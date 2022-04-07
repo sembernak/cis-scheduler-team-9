@@ -9,8 +9,9 @@ function App(): JSX.Element {
                 Bernal, and Anissa Spano
             </header>
             <p>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload.
+                Welcome to Team 9 schedule builder! This application has all the
+                tools you need to create the perfect college course schedule. To
+                get started, ----
             </p>
             <div className="schedule">
                 <p>one</p>
