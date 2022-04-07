@@ -12,11 +12,15 @@ function App(): JSX.Element {
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload.
             </p>
-            <div class="schedule">
-                {/*The user's schedule would appear here*/}
+            <div className="schedule">
+                <p>one</p>
+                <p>two</p>
+                <p>three</p>
             </div>
-            <div class="control">
-                {/*Import/export and other features would be here*/}
+            <div className="control">
+                <p>one</p>
+                <p>two</p>
+                <p>three</p>
             </div>
         </div>
     );
