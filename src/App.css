@@ -37,3 +37,13 @@
         transform: rotate(360deg);
     }
 }
+
+.schedule {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.control {
+    display: flex;
+    flex-wrap: wrap;
+}
