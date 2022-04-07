@@ -1,0 +1,387 @@
+[
+    {
+        "code": "CISC101",
+        "title": "Principles of Computing",
+        "prereq": null,
+        "description": "Introduces students to the central ideas of computing and computer science including programs, algorithms, abstraction, the internet, and information systems. Instills ideas and practices of computational thinking and engages students in activities that show how computing and computer science change the world. Explores computing as a creative activity and empowers students to apply computational thinking to all disciplines including the arts, humanities, business, social and physical sciences, health, and entertainment.",
+        "credits": 3
+    },
+    {
+       "code": "CISC103",
+       "title": "Introduction to Computer Science with Web Applications",
+       "prereq": null,
+       "description": "Principles of computer science illustrated through programming in scripting languages such as JavaScript and VBScript. Topics include control structures, arrays, functions, and procedures. Programming projects illustrate web-based applications.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC106",
+       "title": "General Computer Science for Engineers",
+       "prereq": null,
+       "description": "Principles of computer science illustrated and applied through programming in a general-purpose language. Programming projects illustrate computational problems, styles, and issues that arise in engineering.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC108",
+       "title": "Introduction to Computer Science 1",
+       "prereq": null,
+       "description": "Computing and principles of programming with an emphasis on systematic program design. Topics include functional programming, data abstraction, procedural abstraction, use of control and state, recursion, testing, and object-oriented programming concepts. Requires no prior programming experience, open to any major, but intended primarily for majors and minors in computer science or mathematics.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC181",
+       "title": "Introduction to Computer Science 2",
+       "prereq": ["CISC108", "CISC106"], 
+       "description": "Principles of computer science illustrated and applied through programming in an object oriented language. Programming projects illustrate computational problems, styles and issues that arise in computer systems development and in all application areas of computation.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC187",
+       "title": "Vertically Integrated Projects 1",
+       "prereq": null,
+       "description": "The Vertically-Integrated Projects (VIP) Program operates in a research and development context. Undergraduate students that join VIP teams earn academic credit for their participation in design/discovery efforts that assist faculty and graduate students with research and development issues in their areas of expertise.",
+       "credits": 1 
+    },
+    {
+       "code": "CISC210",
+       "title": "Introduction to Systems Programming",
+       "prereq": ["CISC106", "CISC108"],
+       "description": "Principles of computer systems programming for software and hardware platforms to achieve efficient resource usage. Topics include the C programming language, memory management, and awareness of system constraints and interfacing. Projects include programming embedded systems and interactive objects.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC220",
+       "title": "Data Structures",
+       "prereq": ["CISC210"],
+       "description": "Review of data type abstraction, recursion, arrays, stacks, queues, multiple stacks and linked lists. Emphasis on dynamic storage management, garbage collection, trees, graphs, tables, sorting and searching.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC250",
+       "title": "Business Telecommunication Networks",
+       "prereq": ["CISC181", "MISY160"],
+       "description": "Examines technologies of information transmission currently utilized in the business environments and the implications of these technologies upon the development and implementation of information systems. Provides a basic background in the convergence of voice, data and video services into common digital networks. Security issues also considered.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC260",
+       "title": "Machine Organization and Assembly Language",
+       "prereq": ["CISC210"],
+       "description": "Introduction to the basics of machine organization. Programming tools and techniques at the machine and assembly levels. Assembly language programming and computer arithmetic techniques. ",
+       "credits": 3 
+    },
+    {
+       "code": "CISC275",
+       "title": "Introduction to Software Engineering",
+       "prereq": ["CISC181", "CISC220"],
+       "description": "Object oriented software design and development through use of an object oriented programming language. Topics include team programming, design patterns, graphical user interfaces, software engineering tools (e.g., integrated development environments, version control, build management, bug tracking, automated testing).",
+       "credits": 3 
+    },
+    {
+       "code": "CISC287",
+       "title": "Vertically Integrated Projects 2",
+       "prereq": null,
+       "description": "The Vertically-Integrated Projects (VIP) Program operates in a research and development context. Undergraduate students that join VIP teams earn academic credit for their participation in design/discovery efforts that assist faculty and graduate students with research and development issues in their areas of expertise.",
+       "credits": 2 
+    },
+    {
+       "code": "CISC303",
+       "title": "Automata Theory",
+       "prereq": ["MATH210", "CISC220"],
+       "description": "Automata and formal language theory. Background for advanced applications in compilers, computer networks, operating systems, and natural language processing. Finite automata and regular languages. Push down automata and context free grammars. Turing machines.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC304",
+       "title": "Logic for Programming",
+       "prereq": ["CISC220", "MATH210"],
+       "description": "Propositional and predicate logic for general reasoning and advanced applications in knowledge representation in artificial intelligence and database, program correctness and programming semantics. Models, resolution, logic programming, and natural deduction.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC320",
+       "title": "Introduction to Algorithms",
+       "prereq": ["MATH210", "CISC220"],
+       "description": "Design and analysis of algorithms: worst/average case analysis, proofs for correctness and performance of algorithms. Algorithmic strategies (divide and conquer, greedy methods, dynamic programming, etc.). Algorithms for searching, forming and traversal of strings, trees and graphs. Categorization of computational problems: classes P and NP. NP completeness.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC355",
+       "title": "Computers, Ethics and Society",
+       "prereq": null,
+       "description": "Explains relationships among information technology, society and ethics by examining issues raised by increasingly widespread use of computers. Topics include ethics for computer professionals, computer impact on factory work, office work, personal privacy and social power distribution.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC357",
+       "title": "Engaging Youth in Computing",
+       "prereq": ["CISC101", "CISC103", "CISC106", "CISC108"],
+       "description": "Develop communication, leadership, and teaching skills while working with youth to broaden participation in computing. With training, student teams assist in after-school programs and K-12 classes to engage youth in computational thinking. Focus on low-entry technologies for creating interactive stories, games, websites, and robotics projects. ",
+       "credits": 3 
+    },
+    {
+       "code": "CISC360",
+       "title": "Computer Architecture",
+       "prereq": ["CISC220", "CISC260"],
+       "description": "Principles and techniques used in the architecture of digital computers. Machine elements and their interrelation. Instruction sets, risc vs cisc, registers, busses and switches.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC361",
+       "title": "Operating Systems",
+       "prereq": ["CISC220", "CISC260"],
+       "description": "Principles and techniques employed in the development of operating systems and their control programs. Includes management of memory, processors, I/O devices.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC372",
+       "title": "Parallel Computing",
+       "prereq": ["CISC220", "CISC260"],
+       "description": "Introduction to parallel computing concepts, methodologies, and tools. Programming and algorithmic techniques for code that will run simultaneously on parallel computing architectures. Topics include: single and multi-core parallelism, shared and distributed memory architectures, concurrency, program decomposition, data distribution, communication, load balancing, scalability, locality, granularity, debugging, performance evaluation.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC374",
+       "title": "Educational Game Development",
+       "prereq": ["CISC220"],
+       "description": "Experience the software engineering process through creating educational games for youth; open-ended, project-oriented team learning while assisting regional teachers in integrating computing and computational thinking into the classroom; interact with teachers as clients, hone communication skills and experience design-studio-based critiques of your ideas.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC387",
+       "title": "Vertically Integrated Projects 3",
+       "prereq": null,
+       "description": "The Vertically-Integrated Projects (VIP) Program operates in a research and development context. Undergraduate students that join VIP teams earn academic credit for their participation in design/discovery efforts that assist faculty and graduate students with research and development issues in their areas of expertise.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC401",
+       "title": "Elements of the Theory of Computation",
+       "prereq": ["CISC303"],
+       "description": "General models of computation, formal languages and automata theory and algorithmic unsolvability.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC404",
+       "title": "Logic in Computer Science",
+       "prereq": ["CISC304"],
+       "description": "Formal introduction to first-order logic with emphasis on its relevance to computer science. Syntax, semantics, models, formal proofs and results on soundness, consistency, completeness, compactness and undecidability. Automated theorem proving also covered.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC410",
+       "title": "Computational Mathematics 1",
+       "prereq": ["MATH305", "MATH351", "MATH349"],
+       "description": "Floating point numbers; conditioning and stability; LU, Cholesky, and QR factorizations; square and overdetermined linear systems; Newton and quasi-Newton rootfinding methods; piecewise polynomials for interpolation, integration, and finite differences; explicit methods for initial-value problems.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC411",
+       "title": "Computational Mathematics 2",
+       "prereq": ["MATH426", "CISC410", "MATH353"],
+       "description": "Eigenvalue and singular-value decompositions; power and Krylov subspace iterations; global interpolation and quadrature; methods for boundary-value problems and Poisson's equation; implicit solvers for stiff problems; method of lines for partial differential equations; diffusion and advection problems.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC436",
+       "title": "Computational Biology and Bioinformatics",
+       "prereq": ["CISC220"],
+       "description": "Concepts, methodologies, and tools in bioinformatics. Abstraction of biological problems for computational solutions. Genome sequencing and assembly, bio-sequence analysis and comparison and database search, dynamics programming, hidden Markov models, and phylogenetic trees.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC437",
+       "title": "Database Systems",
+       "prereq": ["CISC220"],
+       "description": "Physical and logical organization of databases. Data retrieval languages, relational database languages, security and integrity, concurrency, distributed databases.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC440",
+       "title": "Computer Graphics",
+       "prereq": ["CISC220", "MATH241"],
+       "description": "Computer graphics technology, two- and three-dimensional systems, graphics software systems, modeling and object hierarchy, and animation.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC442",
+       "title": "Introduction to Computer Vision",
+       "prereq": ["CISC220"],
+       "description": "Analysis of images and video to recognize, reconstruct, model, and otherwise infer static and dynamic properties of objects in the three-dimensional world. Geometry of image formation; image processing such as smoothing, edge and feature detection, color, and texture; segmentation; shape representation including deformable templates; stereo vision; motion estimation and tracking; techniques for 3-D reconstruction; image registration methods.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC449",
+       "title": "Topics in Computer Applications",
+       "prereq": null,
+       "description": "Contents will vary to coincide with the interests of students and current faculty.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC450",
+       "title": "Computer Networks 1",
+       "prereq": ["CISC260", "CPEG222"],
+       "description": "Foundation principles, architectures and techniques employed in computer and communication networks. Focuses on mechanisms used in TCP/IP protocol suite. Topics include connection management, end-to-end reliable data transfer, sliding window protocols, quality of service, flow control, congestion control, routing, LANs, framing, error control, analog versus digital transmission, packet versus circuit switching, multiplexing.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC464",
+       "title": "Introduction to Network Security",
+       "prereq": ["CISC450"],
+       "description": "Practical introduction to network security field. Covers material on cryptography, intrusions, denial-of-service attacks, worms, honeynets and other hot topics in network security.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC471",
+       "title": "Compiler Design",
+       "prereq": ["CISC260", "CISC303"],
+       "description": "Introduction to the design and implementation of compilers, with a focus on lexical analysis, parsing and syntax directed translation.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC472",
+       "title": "Web Applications Security",
+       "prereq": null,
+       "description": "This seminar-style cybersecurity course covers one specific discipline of information security known as application security. This discipline (APPSEC) refers to the development of software that can continue to function correctly even under constant scrutiny and attack by determined adversaries.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC474",
+       "title": "Advanced Web Technologies",
+       "prereq": ["CISC275"],
+       "description": "Programming and architecture of web servers and the technologies for implementing high performance, sophisticated web sites for applications like e-commerce. Students learn how to install and set-up a web server, how to write and install programs for a web server, and how to design and implement multi-tier client/server applications with database backends.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC475",
+       "title": "Advanced Software Engineering",
+       "prereq": ["CISC275"],
+       "description": "Understand and apply a complete modern software engineering process. Topics include requirements analysis, specification, design, implementation, verification, and project management. Real-life team projects cover all aspects of the software development lifecycle, from the requirements to acceptance testing.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC479",
+       "title": "Topics in Architecture and Software",
+       "prereq": ["CISC361"],
+       "description": "Contents will vary to coincide with the interests of students and faculty.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC481",
+       "title": "Artificial Intelligence",
+       "prereq": ["CISC220", "CISC304"],
+       "description": "Programming techniques for problems not amenable to algorithmic solutions. Problem formulation, search strategies, state spaces, applications of logic, knowledge representation, planning and application areas.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC482",
+       "title": "Introduction to Human-Computer Interaction",
+       "prereq": ["CISC275"],
+       "description": "Research and theoretical methods for the study, design, implementation, and evaluation of effective user-interactive systems, including requirements for gathering, survey design, and rapid prototyping. Hands-on group projects supplement theoretical knowledge.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC483",
+       "title": "Introduction to Data Mining",
+       "prereq": ["CISC220", "MATH205", "MATH350"],
+       "description": "Concepts, techniques, and algorithms for mining large data sets to discover structural patterns that can be used to make subsequent predictions. Emphasis on practical approaches and empirical evaluation. Use of a workbench of data mining tools, such as the Weka toolkit.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC484",
+       "title": "Introduction to Machine Learning",
+       "prereq": ["CISC220", "MATH205", "MATH350"],
+       "description": "Development of methods to learn to solve a task using examples. Explore different machine learning algorithms/techniques and discuss their strengths and weaknesses and situations they are or are not suited for.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC498",
+       "title": "Computer Science Senior Design Project 1",
+       "prereq": ["CISC275"],
+       "description": "First semester of two-semester senior software design course.  Students work in teams to develop solutions to real-world problems for a client.  Application of a modern software engineering process; requirement solicitation, analysis, and specification; prototyping; design; incremental development; testing and verification; client interaction; and presentation.",
+       "credits": 3 
+    },
+    {
+       "code": "CISC499",
+       "title": "Computer Science Senior Design Project 2",
+       "prereq": ["CISC498"],
+       "description": "Continuation of CISC 498.",
+       "credits": 3 
+    },
+    {
+       "code": "MATH115",
+       "title": "Pre-Calculus",
+       "prereq": null,
+       "description": "The various classes of functions and their graphs are explored. Function classes include linear, quadratic, polynomial, rational, exponential, logarithmic and trigonometric. Skills and concepts needed for calculus (MATH221) are emphasized.",
+       "credits": 3 
+    },
+    {
+       "code": "MATH205",
+       "title": "Statistical Methods",
+       "prereq": ["MATH210", "MATH230"],
+       "description": "Descriptive statistics, graphical displays, sampling, variation, normal distribution, estimation, hypothesis testing, one-way analysis of variance, simple linear regression and goodness of fit. Laboratory covers use of statistical packages on mainframe and microcomputers.",
+       "credits": 4 
+    },
+    {
+       "code": "MATH210",
+       "title": "Discrete Mathematics 1",
+       "prereq": null,
+       "description": "Elements of sets and logic. Relations, functions. Integers. Induction and recursion. Principles and techniques of counting.",
+       "credits": 3 
+    },
+    {
+       "code": "MATH221",
+       "title": "Calculus 1",
+       "prereq": ["MATH115"],
+       "description": "Topics include functions, graphing functions, limits, derivatives, exponential and logarithmic functions, integration, and techniques of integration. Business applications are emphasized.",
+       "credits": 3 
+    },
+    {
+       "code": "MATH230",
+       "title": "Finite Mathematics with Applications",
+       "prereq": ["MATH221"],
+       "description": "Set theory, probability, optimization, linear programming and an introduction to matrix methods.",
+       "credits": 3 
+    },
+    {
+       "code": "MATH241",
+       "title": "Analytical Geometry and Calculus A",
+       "prereq": null,
+       "description": "Functions, limits, continuity, derivatives. Polynomial, rational, exponential, hyperbolic, logarithmic, trigonometric and inverse trigonometric functions. Definite and indefinite integrals and the Fundamental Theorem of Calculus. Simple differential equations (separable ODE, linear ODE). ODE models leading to exponential growth and decay.",
+       "credits": 3 
+    },
+    {
+       "code": "MATH350",
+       "title": "Probability Theory and Simulation Methods",
+       "prereq": null,
+       "description": "Introduces the basic theory of discrete and continuous aspects of probability theory. Topics include bivariate distributions, sums of independent random variables, moment generating functions, laws of large numbers and central limit theorem.",
+       "credits": 3 
+    },
+    {
+       "code": "MATH351",
+       "title": "Engineering Matheematics 1",
+       "prereq": null,
+       "description": "Solutions of linear algebraic equations, Gauss elimination, vector spaces, subspaces, linear dependence, linear ordinary differential equations of 2nd order and higher, initial value problems, eigenvalues, coupled linear ordinary differential equations, nonlinear differential equations, with engineering applications.",
+       "credits": 3 
+    },
+    {
+       "code": "MATH353",
+       "title": "Engineering Matheematics 3",
+       "prereq": ["MATH351", "CISC106"],
+       "description": "Numerical Methods in engineering, linear and non-linear algebraic equations, numerical solution of ordinary differential equations, Runge-Kutta methods, boundary value problems, finite differences, diffusion, Laplace equation, applications to engineering problems with programming.",
+       "credits": 3 
+    },
+    {
+       "code": "MATH426",
+       "title": "Computational Mathematics 1",
+       "prereq": ["MATH351"],
+       "description": "Floating point numbers; conditioning and stability; LU, Cholesky, and QR factorizations; square and overdetermined linear systems; Newton and quasi-Newton rootfinding methods; piecewise polynomials for interpolation, integration, and finite differences; explicit methods for initial-value problems.",
+       "credits": 3 
+    },
+    {
+       "code": "CPEG222",
+       "title": "Microprocessor Systems",
+       "prereq": ["CISC210"],
+       "description": "Introduction to microprocessors as embedded devices. Emphasizes Input/Output techniques, interrupts, real-time operation, high-level code debugging and interfacing to various types of sensors and actuators. Projects that address various embedded applications are a major part of the course.",
+       "credits": 4 
+    }
+]
