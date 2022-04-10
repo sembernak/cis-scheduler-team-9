@@ -7,7 +7,7 @@ import { Course } from "./interfaces/course";
 import { CourseViewer } from "./components/courseViewer";
 
 const COURSELIST = [
-    //Complete list of every course
+    //Complete list of every course in order of department (see catalog.json)
     {
         code: "test",
         title: "test",
@@ -28,6 +28,7 @@ for (i in catalog) {
 
 function App(): JSX.Element {
     const exampleSem1 = [
+        //for testing
         COURSELIST[1],
         COURSELIST[300],
         COURSELIST[20],
@@ -47,6 +48,7 @@ function App(): JSX.Element {
                 get started, ----
             </p>
             <div className="schedule">
+                {/*feel free to delete this:*/}
                 <CourseViewer
                     changeView={() => console.log("hi")}
                     course={exampleSem1[0]}
