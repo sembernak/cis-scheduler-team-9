@@ -1,7 +1,40 @@
 import React from "react";
+import { Button } from "react-bootstrap";
+import unpackJson from "./helper_functions/unpackJSON";
+import catalog from "./catalog.json";
 import "./App.css";
+import { Course } from "./interfaces/course";
+import { CourseViewer } from "./components/courseViewer";
+
+const COURSELIST = [
+    //Complete list of every course
+    {
+        code: "test",
+        title: "test",
+        prereq: ["test"],
+        description:
+            "I couldn't figure out another way to type this variable properly",
+        credits: 1
+    }
+];
+COURSELIST.pop();
+
+let i: keyof typeof catalog;
+for (i in catalog) {
+    for (const j in catalog[i]) {
+        COURSELIST.push(unpackJson(i, j));
+    }
+}
 
 function App(): JSX.Element {
+    const exampleSem1 = [
+        COURSELIST[1],
+        COURSELIST[300],
+        COURSELIST[20],
+        COURSELIST[808],
+        COURSELIST[1227]
+    ];
+
     return (
         <div className="App">
             <header className="App-header">
@@ -14,15 +47,12 @@ function App(): JSX.Element {
                 get started, ----
             </p>
             <div className="schedule">
-                <p>one</p>
-                <p>two</p>
-                <p>three</p>
+                <CourseViewer
+                    changeView={() => console.log("hi")}
+                    course={exampleSem1[0]}
+                ></CourseViewer>
             </div>
-            <div className="control">
-                <p>one</p>
-                <p>two</p>
-                <p>three</p>
-            </div>
+            <div className="control"></div>
         </div>
     );
 }
