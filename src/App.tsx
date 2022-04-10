@@ -1,8 +1,8 @@
 import React from "react";
-import { Button } from "react-bootstrap";
 import unpackJson from "./helper_functions/unpackJSON";
 import catalog from "./catalog.json";
 import "./App.css";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Course } from "./interfaces/course";
 import { CourseViewer } from "./components/courseViewer";
 
