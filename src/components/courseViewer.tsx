@@ -2,7 +2,7 @@ import React from "react";
 import { Col } from "react-bootstrap";
 import { Course } from "../interfaces/course";
 
-export function courseViewer({
+export function CourseViewer({
     course
 }: {
     changeView: () => void;
