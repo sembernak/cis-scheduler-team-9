@@ -6,11 +6,13 @@ import { CourseView } from "./courseView";
 //import { SemesterViewer } from "./semesterViewer";
 
 export function SemesterView({
-    semester
-}: //deletesemester
-{
+    semester,
+    deleteSemester,
+    deleteCourse
+}: {
     semester: Semester;
-    //deletesemester: (id: number) => void;
+    deleteSemester: (id: number) => void;
+    deleteCourse: (code: string) => void;
 }): JSX.Element {
     /*function changeViewing() {
         setViewing(!viewing);
@@ -28,11 +30,14 @@ export function SemesterView({
                     {"                       "}
                     {semester.courses.map((course: Course) => (
                         <div key={course.code}>
-                            <CourseView course={course}></CourseView>
+                            <CourseView
+                                course={course}
+                                deleteCourse={deleteCourse}
+                            ></CourseView>
                         </div>
                     ))}
                     <Button
-                        //onClick={() => deletesemester(semester.id)}
+                        onClick={() => deleteSemester(semester.id)}
                         variant="danger"
                         className="me-8"
                     >

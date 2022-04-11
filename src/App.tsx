@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import unpackJson from "./helper_functions/unpackJSON";
 import catalog from "./catalog.json";
 import "./App.css";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Course } from "./interfaces/course";
 import { PlanView } from "./components/planView";
+import { Plan } from "./interfaces/plan";
+import { Semester } from "./interfaces/semester";
 
 const COURSELIST = [
     //Complete list of every course in order of department (see catalog.json)
@@ -27,8 +29,6 @@ for (i in catalog) {
 }
 
 function App(): JSX.Element {
-    //const [semesters, setSemesters] = useState<Semester[]>(SEMESTERS);
-
     const exampleSem2 = {
         season: "Spring",
         year: 2020,
@@ -47,12 +47,56 @@ function App(): JSX.Element {
 
     const examplePlan1 = {
         title: "Plan 1",
-        semesters: [exampleSem2, exampleSem3]
+        semesters: [exampleSem2, exampleSem3],
+        id: 1
     };
 
-    /*function deleteSemester(id: number) {
-        setSemesters(quizzes.filter((quiz: Quiz): boolean => quiz.id !== id));
-    }*/
+    const examplePlan2 = {
+        title: "Plan 2",
+        semesters: [exampleSem3],
+        id: 2
+    };
+
+    const PLANS = [examplePlan1, examplePlan2];
+
+    const [plans, setPlans] = useState<Plan[]>(PLANS);
+
+    function deletePlan(id: number) {
+        setPlans(plans.filter((plan: Plan): boolean => plan.id !== id));
+    }
+
+    function deleteSemester(id: number) {
+        setPlans(
+            plans.map(
+                (newplan: Plan): Plan => ({
+                    ...newplan,
+                    semesters: newplan.semesters.filter(
+                        (semester1: Semester): boolean => semester1.id !== id
+                    )
+                })
+            )
+        );
+    }
+
+    function deleteCourse(code: string) {
+        setPlans(
+            plans.map(
+                (newplan: Plan): Plan => ({
+                    ...newplan,
+                    semesters: newplan.semesters.map(
+                        (semester1: Semester): Semester => ({
+                            ...semester1,
+                            courses: semester1.courses.filter(
+                                (course1: Course): boolean =>
+                                    course1.code !== code
+                            )
+                        })
+                    )
+                })
+            )
+        );
+    }
+
     return (
         <div className="App">
             <header className="App-header">
@@ -67,7 +111,12 @@ function App(): JSX.Element {
             <div className="schedule">
                 <br></br>
                 <p>
-                    <PlanView plan={examplePlan1}></PlanView>
+                    <PlanView
+                        plan={examplePlan1}
+                        deleteSemester={deleteSemester}
+                        deletePlan={deletePlan}
+                        deleteCourse={deleteCourse}
+                    ></PlanView>
                 </p>
             </div>
             <div className="control"></div>

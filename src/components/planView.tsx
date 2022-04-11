@@ -1,11 +1,14 @@
 import React from "react";
 import { Semester } from "../interfaces/semester";
-import { Stack } from "react-bootstrap";
+import { Button, Stack } from "react-bootstrap";
 import { SemesterView } from "./semesterView";
 import { Plan } from "../interfaces/plan";
 
 export function PlanView({
-    plan
+    plan,
+    deleteSemester,
+    deletePlan,
+    deleteCourse
 }: //deleteSemester,
 //viewSemester,
 //editCourse,
@@ -15,7 +18,9 @@ export function PlanView({
 //publishCourse
 {
     plan: Plan;
-    //deleteSemester: (id: number) => void;
+    deleteSemester: (id: number) => void;
+    deletePlan: (id: number) => void;
+    deleteCourse: (code: string) => void;
     //viewSemester: (id: number, newSemester: Semester) => void;
     //editCourse: (id: number, newCourse: Course) => void;
     //deleteCourse: (id: number) => void;
@@ -31,7 +36,8 @@ export function PlanView({
                     <div key={Semester.id} className="bg-light border m-2 p-2">
                         <SemesterView
                             semester={Semester}
-                            //deleteSemester={deleteSemester}
+                            deleteSemester={deleteSemester}
+                            deleteCourse={deleteCourse}
                             //viewSemester={viewSemester}
                             //editCourse={editCourse}
                             //viewing={viewing}
@@ -40,6 +46,13 @@ export function PlanView({
                     </div>
                 ))}
             </Stack>
+            <Button
+                onClick={() => deletePlan(plan.id)}
+                variant="danger"
+                className="me-8"
+            >
+                Delete Plan
+            </Button>
         </div>
     );
 }
