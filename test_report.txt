@@ -2,21 +2,86 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
+  console.error
+    Warning: validateDOMNesting(...): <h3> cannot appear as a descendant of <p>.
+        at h3
+        at div
+        at PlanView (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planView.tsx:8:5)
+        at p
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10083:7)
+      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
+      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
+      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
+
+  console.error
+    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/Stack.js:23:7
+        at div
+        at PlanView (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planView.tsx:8:5)
+        at p
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at CourseView (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/courseView.tsx:6:5)
+        at div
+        at div
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at SemesterView (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/semesterView.tsx:9:5)
+        at div
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/Stack.js:23:7
+        at div
+        at PlanView (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planView.tsx:8:5)
+        at p
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10083:7)
+      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
+      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
+      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
+
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (38 ms)
+  ✓ renders the course name somewhere (147 ms)
 
 ----------------------|---------|----------|---------|---------|-------------------
 File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------------|---------|----------|---------|---------|-------------------
-All files             |   86.66 |       50 |      60 |   86.66 |                   
- src                  |    87.5 |      100 |      50 |    87.5 |                   
-  App.tsx             |    87.5 |      100 |      50 |    87.5 | 53                
- src/components       |   66.66 |       50 |      50 |   66.66 |                   
-  courseView.tsx      |       0 |      100 |       0 |       0 | 6                 
-  courseViewer.tsx    |     100 |       50 |     100 |     100 | 22                
-  planView.tsx        |       0 |        0 |       0 |       0 |                   
+All files             |     100 |      100 |     100 |     100 |                   
+ src                  |     100 |      100 |     100 |     100 |                   
+  App.tsx             |     100 |      100 |     100 |     100 |                   
+ src/components       |     100 |      100 |     100 |     100 |                   
+  courseView.tsx      |     100 |      100 |     100 |     100 |                   
+  planView.tsx        |     100 |      100 |     100 |     100 |                   
   planViewer.tsx      |       0 |        0 |       0 |       0 |                   
-  semesterView.tsx    |       0 |        0 |       0 |       0 |                   
+  semesterView.tsx    |     100 |      100 |     100 |     100 |                   
   semesterViewer.tsx  |       0 |        0 |       0 |       0 |                   
  src/helper_functions |     100 |      100 |     100 |     100 |                   
   unpackJSON.tsx      |     100 |      100 |     100 |     100 |                   
@@ -28,5 +93,5 @@ All files             |   86.66 |       50 |      60 |   86.66 |
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        1.982 s
+Time:        3.161 s
 Ran all test suites.
