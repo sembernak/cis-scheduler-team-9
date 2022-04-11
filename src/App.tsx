@@ -5,6 +5,7 @@ import "./App.css";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Course } from "./interfaces/course";
 import { PlanView } from "./components/planView";
+import { PlanViewer } from "./components/planViewer";
 import { Plan } from "./interfaces/plan";
 import { Semester } from "./interfaces/semester";
 
@@ -111,6 +112,7 @@ function App(): JSX.Element {
             <div className="schedule">
                 <br></br>
                 <p>
+                    <PlanViewer planList={PLANS}></PlanViewer>
                     <PlanView
                         plan={examplePlan1}
                         deleteSemester={deleteSemester}

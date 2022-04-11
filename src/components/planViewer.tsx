@@ -8,11 +8,11 @@ type ChangeEvent = React.ChangeEvent<
 
 const STARTERPLAN = {
     title: "New Plan",
-    semesters: []
-    //id: 0
+    semesters: [],
+    id: 0
 };
 
-export function planViewer({ planList }: { planList: Plan[] }): JSX.Element {
+export function PlanViewer({ planList }: { planList: Plan[] }): JSX.Element {
     const [selection, Select] = useState<Plan>(STARTERPLAN);
 
     const workingList = [STARTERPLAN, ...planList];
