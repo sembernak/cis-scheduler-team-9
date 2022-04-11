@@ -6,7 +6,7 @@
     Warning: validateDOMNesting(...): <p> cannot appear as a descendant of <p>.
         at p
         at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:15:30)
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:17:5)
         at p
         at div
         at div
@@ -25,7 +25,7 @@
         at div
         at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
         at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:15:30)
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:17:5)
         at p
         at div
         at div
@@ -44,6 +44,8 @@
         at h3
         at div
         at PlanView (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planView.tsx:8:5)
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:17:5)
         at p
         at div
         at div
@@ -77,7 +79,7 @@
       at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
 
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (147 ms)
+  ✓ renders the course name somewhere (124 ms)
 
 ----------------------|---------|----------|---------|---------|-------------------
 File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
@@ -88,7 +90,7 @@ All files             |   65.85 |      100 |   39.13 |    67.5 |
  src/components       |   68.75 |      100 |   58.33 |   68.75 |                   
   courseView.tsx      |   66.66 |      100 |      50 |   66.66 | 27                
   planView.tsx        |   66.66 |      100 |   66.66 |   66.66 | 50                
-  planViewer.tsx      |   71.42 |      100 |      50 |   71.42 | 21-23             
+  planViewer.tsx      |   71.42 |      100 |      50 |   71.42 | 32-34             
   semesterView.tsx    |   66.66 |      100 |   66.66 |   66.66 | 40                
   semesterViewer.tsx  |       0 |        0 |       0 |       0 |                   
  src/helper_functions |     100 |      100 |     100 |     100 |                   
@@ -101,5 +103,5 @@ All files             |   65.85 |      100 |   39.13 |    67.5 |
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        2.804 s
+Time:        2.181 s
 Ran all test suites.
