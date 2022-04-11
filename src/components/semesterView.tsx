@@ -8,11 +8,13 @@ import { CourseView } from "./courseView";
 export function SemesterView({
     semester,
     deleteSemester,
-    deleteCourse
+    deleteCourse,
+    editCourse
 }: {
     semester: Semester;
     deleteSemester: (id: number) => void;
     deleteCourse: (code: string) => void;
+    editCourse: (code: string, newCourse: Course) => void;
 }): JSX.Element {
     /*function changeViewing() {
         setViewing(!viewing);
@@ -33,6 +35,7 @@ export function SemesterView({
                             <CourseView
                                 course={course}
                                 deleteCourse={deleteCourse}
+                                editCourse={editCourse}
                             ></CourseView>
                         </div>
                     ))}

@@ -1,17 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Col } from "react-bootstrap";
 import { Course } from "../interfaces/course";
+import { CourseEditor } from "./courseEditor";
+import { RecordControlsCourse } from "./recordControlsCourse";
 
 export function CourseView({
     course,
-    deleteCourse
+    deleteCourse,
+    editCourse
 }: {
     //changeView: () => void;
     course: Course;
     deleteCourse: (code: string) => void;
+    editCourse: (code: string, newCourse: Course) => void;
 }): JSX.Element {
     const preRecs = course.prereq.join(", ");
-    return (
+    const [editing, setEditing] = useState<boolean>(false);
+
+    function changeEditing() {
+        setEditing(!editing);
+    }
+
+    return editing ? (
+        <>
+            <CourseEditor
+                changeEditing={changeEditing}
+                course={course}
+                editCourse={editCourse}
+                deleteCourse={deleteCourse}
+            ></CourseEditor>
+        </>
+    ) : (
         <>
             <Col>
                 <h3>
@@ -22,6 +41,11 @@ export function CourseView({
                 {course.description}
                 <br></br>
                 {preRecs.length === 0 ? "" : "Prerequisites: " + preRecs}
+                <Col>
+                    <RecordControlsCourse
+                        changeEditing={changeEditing}
+                    ></RecordControlsCourse>
+                </Col>
             </Col>
             <Button
                 onClick={() => deleteCourse(course.code)}

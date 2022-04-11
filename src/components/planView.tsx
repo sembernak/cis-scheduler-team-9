@@ -3,30 +3,20 @@ import { Semester } from "../interfaces/semester";
 import { Button, Stack } from "react-bootstrap";
 import { SemesterView } from "./semesterView";
 import { Plan } from "../interfaces/plan";
+import { Course } from "../interfaces/course";
 
 export function PlanView({
     plan,
     deleteSemester,
     deletePlan,
-    deleteCourse
-}: //deleteSemester,
-//viewSemester,
-//editCourse,
-//deleteCourse,
-//viewing,
-//setViewing,
-//publishCourse
-{
+    deleteCourse,
+    editCourse
+}: {
     plan: Plan;
     deleteSemester: (id: number) => void;
     deletePlan: (id: number) => void;
     deleteCourse: (code: string) => void;
-    //viewSemester: (id: number, newSemester: Semester) => void;
-    //editCourse: (id: number, newCourse: Course) => void;
-    //deleteCourse: (id: number) => void;
-    //viewing: boolean;
-    //setViewing: (viewing: boolean) => void;
-    //publishCourse: (id: number) => void;
+    editCourse: (code: string, newCourse: Course) => void;
 }): JSX.Element {
     return (
         <div>
@@ -39,7 +29,7 @@ export function PlanView({
                             deleteSemester={deleteSemester}
                             deleteCourse={deleteCourse}
                             //viewSemester={viewSemester}
-                            //editCourse={editCourse}
+                            editCourse={editCourse}
                             //viewing={viewing}
                             //setViewing={setViewing}
                         ></SemesterView>

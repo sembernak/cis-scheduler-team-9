@@ -4,7 +4,6 @@ import catalog from "./catalog.json";
 import "./App.css";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Course } from "./interfaces/course";
-import { PlanView } from "./components/planView";
 import { PlanViewer } from "./components/planViewer";
 import { Plan } from "./interfaces/plan";
 import { Semester } from "./interfaces/semester";
@@ -28,38 +27,37 @@ for (i in catalog) {
         COURSELIST.push(unpackJson(i, j));
     }
 }
+const exampleSem2 = {
+    season: "Spring",
+    year: 2020,
+    totalCredits: 15,
+    courses: [COURSELIST[1], COURSELIST[34], COURSELIST[12]],
+    id: 1
+};
+
+const exampleSem3 = {
+    season: "Winter",
+    year: 2019,
+    totalCredits: 6,
+    courses: [COURSELIST[8], COURSELIST[444]],
+    id: 1
+};
+
+const examplePlan1 = {
+    title: "Plan 1",
+    semesters: [exampleSem2, exampleSem3],
+    id: 1
+};
+
+const examplePlan2 = {
+    title: "Plan 2",
+    semesters: [exampleSem3],
+    id: 2
+};
+
+const PLANS = [examplePlan1, examplePlan2];
 
 function App(): JSX.Element {
-    const exampleSem2 = {
-        season: "Spring",
-        year: 2020,
-        totalCredits: 15,
-        courses: [COURSELIST[1], COURSELIST[34], COURSELIST[12]],
-        id: 1
-    };
-
-    const exampleSem3 = {
-        season: "Winter",
-        year: 2019,
-        totalCredits: 6,
-        courses: [COURSELIST[8], COURSELIST[444]],
-        id: 1
-    };
-
-    const examplePlan1 = {
-        title: "Plan 1",
-        semesters: [exampleSem2, exampleSem3],
-        id: 1
-    };
-
-    const examplePlan2 = {
-        title: "Plan 2",
-        semesters: [exampleSem3],
-        id: 2
-    };
-
-    const PLANS = [examplePlan1, examplePlan2];
-
     const [plans, setPlans] = useState<Plan[]>(PLANS);
 
     function deletePlan(id: number) {
@@ -98,6 +96,24 @@ function App(): JSX.Element {
         );
     }
 
+    function editCourse(code: string, newCourse: Course) {
+        setPlans(
+            plans.map(
+                (newPlan: Plan): Plan => ({
+                    ...newPlan,
+                    semesters: newPlan.semesters.map(
+                        (semester1: Semester): Semester => ({
+                            ...semester1,
+                            courses: semester1.courses.map(
+                                (course1: Course): Course =>
+                                    course1.code === code ? newCourse : course1
+                            )
+                        })
+                    )
+                })
+            )
+        );
+    }
     return (
         <div className="App">
             <header className="App-header">
@@ -113,17 +129,12 @@ function App(): JSX.Element {
                 <br></br>
                 <p>
                     <PlanViewer
-                        planList={PLANS}
+                        planList={plans}
                         deleteSemester={deleteSemester}
                         deletePlan={deletePlan}
                         deleteCourse={deleteCourse}
+                        editCourse={editCourse}
                     ></PlanViewer>
-                    <PlanView
-                        plan={examplePlan1}
-                        deleteSemester={deleteSemester}
-                        deletePlan={deletePlan}
-                        deleteCourse={deleteCourse}
-                    ></PlanView>
                 </p>
             </div>
             <div className="control"></div>

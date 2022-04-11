@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Form } from "react-bootstrap";
 import { Plan } from "../interfaces/plan";
 import { PlanView } from "../components/planView";
+import { Course } from "../interfaces/course";
 type ChangeEvent = React.ChangeEvent<
     HTMLTextAreaElement | HTMLInputElement | HTMLSelectElement
 >;
@@ -17,12 +18,14 @@ export function PlanViewer({
     planList,
     deleteSemester,
     deletePlan,
-    deleteCourse
+    deleteCourse,
+    editCourse
 }: {
     planList: Plan[];
     deleteSemester: (id: number) => void;
     deletePlan: (id: number) => void;
     deleteCourse: (code: string) => void;
+    editCourse: (code: string, newCourse: Course) => void;
 }): JSX.Element {
     const [selection, Select] = useState<Plan>(STARTERPLAN);
 
@@ -35,7 +38,11 @@ export function PlanViewer({
             ) as Plan
         );
     }
-
+    /*
+    function updateSelection(event: React.ChangeEvent<HTMLSelectElement>){
+        Select(event.target.value);
+    }
+*/
     return (
         <div>
             <p>Select a plan from below to get started:</p>
@@ -53,6 +60,7 @@ export function PlanViewer({
                 deleteCourse={deleteCourse}
                 deleteSemester={deleteSemester}
                 deletePlan={deletePlan}
+                editCourse={editCourse}
             ></PlanView>
         </div>
     );
