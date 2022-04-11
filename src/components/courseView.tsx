@@ -1,12 +1,14 @@
 import React from "react";
-import { Col } from "react-bootstrap";
+import { Button, Col } from "react-bootstrap";
 import { Course } from "../interfaces/course";
 
 export function CourseView({
-    course
+    course,
+    deleteCourse
 }: {
     //changeView: () => void;
     course: Course;
+    deleteCourse: (code: string) => void;
 }): JSX.Element {
     const preRecs = course.prereq.join(", ");
     return (
@@ -21,6 +23,13 @@ export function CourseView({
                 <br></br>
                 {preRecs.length === 0 ? "" : "Prerequisites: " + preRecs}
             </Col>
+            <Button
+                onClick={() => deleteCourse(course.code)}
+                variant="danger"
+                className="me-8"
+            >
+                Delete Course
+            </Button>
             <div></div>
         </>
     );
