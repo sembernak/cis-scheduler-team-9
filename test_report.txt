@@ -10,7 +10,7 @@
         at p
         at div
         at div
-        at App
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:62:31)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -29,7 +29,7 @@
         at p
         at div
         at div
-        at App
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:62:31)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -58,7 +58,7 @@
         at p
         at div
         at div
-        at App
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:62:31)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -69,19 +69,19 @@
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (147 ms)
+  ✓ renders the course name somewhere (125 ms)
 
 ----------------------|---------|----------|---------|---------|-------------------
 File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------------|---------|----------|---------|---------|-------------------
-All files             |     100 |      100 |     100 |     100 |                   
- src                  |     100 |      100 |     100 |     100 |                   
-  App.tsx             |     100 |      100 |     100 |     100 |                   
- src/components       |     100 |      100 |     100 |     100 |                   
-  courseView.tsx      |     100 |      100 |     100 |     100 |                   
-  planView.tsx        |     100 |      100 |     100 |     100 |                   
+All files             |    64.7 |      100 |   36.84 |   66.66 |                   
+ src                  |   57.14 |      100 |      10 |      60 |                   
+  App.tsx             |   57.14 |      100 |      10 |      60 | 65-91             
+ src/components       |   66.66 |      100 |    62.5 |   66.66 |                   
+  courseView.tsx      |   66.66 |      100 |      50 |   66.66 | 27                
+  planView.tsx        |   66.66 |      100 |   66.66 |   66.66 | 50                
   planViewer.tsx      |       0 |        0 |       0 |       0 |                   
-  semesterView.tsx    |     100 |      100 |     100 |     100 |                   
+  semesterView.tsx    |   66.66 |      100 |   66.66 |   66.66 | 40                
   semesterViewer.tsx  |       0 |        0 |       0 |       0 |                   
  src/helper_functions |     100 |      100 |     100 |     100 |                   
   unpackJSON.tsx      |     100 |      100 |     100 |     100 |                   
@@ -93,5 +93,5 @@ All files             |     100 |      100 |     100 |     100 |
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        3.161 s
+Time:        2.21 s
 Ran all test suites.
