@@ -3,6 +3,43 @@
 > react-scripts test "--coverage"
 
   console.error
+    Warning: validateDOMNesting(...): <p> cannot appear as a descendant of <p>.
+        at p
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:15:30)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:63:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10083:7)
+      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
+      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
+      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
+
+  console.error
+    Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:15:30)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:63:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10083:7)
+      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
+      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
+      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
+
+  console.error
     Warning: validateDOMNesting(...): <h3> cannot appear as a descendant of <p>.
         at h3
         at div
@@ -10,7 +47,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:62:31)
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:63:31)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -29,7 +66,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:62:31)
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:63:31)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -39,48 +76,19 @@
       at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
       at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
 
-  console.error
-    Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/Col.js:72:8
-        at CourseView (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/courseView.tsx:6:5)
-        at div
-        at div
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/Container.js:24:3
-        at div
-        at SemesterView (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/semesterView.tsx:9:5)
-        at div
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/Stack.js:23:7
-        at div
-        at PlanView (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planView.tsx:8:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:62:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10083:7)
-      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
-      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
-      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
-      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
-
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (125 ms)
+  ✓ renders the course name somewhere (147 ms)
 
 ----------------------|---------|----------|---------|---------|-------------------
 File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------------|---------|----------|---------|---------|-------------------
-All files             |    64.7 |      100 |   36.84 |   66.66 |                   
+All files             |   65.85 |      100 |   39.13 |    67.5 |                   
  src                  |   57.14 |      100 |      10 |      60 |                   
-  App.tsx             |   57.14 |      100 |      10 |      60 | 65-91             
- src/components       |   66.66 |      100 |    62.5 |   66.66 |                   
+  App.tsx             |   57.14 |      100 |      10 |      60 | 66-92             
+ src/components       |   68.75 |      100 |   58.33 |   68.75 |                   
   courseView.tsx      |   66.66 |      100 |      50 |   66.66 | 27                
   planView.tsx        |   66.66 |      100 |   66.66 |   66.66 | 50                
-  planViewer.tsx      |       0 |        0 |       0 |       0 |                   
+  planViewer.tsx      |   71.42 |      100 |      50 |   71.42 | 21-23             
   semesterView.tsx    |   66.66 |      100 |   66.66 |   66.66 | 40                
   semesterViewer.tsx  |       0 |        0 |       0 |       0 |                   
  src/helper_functions |     100 |      100 |     100 |     100 |                   
@@ -93,5 +101,5 @@ All files             |    64.7 |      100 |   36.84 |   66.66 |
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        2.21 s
+Time:        2.804 s
 Ran all test suites.
