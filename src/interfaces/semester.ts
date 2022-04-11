@@ -1,8 +1,9 @@
 import { Course } from "./course";
 
 export interface Semester {
-    season: "spring" | "summer" | "fall" | "winter";
+    season: string;
     year: number;
     totalCredits: number;
     courses: Course[];
+    id: number;
 }

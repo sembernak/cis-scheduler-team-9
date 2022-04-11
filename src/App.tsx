@@ -4,7 +4,7 @@ import catalog from "./catalog.json";
 import "./App.css";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Course } from "./interfaces/course";
-import { CourseViewer } from "./components/courseViewer";
+import { PlanView } from "./components/planView";
 
 const COURSELIST = [
     //Complete list of every course in order of department (see catalog.json)
@@ -27,15 +27,32 @@ for (i in catalog) {
 }
 
 function App(): JSX.Element {
-    const exampleSem1 = [
-        //for testing
-        COURSELIST[1],
-        COURSELIST[300],
-        COURSELIST[20],
-        COURSELIST[808],
-        COURSELIST[1227]
-    ];
+    //const [semesters, setSemesters] = useState<Semester[]>(SEMESTERS);
 
+    const exampleSem2 = {
+        season: "Spring",
+        year: 2020,
+        totalCredits: 15,
+        courses: [COURSELIST[1], COURSELIST[34], COURSELIST[12]],
+        id: 1
+    };
+
+    const exampleSem3 = {
+        season: "Winter",
+        year: 2019,
+        totalCredits: 6,
+        courses: [COURSELIST[8], COURSELIST[444]],
+        id: 1
+    };
+
+    const examplePlan1 = {
+        title: "Plan 1",
+        semesters: [exampleSem2, exampleSem3]
+    };
+
+    /*function deleteSemester(id: number) {
+        setSemesters(quizzes.filter((quiz: Quiz): boolean => quiz.id !== id));
+    }*/
     return (
         <div className="App">
             <header className="App-header">
@@ -48,11 +65,10 @@ function App(): JSX.Element {
                 get started, ----
             </p>
             <div className="schedule">
-                {/*feel free to delete this:*/}
-                <CourseViewer
-                    changeView={() => console.log("hi")}
-                    course={exampleSem1[0]}
-                ></CourseViewer>
+                <br></br>
+                <p>
+                    <PlanView plan={examplePlan1}></PlanView>
+                </p>
             </div>
             <div className="control"></div>
         </div>
