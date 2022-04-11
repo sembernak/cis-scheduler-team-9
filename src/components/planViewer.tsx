@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Form } from "react-bootstrap";
 import { Plan } from "../interfaces/plan";
+import { PlanView } from "../components/planView";
 type ChangeEvent = React.ChangeEvent<
     HTMLTextAreaElement | HTMLInputElement | HTMLSelectElement
 >;
@@ -12,7 +13,17 @@ const STARTERPLAN = {
     id: 0
 };
 
-export function PlanViewer({ planList }: { planList: Plan[] }): JSX.Element {
+export function PlanViewer({
+    planList,
+    deleteSemester,
+    deletePlan,
+    deleteCourse
+}: {
+    planList: Plan[];
+    deleteSemester: (id: number) => void;
+    deletePlan: (id: number) => void;
+    deleteCourse: (code: string) => void;
+}): JSX.Element {
     const [selection, Select] = useState<Plan>(STARTERPLAN);
 
     const workingList = [STARTERPLAN, ...planList];
@@ -31,10 +42,18 @@ export function PlanViewer({ planList }: { planList: Plan[] }): JSX.Element {
             <Form.Group controlId="planDrop">
                 <Form.Select value={selection.title} onChange={changeSelection}>
                     {workingList.map((plan: Plan) => (
-                        <option key={plan.title} value={plan.title}></option>
+                        <option key={plan.title} value={plan.title}>
+                            {plan.title}
+                        </option>
                     ))}
                 </Form.Select>
             </Form.Group>
+            <PlanView
+                plan={selection}
+                deleteCourse={deleteCourse}
+                deleteSemester={deleteSemester}
+                deletePlan={deletePlan}
+            ></PlanView>
         </div>
     );
 }

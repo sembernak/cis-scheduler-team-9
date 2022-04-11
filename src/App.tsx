@@ -112,7 +112,12 @@ function App(): JSX.Element {
             <div className="schedule">
                 <br></br>
                 <p>
-                    <PlanViewer planList={PLANS}></PlanViewer>
+                    <PlanViewer
+                        planList={PLANS}
+                        deleteSemester={deleteSemester}
+                        deletePlan={deletePlan}
+                        deleteCourse={deleteCourse}
+                    ></PlanViewer>
                     <PlanView
                         plan={examplePlan1}
                         deleteSemester={deleteSemester}
