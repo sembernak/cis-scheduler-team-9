@@ -134,6 +134,25 @@ function App(): JSX.Element {
             )
         );
     }
+    function editPlan(id: number, newPlan: Plan) {
+        setPlans(
+            plans.map((plan: Plan): Plan => (plan.id === id ? newPlan : plan))
+        );
+    }
+    function editSemester(id: number, newSemester: Semester) {
+        setPlans(
+            plans.map(
+                (newPlan: Plan): Plan => ({
+                    ...newPlan,
+                    semesters: newPlan.semesters.map(
+                        (semester: Semester): Semester =>
+                            semester.id === id ? newSemester : semester
+                    )
+                })
+            )
+        );
+    }
+
     return (
         <div className="App">
             <header className="App-header">
@@ -154,6 +173,8 @@ function App(): JSX.Element {
                         deletePlan={deletePlan}
                         deleteCourse={deleteCourse}
                         editCourse={editCourse}
+                        editPlan={editPlan}
+                        editSemester={editSemester}
                     ></PlanViewer>
                 </p>
             </div>

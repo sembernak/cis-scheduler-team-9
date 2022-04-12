@@ -4,19 +4,24 @@ import { Button, Stack } from "react-bootstrap";
 import { SemesterView } from "./semesterView";
 import { Plan } from "../interfaces/plan";
 import { Course } from "../interfaces/course";
+import { InsertSemester } from "./insertSemester";
 
 export function PlanView({
     plan,
     deleteSemester,
     deletePlan,
     deleteCourse,
-    editCourse
+    editCourse,
+    editPlan,
+    editSemester
 }: {
     plan: Plan;
     deleteSemester: (id: number) => void;
     deletePlan: (id: number) => void;
     deleteCourse: (code: string) => void;
     editCourse: (code: string, newCourse: Course) => void;
+    editPlan: (id: number, newPlan: Plan) => void;
+    editSemester: (id: number, newSemester: Semester) => void;
 }): JSX.Element {
     return (
         <div>
@@ -36,6 +41,11 @@ export function PlanView({
                     </div>
                 ))}
             </Stack>
+            <InsertSemester
+                plan={plan}
+                editPlan={editPlan}
+                editSemester={editSemester}
+            ></InsertSemester>
             <Button
                 onClick={() => deletePlan(plan.id)}
                 variant="danger"
