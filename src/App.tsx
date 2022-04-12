@@ -27,19 +27,39 @@ for (i in catalog) {
         COURSELIST.push(unpackJson(i, j));
     }
 }
+const course1 = {
+    ...COURSELIST[1],
+    semesterId: "exampleSem2"
+};
+
+const course2 = {
+    ...COURSELIST[34],
+    semesterId: "exampleSem2"
+};
+
+const course3 = {
+    ...COURSELIST[12],
+    semesterId: "exampleSem2"
+};
+
 const exampleSem2 = {
     season: "Spring",
     year: 2020,
     totalCredits: 15,
-    courses: [COURSELIST[1], COURSELIST[34], COURSELIST[12]],
+    courses: [course1, course2, course3],
     id: 1
+};
+
+const course4 = {
+    ...COURSELIST[1],
+    semesterId: "exampleSem3"
 };
 
 const exampleSem3 = {
     season: "Winter",
     year: 2019,
     totalCredits: 6,
-    courses: [COURSELIST[8], COURSELIST[444]],
+    courses: [course4],
     id: 1
 };
 
