@@ -4,4 +4,5 @@ export interface Course {
     prereq: string[];
     description: string;
     credits: number;
+    semesterId: string;
 }
