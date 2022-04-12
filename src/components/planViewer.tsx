@@ -27,9 +27,12 @@ export function PlanViewer({
     deleteCourse: (code: string) => void;
     editCourse: (code: string, newCourse: Course) => void;
 }): JSX.Element {
-    const [selection, Select] = useState<Plan>(STARTERPLAN);
+    const workingList = [...planList, STARTERPLAN];
+    if (planList.length > 0) {
+        workingList.pop();
+    }
 
-    const workingList = [STARTERPLAN, ...planList];
+    const [selection, Select] = useState<Plan>(workingList[0]);
 
     function changeSelection(event: ChangeEvent) {
         Select(
