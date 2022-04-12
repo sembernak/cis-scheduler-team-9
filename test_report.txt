@@ -10,7 +10,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:61:31)
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:81:31)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -29,7 +29,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:61:31)
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:81:31)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -49,7 +49,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:61:31)
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:81:31)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -70,7 +70,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:61:31)
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:81:31)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -81,14 +81,14 @@
       at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
 
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (141 ms)
+  ✓ renders the course name somewhere (260 ms)
 
 ---------------------------|---------|----------|---------|---------|-------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------------|---------|----------|---------|---------|-------------------
-All files                  |    49.2 |       50 |   27.02 |      50 |                   
- src                       |      48 |        0 |    7.14 |      50 |                   
-  App.tsx                  |      48 |        0 |    7.14 |      50 | 64-109            
+All files                  |   52.23 |       50 |   27.02 |   53.03 |                   
+ src                       |   55.17 |        0 |    7.14 |   57.14 |                   
+  App.tsx                  |   55.17 |        0 |    7.14 |   57.14 | 84-129            
  src/components            |   44.11 |    66.66 |   36.36 |   44.11 |                   
   courseEditor.tsx         |       0 |      100 |       0 |       0 | 19-115            
   courseView.tsx           |      60 |       75 |   33.33 |      60 | 21,51             
@@ -107,5 +107,5 @@ All files                  |    49.2 |       50 |   27.02 |      50 |
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        2.521 s
+Time:        3.044 s
 Ran all test suites.
