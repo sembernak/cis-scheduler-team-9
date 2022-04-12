@@ -19,7 +19,6 @@ export function SemesterView({
     /*function changeViewing() {
         setViewing(!viewing);
     }*/
-
     return (
         <div>
             <Container>
