@@ -6,7 +6,7 @@
     Warning: validateDOMNesting(...): <p> cannot appear as a descendant of <p>.
         at p
         at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:18:5)
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:14:5)
         at p
         at div
         at div
@@ -25,7 +25,7 @@
         at div
         at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
         at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:18:5)
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:14:5)
         at p
         at div
         at div
@@ -43,9 +43,10 @@
     Warning: validateDOMNesting(...): <h3> cannot appear as a descendant of <p>.
         at h3
         at div
-        at PlanView (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planView.tsx:9:5)
+        at PlanView (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planView.tsx:10:5)
         at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:18:5)
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:14:5)
         at p
         at div
         at div
@@ -59,43 +60,23 @@
       at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
-  console.error
-    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/Stack.js:23:7
-        at div
-        at PlanView (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planView.tsx:9:5)
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:18:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:81:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (260 ms)
+  ✓ renders the course name somewhere (213 ms)
 
 ---------------------------|---------|----------|---------|---------|-------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------------|---------|----------|---------|---------|-------------------
-All files                  |   52.23 |       50 |   27.02 |   53.03 |                   
- src                       |   55.17 |        0 |    7.14 |   57.14 |                   
-  App.tsx                  |   55.17 |        0 |    7.14 |   57.14 | 84-129            
- src/components            |   44.11 |    66.66 |   36.36 |   44.11 |                   
-  courseEditor.tsx         |       0 |      100 |       0 |       0 | 19-115            
-  courseView.tsx           |      60 |       75 |   33.33 |      60 | 21,51             
-  planView.tsx             |   66.66 |      100 |   66.66 |   66.66 | 40                
-  planViewer.tsx           |   77.77 |       50 |      50 |   77.77 | 38-40             
+All files                  |   47.05 |    21.42 |      24 |   47.61 |                   
+ src                       |   47.05 |        0 |    5.26 |   48.48 |                   
+  App.tsx                  |   47.05 |        0 |    5.26 |   48.48 | 84-154            
+ src/components            |   42.55 |       75 |   33.33 |   42.55 |                   
+  courseEditor.tsx         |       0 |      100 |       0 |       0 | 19-121            
+  courseView.tsx           |      75 |       75 |      50 |      75 | 21                
+  insertSemester.tsx       |   47.05 |      100 |    12.5 |   47.05 | 35-55,72-116      
+  planView.tsx             |   66.66 |      100 |   66.66 |   66.66 | 50                
+  planViewer.tsx           |   66.66 |      100 |      60 |   66.66 | 38-40             
   recordControlsCourse.tsx |     100 |      100 |     100 |     100 |                   
-  semesterView.tsx         |   66.66 |      100 |   66.66 |   66.66 | 43                
+  semesterView.tsx         |   66.66 |      100 |   66.66 |   66.66 | 42                
   semesterViewer.tsx       |       0 |        0 |       0 |       0 |                   
  src/helper_functions      |     100 |      100 |     100 |     100 |                   
   unpackJSON.tsx           |     100 |      100 |     100 |     100 |                   
@@ -107,5 +88,5 @@ All files                  |   52.23 |       50 |   27.02 |   53.03 |
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        3.044 s
+Time:        2.606 s
 Ran all test suites.
