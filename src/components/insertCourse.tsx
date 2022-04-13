@@ -2,32 +2,32 @@ import { useState } from "react";
 import React from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { Course } from "../interfaces/course";
-import { Plan } from "../interfaces/plan";
 import { Semester } from "../interfaces/semester";
 
-export function InsertSemester({
-    plan,
-    editPlan,
+export function InsertCourse({
+    semester,
+    editCourse,
     editSemester
 }: {
-    plan: Plan;
-    editPlan: (id: number, newPlan: Plan) => void;
+    semester: Semester;
+    editCourse: (code: string, newCourse: Course, semesterId: string) => void;
     editSemester: (id: number, newSemester: Semester) => void;
 }): JSX.Element {
     //new instance of semester created
-    const [id, setId] = useState<number>(12);
-    const [season, setSeason] = useState<string>("Spring");
-    const [year, setYear] = useState<number>(2020);
-    const [totalCredits, setTotalCredits] = useState<number>(15);
-    const [courses /*, setCourses*/] = useState<Course[]>([]);
+    const [title, setTitle] = useState<string>("");
+    const [code, setCode] = useState<string>("");
+    const [description, setDescription] = useState<string>("");
+    const [credits, setCredits] = useState<string>("");
     const [editing, setEditing] = useState<boolean>(false);
+    const semesterId = String(semester.id);
 
-    const newSemester = {
-        season: season,
-        year: year,
-        totalCredits: totalCredits,
-        courses: courses,
-        id: id
+    const newCourse = {
+        code: code,
+        title: title,
+        prereq: [],
+        description: description,
+        credits: credits,
+        semesterId: semesterId
     };
 
     function changeEditing() {
@@ -37,19 +37,24 @@ export function InsertSemester({
         changeEditing();
     }
     function save() {
-        //new empty semester updated when user saves
-        editSemester(newSemester.id, {
-            ...newSemester,
-            season: season,
-            year: year,
-            totalCredits: totalCredits,
-            courses: courses,
-            id: id
-        });
+        //new empty course updated when user saves
+        editCourse(
+            newCourse.code,
+            {
+                ...newCourse,
+                code: code,
+                title: title,
+                prereq: [],
+                description: description,
+                credits: credits,
+                semesterId: semesterId
+            },
+            semesterId
+        );
         //plan passed into function is updated with new semester created by user
-        editPlan(plan.id, {
-            ...plan,
-            semesters: [...plan.semesters, newSemester]
+        editSemester(Number(semesterId), {
+            ...semester,
+            courses: [...semester.courses, newCourse]
         });
         changeEditing();
     }
@@ -58,61 +63,59 @@ export function InsertSemester({
         <Container>
             <Row>
                 <Col>
-                    {/* Id */}
-                    <Form.Group controlId="formSemesterId" as={Row}>
+                    {/* Code */}
+                    <Form.Group controlId="formcourseCode" as={Row}>
                         <Form.Label column sm={2}>
-                            Semester Id:
+                            Course Code:
                         </Form.Label>
                         <Col>
                             <Form.Control
-                                value={id}
+                                value={code}
                                 onChange={(
                                     event: React.ChangeEvent<HTMLTextAreaElement>
-                                ) => setId(Number(event.target.value))}
+                                ) => setCode(event.target.value)}
                             />
                         </Col>
                     </Form.Group>
-                    {/* credits */}
-                    <Form.Group controlId="formSemesterCredits" as={Row}>
+                    {/* Title */}
+                    <Form.Group controlId="formCourseTitle" as={Row}>
                         <Form.Label column sm={2}>
-                            Semester Credits:
+                            Course Title:
                         </Form.Label>
                         <Col>
                             <Form.Control
-                                value={totalCredits}
+                                value={title}
                                 onChange={(
                                     event: React.ChangeEvent<HTMLInputElement>
-                                ) =>
-                                    setTotalCredits(Number(event.target.value))
-                                }
+                                ) => setTitle(event.target.value)}
                             />
                         </Col>
                     </Form.Group>
-                    {/* Season */}
-                    <Form.Group controlId="formSemesterSeason" as={Row}>
+                    {/* Description */}
+                    <Form.Group controlId="formCourseDescription" as={Row}>
                         <Form.Label column sm={2}>
-                            Semester Season:
+                            Course Descritpion:
                         </Form.Label>
                         <Col>
                             <Form.Control
-                                value={season}
+                                value={description}
                                 onChange={(
                                     event: React.ChangeEvent<HTMLInputElement>
-                                ) => setSeason(event.target.value)}
+                                ) => setDescription(event.target.value)}
                             />
                         </Col>
                     </Form.Group>
-                    {/* Year */}
-                    <Form.Group controlId="formSemesterYear" as={Row}>
+                    {/* Credits */}
+                    <Form.Group controlId="formCoursecredits" as={Row}>
                         <Form.Label column sm={2}>
-                            Semester Year:
+                            Credits:
                         </Form.Label>
                         <Col>
                             <Form.Control
-                                value={year}
+                                value={credits}
                                 onChange={(
                                     event: React.ChangeEvent<HTMLTextAreaElement>
-                                ) => setYear(Number(event.target.value))}
+                                ) => setCredits(event.target.value)}
                             />
                         </Col>
                     </Form.Group>
