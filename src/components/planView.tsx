@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Semester } from "../interfaces/semester";
 import { Button, Stack } from "react-bootstrap";
 import { SemesterView } from "./semesterView";
@@ -23,6 +23,12 @@ export function PlanView({
     editPlan: (id: number, newPlan: Plan) => void;
     editSemester: (id: number, newSemester: Semester) => void;
 }): JSX.Element {
+    const [visible, setVisible] = useState<boolean>(false); //whether or not the adding semester view is visible
+    //true means the addition screen is open
+    function flipVisibility(): void {
+        setVisible(!visible);
+    }
+
     return (
         <div>
             <h3>{plan.title}</h3>
@@ -35,17 +41,13 @@ export function PlanView({
                             deleteCourse={deleteCourse}
                             //viewSemester={viewSemester}
                             editCourse={editCourse}
+                            editSemester={editSemester}
                             //viewing={viewing}
                             //setViewing={setViewing}
                         ></SemesterView>
                     </div>
                 ))}
             </Stack>
-            <InsertSemester
-                plan={plan}
-                editPlan={editPlan}
-                editSemester={editSemester}
-            ></InsertSemester>
             <Button
                 onClick={() => deletePlan(plan.id)}
                 variant="danger"
@@ -53,6 +55,16 @@ export function PlanView({
             >
                 Delete Plan
             </Button>
+            <Button onClick={flipVisibility} variant="danger" className="me-8">
+                Insert Semester
+            </Button>
+            {visible && (
+                <InsertSemester
+                    plan={plan}
+                    editPlan={editPlan}
+                    editSemester={editSemester}
+                ></InsertSemester>
+            )}
         </div>
     );
 }
