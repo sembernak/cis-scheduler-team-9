@@ -13,8 +13,8 @@ export function SemesterView({
 }: {
     semester: Semester;
     deleteSemester: (id: number) => void;
-    deleteCourse: (code: string) => void;
-    editCourse: (code: string, newCourse: Course) => void;
+    deleteCourse: (code: string, semesterId: string) => void;
+    editCourse: (code: string, newCourse: Course, semesterId: string) => void;
 }): JSX.Element {
     /*function changeViewing() {
         setViewing(!viewing);

@@ -18,8 +18,8 @@ export function PlanView({
     plan: Plan;
     deleteSemester: (id: number) => void;
     deletePlan: (id: number) => void;
-    deleteCourse: (code: string) => void;
-    editCourse: (code: string, newCourse: Course) => void;
+    deleteCourse: (code: string, semesterId: string) => void;
+    editCourse: (code: string, newCourse: Course, semesterId: string) => void;
     editPlan: (id: number, newPlan: Plan) => void;
     editSemester: (id: number, newSemester: Semester) => void;
 }): JSX.Element {

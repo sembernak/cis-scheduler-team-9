@@ -13,21 +13,26 @@ export function CourseEditor({
 }: {
     changeEditing: () => void;
     course: Course;
-    editCourse: (code: string, newCourse: Course) => void;
-    deleteCourse: (code: string) => void;
+    editCourse: (code: string, newCourse: Course, semesterId: string) => void;
+    deleteCourse: (code: string, semesterId: string) => void;
 }): JSX.Element {
     const [code, setCode] = useState<string>(course.code);
     const [title, setTitle] = useState<string>(course.title);
-    const [credits, setCredits] = useState<number>(course.credits);
+    const [credits, setCredits] = useState<string>(course.credits);
     const [description, setDescription] = useState<string>(course.description);
 
     function save() {
-        editCourse(course.code, {
-            ...course,
-            title: title,
-            description: description,
-            code: code
-        });
+        editCourse(
+            course.code,
+            {
+                ...course,
+                title: title,
+                description: description,
+                code: code,
+                credits: credits
+            },
+            course.semesterId
+        );
         changeEditing();
     }
 
@@ -65,7 +70,7 @@ export function CourseEditor({
                                 data-testid={"D" + course.code}
                                 onChange={(
                                     event: React.ChangeEvent<HTMLInputElement>
-                                ) => setCredits(Number(event.target.value))}
+                                ) => setCredits(event.target.value)}
                             />
                         </Col>
                     </Form.Group>
@@ -112,7 +117,9 @@ export function CourseEditor({
                         Cancel
                     </Button>
                     <Button
-                        onClick={() => deleteCourse(course.code)}
+                        onClick={() =>
+                            deleteCourse(course.code, course.semesterId)
+                        }
                         variant="danger"
                         className="me-8"
                     >

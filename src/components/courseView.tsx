@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Col } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import { Course } from "../interfaces/course";
 import { CourseEditor } from "./courseEditor";
 import { RecordControlsCourse } from "./recordControlsCourse";
@@ -11,8 +11,8 @@ export function CourseView({
 }: {
     //changeView: () => void;
     course: Course;
-    deleteCourse: (code: string) => void;
-    editCourse: (code: string, newCourse: Course) => void;
+    deleteCourse: (code: string, semesterId: string) => void;
+    editCourse: (code: string, newCourse: Course, semesterId: string) => void;
 }): JSX.Element {
     const preRecs = course.prereq.join(", ");
     const [editing, setEditing] = useState<boolean>(false);
@@ -47,13 +47,6 @@ export function CourseView({
                     ></RecordControlsCourse>
                 </Col>
             </Col>
-            <Button
-                onClick={() => deleteCourse(course.code)}
-                variant="danger"
-                className="me-8"
-            >
-                Delete Course
-            </Button>
             <div></div>
         </>
     );
