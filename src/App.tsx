@@ -16,7 +16,7 @@ const COURSELIST = [
         prereq: ["test"],
         description:
             "I couldn't figure out another way to type this variable properly",
-        credits: 1
+        credits: "1"
     }
 ];
 COURSELIST.pop();
@@ -47,7 +47,7 @@ const exampleSem2 = {
     year: 2020,
     totalCredits: 15,
     courses: [course1, course2, course3],
-    id: 1
+    id: 2
 };
 
 const course4 = {
@@ -60,12 +60,12 @@ const exampleSem3 = {
     year: 2019,
     totalCredits: 6,
     courses: [course4],
-    id: 1
+    id: 3
 };
 
 const examplePlan1 = {
     title: "Plan 1",
-    semesters: [exampleSem2, exampleSem3],
+    semesters: [exampleSem2],
     id: 1
 };
 
@@ -97,7 +97,7 @@ function App(): JSX.Element {
         );
     }
 
-    function deleteCourse(code: string) {
+    function deleteCourse(code: string, semesterId: string) {
         setPlans(
             plans.map(
                 (newplan: Plan): Plan => ({
@@ -107,7 +107,8 @@ function App(): JSX.Element {
                             ...semester1,
                             courses: semester1.courses.filter(
                                 (course1: Course): boolean =>
-                                    course1.code !== code
+                                    course1.code !== code ||
+                                    course1.semesterId !== semesterId
                             )
                         })
                     )
@@ -116,7 +117,7 @@ function App(): JSX.Element {
         );
     }
 
-    function editCourse(code: string, newCourse: Course) {
+    function editCourse(code: string, newCourse: Course, semesterId: string) {
         setPlans(
             plans.map(
                 (newPlan: Plan): Plan => ({
@@ -126,7 +127,10 @@ function App(): JSX.Element {
                             ...semester1,
                             courses: semester1.courses.map(
                                 (course1: Course): Course =>
-                                    course1.code === code ? newCourse : course1
+                                    course1.code === code &&
+                                    course1.semesterId === semesterId
+                                        ? newCourse
+                                        : course1
                             )
                         })
                     )
@@ -139,6 +143,7 @@ function App(): JSX.Element {
             plans.map((plan: Plan): Plan => (plan.id === id ? newPlan : plan))
         );
     }
+
     function editSemester(id: number, newSemester: Semester) {
         setPlans(
             plans.map(

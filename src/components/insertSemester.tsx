@@ -28,7 +28,7 @@ export function InsertSemester({
     const [totalCredits, setTotalCredits] = useState<number>(
         newSemester.totalCredits
     );
-    const [courses, setCourses] = useState<Course[]>(newSemester.courses);
+    const [courses /*, setCourses*/] = useState<Course[]>(newSemester.courses);
     const [editing, setEditing] = useState<boolean>(false);
 
     function changeEditing() {

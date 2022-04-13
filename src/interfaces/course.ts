@@ -3,6 +3,6 @@ export interface Course {
     title: string;
     prereq: string[];
     description: string;
-    credits: number;
+    credits: string;
     semesterId: string;
 }

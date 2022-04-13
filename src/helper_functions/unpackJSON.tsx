@@ -16,7 +16,7 @@ export default function unloadJson(
         title: courseSpec["name"],
         prereq: [courseSpec["preReq"]],
         description: courseSpec["descr"],
-        credits: parseInt(courseSpec["credits"]),
+        credits: courseSpec["credits"],
         semesterId: ""
     };
 }
