@@ -61,22 +61,23 @@
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (213 ms)
+  ✓ renders the course name somewhere (248 ms)
 
 ---------------------------|---------|----------|---------|---------|-------------------
 File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------------|---------|----------|---------|---------|-------------------
-All files                  |   47.05 |    21.42 |      24 |   47.61 |                   
+All files                  |   32.07 |    27.77 |   18.33 |   32.38 |                   
  src                       |   47.05 |        0 |    5.26 |   48.48 |                   
   App.tsx                  |   47.05 |        0 |    5.26 |   48.48 | 84-154            
- src/components            |   42.55 |       75 |   33.33 |   42.55 |                   
+ src/components            |   20.58 |     62.5 |    22.5 |   20.58 |                   
   courseEditor.tsx         |       0 |      100 |       0 |       0 | 19-121            
   courseView.tsx           |      75 |       75 |      50 |      75 | 21                
-  insertSemester.tsx       |   47.05 |      100 |    12.5 |   47.05 | 35-55,72-116      
-  planView.tsx             |   66.66 |      100 |   66.66 |   66.66 | 50                
+  insertCourse.tsx         |       0 |      100 |       0 |       0 | 17-118            
+  insertSemester.tsx       |       0 |      100 |       0 |       0 | 18-115            
+  planView.tsx             |      60 |       50 |      50 |      60 | 29,52             
   planViewer.tsx           |   66.66 |      100 |      60 |   66.66 | 38-40             
   recordControlsCourse.tsx |     100 |      100 |     100 |     100 |                   
-  semesterView.tsx         |   66.66 |      100 |   66.66 |   66.66 | 42                
+  semesterView.tsx         |      60 |       50 |      50 |      60 | 25,47             
   semesterViewer.tsx       |       0 |        0 |       0 |       0 |                   
  src/helper_functions      |     100 |      100 |     100 |     100 |                   
   unpackJSON.tsx           |     100 |      100 |     100 |     100 |                   
@@ -88,5 +89,5 @@ All files                  |   47.05 |    21.42 |      24 |   47.61 |
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        2.606 s
+Time:        3.771 s
 Ran all test suites.
