@@ -6,10 +6,6 @@ import { PlanView } from "../components/planView";
 import { Course } from "../interfaces/course";
 import { Semester } from "../interfaces/semester";
 
-type ChangeEvent = React.ChangeEvent<
-    HTMLTextAreaElement | HTMLInputElement | HTMLSelectElement
->;
-
 export function PlanViewer({
     planList,
     deleteSemester,
