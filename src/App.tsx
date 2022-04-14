@@ -65,7 +65,7 @@ const exampleSem3 = {
 
 const examplePlan1 = {
     title: "Plan 1",
-    semesters: [exampleSem2],
+    semesters: [exampleSem2, exampleSem3],
     id: 1
 };
 

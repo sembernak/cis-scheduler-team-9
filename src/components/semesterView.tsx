@@ -25,48 +25,48 @@ export function SemesterView({
         setVisible(!visible);
     }
     return (
-        <div>
-            <Container>
-                <div>
-                    <h3>
-                        {semester.season} {" - "} {semester.year}
-                        <br></br>
-                    </h3>
-                    {semester.totalCredits} {" credits"}
-                    {"                       "}
-                    {semester.courses.map((course: Course) => (
-                        <div key={course.code}>
-                            <CourseView
-                                course={course}
-                                deleteCourse={deleteCourse}
-                                editCourse={editCourse}
-                            ></CourseView>
-                        </div>
-                    ))}
-                    <Button
-                        onClick={() => deleteSemester(semester.id)}
-                        variant="danger"
-                        className="me-8"
-                    >
-                        Delete semester
-                    </Button>
-                    <Button
-                        onClick={flipVisibility}
-                        variant="danger"
-                        className="me-8"
-                    >
-                        Insert Course
-                    </Button>
-                    {visible && (
-                        <InsertCourse
-                            semester={semester}
-                            //editPlan={editPlan}
+        <Container className="semester-view">
+            <div>
+                <h3>
+                    {semester.season} {" - "} {semester.year}
+                    <br></br>
+                </h3>
+                {semester.totalCredits} {" credits"}
+                {"                       "}
+                {semester.courses.map((course: Course) => (
+                    <div key={course.code}>
+                        <CourseView
+                            course={course}
+                            deleteCourse={deleteCourse}
                             editCourse={editCourse}
-                            editSemester={editSemester}
-                        ></InsertCourse>
-                    )}
-                </div>
-            </Container>
-        </div>
+                        ></CourseView>
+                    </div>
+                ))}
+            </div>
+            <div>
+                <Button
+                    onClick={() => deleteSemester(semester.id)}
+                    variant="danger"
+                    className="me-8"
+                >
+                    Delete semester
+                </Button>
+                <Button
+                    onClick={flipVisibility}
+                    variant="danger"
+                    className="me-8"
+                >
+                    Insert Course
+                </Button>
+                {visible && (
+                    <InsertCourse
+                        semester={semester}
+                        //editPlan={editPlan}
+                        editCourse={editCourse}
+                        editSemester={editSemester}
+                    ></InsertCourse>
+                )}
+            </div>
+        </Container>
     );
 }
