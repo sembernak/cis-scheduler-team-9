@@ -53,7 +53,7 @@ export function InsertCourse({
             },
             semesterId
         );
-        //plan passed into function is updated with new semester created by user
+        //semester passed into function is updated with new course
         editSemester(Number(semesterId), {
             ...semester,
             courses: [...semester.courses, newCourse]
