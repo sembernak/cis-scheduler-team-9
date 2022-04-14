@@ -1,18 +1,25 @@
 import React, { useState } from "react";
 import { Button, Container } from "react-bootstrap";
 import { Course } from "../interfaces/course";
+import { Plan } from "../interfaces/plan";
 import { Semester } from "../interfaces/semester";
 import { CourseView } from "./courseView";
 import { InsertCourse } from "./insertCourse";
+import { RecordControlsSemester } from "./recordControlsSemester";
+import { SemestorEditor } from "./semesterEditor";
 //import { SemesterViewer } from "./semesterViewer";
 
 export function SemesterView({
+    plan,
+    editPlan,
     semester,
     deleteSemester,
     deleteCourse,
     editCourse,
     editSemester
 }: {
+    plan: Plan;
+    editPlan: (id: number, newPlan: Plan) => void;
     semester: Semester;
     deleteSemester: (id: number) => void;
     deleteCourse: (code: string, semesterId: string) => void;
@@ -20,9 +27,14 @@ export function SemesterView({
     editSemester: (id: number, newSemester: Semester) => void;
 }): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false); //whether or not the adding semester view is visible
+    const [editing, setEditing] = useState<boolean>(false);
     //true means the addition screen is open
     function flipVisibility(): void {
         setVisible(!visible);
+    }
+
+    function changeEditing(): void {
+        setEditing(!editing);
     }
 
     const newsemester = {
@@ -34,7 +46,17 @@ export function SemesterView({
         )
     };
 
-    return (
+    return editing ? (
+        <>
+            <SemestorEditor
+                changeEditing={changeEditing}
+                semester={semester}
+                editSemester={editSemester}
+                plan={plan}
+                editPlan={editPlan}
+            ></SemestorEditor>
+        </>
+    ) : (
         <Container className="semester-view">
             <div>
                 <h3>
@@ -77,6 +99,9 @@ export function SemesterView({
                         editSemester={editSemester}
                     ></InsertCourse>
                 )}
+                <RecordControlsSemester
+                    changeEditing={changeEditing}
+                ></RecordControlsSemester>
             </div>
         </Container>
     );
