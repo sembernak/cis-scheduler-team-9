@@ -157,7 +157,10 @@ function App(): JSX.Element {
             )
         );
     }
-
+    function addPlan(newPlan: Plan) {
+        plans.push(newPlan);
+        setPlans(plans);
+    }
     return (
         <div className="App">
             <header className="App-header">
@@ -180,6 +183,7 @@ function App(): JSX.Element {
                         editCourse={editCourse}
                         editPlan={editPlan}
                         editSemester={editSemester}
+                        addPlan={addPlan}
                     ></PlanViewer>
                 </p>
             </div>

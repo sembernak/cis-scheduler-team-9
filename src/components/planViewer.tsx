@@ -1,10 +1,11 @@
 import React from "react";
 import { useState } from "react";
-import { Form } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import { Plan } from "../interfaces/plan";
 import { PlanView } from "../components/planView";
 import { Course } from "../interfaces/course";
 import { Semester } from "../interfaces/semester";
+import { InsertPlan } from "./insertPlan";
 
 export function PlanViewer({
     planList,
@@ -13,7 +14,8 @@ export function PlanViewer({
     deleteCourse,
     editCourse,
     editPlan,
-    editSemester
+    editSemester,
+    addPlan
 }: {
     planList: Plan[];
     deleteSemester: (id: number) => void;
@@ -22,9 +24,14 @@ export function PlanViewer({
     editCourse: (code: string, newCourse: Course, semesterId: string) => void;
     editPlan: (id: number, newPlan: Plan) => void;
     editSemester: (id: number, newSemester: Semester) => void;
+    addPlan: (newPlan: Plan) => void;
 }): JSX.Element {
     const [selection, Select] = useState<string>(planList[0].title);
-
+    const [planInsert, setInsert] = useState<boolean>(false); //whether or not the adding semester view is visible
+    //true means the addition screen is open
+    function flipInsert(): void {
+        setInsert(!planInsert);
+    }
     function updateSelection(event: React.ChangeEvent<HTMLSelectElement>) {
         Select(event.target.value);
     }
@@ -41,6 +48,18 @@ export function PlanViewer({
                     ))}
                 </Form.Select>
             </Form.Group>
+            <p>Or create a new plan here:</p>
+            <Button onClick={flipInsert} variant="danger" className="me-8">
+                New Plan
+            </Button>
+            {planInsert && (
+                <InsertPlan
+                    addPlan={addPlan}
+                    planList={planList}
+                    editPlan={editPlan}
+                    flipInsert={flipInsert}
+                ></InsertPlan>
+            )}
             {planList.map((plan: Plan) => (
                 <div key={plan.id} hidden={selection !== plan.title}>
                     <PlanView
