@@ -27,31 +27,17 @@ export function PlanViewer({
     editPlan: (id: number, newPlan: Plan) => void;
     editSemester: (id: number, newSemester: Semester) => void;
 }): JSX.Element {
-    /*const workingList = [...planList, STARTERPLAN];
-    if (planList.length > 0) {
-        workingList.pop();
-    }*/
+    const [selection, Select] = useState<string>(planList[0].title);
 
-    const [selection, Select] = useState<Plan>(planList[0]);
-
-    function changeSelection(event: ChangeEvent) {
-        Select(
-            planList.find(
-                (item: Plan): boolean => item.title === event.target.value
-            ) as Plan
-        );
-    }
-
-    /*
-    function updateSelection(event: React.ChangeEvent<HTMLSelectElement>){
+    function updateSelection(event: React.ChangeEvent<HTMLSelectElement>) {
         Select(event.target.value);
     }
-*/
+
     return (
         <div>
             <p>Select a plan from below to get started:</p>
             <Form.Group controlId="planDrop">
-                <Form.Select value={selection.title} onChange={changeSelection}>
+                <Form.Select value={selection} onChange={updateSelection}>
                     {planList.map((plan: Plan) => (
                         <option key={plan.title} value={plan.title}>
                             {plan.title}
@@ -59,9 +45,8 @@ export function PlanViewer({
                     ))}
                 </Form.Select>
             </Form.Group>
-            {/*planList.filter((plan: Plan): boolean => plan.id !== selection.id)*/}
             {planList.map((plan: Plan) => (
-                <div key={plan.id}>
+                <div key={plan.id} hidden={selection !== plan.title}>
                     <PlanView
                         plan={plan}
                         deleteCourse={deleteCourse}
