@@ -7,18 +7,20 @@ import { Semester } from "../interfaces/semester";
 export function InsertCourse({
     semester,
     editCourse,
-    editSemester
+    editSemester,
+    flipVisibility
 }: {
     semester: Semester;
     editCourse: (code: string, newCourse: Course, semesterId: string) => void;
     editSemester: (id: number, newSemester: Semester) => void;
+    flipVisibility: () => void;
 }): JSX.Element {
     //new instance of semester created
     const [title, setTitle] = useState<string>("");
     const [code, setCode] = useState<string>("");
     const [description, setDescription] = useState<string>("");
     const [credits, setCredits] = useState<string>("");
-    const [editing, setEditing] = useState<boolean>(false);
+    //const [editing, setEditing] = useState<boolean>(false);
     const semesterId = String(semester.id);
 
     const newCourse = {
@@ -30,11 +32,11 @@ export function InsertCourse({
         semesterId: semesterId
     };
 
-    function changeEditing() {
-        setEditing(!editing);
-    }
+    //function changeEditing() {
+    //    setEditing(!editing);
+    //}
     function cancel() {
-        changeEditing();
+        flipVisibility();
     }
     function save() {
         //new empty course updated when user saves
@@ -56,7 +58,7 @@ export function InsertCourse({
             ...semester,
             courses: [...semester.courses, newCourse]
         });
-        changeEditing();
+        flipVisibility();
     }
 
     return (

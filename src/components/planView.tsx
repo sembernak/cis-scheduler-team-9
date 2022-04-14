@@ -64,6 +64,7 @@ export function PlanView({
             </Button>
             {visible && (
                 <InsertSemester
+                    flipVisibility={flipVisibility}
                     plan={plan}
                     editPlan={editPlan}
                     editSemester={editSemester}
