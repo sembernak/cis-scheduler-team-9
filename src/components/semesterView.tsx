@@ -24,16 +24,26 @@ export function SemesterView({
     function flipVisibility(): void {
         setVisible(!visible);
     }
+
+    const newsemester = {
+        ...semester,
+        totalCredits: semester.courses.reduce(
+            (currentCredits: number, course: Course) =>
+                currentCredits + Number(course.credits),
+            0
+        )
+    };
+
     return (
         <Container className="semester-view">
             <div>
                 <h3>
-                    {semester.season} {" - "} {semester.year}
+                    {newsemester.season} {" - "} {newsemester.year}
                     <br></br>
                 </h3>
-                {semester.totalCredits} {" credits"}
+                {newsemester.totalCredits} {" credits"}
                 {"                       "}
-                {semester.courses.map((course: Course) => (
+                {newsemester.courses.map((course: Course) => (
                     <div key={course.code}>
                         <CourseView
                             course={course}
@@ -45,7 +55,7 @@ export function SemesterView({
             </div>
             <div>
                 <Button
-                    onClick={() => deleteSemester(semester.id)}
+                    onClick={() => deleteSemester(newsemester.id)}
                     variant="danger"
                     className="me-8"
                 >
@@ -60,7 +70,7 @@ export function SemesterView({
                 </Button>
                 {visible && (
                     <InsertCourse
-                        semester={semester}
+                        semester={newsemester}
                         flipVisibility={flipVisibility}
                         //editPlan={editPlan}
                         editCourse={editCourse}

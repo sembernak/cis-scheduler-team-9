@@ -20,14 +20,14 @@ export function InsertSemester({
     const [id, setId] = useState<number>(12);
     const [season, setSeason] = useState<string>("Spring");
     const [year, setYear] = useState<number>(2020);
-    const [totalCredits, setTotalCredits] = useState<number>(15);
+    //const [totalCredits, setTotalCredits] = useState<number>(0);
     const [courses /*, setCourses*/] = useState<Course[]>([]);
     //const [editing, setEditing] = useState<boolean>(false);
 
     const newSemester = {
         season: season,
         year: year,
-        totalCredits: totalCredits,
+        totalCredits: 0,
         courses: courses,
         id: id
     };
@@ -44,7 +44,6 @@ export function InsertSemester({
             ...newSemester,
             season: season,
             year: year,
-            totalCredits: totalCredits,
             courses: courses,
             id: id
         });
@@ -71,22 +70,6 @@ export function InsertSemester({
                                 onChange={(
                                     event: React.ChangeEvent<HTMLTextAreaElement>
                                 ) => setId(Number(event.target.value))}
-                            />
-                        </Col>
-                    </Form.Group>
-                    {/* credits */}
-                    <Form.Group controlId="formSemesterCredits" as={Row}>
-                        <Form.Label column sm={2}>
-                            Semester Credits:
-                        </Form.Label>
-                        <Col>
-                            <Form.Control
-                                value={totalCredits}
-                                onChange={(
-                                    event: React.ChangeEvent<HTMLInputElement>
-                                ) =>
-                                    setTotalCredits(Number(event.target.value))
-                                }
                             />
                         </Col>
                     </Form.Group>
