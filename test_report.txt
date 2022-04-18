@@ -10,7 +10,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:81:31)
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:92:31)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -29,7 +29,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:81:31)
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:92:31)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -50,7 +50,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:81:31)
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:92:31)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -61,20 +61,20 @@
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (142 ms)
+  ✓ renders the course name somewhere (162 ms)
 
 -----------------------------|---------|----------|---------|---------|-------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------------|---------|----------|---------|---------|-------------------
-All files                    |   29.77 |    33.33 |   18.05 |      30 |                   
- src                         |   44.44 |        0 |       5 |   45.71 |                   
-  App.tsx                    |   44.44 |        0 |       5 |   45.71 | 84-162            
+All files                    |    30.3 |    33.33 |   18.05 |   30.53 |                   
+ src                         |   45.94 |        0 |       5 |   47.22 |                   
+  App.tsx                    |   45.94 |        0 |       5 |   47.22 | 95-173            
  src/components              |   20.87 |    57.14 |   21.56 |   20.87 |                   
   courseEditor.tsx           |       0 |      100 |       0 |       0 | 19-121            
   courseView.tsx             |      75 |       75 |      50 |      75 | 21                
   insertCourse.tsx           |       0 |      100 |       0 |       0 | 19-120            
   insertPlan.tsx             |       0 |      100 |       0 |       0 | 17-68             
-  insertSemester.tsx         |       0 |      100 |       0 |       0 | 20-100            
+  insertSemester.tsx         |       0 |      100 |       0 |       0 | 20-101            
   planView.tsx               |      60 |       50 |      50 |      60 | 29,58             
   planViewer.tsx             |   71.42 |       50 |      60 |   71.42 | 34-37             
   recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                   
@@ -92,5 +92,5 @@ All files                    |   29.77 |    33.33 |   18.05 |      30 |
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        2.882 s
+Time:        3.331 s
 Ran all test suites.
