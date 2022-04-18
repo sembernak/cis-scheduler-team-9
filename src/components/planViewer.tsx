@@ -43,7 +43,11 @@ export function PlanViewer({
         <div>
             <p>Select a plan from below to get started:</p>
             <Form.Group controlId="planDrop">
-                <Form.Select value={selection} onChange={updateSelection}>
+                <Form.Select
+                    data-testid={"PlanSelect"}
+                    value={selection}
+                    onChange={updateSelection}
+                >
                     {planList.map((plan: Plan) => (
                         <option key={plan.title} value={plan.title}>
                             {plan.title}
@@ -52,7 +56,12 @@ export function PlanViewer({
                 </Form.Select>
             </Form.Group>
             <p>Or create a new plan here:</p>
-            <Button onClick={flipInsert} variant="danger" className="me-8">
+            <Button
+                data-testid={"NewPlan"}
+                onClick={flipInsert}
+                variant="danger"
+                className="me-8"
+            >
                 New Plan
             </Button>
             {planInsert && (
@@ -76,7 +85,11 @@ export function PlanViewer({
                 ></PlanView>
             ) : (
                 planList.map((plan: Plan) => (
-                    <div key={plan.id} hidden={selection !== plan.title}>
+                    <div
+                        key={plan.id}
+                        hidden={selection !== plan.title}
+                        aria-hidden={selection !== plan.title}
+                    >
                         <PlanView
                             deleteAllCourses={deleteAllCourses}
                             plan={plan}

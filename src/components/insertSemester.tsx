@@ -102,7 +102,12 @@ export function InsertSemester({
                             />
                         </Col>
                     </Form.Group>
-                    <Button onClick={save} variant="success" className="me-4">
+                    <Button
+                        data-testid={"Save" + plan.title}
+                        onClick={save}
+                        variant="success"
+                        className="me-4"
+                    >
                         Save
                     </Button>
                     <Button onClick={cancel} variant="warning" className="me-5">
