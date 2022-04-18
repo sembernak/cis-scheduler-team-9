@@ -72,7 +72,12 @@ export function InsertPlan({
                     <Button onClick={save} variant="success" className="me-4">
                         Save
                     </Button>
-                    <Button onClick={cancel} variant="warning" className="me-5">
+                    <Button
+                        data-testid={"CancelPlan"}
+                        onClick={cancel}
+                        variant="warning"
+                        className="me-5"
+                    >
                         Cancel
                     </Button>
                 </Col>

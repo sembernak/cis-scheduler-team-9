@@ -63,7 +63,12 @@ export function PlanView({
             >
                 Delete Plan
             </Button>
-            <Button onClick={flipVisibility} variant="danger" className="me-8">
+            <Button
+                data-testid={"InsertSemester" + plan.title}
+                onClick={flipVisibility}
+                variant="danger"
+                className="me-8"
+            >
                 Insert Semester
             </Button>
             {visible && (
