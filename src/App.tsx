@@ -47,7 +47,8 @@ const exampleSem2 = {
     year: 2020,
     totalCredits: 15,
     courses: [course1, course2, course3],
-    id: 2
+    id: 2,
+    planId: 1
 };
 
 const course4 = {
@@ -60,7 +61,17 @@ const exampleSem3 = {
     year: 2019,
     totalCredits: 6,
     courses: [course4],
-    id: 3
+    id: 3,
+    planId: 1
+};
+
+const exampleSem4 = {
+    season: "Winter",
+    year: 2019,
+    totalCredits: 6,
+    courses: [course4],
+    id: 3,
+    planId: 2
 };
 
 const examplePlan1 = {
@@ -71,7 +82,7 @@ const examplePlan1 = {
 
 const examplePlan2 = {
     title: "Plan 2",
-    semesters: [exampleSem3],
+    semesters: [exampleSem4],
     id: 2
 };
 

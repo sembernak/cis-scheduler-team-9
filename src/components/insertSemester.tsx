@@ -29,7 +29,8 @@ export function InsertSemester({
         year: year,
         totalCredits: 0,
         courses: courses,
-        id: id
+        id: id,
+        planId: plan.id
     };
 
     //function changeEditing() {
