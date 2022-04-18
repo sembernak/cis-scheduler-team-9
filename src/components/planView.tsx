@@ -39,7 +39,6 @@ export function PlanView({
                             <div className="bg-light border m-2 p-2 contains-semester">
                                 <SemesterView
                                     plan={plan}
-                                    editPlan={editPlan}
                                     semester={Semester}
                                     deleteSemester={deleteSemester}
                                     deleteCourse={deleteCourse}

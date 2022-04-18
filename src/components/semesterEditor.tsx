@@ -11,14 +11,12 @@ export function SemestorEditor({
     changeEditing,
     semester,
     editSemester,
-    plan,
-    editPlan
+    plan
 }: {
     changeEditing: () => void;
     semester: Semester;
     editSemester: (id: number, semester: Semester) => void;
     plan: Plan;
-    editPlan: (id: number, newPlan: Plan) => void;
 }): JSX.Element {
     const [id, setId] = useState<number>(semester.id);
     const [season, setSeason] = useState<string>(semester.season);
@@ -39,13 +37,14 @@ export function SemestorEditor({
             season: season,
             year: year,
             courses: courses,
-            id: id
+            id: id,
+            planId: plan.id
         });
         //plan passed into function is updated with new semester created by user
-        editPlan(plan.id, {
+        /*editPlan(plan.id, {
             ...plan,
             semesters: [...plan.semesters, semester]
-        });
+        });*/
         changeEditing();
     }
 
