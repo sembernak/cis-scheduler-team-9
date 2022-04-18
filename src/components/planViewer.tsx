@@ -60,19 +60,31 @@ export function PlanViewer({
                     flipInsert={flipInsert}
                 ></InsertPlan>
             )}
-            {planList.map((plan: Plan) => (
-                <div key={plan.id} hidden={selection !== plan.title}>
-                    <PlanView
-                        plan={plan}
-                        deleteCourse={deleteCourse}
-                        deleteSemester={deleteSemester}
-                        deletePlan={deletePlan}
-                        editCourse={editCourse}
-                        editPlan={editPlan}
-                        editSemester={editSemester}
-                    ></PlanView>
-                </div>
-            ))}
+            {planList.length < 2 ? (
+                <PlanView
+                    plan={planList[0]}
+                    deleteCourse={deleteCourse}
+                    deleteSemester={deleteSemester}
+                    deletePlan={deletePlan}
+                    editCourse={editCourse}
+                    editPlan={editPlan}
+                    editSemester={editSemester}
+                ></PlanView>
+            ) : (
+                planList.map((plan: Plan) => (
+                    <div key={plan.id} hidden={selection !== plan.title}>
+                        <PlanView
+                            plan={plan}
+                            deleteCourse={deleteCourse}
+                            deleteSemester={deleteSemester}
+                            deletePlan={deletePlan}
+                            editCourse={editCourse}
+                            editPlan={editPlan}
+                            editSemester={editSemester}
+                        ></PlanView>
+                    </div>
+                ))
+            )}
         </div>
     );
 }
