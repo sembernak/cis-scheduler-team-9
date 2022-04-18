@@ -61,22 +61,25 @@
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (141 ms)
+  Make a new plan
+    ✓ Clicking New Plan gives a form to enter a title (295 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (45 ms)
+    ✓ Can set new plan title (204 ms)
 
 -----------------------------|---------|----------|---------|---------|-------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------------|---------|----------|---------|---------|-------------------
-All files                    |   29.41 |    33.33 |   16.88 |   29.62 |                   
- src                         |   41.46 |        0 |    4.16 |    42.5 |                   
-  App.tsx                    |   41.46 |        0 |    4.16 |    42.5 | 95-191            
- src/components              |   20.87 |    57.14 |   21.15 |   20.87 |                   
+All files                    |   41.91 |    41.66 |   29.87 |   42.22 |                   
+ src                         |   51.21 |       10 |   16.66 |    52.5 |                   
+  App.tsx                    |   51.21 |       10 |   16.66 |    52.5 | 95-159,177-183    
+ src/components              |   35.16 |    64.28 |   34.61 |   35.16 |                   
   courseEditor.tsx           |       0 |      100 |       0 |       0 | 19-121            
   courseView.tsx             |      75 |       75 |      50 |      75 | 21                
   insertCourse.tsx           |       0 |      100 |       0 |       0 | 19-120            
-  insertPlan.tsx             |       0 |      100 |       0 |       0 | 17-68             
+  insertPlan.tsx             |     100 |      100 |     100 |     100 |                   
   insertSemester.tsx         |       0 |      100 |       0 |       0 | 20-101            
   planView.tsx               |      60 |       50 |      50 |      60 | 31,60             
-  planViewer.tsx             |   71.42 |       50 |      60 |   71.42 | 36-39             
+  planViewer.tsx             |     100 |       75 |     100 |     100 | 75                
   recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                   
   recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                   
   semesterEditor.tsx         |       0 |      100 |       0 |       0 | 21-93             
@@ -90,7 +93,7 @@ All files                    |   29.41 |    33.33 |   16.88 |   29.62 |
   semester.ts                |       0 |        0 |       0 |       0 |                   
 -----------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 passed, 1 total
-Tests:       1 passed, 1 total
+Tests:       3 passed, 3 total
 Snapshots:   0 total
-Time:        2.857 s
+Time:        3.372 s
 Ran all test suites.
