@@ -16,7 +16,8 @@ export function PlanViewer({
     editCourse,
     editPlan,
     editSemester,
-    addPlan
+    addPlan,
+    deleteAllCourses
 }: {
     planList: Plan[];
     deleteSemester: (id: number) => void;
@@ -26,6 +27,7 @@ export function PlanViewer({
     editPlan: (id: number, newPlan: Plan) => void;
     editSemester: (id: number, newSemester: Semester) => void;
     addPlan: (newPlan: Plan) => void;
+    deleteAllCourses: (semesterId: string) => void;
 }): JSX.Element {
     const [selection, Select] = useState<string>(planList[0].title);
     const [planInsert, setInsert] = useState<boolean>(false); //whether or not the adding semester view is visible
@@ -63,6 +65,7 @@ export function PlanViewer({
             )}
             {planList.length < 2 ? (
                 <PlanView
+                    deleteAllCourses={deleteAllCourses}
                     plan={planList[0]}
                     deleteCourse={deleteCourse}
                     deleteSemester={deleteSemester}
@@ -75,6 +78,7 @@ export function PlanViewer({
                 planList.map((plan: Plan) => (
                     <div key={plan.id} hidden={selection !== plan.title}>
                         <PlanView
+                            deleteAllCourses={deleteAllCourses}
                             plan={plan}
                             deleteCourse={deleteCourse}
                             deleteSemester={deleteSemester}
