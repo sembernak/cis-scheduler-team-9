@@ -15,12 +15,14 @@ export function SemesterView({
     deleteSemester,
     deleteCourse,
     editCourse,
-    editSemester
+    editSemester,
+    deleteAllCourses
 }: {
     plan: Plan;
     semester: Semester;
     deleteSemester: (id: number) => void;
     deleteCourse: (code: string, semesterId: string) => void;
+    deleteAllCourses: (semesterId: string) => void;
     editCourse: (code: string, newCourse: Course, semesterId: string) => void;
     editSemester: (id: number, newSemester: Semester) => void;
 }): JSX.Element {
@@ -86,6 +88,13 @@ export function SemesterView({
                     className="me-8"
                 >
                     Insert Course
+                </Button>
+                <Button
+                    onClick={() => deleteAllCourses(String(semester.id))}
+                    variant="danger"
+                    className="me-8"
+                >
+                    Delete All Courses
                 </Button>
                 {visible && (
                     <InsertCourse

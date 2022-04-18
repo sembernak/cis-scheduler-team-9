@@ -127,6 +127,24 @@ function App(): JSX.Element {
             )
         );
     }
+    function deleteAllCourses(semesterId: string) {
+        setPlans(
+            plans.map(
+                (newplan: Plan): Plan => ({
+                    ...newplan,
+                    semesters: newplan.semesters.map(
+                        (semester1: Semester): Semester => ({
+                            ...semester1,
+                            courses: semester1.courses.filter(
+                                (course1: Course): boolean =>
+                                    course1.semesterId !== semesterId
+                            )
+                        })
+                    )
+                })
+            )
+        );
+    }
 
     function editCourse(code: string, newCourse: Course, semesterId: string) {
         setPlans(
@@ -187,6 +205,7 @@ function App(): JSX.Element {
                 <br></br>
                 <p>
                     <PlanViewer
+                        deleteAllCourses={deleteAllCourses}
                         planList={plans}
                         deleteSemester={deleteSemester}
                         deletePlan={deletePlan}
