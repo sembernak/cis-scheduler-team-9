@@ -39,13 +39,14 @@ export function SemestorEditor({
             season: season,
             year: year,
             courses: courses,
-            id: id
+            id: id,
+            planId: plan.id
         });
         //plan passed into function is updated with new semester created by user
-        editPlan(plan.id, {
+        /*editPlan(plan.id, {
             ...plan,
             semesters: [...plan.semesters, semester]
-        });
+        });*/
         changeEditing();
     }
 
