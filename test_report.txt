@@ -61,26 +61,26 @@
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (162 ms)
+  ✓ renders the course name somewhere (129 ms)
 
 -----------------------------|---------|----------|---------|---------|-------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------------|---------|----------|---------|---------|-------------------
-All files                    |    30.3 |    33.33 |   18.05 |   30.53 |                   
+All files                    |   30.53 |    33.33 |   18.05 |   30.76 |                   
  src                         |   45.94 |        0 |       5 |   47.22 |                   
   App.tsx                    |   45.94 |        0 |       5 |   47.22 | 95-173            
- src/components              |   20.87 |    57.14 |   21.56 |   20.87 |                   
+ src/components              |   21.11 |    57.14 |   21.56 |   21.11 |                   
   courseEditor.tsx           |       0 |      100 |       0 |       0 | 19-121            
   courseView.tsx             |      75 |       75 |      50 |      75 | 21                
   insertCourse.tsx           |       0 |      100 |       0 |       0 | 19-120            
   insertPlan.tsx             |       0 |      100 |       0 |       0 | 17-68             
   insertSemester.tsx         |       0 |      100 |       0 |       0 | 20-101            
-  planView.tsx               |      60 |       50 |      50 |      60 | 29,58             
+  planView.tsx               |      60 |       50 |      50 |      60 | 29,57             
   planViewer.tsx             |   71.42 |       50 |      60 |   71.42 | 34-37             
   recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                   
   recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                   
-  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 23-94             
-  semesterView.tsx           |   66.66 |       50 |      50 |   66.66 | 33-37,80          
+  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 21-93             
+  semesterView.tsx           |   66.66 |       50 |      50 |   66.66 | 31-35,77          
   semesterViewer.tsx         |       0 |        0 |       0 |       0 |                   
  src/helper_functions        |     100 |      100 |     100 |     100 |                   
   unpackJSON.tsx             |     100 |      100 |     100 |     100 |                   
@@ -92,5 +92,5 @@ All files                    |    30.3 |    33.33 |   18.05 |   30.53 |
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        3.331 s
+Time:        2.801 s
 Ran all test suites.
