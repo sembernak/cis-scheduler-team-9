@@ -11,7 +11,6 @@ import { SemestorEditor } from "./semesterEditor";
 
 export function SemesterView({
     plan,
-    editPlan,
     semester,
     deleteSemester,
     deleteCourse,
@@ -19,7 +18,6 @@ export function SemesterView({
     editSemester
 }: {
     plan: Plan;
-    editPlan: (id: number, newPlan: Plan) => void;
     semester: Semester;
     deleteSemester: (id: number) => void;
     deleteCourse: (code: string, semesterId: string) => void;
@@ -53,7 +51,6 @@ export function SemesterView({
                 semester={semester}
                 editSemester={editSemester}
                 plan={plan}
-                editPlan={editPlan}
             ></SemestorEditor>
         </>
     ) : (
