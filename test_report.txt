@@ -176,28 +176,28 @@
 
 PASS src/App.test.tsx
   Make a new plan
-    ✓ Clicking New Plan gives a form to enter a title (314 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (50 ms)
-    ✓ Can set new plan title (190 ms)
-    ✓ Insert Semester works (546 ms)
+    ✓ Clicking New Plan gives a form to enter a title (312 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (51 ms)
+    ✓ Can set new plan title (185 ms)
+    ✓ Insert Semester works (542 ms)
 
 -----------------------------|---------|----------|---------|---------|-------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------------|---------|----------|---------|---------|-------------------
-All files                    |   52.94 |    54.16 |   40.25 |   53.33 |                   
+All files                    |   53.73 |    54.16 |   41.33 |   54.13 |                   
  src                         |   58.53 |       30 |   29.16 |      60 |                   
   App.tsx                    |   58.53 |       30 |   29.16 |      60 | 95-159            
- src/components              |   48.35 |    71.42 |   44.23 |   48.35 |                   
+ src/components              |   49.43 |    71.42 |      46 |   49.43 |                   
   courseEditor.tsx           |       0 |      100 |       0 |       0 | 19-121            
   courseView.tsx             |      75 |       75 |      50 |      75 | 21                
   insertCourse.tsx           |       0 |      100 |       0 |       0 | 19-120            
   insertPlan.tsx             |     100 |      100 |     100 |     100 |                   
-  insertSemester.tsx         |   84.61 |      100 |   66.66 |   84.61 | 40,73             
+  insertSemester.tsx         |   91.66 |      100 |      80 |   91.66 | 39                
   planView.tsx               |      80 |      100 |      75 |      80 | 60                
   planViewer.tsx             |     100 |       75 |     100 |     100 | 75                
   recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                   
   recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                   
-  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 21-93             
+  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 21-75             
   semesterView.tsx           |      60 |       50 |   42.85 |      60 | 33-37,79-93       
   semesterViewer.tsx         |       0 |        0 |       0 |       0 |                   
  src/helper_functions        |     100 |      100 |     100 |     100 |                   
@@ -210,5 +210,5 @@ All files                    |   52.94 |    54.16 |   40.25 |   53.33 |
 Test Suites: 1 passed, 1 total
 Tests:       4 passed, 4 total
 Snapshots:   0 total
-Time:        3.78 s
+Time:        3.859 s
 Ran all test suites.
