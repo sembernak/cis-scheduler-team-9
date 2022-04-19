@@ -60,144 +60,1249 @@
       at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:92:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `6`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:92:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:92:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `6`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:92:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:92:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `6`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:92:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-PASS src/App.test.tsx
+FAIL src/App.test.tsx
   Make a new plan
-    ✓ Clicking New Plan gives a form to enter a title (312 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (51 ms)
-    ✓ Can set new plan title (185 ms)
-    ✓ Insert Semester works (542 ms)
+    ✕ Clicking New Plan gives a form to enter a title (185 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (49 ms)
+    ✕ Can set new plan title (49 ms)
+    ✕ Insert Semester works (44 ms)
 
------------------------------|---------|----------|---------|---------|-------------------
+  ● Make a new plan › Clicking New Plan gives a form to enter a title
+
+    TestingLibraryElementError: Unable to find a label with the text of: Plan Id:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mUD CISC275 with React Hooks and TypeScript - Allie Platchek, Sam Bernal, and Anissa Spano[0m
+          [36m</header>[39m
+          [36m<p>[39m
+            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, ----[0m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"schedule"[39m
+          [36m>[39m
+            [36m<br />[39m
+            [36m<p>[39m
+              [36m<div>[39m
+                [36m<p>[39m
+                  [0mSelect a plan from below to get started:[0m
+                [36m</p>[39m
+                [36m<div>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mdata-testid[39m=[32m"PlanSelect"[39m
+                    [33mid[39m=[32m"planDrop"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 1"[39m
+                    [36m>[39m
+                      [0mPlan 1[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 2"[39m
+                    [36m>[39m
+                      [0mPlan 2[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+                [36m<p>[39m
+                  [0mOr create a new plan here:[0m
+                [36m</p>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                  [33mdata-testid[39m=[32m"NewPlan"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mNew Plan[0m
+                [36m</button>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"container"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"row"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row"[39m
+                      [36m>[39m
+                        [36m<label[39m
+                          [33mclass[39m=[32m"form-label col-form-label col-sm-2"[39m
+                          [33mfor[39m=[32m"formPlanTitle"[39m
+                        [36m>[39m
+                          [0mPlan Title:[0m
+                        [36m</label>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"col"[39m
+                        [36m>[39m
+                          [36m<input[39m
+                            [33mclass[39m=[32m"form-control"[39m
+                            [33mid[39m=[32m"formPlanTitle"[39m
+                            [33mvalue[39m=[32m""[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"me-4 btn btn-success"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mSave[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"me-5 btn btn-warning"[39m
+                        [33mdata-testid[39m=[32m"CancelPlan"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mCancel[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33maria-hidden[39m=[32m"false"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mPlan 1[0m
+                    [36m</h3>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row row-cols-md-2 row-cols-sm-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div>[39m
+                                [36m<h3>[39m
+                                  [0mSpring - 2020[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m10[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mSurvey of Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 4[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                  [36m<div />[39m
+                                [36m</div>[39m
+                                [36m<div>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 457[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mLegal Issues for Entrepreneurs[0m
+                                    [36m</h3>[39m
+                                    [0m 3[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mExplores important legal issues faced by entrepreneurs as they put their ideas into action. Topics are sequenced to mirror the entrepreneurial process, beginning with pre-startup issues like partnership agreements and intellectual property, continuing to entity formation, governance and ownership issues, and ending with emerging growth and exit transactions.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                  [36m<div />[39m
+                                [36m</div>[39m
+                                [36m<div>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 327[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mCost Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 3[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mProcess, job order and standard costing; variable and absorption costing; budgeting, decentralization, and transfer pricing; and cost analysis for managerial applications.[0m
+                                    [36m<br />[39m
+                                    [0mPrerequisites: ACCT 208.[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                  [36m<div />[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                              [36m<div>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDelete semester[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mInsert Course[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDelete All Courses[0m
+                                [36m</button>[39m
+                                [36m<div>[39m
+                                  [36m<button[39m
+                                    [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                    [33mtype[39m=[32m"button"[39m
+                                  [36m>[39m
+                                    [0mEdit Semester[0m
+                                  [36m</button>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div>[39m
+                                [36m<h3>[39m
+                                  [0mWinter - 2019[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m4[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mSurvey of Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 4[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                  [36m<div />[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                              [36m<div>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDelete semester[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mInsert Course[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDelete All Courses[0m
+                                [36m</button>[39m
+                                [36m<div>[39m
+                                  [36m<button[39m
+                                    [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                    [33mtype[39m=[32m"button"[39m
+                                  [36m>[39m
+                                    [0mEdit Semester[0m
+                                  [36m</button>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mDelete Plan[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                      [33mdata-testid[39m=[32m"InsertSemesterPlan 1"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mInsert Semester[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mhidden[39m=[32m""[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mPlan 2[0m
+                    [36m</h3>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row row-cols-md-2 row-cols-sm-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div>[39m
+                                [36m<h3>[39m
+                                  [0mWinter - 2019[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m4[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mSurvey of Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 4[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                  [36m<div />[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                              [36m<div>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDelete semester[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mInsert Course[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDelete All Courses[0m
+                                [36m</button>[39m
+                                [36m<div>[39m
+                                  [36m<button[39m
+                                    [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                    [33mtype[39m=[32m"button"[39m
+                                  [36m>[39m
+                                    [0mEdit Semester[0m
+                                  [36m</button>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mDelete Plan[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                      [33mdata-testid[39m=[32m"InsertSemesterPlan 2"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mInsert Semester[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</p>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"control"[39m
+          [36m/>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      16 |         createNew.click();
+      17 |         expect(screen.getByLabelText("Plan Title:")).toBeInTheDocument();
+    > 18 |         const enterId = screen.getByLabelText("Plan Id:");
+         |                                ^
+      19 |         userEvent.type(enterId, "6"); //get rid of this when ids become automatic
+      20 |         const enterTitle = screen.getByLabelText("Plan Title:");
+      21 |         userEvent.type(enterTitle, "Test Plan 1");
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getAllByLabelText (node_modules/@testing-library/dom/dist/queries/label-text.js:116:38)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByLabelText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/App.test.tsx:18:32)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Make a new plan › Can set new plan title
+
+    TestingLibraryElementError: Unable to find a label with the text of: Plan Id:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mUD CISC275 with React Hooks and TypeScript - Allie Platchek, Sam Bernal, and Anissa Spano[0m
+          [36m</header>[39m
+          [36m<p>[39m
+            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, ----[0m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"schedule"[39m
+          [36m>[39m
+            [36m<br />[39m
+            [36m<p>[39m
+              [36m<div>[39m
+                [36m<p>[39m
+                  [0mSelect a plan from below to get started:[0m
+                [36m</p>[39m
+                [36m<div>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mdata-testid[39m=[32m"PlanSelect"[39m
+                    [33mid[39m=[32m"planDrop"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 1"[39m
+                    [36m>[39m
+                      [0mPlan 1[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 2"[39m
+                    [36m>[39m
+                      [0mPlan 2[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+                [36m<p>[39m
+                  [0mOr create a new plan here:[0m
+                [36m</p>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                  [33mdata-testid[39m=[32m"NewPlan"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mNew Plan[0m
+                [36m</button>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"container"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"row"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row"[39m
+                      [36m>[39m
+                        [36m<label[39m
+                          [33mclass[39m=[32m"form-label col-form-label col-sm-2"[39m
+                          [33mfor[39m=[32m"formPlanTitle"[39m
+                        [36m>[39m
+                          [0mPlan Title:[0m
+                        [36m</label>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"col"[39m
+                        [36m>[39m
+                          [36m<input[39m
+                            [33mclass[39m=[32m"form-control"[39m
+                            [33mid[39m=[32m"formPlanTitle"[39m
+                            [33mvalue[39m=[32m""[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"me-4 btn btn-success"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mSave[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"me-5 btn btn-warning"[39m
+                        [33mdata-testid[39m=[32m"CancelPlan"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mCancel[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33maria-hidden[39m=[32m"false"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mPlan 1[0m
+                    [36m</h3>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row row-cols-md-2 row-cols-sm-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div>[39m
+                                [36m<h3>[39m
+                                  [0mSpring - 2020[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m10[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mSurvey of Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 4[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                  [36m<div />[39m
+                                [36m</div>[39m
+                                [36m<div>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 457[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mLegal Issues for Entrepreneurs[0m
+                                    [36m</h3>[39m
+                                    [0m 3[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mExplores important legal issues faced by entrepreneurs as they put their ideas into action. Topics are sequenced to mirror the entrepreneurial process, beginning with pre-startup issues like partnership agreements and intellectual property, continuing to entity formation, governance and ownership issues, and ending with emerging growth and exit transactions.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                  [36m<div />[39m
+                                [36m</div>[39m
+                                [36m<div>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 327[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mCost Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 3[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mProcess, job order and standard costing; variable and absorption costing; budgeting, decentralization, and transfer pricing; and cost analysis for managerial applications.[0m
+                                    [36m<br />[39m
+                                    [0mPrerequisites: ACCT 208.[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                  [36m<div />[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                              [36m<div>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDelete semester[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mInsert Course[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDelete All Courses[0m
+                                [36m</button>[39m
+                                [36m<div>[39m
+                                  [36m<button[39m
+                                    [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                    [33mtype[39m=[32m"button"[39m
+                                  [36m>[39m
+                                    [0mEdit Semester[0m
+                                  [36m</button>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div>[39m
+                                [36m<h3>[39m
+                                  [0mWinter - 2019[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m4[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mSurvey of Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 4[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                  [36m<div />[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                              [36m<div>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDelete semester[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mInsert Course[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDelete All Courses[0m
+                                [36m</button>[39m
+                                [36m<div>[39m
+                                  [36m<button[39m
+                                    [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                    [33mtype[39m=[32m"button"[39m
+                                  [36m>[39m
+                                    [0mEdit Semester[0m
+                                  [36m</button>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mDelete Plan[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                      [33mdata-testid[39m=[32m"InsertSemesterPlan 1"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mInsert Semester[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mhidden[39m=[32m""[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mPlan 2[0m
+                    [36m</h3>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row row-cols-md-2 row-cols-sm-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div>[39m
+                                [36m<h3>[39m
+                                  [0mWinter - 2019[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m4[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mSurvey of Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 4[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                  [36m<div />[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                              [36m<div>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDelete semester[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mInsert Course[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDelete All Courses[0m
+                                [36m</button>[39m
+                                [36m<div>[39m
+                                  [36m<button[39m
+                                    [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                    [33mtype[39m=[32m"button"[39m
+                                  [36m>[39m
+                                    [0mEdit Semester[0m
+                                  [36m</button>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mDelete Plan[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                      [33mdata-testid[39m=[32m"InsertSemesterPlan 2"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mInsert Semester[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</p>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"control"[39m
+          [36m/>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      32 |         createNew.click();
+      33 |         expect(screen.getByLabelText("Plan Title:")).toBeInTheDocument();
+    > 34 |         const enterId = screen.getByLabelText("Plan Id:");
+         |                                ^
+      35 |         userEvent.type(enterId, "6"); //get rid of this when ids become automatic
+      36 |         const enterTitle = screen.getByLabelText("Plan Title:");
+      37 |         userEvent.type(enterTitle, "Test Plan 1");
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getAllByLabelText (node_modules/@testing-library/dom/dist/queries/label-text.js:116:38)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByLabelText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/App.test.tsx:34:32)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Make a new plan › Insert Semester works
+
+    TestingLibraryElementError: Unable to find a label with the text of: Plan Id:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mUD CISC275 with React Hooks and TypeScript - Allie Platchek, Sam Bernal, and Anissa Spano[0m
+          [36m</header>[39m
+          [36m<p>[39m
+            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, ----[0m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"schedule"[39m
+          [36m>[39m
+            [36m<br />[39m
+            [36m<p>[39m
+              [36m<div>[39m
+                [36m<p>[39m
+                  [0mSelect a plan from below to get started:[0m
+                [36m</p>[39m
+                [36m<div>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mdata-testid[39m=[32m"PlanSelect"[39m
+                    [33mid[39m=[32m"planDrop"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 1"[39m
+                    [36m>[39m
+                      [0mPlan 1[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 2"[39m
+                    [36m>[39m
+                      [0mPlan 2[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+                [36m<p>[39m
+                  [0mOr create a new plan here:[0m
+                [36m</p>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                  [33mdata-testid[39m=[32m"NewPlan"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mNew Plan[0m
+                [36m</button>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"container"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"row"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row"[39m
+                      [36m>[39m
+                        [36m<label[39m
+                          [33mclass[39m=[32m"form-label col-form-label col-sm-2"[39m
+                          [33mfor[39m=[32m"formPlanTitle"[39m
+                        [36m>[39m
+                          [0mPlan Title:[0m
+                        [36m</label>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"col"[39m
+                        [36m>[39m
+                          [36m<input[39m
+                            [33mclass[39m=[32m"form-control"[39m
+                            [33mid[39m=[32m"formPlanTitle"[39m
+                            [33mvalue[39m=[32m""[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"me-4 btn btn-success"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mSave[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"me-5 btn btn-warning"[39m
+                        [33mdata-testid[39m=[32m"CancelPlan"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mCancel[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33maria-hidden[39m=[32m"false"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mPlan 1[0m
+                    [36m</h3>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row row-cols-md-2 row-cols-sm-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div>[39m
+                                [36m<h3>[39m
+                                  [0mSpring - 2020[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m10[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mSurvey of Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 4[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                  [36m<div />[39m
+                                [36m</div>[39m
+                                [36m<div>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 457[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mLegal Issues for Entrepreneurs[0m
+                                    [36m</h3>[39m
+                                    [0m 3[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mExplores important legal issues faced by entrepreneurs as they put their ideas into action. Topics are sequenced to mirror the entrepreneurial process, beginning with pre-startup issues like partnership agreements and intellectual property, continuing to entity formation, governance and ownership issues, and ending with emerging growth and exit transactions.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                  [36m<div />[39m
+                                [36m</div>[39m
+                                [36m<div>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 327[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mCost Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 3[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mProcess, job order and standard costing; variable and absorption costing; budgeting, decentralization, and transfer pricing; and cost analysis for managerial applications.[0m
+                                    [36m<br />[39m
+                -----------------------------|---------|----------|---------|---------|-------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------------|---------|----------|---------|---------|-------------------
-All files                    |   53.73 |    54.16 |   41.33 |   54.13 |                   
- src                         |   58.53 |       30 |   29.16 |      60 |                   
-  App.tsx                    |   58.53 |       30 |   29.16 |      60 | 95-159            
- src/components              |   49.43 |    71.42 |      46 |   49.43 |                   
+All files                    |   34.58 |     37.5 |   21.62 |   34.84 |                   
+ src                         |   41.46 |        0 |    4.16 |    42.5 |                   
+  App.tsx                    |   41.46 |        0 |    4.16 |    42.5 | 95-191            
+ src/components              |    28.4 |    64.28 |   28.57 |    28.4 |                   
   courseEditor.tsx           |       0 |      100 |       0 |       0 | 19-121            
   courseView.tsx             |      75 |       75 |      50 |      75 | 21                
   insertCourse.tsx           |       0 |      100 |       0 |       0 | 19-120            
-  insertPlan.tsx             |     100 |      100 |     100 |     100 |                   
-  insertSemester.tsx         |   91.66 |      100 |      80 |   91.66 | 39                
-  planView.tsx               |      80 |      100 |      75 |      80 | 60                
-  planViewer.tsx             |     100 |       75 |     100 |     100 | 75                
+  insertPlan.tsx             |      50 |      100 |      50 |      50 | 30-36,53          
+  insertSemester.tsx         |       0 |      100 |       0 |       0 | 20-90             
+  planView.tsx               |      60 |       50 |      50 |      60 | 31,60             
+  planViewer.tsx             |   85.71 |       75 |      80 |   85.71 | 39                
   recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                   
   recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                   
-  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 21-75             
+  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 21-74             
   semesterView.tsx           |      60 |       50 |   42.85 |      60 | 33-37,79-93       
   semesterViewer.tsx         |       0 |        0 |       0 |       0 |                   
  src/helper_functions        |     100 |      100 |     100 |     100 |                   
@@ -207,8 +1312,298 @@ All files                    |   53.73 |    54.16 |   41.33 |   54.13 |
   plan.ts                    |       0 |        0 |       0 |       0 |                   
   semester.ts                |       0 |        0 |       0 |       0 |                   
 -----------------------------|---------|----------|---------|---------|-------------------
-Test Suites: 1 passed, 1 total
-Tests:       4 passed, 4 total
+                    [0mPrerequisites: ACCT 208.[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                  [36m<div />[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                              [36m<div>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDelete semester[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mInsert Course[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDelete All Courses[0m
+                                [36m</button>[39m
+                                [36m<div>[39m
+                                  [36m<button[39m
+                                    [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                    [33mtype[39m=[32m"button"[39m
+                                  [36m>[39m
+                                    [0mEdit Semester[0m
+                                  [36m</button>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div>[39m
+                                [36m<h3>[39m
+                                  [0mWinter - 2019[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m4[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mSurvey of Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 4[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                  [36m<div />[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                              [36m<div>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDelete semester[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mInsert Course[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDelete All Courses[0m
+                                [36m</button>[39m
+                                [36m<div>[39m
+                                  [36m<button[39m
+                                    [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                    [33mtype[39m=[32m"button"[39m
+                                  [36m>[39m
+                                    [0mEdit Semester[0m
+                                  [36m</button>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mDelete Plan[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                      [33mdata-testid[39m=[32m"InsertSemesterPlan 1"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mInsert Semester[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mhidden[39m=[32m""[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mPlan 2[0m
+                    [36m</h3>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row row-cols-md-2 row-cols-sm-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div>[39m
+                                [36m<h3>[39m
+                                  [0mWinter - 2019[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m4[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mSurvey of Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 4[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div>[39m
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                          [33mtype[39m=[32m"button"[39m
+                                        [36m>[39m
+                                          [0mEdit[0m
+                                        [36m</button>[39m
+                                      [36m</div>[39m
+                                    [36m</div>[39m
+                                  [36m</div>[39m
+                                  [36m<div />[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                              [36m<div>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDelete semester[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mInsert Course[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDelete All Courses[0m
+                                [36m</button>[39m
+                                [36m<div>[39m
+                                  [36m<button[39m
+                                    [33mclass[39m=[32m"float-right btn btn-primary btn-sm"[39m
+                                    [33mtype[39m=[32m"button"[39m
+                                  [36m>[39m
+                                    [0mEdit Semester[0m
+                                  [36m</button>[39m
+                                [36m</div>[39m
+                              [36m</div>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mDelete Plan[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"me-8 btn btn-danger"[39m
+                      [33mdata-testid[39m=[32m"InsertSemesterPlan 2"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mInsert Semester[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</p>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"control"[39m
+          [36m/>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      47 |         const createNew = screen.getByTestId("NewPlan");
+      48 |         createNew.click();
+    > 49 |         const enterId = screen.getByLabelText("Plan Id:");
+         |                                ^
+      50 |         userEvent.type(enterId, "6"); //get rid of this when ids become automatic
+      51 |         const enterTitle = screen.getByLabelText("Plan Title:");
+      52 |         userEvent.type(enterTitle, "Test Plan 1");
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getAllByLabelText (node_modules/@testing-library/dom/dist/queries/label-text.js:116:38)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByLabelText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/App.test.tsx:49:32)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 1 passed, 4 total
 Snapshots:   0 total
-Time:        3.859 s
+Time:        3.164 s
 Ran all test suites.
