@@ -21,10 +21,10 @@ export function PlanViewer({
 }: {
     planList: Plan[];
     deleteSemester: (id: string) => void;
-    deletePlan: (id: number) => void;
+    deletePlan: (id: string) => void;
     deleteCourse: (code: string, semesterId: string) => void;
     editCourse: (code: string, newCourse: Course, semesterId: string) => void;
-    editPlan: (id: number, newPlan: Plan) => void;
+    editPlan: (id: string, newPlan: Plan) => void;
     editSemester: (id: string, newSemester: Semester) => void;
     addPlan: (newPlan: Plan) => void;
     deleteAllCourses: (semesterId: string) => void;
