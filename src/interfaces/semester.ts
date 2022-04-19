@@ -5,6 +5,6 @@ export interface Semester {
     year: number;
     totalCredits: number;
     courses: Course[];
-    id: number;
+    id: string;
     planId: number;
 }

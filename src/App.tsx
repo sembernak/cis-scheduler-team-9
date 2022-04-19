@@ -47,7 +47,7 @@ const exampleSem2 = {
     year: 2020,
     totalCredits: 15,
     courses: [course1, course2, course3],
-    id: 2,
+    id: "2",
     planId: 1
 };
 
@@ -61,7 +61,7 @@ const exampleSem3 = {
     year: 2019,
     totalCredits: 6,
     courses: [course4],
-    id: 3,
+    id: "3",
     planId: 1
 };
 
@@ -70,7 +70,7 @@ const exampleSem4 = {
     year: 2019,
     totalCredits: 6,
     courses: [course4],
-    id: 3,
+    id: "4",
     planId: 2
 };
 
@@ -95,7 +95,7 @@ function App(): JSX.Element {
         setPlans(plans.filter((plan: Plan): boolean => plan.id !== id));
     }
 
-    function deleteSemester(id: number) {
+    function deleteSemester(id: string) {
         setPlans(
             plans.map(
                 (newplan: Plan): Plan => ({
@@ -173,7 +173,7 @@ function App(): JSX.Element {
         );
     }
 
-    function editSemester(id: number, newSemester: Semester) {
+    function editSemester(id: string, newSemester: Semester) {
         setPlans(
             plans.map(
                 (newPlan: Plan): Plan => ({

@@ -20,11 +20,11 @@ export function SemesterView({
 }: {
     plan: Plan;
     semester: Semester;
-    deleteSemester: (id: number) => void;
+    deleteSemester: (id: string) => void;
     deleteCourse: (code: string, semesterId: string) => void;
     deleteAllCourses: (semesterId: string) => void;
     editCourse: (code: string, newCourse: Course, semesterId: string) => void;
-    editSemester: (id: number, newSemester: Semester) => void;
+    editSemester: (id: string, newSemester: Semester) => void;
 }): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false); //whether or not the adding semester view is visible
     const [editing, setEditing] = useState<boolean>(false);

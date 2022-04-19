@@ -12,7 +12,7 @@ export function InsertCourse({
 }: {
     semester: Semester;
     editCourse: (code: string, newCourse: Course, semesterId: string) => void;
-    editSemester: (id: number, newSemester: Semester) => void;
+    editSemester: (id: string, newSemester: Semester) => void;
     flipVisibility: () => void;
 }): JSX.Element {
     //new instance of semester created
@@ -54,7 +54,7 @@ export function InsertCourse({
             semesterId
         );
         //semester passed into function is updated with new course
-        editSemester(Number(semesterId), {
+        editSemester(semesterId, {
             ...semester,
             courses: [...semester.courses, newCourse]
         });

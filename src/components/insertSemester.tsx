@@ -13,11 +13,10 @@ export function InsertSemester({
 }: {
     plan: Plan;
     editPlan: (id: number, newPlan: Plan) => void;
-    editSemester: (id: number, newSemester: Semester) => void;
+    editSemester: (id: string, newSemester: Semester) => void;
     flipVisibility: () => void;
 }): JSX.Element {
     //new instance of semester created
-    const [id, setId] = useState<number>(12);
     const [season, setSeason] = useState<string>("Spring");
     const [year, setYear] = useState<number>(2020);
     //const [totalCredits, setTotalCredits] = useState<number>(0);
@@ -29,7 +28,7 @@ export function InsertSemester({
         year: year,
         totalCredits: 0,
         courses: courses,
-        id: id,
+        id: season + String(year) + plan.id,
         planId: plan.id
     };
 
@@ -41,12 +40,16 @@ export function InsertSemester({
     }
     function save() {
         //new empty semester updated when user saves
+        newSemester.id =
+            newSemester.season +
+            String(newSemester.year) +
+            newSemester.id +
+            newSemester.planId;
         editSemester(newSemester.id, {
             ...newSemester,
             season: season,
             year: year,
-            courses: courses,
-            id: id
+            courses: courses
         });
         //plan passed into function is updated with new semester created by user
         editPlan(plan.id, {
@@ -60,20 +63,6 @@ export function InsertSemester({
         <Container>
             <Row>
                 <Col>
-                    {/* Id */}
-                    <Form.Group controlId="formSemesterId" as={Row}>
-                        <Form.Label column sm={2}>
-                            Semester Id:
-                        </Form.Label>
-                        <Col>
-                            <Form.Control
-                                value={id}
-                                onChange={(
-                                    event: React.ChangeEvent<HTMLTextAreaElement>
-                                ) => setId(Number(event.target.value))}
-                            />
-                        </Col>
-                    </Form.Group>
                     {/* Season */}
                     <Form.Group controlId="formSemesterSeason" as={Row}>
                         <Form.Label column sm={2}>

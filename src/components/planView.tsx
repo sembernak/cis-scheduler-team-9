@@ -17,12 +17,12 @@ export function PlanView({
     deleteAllCourses
 }: {
     plan: Plan;
-    deleteSemester: (id: number) => void;
+    deleteSemester: (id: string) => void;
     deletePlan: (id: number) => void;
     deleteCourse: (code: string, semesterId: string) => void;
     editCourse: (code: string, newCourse: Course, semesterId: string) => void;
     editPlan: (id: number, newPlan: Plan) => void;
-    editSemester: (id: number, newSemester: Semester) => void;
+    editSemester: (id: string, newSemester: Semester) => void;
     deleteAllCourses: (semesterId: string) => void;
 }): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false); //whether or not the adding semester view is visible
