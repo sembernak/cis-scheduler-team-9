@@ -14,7 +14,8 @@ export function PlanView({
     editCourse,
     editPlan,
     editSemester,
-    deleteAllCourses
+    deleteAllCourses,
+    deleteAllSemesters
 }: {
     plan: Plan;
     deleteSemester: (id: string) => void;
@@ -24,6 +25,7 @@ export function PlanView({
     editPlan: (id: string, newPlan: Plan) => void;
     editSemester: (id: string, newSemester: Semester) => void;
     deleteAllCourses: (semesterId: string) => void;
+    deleteAllSemesters: (planid: string) => void;
 }): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false); //whether or not the adding semester view is visible
     //true means the addition screen is open
@@ -66,10 +68,17 @@ export function PlanView({
             <Button
                 data-testid={"InsertSemester" + plan.title}
                 onClick={flipVisibility}
-                variant="danger"
+                variant="success"
                 className="me-8"
             >
                 Insert Semester
+            </Button>
+            <Button
+                onClick={() => deleteAllSemesters(String(plan.id))}
+                variant="danger"
+                className="me-8"
+            >
+                Delete All Semesters
             </Button>
             {visible && (
                 <InsertSemester
