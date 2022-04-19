@@ -107,6 +107,19 @@ function App(): JSX.Element {
             )
         );
     }
+    function deleteAllSemesters(planid: string) {
+        setPlans(
+            plans.map(
+                (newplan: Plan): Plan => ({
+                    ...newplan,
+                    semesters: newplan.semesters.filter(
+                        (semester1: Semester): boolean =>
+                            semester1.planId !== planid
+                    )
+                })
+            )
+        );
+    }
 
     function deleteCourse(code: string, semesterId: string) {
         setPlans(
@@ -208,6 +221,7 @@ function App(): JSX.Element {
                         deleteAllCourses={deleteAllCourses}
                         planList={plans}
                         deleteSemester={deleteSemester}
+                        deleteAllSemesters={deleteAllSemesters}
                         deletePlan={deletePlan}
                         deleteCourse={deleteCourse}
                         editCourse={editCourse}

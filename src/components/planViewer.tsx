@@ -17,7 +17,8 @@ export function PlanViewer({
     editPlan,
     editSemester,
     addPlan,
-    deleteAllCourses
+    deleteAllCourses,
+    deleteAllSemesters
 }: {
     planList: Plan[];
     deleteSemester: (id: string) => void;
@@ -28,6 +29,7 @@ export function PlanViewer({
     editSemester: (id: string, newSemester: Semester) => void;
     addPlan: (newPlan: Plan) => void;
     deleteAllCourses: (semesterId: string) => void;
+    deleteAllSemesters: (planid: string) => void;
 }): JSX.Element {
     const [selection, Select] = useState<string>(planList[0].title);
     const [planInsert, setInsert] = useState<boolean>(false); //whether or not the adding semester view is visible
@@ -59,7 +61,7 @@ export function PlanViewer({
             <Button
                 data-testid={"NewPlan"}
                 onClick={flipInsert}
-                variant="danger"
+                variant="success"
                 className="me-8"
             >
                 New Plan
@@ -82,6 +84,7 @@ export function PlanViewer({
                     editCourse={editCourse}
                     editPlan={editPlan}
                     editSemester={editSemester}
+                    deleteAllSemesters={deleteAllSemesters}
                 ></PlanView>
             ) : (
                 planList.map((plan: Plan) => (
@@ -99,6 +102,7 @@ export function PlanViewer({
                             editCourse={editCourse}
                             editPlan={editPlan}
                             editSemester={editSemester}
+                            deleteAllSemesters={deleteAllSemesters}
                         ></PlanView>
                     </div>
                 ))
