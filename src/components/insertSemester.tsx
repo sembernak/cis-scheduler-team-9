@@ -12,7 +12,7 @@ export function InsertSemester({
     flipVisibility
 }: {
     plan: Plan;
-    editPlan: (id: number, newPlan: Plan) => void;
+    editPlan: (id: string, newPlan: Plan) => void;
     editSemester: (id: string, newSemester: Semester) => void;
     flipVisibility: () => void;
 }): JSX.Element {

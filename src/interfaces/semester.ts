@@ -6,5 +6,5 @@ export interface Semester {
     totalCredits: number;
     courses: Course[];
     id: string;
-    planId: number;
+    planId: string;
 }

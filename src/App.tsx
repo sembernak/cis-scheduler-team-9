@@ -48,7 +48,7 @@ const exampleSem2 = {
     totalCredits: 15,
     courses: [course1, course2, course3],
     id: "2",
-    planId: 1
+    planId: "1"
 };
 
 const course4 = {
@@ -62,7 +62,7 @@ const exampleSem3 = {
     totalCredits: 6,
     courses: [course4],
     id: "3",
-    planId: 1
+    planId: "1"
 };
 
 const exampleSem4 = {
@@ -71,19 +71,19 @@ const exampleSem4 = {
     totalCredits: 6,
     courses: [course4],
     id: "4",
-    planId: 2
+    planId: "2"
 };
 
 const examplePlan1 = {
     title: "Plan 1",
     semesters: [exampleSem2, exampleSem3],
-    id: 1
+    id: "1"
 };
 
 const examplePlan2 = {
     title: "Plan 2",
     semesters: [exampleSem4],
-    id: 2
+    id: "2"
 };
 
 const PLANS = [examplePlan1, examplePlan2];
@@ -91,7 +91,7 @@ const PLANS = [examplePlan1, examplePlan2];
 function App(): JSX.Element {
     const [plans, setPlans] = useState<Plan[]>(PLANS);
 
-    function deletePlan(id: number) {
+    function deletePlan(id: string) {
         setPlans(plans.filter((plan: Plan): boolean => plan.id !== id));
     }
 
@@ -167,7 +167,7 @@ function App(): JSX.Element {
             )
         );
     }
-    function editPlan(id: number, newPlan: Plan) {
+    function editPlan(id: string, newPlan: Plan) {
         setPlans(
             plans.map((plan: Plan): Plan => (plan.id === id ? newPlan : plan))
         );

@@ -47,7 +47,6 @@ export function SemestorEditor({
         <Container>
             <Row>
                 <Col>
-                    Semester Id: {semester.id}
                     {/* Season */}
                     <Form.Group controlId="formSemesterSeason" as={Row}>
                         <Form.Label column sm={2}>
