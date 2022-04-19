@@ -59,7 +59,7 @@ export function SemesterView({
         <Container className="semester-view">
             <div>
                 <h3>
-                    {newsemester.season} {" - "} {newsemester.year}
+                    {newsemester.season + " - " + newsemester.year}
                     <br></br>
                 </h3>
                 {newsemester.totalCredits} {" credits"}
