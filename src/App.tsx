@@ -7,6 +7,7 @@ import { Course } from "./interfaces/course";
 import { PlanViewer } from "./components/planViewer";
 import { Plan } from "./interfaces/plan";
 import { Semester } from "./interfaces/semester";
+import { CoursePool } from "./components/coursePool";
 
 const COURSELIST = [
     //Complete list of every course in order of department (see catalog.json)
@@ -231,7 +232,7 @@ function App(): JSX.Element {
                     ></PlanViewer>
                 </p>
             </div>
-            <div className="control"></div>
+            <CoursePool></CoursePool>
         </div>
     );
 }
