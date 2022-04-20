@@ -29,6 +29,9 @@ export function PlanViewer({
     addPlan: (newPlan: Plan) => void;
     deleteAllCourses: (semesterId: string) => void;
 }): JSX.Element {
+    if (planList.length < 1) {
+        planList.push({ title: "New Plan", semesters: [], id: "New Plan" });
+    }
     const [selection, Select] = useState<string>(planList[0].title);
     const [planInsert, setInsert] = useState<boolean>(false); //whether or not the adding semester view is visible
     //true means the addition screen is open
