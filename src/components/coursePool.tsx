@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import unpackJson from "../helper_functions/unpackJSON";
 import catalog from "../catalog.json";
 import { Button, Form } from "react-bootstrap";
+import { CoursePoolView } from "./coursePoolView";
 
 const DEPARTMENTS = ["hello"];
 DEPARTMENTS.pop();
@@ -21,7 +22,7 @@ const COURSEPOOL = [
         description:
             "I couldn't figure out another way to type this variable properly",
         credits: "1",
-        semesterId: ""
+        semesterId: "pool"
     }
 ];
 COURSEPOOL.pop();
@@ -53,6 +54,27 @@ export function CoursePool(): JSX.Element {
 
     function courseSelect(event: React.ChangeEvent<HTMLSelectElement>) {
         changeCourse(event.target.value);
+    }
+
+    function deletePoolCourse(code: string) {
+        changePool(
+            userPool.filter((course: Course): boolean => course.code !== code)
+        );
+    }
+
+    function editPoolCourse(
+        code: string,
+        newCourse: Course,
+        semesterId: string
+    ) {
+        changePool(
+            userPool.map(
+                (course: Course): Course =>
+                    course.code === code && course.semesterId === semesterId
+                        ? newCourse
+                        : course
+            )
+        );
     }
 
     return (
@@ -93,12 +115,21 @@ export function CoursePool(): JSX.Element {
                 Add Course
             </Button>
             <ul>
-                {userPool.map(
+                {/*userPool.map(
                     (course: Course): JSX.Element => (
                         <li key={course.code}>{course.code}</li>
                     )
-                )}
+                    )*/}
             </ul>
+            {userPool.map((course: Course) => (
+                <div key={course.code}>
+                    <CoursePoolView
+                        course={course}
+                        deletePoolCourse={deletePoolCourse}
+                        editCourse={editPoolCourse}
+                    ></CoursePoolView>
+                </div>
+            ))}
         </div>
     );
 }

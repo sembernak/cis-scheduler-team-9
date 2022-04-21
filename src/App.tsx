@@ -181,6 +181,7 @@ function App(): JSX.Element {
             )
         );
     }
+
     function editPlan(id: string, newPlan: Plan) {
         setPlans(
             plans.map((plan: Plan): Plan => (plan.id === id ? newPlan : plan))
