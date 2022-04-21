@@ -33,6 +33,9 @@ export function SemestorEditor({
             String(semester.year) +
             semester.id +
             semester.planId;
+        semester.courses.map(
+            (course: Course) => (course.semesterId = semester.id)
+        );
         editSemester(semester.id, {
             ...semester,
             season: season,
