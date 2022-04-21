@@ -30,17 +30,27 @@ for (i in catalog) {
 }
 const course1 = {
     ...COURSELIST[1],
-    semesterId: "exampleSem2"
+    semesterId: "Spring2020Plan 1"
 };
 
 const course2 = {
     ...COURSELIST[34],
-    semesterId: "exampleSem2"
+    semesterId: "Spring2020Plan 1"
 };
 
 const course3 = {
     ...COURSELIST[12],
-    semesterId: "exampleSem2"
+    semesterId: "Spring2020Plan 1"
+};
+
+const course4 = {
+    ...COURSELIST[1],
+    semesterId: "Winter2019Plan 1"
+};
+
+const course5 = {
+    ...COURSELIST[433],
+    semesterId: "Winter2019Plan 2"
 };
 
 const exampleSem2 = {
@@ -48,13 +58,8 @@ const exampleSem2 = {
     year: 2020,
     totalCredits: 15,
     courses: [course1, course2, course3],
-    id: "2",
-    planId: "1"
-};
-
-const course4 = {
-    ...COURSELIST[1],
-    semesterId: "exampleSem3"
+    id: "Spring2020Plan 1",
+    planId: "Plan 1"
 };
 
 const exampleSem3 = {
@@ -62,29 +67,29 @@ const exampleSem3 = {
     year: 2019,
     totalCredits: 6,
     courses: [course4],
-    id: "3",
-    planId: "1"
+    id: "Winter2019Plan 1",
+    planId: "Plan 1"
 };
 
 const exampleSem4 = {
     season: "Winter",
     year: 2019,
     totalCredits: 6,
-    courses: [course4],
-    id: "4",
-    planId: "2"
+    courses: [course5],
+    id: "Winter2019Plan 2",
+    planId: "Plan 2"
 };
 
 const examplePlan1 = {
     title: "Plan 1",
     semesters: [exampleSem2, exampleSem3],
-    id: "1"
+    id: "Plan 1"
 };
 
 const examplePlan2 = {
     title: "Plan 2",
     semesters: [exampleSem4],
-    id: "2"
+    id: "Plan 2"
 };
 
 const PLANS = [examplePlan1, examplePlan2];
