@@ -45,9 +45,6 @@ export function InsertSemester({
             String(newSemester.year) +
             newSemester.id +
             newSemester.planId;
-        newSemester.courses.map(
-            (course: Course) => (course.semesterId = newSemester.id)
-        );
         editSemester(newSemester.id, {
             ...newSemester,
             season: season,
