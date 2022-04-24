@@ -43,7 +43,7 @@
     Warning: validateDOMNesting(...): <h3> cannot appear as a descendant of <p>.
         at h3
         at div
-        at PlanView (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planView.tsx:10:5)
+        at PlanView (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planView.tsx:11:5)
         at div
         at div
         at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
@@ -62,10 +62,10 @@
 
 FAIL src/App.test.tsx
   Make a new plan
-    ✕ Clicking New Plan gives a form to enter a title (256 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (96 ms)
-    ✕ Can set new plan title (88 ms)
-    ✕ Insert Semester works (72 ms)
+    ✕ Clicking New Plan gives a form to enter a title (379 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (148 ms)
+    ✕ Can set new plan title (146 ms)
+    ✕ Insert Semester works (113 ms)
 
   ● Make a new plan › Clicking New Plan gives a form to enter a title
 
@@ -613,24 +613,25 @@ FAIL src/App.test.tsx
 -----------------------------|---------|----------|---------|---------|-------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------------|---------|----------|---------|---------|-------------------
-All files                    |   37.14 |    29.41 |   21.87 |   37.35 |                   
+All files                    |    35.1 |    30.55 |   20.19 |   35.48 |                   
  src                         |      40 |        0 |     3.7 |    40.9 |                   
   App.tsx                    |      40 |        0 |     3.7 |    40.9 | 101-211           
- src/components              |   34.12 |    41.66 |   27.94 |   34.12 |                   
+ src/components              |   31.65 |     42.3 |      25 |   31.88 |                   
   courseEditor.tsx           |       0 |      100 |       0 |       0 | 19-121            
   coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 51-73,106-125     
   coursePoolView.tsx         |       0 |        0 |       0 |       0 | 17-24             
   courseView.tsx             |      75 |       75 |      50 |      75 | 21                
   insertCourse.tsx           |       0 |      100 |       0 |       0 | 19-120            
   insertPlan.tsx             |      50 |      100 |      50 |      50 | 30-36,53          
-  insertSemester.tsx         |       0 |      100 |       0 |       0 | 20-93             
-  planView.tsx               |      50 |       50 |      40 |      50 | 33,62-77          
+  insertSemester.tsx         |       0 |      100 |       0 |       0 | 20-90             
+  planEditor.tsx             |       0 |      100 |       0 |       0 | 19-56             
+  planView.tsx               |      50 |       50 |   33.33 |      50 | 36-40,75-93       
   planViewer.tsx             |   77.77 |    66.66 |      80 |   77.77 | 35,44             
   recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                   
+  recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                 
   recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                   
   semesterEditor.tsx         |       0 |      100 |       0 |       0 | 21-77             
   semesterView.tsx           |      60 |       50 |   42.85 |      60 | 33-37,79-93       
-  semesterViewer.tsx         |       0 |        0 |       0 |       0 |                   
  src/helper_functions        |     100 |      100 |     100 |     100 |                   
   unpackJSON.tsx             |     100 |      100 |     100 |     100 |                   
  src/interfaces              |       0 |        0 |       0 |       0 |                   
@@ -641,5 +642,5 @@ All files                    |   37.14 |    29.41 |   21.87 |   37.35 |
 Test Suites: 1 failed, 1 total
 Tests:       3 failed, 1 passed, 4 total
 Snapshots:   0 total
-Time:        3.348 s
+Time:        4.751 s
 Ran all test suites.
