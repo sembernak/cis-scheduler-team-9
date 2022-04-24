@@ -5,6 +5,7 @@ import { SemesterView } from "./semesterView";
 import { Plan } from "../interfaces/plan";
 import { Course } from "../interfaces/course";
 import { InsertSemester } from "./insertSemester";
+import { PlanEditor } from "./planEditor";
 
 export function PlanView({
     plan,
@@ -29,11 +30,23 @@ export function PlanView({
 }): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false); //whether or not the adding semester view is visible
     //true means the addition screen is open
+    const [editing, setEditing] = useState<boolean>(false);
+
+    function changeEditing(): void {
+        setEditing(!editing);
+    }
+
     function flipVisibility(): void {
         setVisible(!visible);
     }
 
-    return (
+    return editing ? (
+        <PlanEditor
+            changeEditing={changeEditing}
+            editPlan={editPlan}
+            plan={plan}
+        ></PlanEditor>
+    ) : (
         <div>
             <h3>{plan.title}</h3>
             <Container>
@@ -64,6 +77,9 @@ export function PlanView({
                 className="me-8"
             >
                 Delete Plan
+            </Button>
+            <Button onClick={changeEditing} variant="primary" className="me-8">
+                Edit Plan
             </Button>
             <Button
                 data-testid={"InsertSemester" + plan.title}
