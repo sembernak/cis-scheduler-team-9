@@ -16,7 +16,8 @@ export function SemesterView({
     deleteCourse,
     editCourse,
     editSemester,
-    deleteAllCourses
+    deleteAllCourses,
+    resetCourse
 }: {
     plan: Plan;
     semester: Semester;
@@ -25,6 +26,7 @@ export function SemesterView({
     deleteAllCourses: (semesterId: string) => void;
     editCourse: (code: string, newCourse: Course, semesterId: string) => void;
     editSemester: (id: string, newSemester: Semester) => void;
+    resetCourse: (code: string, semesterId: string) => void;
 }): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false); //whether or not the adding semester view is visible
     const [editing, setEditing] = useState<boolean>(false);
@@ -70,6 +72,7 @@ export function SemesterView({
                             course={course}
                             deleteCourse={deleteCourse}
                             editCourse={editCourse}
+                            resetCourse={resetCourse}
                         ></CourseView>
                     </div>
                 ))}
@@ -84,7 +87,7 @@ export function SemesterView({
                 </Button>
                 <Button
                     onClick={flipVisibility}
-                    variant="danger"
+                    variant="success"
                     className="me-8"
                 >
                     Insert Course

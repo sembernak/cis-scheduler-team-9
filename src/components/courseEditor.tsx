@@ -16,7 +16,7 @@ export function CourseEditor({
     editCourse: (code: string, newCourse: Course, semesterId: string) => void;
     deleteCourse: (code: string, semesterId: string) => void;
 }): JSX.Element {
-    const [code, setCode] = useState<string>(course.code);
+    const [code] = useState<string>(course.code);
     const [title, setTitle] = useState<string>(course.title);
     const [credits, setCredits] = useState<string>(course.credits);
     const [description, setDescription] = useState<string>(course.description);
@@ -44,21 +44,6 @@ export function CourseEditor({
         <Container>
             <Row>
                 <Col>
-                    {/* Code */}
-                    <Form.Group controlId="formCourseCode" as={Row}>
-                        <Form.Label column sm={2}>
-                            Code:
-                        </Form.Label>
-                        <Col>
-                            <Form.Control
-                                value={code}
-                                data-testid={"D" + course.code}
-                                onChange={(
-                                    event: React.ChangeEvent<HTMLTextAreaElement>
-                                ) => setCode(event.target.value)}
-                            />
-                        </Col>
-                    </Form.Group>
                     {/* credits */}
                     <Form.Group controlId="formCourseCredits" as={Row}>
                         <Form.Label column sm={2}>

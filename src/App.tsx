@@ -17,7 +17,8 @@ const COURSELIST = [
         prereq: ["test"],
         description:
             "I couldn't figure out another way to type this variable properly",
-        credits: "1"
+        credits: "1",
+        semesterId: ""
     }
 ];
 COURSELIST.pop();
@@ -213,6 +214,16 @@ function App(): JSX.Element {
         plans.push(newPlan);
         setPlans(plans);
     }
+
+    function resetCourse(code: string, semesterId: string) {
+        const defaultCourse = COURSELIST.filter(
+            (course: Course) => course.code === code
+        );
+        if (defaultCourse.length > 0) {
+            editCourse(code, defaultCourse[0], semesterId);
+        }
+    }
+
     return (
         <div className="App">
             <header className="App-header">
@@ -240,6 +251,7 @@ function App(): JSX.Element {
                         editPlan={editPlan}
                         editSemester={editSemester}
                         addPlan={addPlan}
+                        resetCourse={resetCourse}
                     ></PlanViewer>
                 </p>
             </div>

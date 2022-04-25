@@ -20,7 +20,8 @@ export function PlanViewer({
     editSemester,
     addPlan,
     deleteAllCourses,
-    deleteAllSemesters
+    deleteAllSemesters,
+    resetCourse
 }: {
     planList: Plan[];
     select: (title: string) => void;
@@ -34,6 +35,7 @@ export function PlanViewer({
     addPlan: (newPlan: Plan) => void;
     deleteAllCourses: (semesterId: string) => void;
     deleteAllSemesters: (planid: string) => void;
+    resetCourse: (code: string, semesterId: string) => void;
 }): JSX.Element {
     if (planList.length < 1) {
         planList.push({ title: "New Plan", semesters: [], id: "New Plan" });
@@ -91,6 +93,7 @@ export function PlanViewer({
                     editPlan={editPlan}
                     editSemester={editSemester}
                     deleteAllSemesters={deleteAllSemesters}
+                    resetCourse={resetCourse}
                 ></PlanView>
             ) : (
                 planList.map((plan: Plan) => (
@@ -109,6 +112,7 @@ export function PlanViewer({
                             editPlan={editPlan}
                             editSemester={editSemester}
                             deleteAllSemesters={deleteAllSemesters}
+                            resetCourse={resetCourse}
                         ></PlanView>
                     </div>
                 ))
