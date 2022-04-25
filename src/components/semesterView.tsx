@@ -7,7 +7,7 @@ import { CourseView } from "./courseView";
 import { InsertCourse } from "./insertCourse";
 import { RecordControlsSemester } from "./recordControlsSemester";
 import { SemestorEditor } from "./semesterEditor";
-import { DragDropContext, Draggable } from "react-beautiful-dnd";
+import { DragDropContext, Droppable } from "react-beautiful-dnd";
 //import { SemesterViewer } from "./semesterViewer";
 
 export function SemesterView({
@@ -50,6 +50,30 @@ export function SemesterView({
         )
     };
 
+    const [dragOver, setDragOver] = React.useState(false);
+    const handleDragOverStart = () => setDragOver(true);
+    const handleDragOverEnd = () => setDragOver(false);
+
+    const handleDragStart = (event: React.DragEvent<HTMLDivElement>) => {
+        event.dataTransfer.setData("text", event.currentTarget.id);
+    };
+
+    const enableDropping = (event: React.DragEvent<HTMLDivElement>) => {
+        event.preventDefault();
+        event.dataTransfer.dropEffect = "move";
+    };
+
+    const handleDrop = (event: React.DragEvent<HTMLDivElement>) => {
+        const id = event.dataTransfer.getData("text");
+        const courseId = id.substring(0, id.indexOf("&"));
+        const semesterId = id.substring(id.indexOf("&") + 1);
+        deleteCourse(courseId, semesterId);
+        console.log(courseId);
+        console.log(semesterId);
+        console.log("Somebody dropped an element with id:" + id);
+        setDragOver(false);
+    };
+
     return editing ? (
         <>
             <SemestorEditor
@@ -61,34 +85,32 @@ export function SemesterView({
         </>
     ) : (
         <Container className="semester-view">
-            <div>
+            <div
+                onDragOver={enableDropping}
+                onDrop={handleDrop}
+                onDragEnter={handleDragOverStart}
+                onDragLeave={handleDragOverEnd}
+            >
                 <h3>
                     {newsemester.season + " - " + newsemester.year}
                     <br></br>
                 </h3>
                 {newsemester.totalCredits} {" credits"}
                 {"                       "}
-                {newsemester.courses.map((course: Course, index) => (
-                    <Draggable
+                {newsemester.courses.map((course: Course) => (
+                    <div
                         key={course.code}
-                        draggableId={course.code}
-                        index={index}
+                        draggable={true}
+                        onDragStart={handleDragStart}
+                        id={course.code + "&" + course.semesterId}
                     >
-                        {(provided, snapshot) => (
-                            <div
-                                ref={provided.innerRef}
-                                {...provided.draggableProps}
-                                {...provided.dragHandleProps}
-                            >
-                                <CourseView
-                                    course={course}
-                                    deleteCourse={deleteCourse}
-                                    editCourse={editCourse}
-                                    resetCourse={resetCourse}
-                                ></CourseView>
-                            </div>
-                        )}
-                    </Draggable>
+                        <CourseView
+                            course={course}
+                            deleteCourse={deleteCourse}
+                            editCourse={editCourse}
+                            resetCourse={resetCourse}
+                        ></CourseView>
+                    </div>
                 ))}
             </div>
             <div>
