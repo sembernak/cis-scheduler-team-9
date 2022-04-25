@@ -8,6 +8,8 @@ import { PlanViewer } from "./components/planViewer";
 import { Plan } from "./interfaces/plan";
 import { Semester } from "./interfaces/semester";
 import { CoursePool } from "./components/coursePool";
+import { Button } from "react-bootstrap";
+import userEvent from "@testing-library/user-event";
 
 const COURSELIST = [
     //Complete list of every course in order of department (see catalog.json)
@@ -98,6 +100,48 @@ const PLANS = [examplePlan1, examplePlan2];
 function App(): JSX.Element {
     const [plans, setPlans] = useState<Plan[]>(PLANS);
     const [selection, select] = useState<string>(PLANS[0].title);
+
+    function makeCSV() {
+        let csvContent = "data:text/csv;charset=utf-8, ";
+        csvContent =
+            csvContent +
+            plans
+                .map(
+                    (plan: Plan): string =>
+                        plan.title +
+                        ",\n" +
+                        plan.semesters
+                            .map(
+                                (semester: Semester): string =>
+                                    semester.season +
+                                    ", " +
+                                    semester.year +
+                                    ",\n" +
+                                    semester.courses
+                                        .map(
+                                            (course: Course): string =>
+                                                course.code +
+                                                ", " +
+                                                course.title +
+                                                ", " +
+                                                course.credits +
+                                                ", " +
+                                                course.description +
+                                                ", " +
+                                                course.prereq
+                                        )
+                                        .join(",\n")
+                            )
+                            .join(",\n")
+                )
+                .join(",\n");
+        const a = document.createElement("a");
+        const encodeUri = encodeURI(csvContent);
+        a["download"] = "plans.csv";
+        a.href = encodeUri;
+        a.click();
+        console.log(csvContent);
+    }
 
     function deletePlan(id: string) {
         setPlans(plans.filter((plan: Plan): boolean => plan.id !== id));
@@ -256,6 +300,7 @@ function App(): JSX.Element {
                 </p>
             </div>
             <CoursePool></CoursePool>
+            <Button onClick={makeCSV}>Download CSV</Button>
         </div>
     );
 }
