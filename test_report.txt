@@ -62,10 +62,10 @@
 
 FAIL src/App.test.tsx
   Make a new plan
-    ✕ Clicking New Plan gives a form to enter a title (379 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (148 ms)
-    ✕ Can set new plan title (146 ms)
-    ✕ Insert Semester works (113 ms)
+    ✕ Clicking New Plan gives a form to enter a title (353 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (138 ms)
+    ✕ Can set new plan title (144 ms)
+    ✕ Insert Semester works (119 ms)
 
   ● Make a new plan › Clicking New Plan gives a form to enter a title
 
@@ -613,10 +613,10 @@ FAIL src/App.test.tsx
 -----------------------------|---------|----------|---------|---------|-------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------------|---------|----------|---------|---------|-------------------
-All files                    |    35.1 |    30.55 |   20.19 |   35.48 |                   
- src                         |      40 |        0 |     3.7 |    40.9 |                   
-  App.tsx                    |      40 |        0 |     3.7 |    40.9 | 101-211           
- src/components              |   31.65 |     42.3 |      25 |   31.88 |                   
+All files                    |   34.73 |    30.55 |   20.19 |    35.1 |                   
+ src                         |   39.58 |        0 |     3.7 |   40.42 |                   
+  App.tsx                    |   39.58 |        0 |     3.7 |   40.42 | 102-214           
+ src/components              |   31.15 |     42.3 |      25 |   31.38 |                   
   courseEditor.tsx           |       0 |      100 |       0 |       0 | 19-121            
   coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 51-73,106-125     
   coursePoolView.tsx         |       0 |        0 |       0 |       0 | 17-24             
@@ -626,7 +626,7 @@ All files                    |    35.1 |    30.55 |   20.19 |   35.48 |
   insertSemester.tsx         |       0 |      100 |       0 |       0 | 20-90             
   planEditor.tsx             |       0 |      100 |       0 |       0 | 19-56             
   planView.tsx               |      50 |       50 |   33.33 |      50 | 36-40,75-93       
-  planViewer.tsx             |   77.77 |    66.66 |      80 |   77.77 | 35,44             
+  planViewer.tsx             |      75 |    66.66 |      80 |      75 | 39,47             
   recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                   
   recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                 
   recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                   
@@ -642,5 +642,5 @@ All files                    |    35.1 |    30.55 |   20.19 |   35.48 |
 Test Suites: 1 failed, 1 total
 Tests:       3 failed, 1 passed, 4 total
 Snapshots:   0 total
-Time:        4.751 s
+Time:        4.639 s
 Ran all test suites.
