@@ -96,9 +96,11 @@ const PLANS = [examplePlan1, examplePlan2];
 
 function App(): JSX.Element {
     const [plans, setPlans] = useState<Plan[]>(PLANS);
+    const [selection, select] = useState<string>(PLANS[0].title);
 
     function deletePlan(id: string) {
         setPlans(plans.filter((plan: Plan): boolean => plan.id !== id));
+        select(PLANS[0].title);
     }
 
     function deleteSemester(id: string) {
@@ -191,6 +193,7 @@ function App(): JSX.Element {
         setPlans(
             plans.map((plan: Plan): Plan => (plan.id === id ? newPlan : plan))
         );
+        select(newPlan.title);
     }
 
     function editSemester(id: string, newSemester: Semester) {
@@ -226,6 +229,8 @@ function App(): JSX.Element {
                 <p>
                     <PlanViewer
                         deleteAllCourses={deleteAllCourses}
+                        select={select}
+                        selection={selection}
                         planList={plans}
                         deleteSemester={deleteSemester}
                         deleteAllSemesters={deleteAllSemesters}

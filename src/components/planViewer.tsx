@@ -10,6 +10,8 @@ import { InsertPlan } from "./insertPlan";
 
 export function PlanViewer({
     planList,
+    select,
+    selection,
     deleteSemester,
     deletePlan,
     deleteCourse,
@@ -21,6 +23,8 @@ export function PlanViewer({
     deleteAllSemesters
 }: {
     planList: Plan[];
+    select: (title: string) => void;
+    selection: string;
     deleteSemester: (id: string) => void;
     deletePlan: (id: string) => void;
     deleteCourse: (code: string, semesterId: string) => void;
@@ -34,14 +38,13 @@ export function PlanViewer({
     if (planList.length < 1) {
         planList.push({ title: "New Plan", semesters: [], id: "New Plan" });
     }
-    const [selection, Select] = useState<string>(planList[0].title);
     const [planInsert, setInsert] = useState<boolean>(false); //whether or not the adding semester view is visible
     //true means the addition screen is open
     function flipInsert(): void {
         setInsert(!planInsert);
     }
     function updateSelection(event: React.ChangeEvent<HTMLSelectElement>) {
-        Select(event.target.value);
+        select(event.target.value);
     }
 
     return (
