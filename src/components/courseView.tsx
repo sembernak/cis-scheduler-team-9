@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Col } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
 import { Course } from "../interfaces/course";
 import { CourseEditor } from "./courseEditor";
 import { RecordControlsCourse } from "./recordControlsCourse";
@@ -43,17 +43,20 @@ export function CourseView({
                 <br></br>
                 {preRecs.length === 0 ? "" : "Prerequisites: " + preRecs}
                 <Col>
-                    <RecordControlsCourse
-                        changeEditing={changeEditing}
-                    ></RecordControlsCourse>
+                    <Row>
+                        <RecordControlsCourse
+                            changeEditing={changeEditing}
+                        ></RecordControlsCourse>
+                    </Row>
+                    <Button
+                        onClick={() =>
+                            resetCourse(course.code, course.semesterId)
+                        }
+                        className="reset-course-btn"
+                    >
+                        Reset to Default
+                    </Button>
                 </Col>
-                <Button
-                    onClick={() => resetCourse(course.code, course.semesterId)}
-                    variant="primary"
-                    className="me-8"
-                >
-                    Reset to Default
-                </Button>
             </Col>
             <div></div>
         </>

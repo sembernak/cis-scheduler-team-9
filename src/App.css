@@ -65,3 +65,68 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.edit-sem-btn {
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(127, 163, 228);
+    padding: 10px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+}
+.edit-sem-btn:hover {
+    background-color: rgb(31, 96, 216);
+}
+.delete-sem-btn {
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+    padding: 10px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+}
+.delete-sem-btn:hover {
+    background-color: red;
+}
+.delete-allcourse-btn {
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+    padding: 10px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+}
+.delete-allcourse-btn:hover {
+    background-color: red;
+}
+.insert-course-btn {
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    border: 1px solid green;
+    padding: 10px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+}
+.insert-course-btn:hover {
+    background-color: green;
+}
+.reset-course-btn {
+    background-color: rgb(127, 163, 228);
+    text-align: center;
+}
