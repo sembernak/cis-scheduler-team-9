@@ -7,6 +7,7 @@ import { CourseView } from "./courseView";
 import { InsertCourse } from "./insertCourse";
 import { RecordControlsSemester } from "./recordControlsSemester";
 import { SemestorEditor } from "./semesterEditor";
+import { DragDropContext, Draggable } from "react-beautiful-dnd";
 //import { SemesterViewer } from "./semesterViewer";
 
 export function SemesterView({
@@ -30,6 +31,7 @@ export function SemesterView({
 }): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false); //whether or not the adding semester view is visible
     const [editing, setEditing] = useState<boolean>(false);
+
     //true means the addition screen is open
     function flipVisibility(): void {
         setVisible(!visible);
@@ -66,15 +68,27 @@ export function SemesterView({
                 </h3>
                 {newsemester.totalCredits} {" credits"}
                 {"                       "}
-                {newsemester.courses.map((course: Course) => (
-                    <div key={course.code}>
-                        <CourseView
-                            course={course}
-                            deleteCourse={deleteCourse}
-                            editCourse={editCourse}
-                            resetCourse={resetCourse}
-                        ></CourseView>
-                    </div>
+                {newsemester.courses.map((course: Course, index) => (
+                    <Draggable
+                        key={course.code}
+                        draggableId={course.code}
+                        index={index}
+                    >
+                        {(provided, snapshot) => (
+                            <div
+                                ref={provided.innerRef}
+                                {...provided.draggableProps}
+                                {...provided.dragHandleProps}
+                            >
+                                <CourseView
+                                    course={course}
+                                    deleteCourse={deleteCourse}
+                                    editCourse={editCourse}
+                                    resetCourse={resetCourse}
+                                ></CourseView>
+                            </div>
+                        )}
+                    </Draggable>
                 ))}
             </div>
             <div>
