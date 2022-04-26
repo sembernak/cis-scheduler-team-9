@@ -10,9 +10,9 @@ import { PlanViewer } from "./components/planViewer";
 import { Plan } from "./interfaces/plan";
 import { Semester } from "./interfaces/semester";
 import { CoursePool } from "./components/coursePool";
-import { Button, Container } from "react-bootstrap";
-import userEvent from "@testing-library/user-event";
-import { textSpanContainsPosition } from "typescript";
+import { Button /*, Container*/ } from "react-bootstrap";
+//import userEvent from "@testing-library/user-event";
+//import { textSpanContainsPosition } from "typescript";
 
 const COURSELIST = [
     //Complete list of every course in order of department (see catalog.json)
