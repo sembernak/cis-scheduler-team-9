@@ -1,3 +1,4 @@
+//import { hasSelectionSupport } from "@testing-library/user-event/dist/utils";
 import React, { useState } from "react";
 import { Button, Container } from "react-bootstrap";
 import { Course } from "../interfaces/course";
@@ -17,7 +18,8 @@ export function SemesterView({
     editCourse,
     editSemester,
     deleteAllCourses,
-    resetCourse
+    resetCourse,
+    addCourse
 }: {
     plan: Plan;
     semester: Semester;
@@ -27,9 +29,11 @@ export function SemesterView({
     editCourse: (code: string, newCourse: Course, semesterId: string) => void;
     editSemester: (id: string, newSemester: Semester) => void;
     resetCourse: (code: string, semesterId: string) => void;
+    addCourse: (code: string, newCourse: Course, semesterId: string) => void;
 }): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false); //whether or not the adding semester view is visible
     const [editing, setEditing] = useState<boolean>(false);
+
     //true means the addition screen is open
     function flipVisibility(): void {
         setVisible(!visible);
@@ -48,6 +52,52 @@ export function SemesterView({
         )
     };
 
+    const [, setDragOver] = React.useState(false);
+    const handleDragOverStart = () => setDragOver(true);
+    const handleDragOverEnd = () => setDragOver(false);
+
+    //console.log(dragOver); //keep getting lint error if I remove this line
+
+    const handleDragStart = (event: React.DragEvent<HTMLDivElement>) => {
+        event.dataTransfer.setData("text", event.currentTarget.id);
+    };
+
+    const enableDropping = (event: React.DragEvent<HTMLDivElement>) => {
+        event.preventDefault();
+        event.dataTransfer.dropEffect = "move";
+    };
+
+    const handleDrop = (event: React.DragEvent<HTMLDivElement>) => {
+        const id = event.dataTransfer.getData("text");
+        const courseInfo = id.split("&*");
+        const courseCode = courseInfo[0];
+        const courseTitle = courseInfo[1];
+        const courseDescription = courseInfo[2];
+        const courseCredits = courseInfo[3];
+        const courseSemesterId = courseInfo[4]; //original semester the course is from
+        const newSemesterId = event.currentTarget as Element; //semester where the course was dropped
+        console.log("new id:" + newSemesterId.id);
+        console.log("code:" + courseCode);
+        console.log("old id:" + courseSemesterId);
+
+        deleteCourse(courseCode, courseSemesterId);
+
+        const newCourse = {
+            code: courseCode,
+            title: courseTitle,
+            prereq: [],
+            description: courseDescription,
+            credits: courseCredits,
+            semesterId: newSemesterId.id
+        };
+
+        addCourse(courseCode, newCourse, newSemesterId.id);
+
+        console.log("Somebody dropped an element with id:" + id);
+        //const newSemesterId = event.target;
+        setDragOver(false);
+    };
+
     return editing ? (
         <>
             <SemestorEditor
@@ -59,7 +109,13 @@ export function SemesterView({
         </>
     ) : (
         <Container className="semester-view">
-            <div>
+            <div
+                onDragOver={enableDropping}
+                onDrop={handleDrop}
+                onDragEnter={handleDragOverStart}
+                onDragLeave={handleDragOverEnd}
+                id={newsemester.id}
+            >
                 <h3>
                     {newsemester.season + " - " + newsemester.year}
                     <br></br>
@@ -67,7 +123,22 @@ export function SemesterView({
                 {newsemester.totalCredits} {" credits"}
                 {"                       "}
                 {newsemester.courses.map((course: Course) => (
-                    <div key={course.code}>
+                    <div
+                        key={course.code}
+                        draggable={true}
+                        onDragStart={handleDragStart}
+                        id={
+                            course.code +
+                            "&*" +
+                            course.title +
+                            "&*" +
+                            course.description +
+                            "&*" +
+                            course.credits +
+                            "&*" +
+                            course.semesterId
+                        }
+                    >
                         <CourseView
                             course={course}
                             deleteCourse={deleteCourse}

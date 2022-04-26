@@ -8,7 +8,11 @@ export function RecordControlsCourse({
 }): JSX.Element {
     return (
         <div>
-            <Button className="float-right" size="sm" onClick={changeEditing}>
+            <Button
+                className="edit-course-btn"
+                size="sm"
+                onClick={changeEditing}
+            >
                 Edit
             </Button>
         </div>

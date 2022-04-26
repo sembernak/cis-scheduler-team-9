@@ -28,11 +28,7 @@ export function SemestorEditor({
     }
     function save() {
         //new empty semester updated when user saves
-        semester.id =
-            semester.season +
-            String(semester.year) +
-            semester.id +
-            semester.planId;
+        semester.id = semester.season + String(semester.year) + semester.planId;
         semester.courses.map(
             (course: Course) => (course.semesterId = semester.id)
         );

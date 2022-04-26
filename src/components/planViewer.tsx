@@ -21,7 +21,8 @@ export function PlanViewer({
     addPlan,
     deleteAllCourses,
     deleteAllSemesters,
-    resetCourse
+    resetCourse,
+    addCourse
 }: {
     planList: Plan[];
     select: (title: string) => void;
@@ -36,6 +37,7 @@ export function PlanViewer({
     deleteAllCourses: (semesterId: string) => void;
     deleteAllSemesters: (planid: string) => void;
     resetCourse: (code: string, semesterId: string) => void;
+    addCourse: (code: string, newCourse: Course, semesterId: string) => void;
 }): JSX.Element {
     if (planList.length < 1) {
         planList.push({ title: "New Plan", semesters: [], id: "New Plan" });
@@ -51,7 +53,7 @@ export function PlanViewer({
 
     return (
         <div>
-            <p>Select a plan from below to get started:</p>
+            <>Select a plan from below to get started:</>
             <Form.Group controlId="planDrop">
                 <Form.Select
                     data-testid={"PlanSelect"}
@@ -65,7 +67,7 @@ export function PlanViewer({
                     ))}
                 </Form.Select>
             </Form.Group>
-            <p>Or create a new plan here:</p>
+            <>Or create a new plan here:</>
             <Button
                 data-testid={"NewPlan"}
                 onClick={flipInsert}
@@ -94,6 +96,7 @@ export function PlanViewer({
                     editSemester={editSemester}
                     deleteAllSemesters={deleteAllSemesters}
                     resetCourse={resetCourse}
+                    addCourse={addCourse}
                 ></PlanView>
             ) : (
                 planList.map((plan: Plan) => (
@@ -113,6 +116,7 @@ export function PlanViewer({
                             editSemester={editSemester}
                             deleteAllSemesters={deleteAllSemesters}
                             resetCourse={resetCourse}
+                            addCourse={addCourse}
                         ></PlanView>
                     </div>
                 ))

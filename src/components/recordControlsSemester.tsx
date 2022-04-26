@@ -7,10 +7,8 @@ export function RecordControlsSemester({
     changeEditing: () => void;
 }): JSX.Element {
     return (
-        <div>
-            <Button className="float-right" size="sm" onClick={changeEditing}>
-                Edit Semester
-            </Button>
-        </div>
+        <Button className="edit-sem-btn" size="sm" onClick={changeEditing}>
+            Edit Semester
+        </Button>
     );
 }

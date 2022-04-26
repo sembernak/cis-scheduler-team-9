@@ -1,15 +1,18 @@
+/* eslint-disable indent */
 import React, { useState } from "react";
 import unpackJson from "./helper_functions/unpackJSON";
 import catalog from "./catalog.json";
 import "./App.css";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// need to remove this later!!!!!!!!
 import { Course } from "./interfaces/course";
 import { PlanViewer } from "./components/planViewer";
 import { Plan } from "./interfaces/plan";
 import { Semester } from "./interfaces/semester";
 import { CoursePool } from "./components/coursePool";
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import userEvent from "@testing-library/user-event";
+import { textSpanContainsPosition } from "typescript";
 
 const COURSELIST = [
     //Complete list of every course in order of department (see catalog.json)
@@ -264,7 +267,44 @@ function App(): JSX.Element {
             (course: Course) => course.code === code
         );
         if (defaultCourse.length > 0) {
-            editCourse(code, defaultCourse[0], semesterId);
+            editCourse(
+                code,
+                { ...defaultCourse[0], semesterId: semesterId },
+                semesterId
+            );
+        }
+    }
+
+    function addCourse(code: string, newCourse: Course, semesterId: string) {
+        setPlans(
+            plans.map(
+                (newPlan: Plan): Plan => ({
+                    ...newPlan,
+                    semesters: newPlan.semesters.map(
+                        (semester: Semester): Semester =>
+                            semester.id === semesterId &&
+                            !contains(code, semester)
+                                ? {
+                                      ...semester,
+                                      courses: [...semester.courses, newCourse]
+                                  }
+                                : semester
+                    )
+                })
+            )
+        );
+    }
+
+    function contains(code: string, semester: Semester) {
+        //helper for addCourse()
+        const arr = semester.courses.filter(
+            (course: Course) => course.code === code
+        );
+        if (arr.length > 0) {
+            //the course is not already in the semester
+            return true;
+        } else {
+            return false;
         }
     }
 
@@ -296,6 +336,7 @@ function App(): JSX.Element {
                         editSemester={editSemester}
                         addPlan={addPlan}
                         resetCourse={resetCourse}
+                        addCourse={addCourse}
                     ></PlanViewer>
                 </p>
             </div>
