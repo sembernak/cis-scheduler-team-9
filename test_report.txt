@@ -11,7 +11,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:103:31)
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -32,7 +32,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:103:31)
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -44,10 +44,10 @@
 
 FAIL src/App.test.tsx
   Make a new plan
-    ✕ Clicking New Plan gives a form to enter a title (364 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (142 ms)
-    ✕ Can set new plan title (151 ms)
-    ✕ Insert Semester works (131 ms)
+    ✕ Clicking New Plan gives a form to enter a title (380 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (154 ms)
+    ✕ Can set new plan title (149 ms)
+    ✕ Insert Semester works (123 ms)
 
   ● Make a new plan › Clicking New Plan gives a form to enter a title
 
@@ -568,9 +568,9 @@ FAIL src/App.test.tsx
 -----------------------------|---------|----------|---------|---------|------------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s            
 -----------------------------|---------|----------|---------|---------|------------------------------
-All files                    |   31.44 |       25 |    18.1 |      32 |                              
- src                         |   31.66 |        0 |    2.94 |    32.2 |                              
-  App.tsx                    |   31.66 |        0 |    2.94 |    32.2 | 107-264                      
+All files                    |      30 |       25 |    17.5 |    30.5 |                              
+ src                         |   26.76 |        0 |    2.63 |   27.14 |                              
+  App.tsx                    |   26.76 |        0 |    2.63 |   27.14 | 108-307                      
  src/components              |   29.69 |     42.3 |   23.45 |   30.24 |                              
   courseEditor.tsx           |       0 |      100 |       0 |       0 | 19-106                       
   coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 51-73,106-125                
@@ -597,5 +597,5 @@ All files                    |   31.44 |       25 |    18.1 |      32 |
 Test Suites: 1 failed, 1 total
 Tests:       3 failed, 1 passed, 4 total
 Snapshots:   0 total
-Time:        4.844 s
+Time:        4.879 s
 Ran all test suites.
