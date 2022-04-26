@@ -1,5 +1,6 @@
+//import { hasSelectionSupport } from "@testing-library/user-event/dist/utils";
 import React, { useState } from "react";
-import { Button, Container, Col } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import { Course } from "../interfaces/course";
 import { Plan } from "../interfaces/plan";
 import { Semester } from "../interfaces/semester";
@@ -17,7 +18,8 @@ export function SemesterView({
     editCourse,
     editSemester,
     deleteAllCourses,
-    resetCourse
+    resetCourse,
+    addCourse
 }: {
     plan: Plan;
     semester: Semester;
@@ -27,6 +29,7 @@ export function SemesterView({
     editCourse: (code: string, newCourse: Course, semesterId: string) => void;
     editSemester: (id: string, newSemester: Semester) => void;
     resetCourse: (code: string, semesterId: string) => void;
+    addCourse: (code: string, newCourse: Course, semesterId: string) => void;
 }): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false); //whether or not the adding semester view is visible
     const [editing, setEditing] = useState<boolean>(false);
@@ -49,11 +52,11 @@ export function SemesterView({
         )
     };
 
-    const [dragOver, setDragOver] = React.useState(false);
+    const [, setDragOver] = React.useState(false);
     const handleDragOverStart = () => setDragOver(true);
     const handleDragOverEnd = () => setDragOver(false);
 
-    console.log(dragOver);
+    //console.log(dragOver); //keep getting lint error if I remove this line
 
     const handleDragStart = (event: React.DragEvent<HTMLDivElement>) => {
         event.dataTransfer.setData("text", event.currentTarget.id);
@@ -66,15 +69,31 @@ export function SemesterView({
 
     const handleDrop = (event: React.DragEvent<HTMLDivElement>) => {
         const id = event.dataTransfer.getData("text");
-        const courseId = id.substring(0, id.indexOf("&"));
-        const semesterId = id.substring(id.indexOf("&") + 1);
-        deleteCourse(courseId, semesterId);
-        console.log(courseId);
-        console.log(semesterId);
+        const courseInfo = id.split("&*");
+        const courseCode = courseInfo[0];
+        const courseTitle = courseInfo[1];
+        const courseDescription = courseInfo[2];
+        const courseCredits = courseInfo[3];
+        const courseSemesterId = courseInfo[4]; //original semester the course is from
+        const newSemesterId = event.currentTarget as Element; //semester where the course was dropped
+        console.log("new id:" + newSemesterId.id);
+        console.log("code:" + courseCode);
+        console.log("old id:" + courseSemesterId);
+
+        const newCourse = {
+            code: courseCode,
+            title: courseTitle,
+            prereq: [],
+            description: courseDescription,
+            credits: courseCredits,
+            semesterId: newSemesterId.id
+        };
+
+        deleteCourse(courseCode, courseSemesterId);
+        addCourse(courseCode, newCourse, newSemesterId.id);
+
         console.log("Somebody dropped an element with id:" + id);
-        const newSemesterId = event.currentTarget as Element;
         //const newSemesterId = event.target;
-        console.log(newSemesterId.id);
         setDragOver(false);
     };
 
@@ -107,7 +126,17 @@ export function SemesterView({
                         key={course.code}
                         draggable={true}
                         onDragStart={handleDragStart}
-                        id={course.code + "&" + course.semesterId}
+                        id={
+                            course.code +
+                            "&*" +
+                            course.title +
+                            "&*" +
+                            course.description +
+                            "&*" +
+                            course.credits +
+                            "&*" +
+                            course.semesterId
+                        }
                     >
                         <CourseView
                             course={course}
@@ -119,6 +148,27 @@ export function SemesterView({
                 ))}
             </div>
             <div>
+                <Button
+                    onClick={() => deleteSemester(newsemester.id)}
+                    variant="danger"
+                    className="me-8"
+                >
+                    Delete semester
+                </Button>
+                <Button
+                    onClick={flipVisibility}
+                    variant="success"
+                    className="me-8"
+                >
+                    Insert Course
+                </Button>
+                <Button
+                    onClick={() => deleteAllCourses(String(semester.id))}
+                    variant="danger"
+                    className="me-8"
+                >
+                    Delete All Courses
+                </Button>
                 {visible && (
                     <InsertCourse
                         semester={newsemester}
@@ -128,32 +178,9 @@ export function SemesterView({
                         editSemester={editSemester}
                     ></InsertCourse>
                 )}
-                <Col>
-                    <Button
-                        onClick={flipVisibility}
-                        variant="success"
-                        className="insert-course-btn"
-                    >
-                        Insert Course
-                    </Button>
-                    <Button
-                        onClick={() => deleteAllCourses(String(semester.id))}
-                        variant="danger"
-                        className="delete-allcourse-btn"
-                    >
-                        Delete All Courses
-                    </Button>
-                    <RecordControlsSemester
-                        changeEditing={changeEditing}
-                    ></RecordControlsSemester>
-                    <Button
-                        onClick={() => deleteSemester(newsemester.id)}
-                        variant="danger"
-                        className="delete-sem-btn"
-                    >
-                        Delete Semester
-                    </Button>
-                </Col>
+                <RecordControlsSemester
+                    changeEditing={changeEditing}
+                ></RecordControlsSemester>
             </div>
         </Container>
     );
