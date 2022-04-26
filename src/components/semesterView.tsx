@@ -80,6 +80,8 @@ export function SemesterView({
         console.log("code:" + courseCode);
         console.log("old id:" + courseSemesterId);
 
+        deleteCourse(courseCode, courseSemesterId);
+
         const newCourse = {
             code: courseCode,
             title: courseTitle,
@@ -89,7 +91,6 @@ export function SemesterView({
             semesterId: newSemesterId.id
         };
 
-        deleteCourse(courseCode, courseSemesterId);
         addCourse(courseCode, newCourse, newSemesterId.id);
 
         console.log("Somebody dropped an element with id:" + id);

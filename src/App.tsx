@@ -224,7 +224,11 @@ function App(): JSX.Element {
             (course: Course) => course.code === code
         );
         if (defaultCourse.length > 0) {
-            editCourse(code, defaultCourse[0], semesterId);
+            editCourse(
+                code,
+                { ...defaultCourse[0], semesterId: semesterId },
+                semesterId
+            );
         }
     }
 
