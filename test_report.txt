@@ -3,24 +3,6 @@
 > react-scripts test "--coverage"
 
   console.error
-    Warning: validateDOMNesting(...): <p> cannot appear as a descendant of <p>.
-        at p
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:99:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10083:7)
-      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
-      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
-      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
-      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
-
-  console.error
     Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
         at div
         at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
@@ -29,7 +11,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:99:31)
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:103:31)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -50,7 +32,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:99:31)
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:103:31)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -60,147 +42,12 @@
       at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
-  console.log
-    false
-
-      at SemesterView (src/components/semesterView.tsx:56:13)
-
 FAIL src/App.test.tsx
   Make a new plan
-    ✕ Clicking New Plan gives a form to enter a title (364 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (158 ms)
-    ✕ Can set new plan title (156 ms)
-    ✕ Insert Semester works (133 ms)
+    ✕ Clicking New Plan gives a form to enter a title (266 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (99 ms)
+    ✕ Can set new plan title (99 ms)
+    ✕ Insert Semester works (81 ms)
 
   ● Make a new plan › Clicking New Plan gives a form to enter a title
 
@@ -226,9 +73,7 @@ FAIL src/App.test.tsx
             [36m<br />[39m
             [36m<p>[39m
               [36m<div>[39m
-                [36m<p>[39m
-                  [0mSelect a plan from below to get started:[0m
-                [36m</p>[39m
+                [0mSelect a plan from below to get started:[0m
                 [36m<div>[39m
                   [36m<select[39m
                     [33mclass[39m=[32m"form-select"[39m
@@ -247,9 +92,7 @@ FAIL src/App.test.tsx
                     [36m</option>[39m
                   [36m</select>[39m
                 [36m</div>[39m
-                [36m<p>[39m
-                  [0mOr create a new plan here:[0m
-                [36m</p>[39m
+                [0mOr create a new plan here:[0m
                 [36m<button[39m
                   [33mclass[39m=[32m"me-8 btn btn-success"[39m
                   [33mdata-testid[39m=[32m"NewPlan"[39m
@@ -336,7 +179,7 @@ FAIL src/App.test.tsx
                                 [0m                       [0m
                                 [36m<div[39m
                                   [33mdraggable[39m=[32m"true"[39m
-                                  [33mid[39m=[32m"ACCT 200&Spring2020Plan 1"[39m
+                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1"[39m
                                 [36m>[39m
                                   [36m<div[39m
                                     [33mclass[39m=[32m"col"[39m
@@ -358,12 +201,7 @@ FAIL src/App.test.tsx
                                     [0m[0m
                                     [36m<div[39m
                                       [33mclass[39m=[32m"col"[39m
-                                    [36m>[39m
-                                      [36m<div[39m
-                                        [33mclass[39m=[32m"row"[39m
-                                      [36m>[39m
-                                        [36m<div>[39m
-                ...
+                                    [36...
 
       16 |         createNew.click();
       17 |         expect(screen.getByLabelText("Plan Title:")).toBeInTheDocument();
@@ -407,9 +245,7 @@ FAIL src/App.test.tsx
             [36m<br />[39m
             [36m<p>[39m
               [36m<div>[39m
-                [36m<p>[39m
-                  [0mSelect a plan from below to get started:[0m
-                [36m</p>[39m
+                [0mSelect a plan from below to get started:[0m
                 [36m<div>[39m
                   [36m<select[39m
                     [33mclass[39m=[32m"form-select"[39m
@@ -428,9 +264,7 @@ FAIL src/App.test.tsx
                     [36m</option>[39m
                   [36m</select>[39m
                 [36m</div>[39m
-                [36m<p>[39m
-                  [0mOr create a new plan here:[0m
-                [36m</p>[39m
+                [0mOr create a new plan here:[0m
                 [36m<button[39m
                   [33mclass[39m=[32m"me-8 btn btn-success"[39m
                   [33mdata-testid[39m=[32m"NewPlan"[39m
@@ -517,7 +351,7 @@ FAIL src/App.test.tsx
                                 [0m                       [0m
                                 [36m<div[39m
                                   [33mdraggable[39m=[32m"true"[39m
-                                  [33mid[39m=[32m"ACCT 200&Spring2020Plan 1"[39m
+                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1"[39m
                                 [36m>[39m
                                   [36m<div[39m
                                     [33mclass[39m=[32m"col"[39m
@@ -539,12 +373,7 @@ FAIL src/App.test.tsx
                                     [0m[0m
                                     [36m<div[39m
                                       [33mclass[39m=[32m"col"[39m
-                                    [36m>[39m
-                                      [36m<div[39m
-                                        [33mclass[39m=[32m"row"[39m
-                                      [36m>[39m
-                                        [36m<div>[39m
-                ...
+                                    [36...
 
       32 |         createNew.click();
       33 |         expect(screen.getByLabelText("Plan Title:")).toBeInTheDocument();
@@ -588,9 +417,7 @@ FAIL src/App.test.tsx
             [36m<br />[39m
             [36m<p>[39m
               [36m<div>[39m
-                [36m<p>[39m
-                  [0mSelect a plan from below to get started:[0m
-                [36m</p>[39m
+                [0mSelect a plan from below to get started:[0m
                 [36m<div>[39m
                   [36m<select[39m
                     [33mclass[39m=[32m"form-select"[39m
@@ -609,9 +436,7 @@ FAIL src/App.test.tsx
                     [36m</option>[39m
                   [36m</select>[39m
                 [36m</div>[39m
-                [36m<p>[39m
-                  [0mOr create a new plan here:[0m
-                [36m</p>[39m
+                [0mOr create a new plan here:[0m
                 [36m<button[39m
                   [33mclass[39m=[32m"me-8 btn btn-success"[39m
                   [33mdata-testid[39m=[32m"NewPlan"[39m
@@ -698,7 +523,7 @@ FAIL src/App.test.tsx
                                 [0m                       [0m
                                 [36m<div[39m
                                   [33mdraggable[39m=[32m"true"[39m
-                                  [33mid[39m=[32m"ACCT 200&Spring2020Plan 1"[39m
+                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1"[39m
                                 [36m>[39m
                                   [36m<div[39m
                                     [33mclass[39m=[32m"col"[39m
@@ -720,12 +545,7 @@ FAIL src/App.test.tsx
                                     [0m[0m
                                     [36m<div[39m
                                       [33mclass[39m=[32m"col"[39m
-                                    [36m>[39m
-                                      [36m<div[39m
-                                        [33mclass[39m=[32m"row"[39m
-                                      [36m>[39m
-                                        [36m<div>[39m
-                ...
+                                    [36...
 
       47 |         const createNew = screen.getByTestId("NewPlan");
       48 |         createNew.click();
@@ -748,25 +568,25 @@ FAIL src/App.test.tsx
 -----------------------------|---------|----------|---------|---------|------------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s            
 -----------------------------|---------|----------|---------|---------|------------------------------
-All files                    |   33.79 |    28.94 |   18.91 |   34.43 |                              
- src                         |   36.53 |        0 |    3.44 |   37.25 |                              
-  App.tsx                    |   36.53 |        0 |    3.44 |   37.25 | 103-223                      
- src/components              |   31.25 |     42.3 |   23.45 |   31.84 |                              
+All files                    |   31.44 |       25 |    18.1 |      32 |                              
+ src                         |   31.66 |        0 |    2.94 |    32.2 |                              
+  App.tsx                    |   31.66 |        0 |    2.94 |    32.2 | 107-260                      
+ src/components              |   29.69 |     42.3 |   23.45 |   30.24 |                              
   courseEditor.tsx           |       0 |      100 |       0 |       0 | 19-106                       
   coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 51-73,106-125                
   coursePoolView.tsx         |       0 |        0 |       0 |       0 | 17-24                        
   courseView.tsx             |      60 |       75 |   33.33 |      60 | 22,53                        
   insertCourse.tsx           |       0 |      100 |       0 |       0 | 19-120                       
   insertPlan.tsx             |      50 |      100 |      50 |      50 | 30-36,53                     
-  insertSemester.tsx         |       0 |      100 |       0 |       0 | 20-90                        
+  insertSemester.tsx         |       0 |      100 |       0 |       0 | 20-87                        
   planEditor.tsx             |       0 |      100 |       0 |       0 | 19-56                        
-  planView.tsx               |      50 |       50 |   33.33 |      50 | 38-42,75-93                  
-  planViewer.tsx             |      75 |    66.66 |      80 |      75 | 41,49                        
+  planView.tsx               |      50 |       50 |   33.33 |      50 | 40-44,78-96                  
+  planViewer.tsx             |      75 |    66.66 |      80 |      75 | 43,51                        
   recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                              
   recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                            
   recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                              
-  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 21-77                        
-  semesterView.tsx           |   40.62 |       50 |      25 |   43.33 | 36-40,59,63-64,68-78,140-150 
+  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 21-73                        
+  semesterView.tsx           |   32.43 |       50 |      25 |   34.28 | 39-43,62,66-67,71-97,152-166 
  src/helper_functions        |     100 |      100 |     100 |     100 |                              
   unpackJSON.tsx             |     100 |      100 |     100 |     100 |                              
  src/interfaces              |       0 |        0 |       0 |       0 |                              
@@ -777,5 +597,5 @@ All files                    |   33.79 |    28.94 |   18.91 |   34.43 |
 Test Suites: 1 failed, 1 total
 Tests:       3 failed, 1 passed, 4 total
 Snapshots:   0 total
-Time:        4.698 s
+Time:        3.661 s
 Ran all test suites.
