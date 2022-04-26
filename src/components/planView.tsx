@@ -30,7 +30,12 @@ export function PlanView({
     deleteAllCourses: (semesterId: string) => void;
     deleteAllSemesters: (planid: string) => void;
     resetCourse: (code: string, semesterId: string) => void;
-    addCourse: (code: string, newCourse: Course, semesterId: string) => void;
+    addCourse: (
+        code: string,
+        newCourse: Course,
+        semesterId: string,
+        oldSemesterId: string
+    ) => void;
 }): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false); //whether or not the adding semester view is visible
     //true means the addition screen is open

@@ -37,7 +37,12 @@ export function PlanViewer({
     deleteAllCourses: (semesterId: string) => void;
     deleteAllSemesters: (planid: string) => void;
     resetCourse: (code: string, semesterId: string) => void;
-    addCourse: (code: string, newCourse: Course, semesterId: string) => void;
+    addCourse: (
+        code: string,
+        newCourse: Course,
+        semesterId: string,
+        oldSemesterId: string
+    ) => void;
 }): JSX.Element {
     if (planList.length < 1) {
         planList.push({ title: "New Plan", semesters: [], id: "New Plan" });
