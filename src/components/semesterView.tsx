@@ -29,7 +29,12 @@ export function SemesterView({
     editCourse: (code: string, newCourse: Course, semesterId: string) => void;
     editSemester: (id: string, newSemester: Semester) => void;
     resetCourse: (code: string, semesterId: string) => void;
-    addCourse: (code: string, newCourse: Course, semesterId: string) => void;
+    addCourse: (
+        code: string,
+        newCourse: Course,
+        semesterId: string,
+        oldSemesterId: string
+    ) => void;
 }): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false); //whether or not the adding semester view is visible
     const [editing, setEditing] = useState<boolean>(false);
@@ -80,7 +85,7 @@ export function SemesterView({
         console.log("code:" + courseCode);
         console.log("old id:" + courseSemesterId);
 
-        deleteCourse(courseCode, courseSemesterId);
+        //deleteCourse(courseCode, courseSemesterId);
 
         const newCourse = {
             code: courseCode,
@@ -91,7 +96,7 @@ export function SemesterView({
             semesterId: newSemesterId.id
         };
 
-        addCourse(courseCode, newCourse, newSemesterId.id);
+        addCourse(courseCode, newCourse, newSemesterId.id, courseSemesterId);
 
         console.log("Somebody dropped an element with id:" + id);
         //const newSemesterId = event.target;

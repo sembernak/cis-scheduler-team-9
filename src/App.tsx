@@ -275,7 +275,30 @@ function App(): JSX.Element {
         }
     }
 
-    function addCourse(code: string, newCourse: Course, semesterId: string) {
+    function addCourse(
+        code: string,
+        newCourse: Course,
+        semesterId: string,
+        oldSemesterId: string
+    ) {
+        const currentPlans = [...plans];
+        const newPlans = plans.map(
+            (newPlan: Plan): Plan => ({
+                ...newPlan,
+                semesters: newPlan.semesters.map(
+                    (semester1: Semester): Semester => ({
+                        ...semester1,
+                        courses: semester1.courses.filter(
+                            (course1: Course): boolean =>
+                                course1.code === code &&
+                                course1.semesterId === semesterId,
+                            deleteCourse(code, oldSemesterId)
+                        )
+                    })
+                )
+            })
+        );
+        console.log(JSON.stringify(newPlans));
         setPlans(
             plans.map(
                 (newPlan: Plan): Plan => ({
@@ -293,6 +316,9 @@ function App(): JSX.Element {
                 })
             )
         );
+        /*if (currentPlans !== plans) {
+            deleteCourse(code, oldSemesterId);
+        }*/
     }
 
     function contains(code: string, semester: Semester) {
