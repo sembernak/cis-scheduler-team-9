@@ -7,7 +7,6 @@ import { CourseView } from "./courseView";
 import { InsertCourse } from "./insertCourse";
 import { RecordControlsSemester } from "./recordControlsSemester";
 import { SemestorEditor } from "./semesterEditor";
-import { DragDropContext, Droppable } from "react-beautiful-dnd";
 //import { SemesterViewer } from "./semesterViewer";
 
 export function SemesterView({
@@ -54,6 +53,8 @@ export function SemesterView({
     const handleDragOverStart = () => setDragOver(true);
     const handleDragOverEnd = () => setDragOver(false);
 
+    console.log(dragOver);
+
     const handleDragStart = (event: React.DragEvent<HTMLDivElement>) => {
         event.dataTransfer.setData("text", event.currentTarget.id);
     };
@@ -71,6 +72,9 @@ export function SemesterView({
         console.log(courseId);
         console.log(semesterId);
         console.log("Somebody dropped an element with id:" + id);
+        const newSemesterId = event.currentTarget as Element;
+        //const newSemesterId = event.target;
+        console.log(newSemesterId.id);
         setDragOver(false);
     };
 
@@ -90,6 +94,7 @@ export function SemesterView({
                 onDrop={handleDrop}
                 onDragEnter={handleDragOverStart}
                 onDragLeave={handleDragOverEnd}
+                id={newsemester.id}
             >
                 <h3>
                     {newsemester.season + " - " + newsemester.year}

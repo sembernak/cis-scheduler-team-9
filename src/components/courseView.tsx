@@ -33,7 +33,7 @@ export function CourseView({
         </>
     ) : (
         <>
-            <Col>
+            <Col id={course.semesterId}>
                 <h3>
                     {course.code} {" - "} {course.title}
                 </h3>
