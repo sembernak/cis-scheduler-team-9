@@ -41,10 +41,7 @@ export function InsertSemester({
     function save() {
         //new empty semester updated when user saves
         newSemester.id =
-            newSemester.season +
-            String(newSemester.year) +
-            newSemester.id +
-            newSemester.planId;
+            newSemester.season + String(newSemester.year) + newSemester.planId;
         editSemester(newSemester.id, {
             ...newSemester,
             season: season,
