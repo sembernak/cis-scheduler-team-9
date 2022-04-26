@@ -60,12 +60,147 @@
       at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
+  console.log
+    false
+
+      at SemesterView (src/components/semesterView.tsx:56:13)
+
 FAIL src/App.test.tsx
   Make a new plan
-    ✕ Clicking New Plan gives a form to enter a title (260 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (95 ms)
-    ✕ Can set new plan title (97 ms)
-    ✕ Insert Semester works (78 ms)
+    ✕ Clicking New Plan gives a form to enter a title (364 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (158 ms)
+    ✕ Can set new plan title (156 ms)
+    ✕ Insert Semester works (133 ms)
 
   ● Make a new plan › Clicking New Plan gives a form to enter a title
 
@@ -188,7 +323,9 @@ FAIL src/App.test.tsx
                             [36m<div[39m
                               [33mclass[39m=[32m"semester-view container"[39m
                             [36m>[39m
-                              [36m<div>[39m
+                              [36m<div[39m
+                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                              [36m>[39m
                                 [36m<h3>[39m
                                   [0mSpring - 2020[0m
                                   [36m<br />[39m
@@ -197,9 +334,13 @@ FAIL src/App.test.tsx
                                 [0m [0m
                                 [0m credits[0m
                                 [0m                       [0m
-                                [36m<div>[39m
+                                [36m<div[39m
+                                  [33mdraggable[39m=[32m"true"[39m
+                                  [33mid[39m=[32m"ACCT 200&Spring2020Plan 1"[39m
+                                [36m>[39m
                                   [36m<div[39m
                                     [33mclass[39m=[32m"col"[39m
+                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
                                   [36m>[39m
                                     [36m<h3>[39m
                                       [0mACCT 200[0m
@@ -222,12 +363,7 @@ FAIL src/App.test.tsx
                                         [33mclass[39m=[32m"row"[39m
                                       [36m>[39m
                                         [36m<div>[39m
-                                          [36m<button[39m
-                                            [33mclass[39m=[32m"edit-course-btn btn btn-primary btn-sm"[39m
-                                            [33mtype[39m=[32m"button"[39m
-                                          [36m>[39m
-                                            [0mEdit[0m
-                                          [...
+                ...
 
       16 |         createNew.click();
       17 |         expect(screen.getByLabelText("Plan Title:")).toBeInTheDocument();
@@ -368,7 +504,9 @@ FAIL src/App.test.tsx
                             [36m<div[39m
                               [33mclass[39m=[32m"semester-view container"[39m
                             [36m>[39m
-                              [36m<div>[39m
+                              [36m<div[39m
+                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                              [36m>[39m
                                 [36m<h3>[39m
                                   [0mSpring - 2020[0m
                                   [36m<br />[39m
@@ -377,9 +515,13 @@ FAIL src/App.test.tsx
                                 [0m [0m
                                 [0m credits[0m
                                 [0m                       [0m
-                                [36m<div>[39m
+                                [36m<div[39m
+                                  [33mdraggable[39m=[32m"true"[39m
+                                  [33mid[39m=[32m"ACCT 200&Spring2020Plan 1"[39m
+                                [36m>[39m
                                   [36m<div[39m
                                     [33mclass[39m=[32m"col"[39m
+                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
                                   [36m>[39m
                                     [36m<h3>[39m
                                       [0mACCT 200[0m
@@ -402,12 +544,7 @@ FAIL src/App.test.tsx
                                         [33mclass[39m=[32m"row"[39m
                                       [36m>[39m
                                         [36m<div>[39m
-                                          [36m<button[39m
-                                            [33mclass[39m=[32m"edit-course-btn btn btn-primary btn-sm"[39m
-                                            [33mtype[39m=[32m"button"[39m
-                                          [36m>[39m
-                                            [0mEdit[0m
-                                          [...
+                ...
 
       32 |         createNew.click();
       33 |         expect(screen.getByLabelText("Plan Title:")).toBeInTheDocument();
@@ -548,7 +685,9 @@ FAIL src/App.test.tsx
                             [36m<div[39m
                               [33mclass[39m=[32m"semester-view container"[39m
                             [36m>[39m
-                              [36m<div>[39m
+                              [36m<div[39m
+                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                              [36m>[39m
                                 [36m<h3>[39m
                                   [0mSpring - 2020[0m
                                   [36m<br />[39m
@@ -557,9 +696,13 @@ FAIL src/App.test.tsx
                                 [0m [0m
                                 [0m credits[0m
                                 [0m                       [0m
-                                [36m<div>[39m
+                                [36m<div[39m
+                                  [33mdraggable[39m=[32m"true"[39m
+                                  [33mid[39m=[32m"ACCT 200&Spring2020Plan 1"[39m
+                                [36m>[39m
                                   [36m<div[39m
                                     [33mclass[39m=[32m"col"[39m
+                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
                                   [36m>[39m
                                     [36m<h3>[39m
                                       [0mACCT 200[0m
@@ -582,12 +725,7 @@ FAIL src/App.test.tsx
                                         [33mclass[39m=[32m"row"[39m
                                       [36m>[39m
                                         [36m<div>[39m
-                                          [36m<button[39m
-                                            [33mclass[39m=[32m"edit-course-btn btn btn-primary btn-sm"[39m
-                                            [33mtype[39m=[32m"button"[39m
-                                          [36m>[39m
-                                            [0mEdit[0m
-                                          [...
+                ...
 
       47 |         const createNew = screen.getByTestId("NewPlan");
       48 |         createNew.click();
@@ -607,37 +745,37 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
------------------------------|---------|----------|---------|---------|-------------------
-File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
------------------------------|---------|----------|---------|---------|-------------------
-All files                    |   34.02 |    28.94 |   19.81 |   34.37 |                   
- src                         |   36.53 |        0 |    3.44 |   37.25 |                   
-  App.tsx                    |   36.53 |        0 |    3.44 |   37.25 | 103-223           
- src/components              |   31.15 |     42.3 |      25 |   31.38 |                   
-  courseEditor.tsx           |       0 |      100 |       0 |       0 | 19-106            
-  coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 51-73,106-125     
-  coursePoolView.tsx         |       0 |        0 |       0 |       0 | 17-24             
-  courseView.tsx             |      60 |       75 |   33.33 |      60 | 22,53             
-  insertCourse.tsx           |       0 |      100 |       0 |       0 | 19-120            
-  insertPlan.tsx             |      50 |      100 |      50 |      50 | 30-36,53          
-  insertSemester.tsx         |       0 |      100 |       0 |       0 | 20-90             
-  planEditor.tsx             |       0 |      100 |       0 |       0 | 19-56             
-  planView.tsx               |      50 |       50 |   33.33 |      50 | 38-42,75-93       
-  planViewer.tsx             |      75 |    66.66 |      80 |      75 | 41,49             
-  recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                   
-  recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                 
-  recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                   
-  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 21-77             
-  semesterView.tsx           |      60 |       50 |   42.85 |      60 | 35-39,99-109      
- src/helper_functions        |     100 |      100 |     100 |     100 |                   
-  unpackJSON.tsx             |     100 |      100 |     100 |     100 |                   
- src/interfaces              |       0 |        0 |       0 |       0 |                   
-  course.ts                  |       0 |        0 |       0 |       0 |                   
-  plan.ts                    |       0 |        0 |       0 |       0 |                   
-  semester.ts                |       0 |        0 |       0 |       0 |                   
------------------------------|---------|----------|---------|---------|-------------------
+-----------------------------|---------|----------|---------|---------|------------------------------
+File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s            
+-----------------------------|---------|----------|---------|---------|------------------------------
+All files                    |   33.79 |    28.94 |   18.91 |   34.43 |                              
+ src                         |   36.53 |        0 |    3.44 |   37.25 |                              
+  App.tsx                    |   36.53 |        0 |    3.44 |   37.25 | 103-223                      
+ src/components              |   31.25 |     42.3 |   23.45 |   31.84 |                              
+  courseEditor.tsx           |       0 |      100 |       0 |       0 | 19-106                       
+  coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 51-73,106-125                
+  coursePoolView.tsx         |       0 |        0 |       0 |       0 | 17-24                        
+  courseView.tsx             |      60 |       75 |   33.33 |      60 | 22,53                        
+  insertCourse.tsx           |       0 |      100 |       0 |       0 | 19-120                       
+  insertPlan.tsx             |      50 |      100 |      50 |      50 | 30-36,53                     
+  insertSemester.tsx         |       0 |      100 |       0 |       0 | 20-90                        
+  planEditor.tsx             |       0 |      100 |       0 |       0 | 19-56                        
+  planView.tsx               |      50 |       50 |   33.33 |      50 | 38-42,75-93                  
+  planViewer.tsx             |      75 |    66.66 |      80 |      75 | 41,49                        
+  recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                              
+  recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                            
+  recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                              
+  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 21-77                        
+  semesterView.tsx           |   40.62 |       50 |      25 |   43.33 | 36-40,59,63-64,68-78,140-150 
+ src/helper_functions        |     100 |      100 |     100 |     100 |                              
+  unpackJSON.tsx             |     100 |      100 |     100 |     100 |                              
+ src/interfaces              |       0 |        0 |       0 |       0 |                              
+  course.ts                  |       0 |        0 |       0 |       0 |                              
+  plan.ts                    |       0 |        0 |       0 |       0 |                              
+  semester.ts                |       0 |        0 |       0 |       0 |                              
+-----------------------------|---------|----------|---------|---------|------------------------------
 Test Suites: 1 failed, 1 total
 Tests:       3 failed, 1 passed, 4 total
 Snapshots:   0 total
-Time:        3.297 s
+Time:        4.698 s
 Ran all test suites.
