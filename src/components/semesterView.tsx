@@ -30,6 +30,7 @@ export function SemesterView({
 }): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false); //whether or not the adding semester view is visible
     const [editing, setEditing] = useState<boolean>(false);
+
     //true means the addition screen is open
     function flipVisibility(): void {
         setVisible(!visible);
@@ -48,6 +49,35 @@ export function SemesterView({
         )
     };
 
+    const [dragOver, setDragOver] = React.useState(false);
+    const handleDragOverStart = () => setDragOver(true);
+    const handleDragOverEnd = () => setDragOver(false);
+
+    console.log(dragOver);
+
+    const handleDragStart = (event: React.DragEvent<HTMLDivElement>) => {
+        event.dataTransfer.setData("text", event.currentTarget.id);
+    };
+
+    const enableDropping = (event: React.DragEvent<HTMLDivElement>) => {
+        event.preventDefault();
+        event.dataTransfer.dropEffect = "move";
+    };
+
+    const handleDrop = (event: React.DragEvent<HTMLDivElement>) => {
+        const id = event.dataTransfer.getData("text");
+        const courseId = id.substring(0, id.indexOf("&"));
+        const semesterId = id.substring(id.indexOf("&") + 1);
+        deleteCourse(courseId, semesterId);
+        console.log(courseId);
+        console.log(semesterId);
+        console.log("Somebody dropped an element with id:" + id);
+        const newSemesterId = event.currentTarget as Element;
+        //const newSemesterId = event.target;
+        console.log(newSemesterId.id);
+        setDragOver(false);
+    };
+
     return editing ? (
         <>
             <SemestorEditor
@@ -59,7 +89,13 @@ export function SemesterView({
         </>
     ) : (
         <Container className="semester-view">
-            <div>
+            <div
+                onDragOver={enableDropping}
+                onDrop={handleDrop}
+                onDragEnter={handleDragOverStart}
+                onDragLeave={handleDragOverEnd}
+                id={newsemester.id}
+            >
                 <h3>
                     {newsemester.season + " - " + newsemester.year}
                     <br></br>
@@ -67,7 +103,12 @@ export function SemesterView({
                 {newsemester.totalCredits} {" credits"}
                 {"                       "}
                 {newsemester.courses.map((course: Course) => (
-                    <div key={course.code}>
+                    <div
+                        key={course.code}
+                        draggable={true}
+                        onDragStart={handleDragStart}
+                        id={course.code + "&" + course.semesterId}
+                    >
                         <CourseView
                             course={course}
                             deleteCourse={deleteCourse}
