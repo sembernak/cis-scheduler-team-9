@@ -281,32 +281,6 @@ function App(): JSX.Element {
         semesterId: string,
         oldSemesterId: string
     ) {
-        const newPlans = plans.map(
-            (newPlan: Plan): Plan => ({
-                ...newPlan,
-                semesters: newPlan.semesters.map(
-                    (semester1: Semester): Semester => ({
-                        ...semester1,
-                        courses: semester1.courses.filter(
-                            (course1: Course): boolean =>
-                                course1.code === code &&
-                                course1.semesterId === semesterId,
-                            deleteCourse(code, oldSemesterId)
-                        )
-                    })
-                )
-            })
-        );
-        const str = JSON.stringify(newPlans);
-        if (str.includes(code)) {
-            deleteCourse(code, oldSemesterId);
-            console.log("delete");
-        }
-        console.log(str);
-        let tempSemester = plans.map(
-            (plan: Plan): Semester => plan.semesters[0]
-        )[0];
-
         setPlans(
             plans.map(
                 (newPlan: Plan): Plan => ({
@@ -317,15 +291,11 @@ function App(): JSX.Element {
                                 semester.id === semesterId &&
                                 !contains(code, semester)
                             ) {
-                                tempSemester = semester;
                                 return {
                                     ...semester,
                                     courses: [...semester.courses, newCourse]
                                 };
-                            } else if (
-                                semester.id === oldSemesterId &&
-                                !contains(code, tempSemester)
-                            ) {
+                            } else if (semester.id === oldSemesterId) {
                                 return {
                                     ...semester,
                                     courses: semester.courses.filter(
@@ -341,10 +311,6 @@ function App(): JSX.Element {
                 })
             )
         );
-
-        /*if (currentPlans !== plans) {
-            deleteCourse(code, oldSemesterId);
-        }*/
     }
 
     function contains(code: string, semester: Semester) {
