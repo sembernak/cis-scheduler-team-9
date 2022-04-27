@@ -15,14 +15,17 @@
 
 .App-header {
     width: 100%;
-    background-color: #282c34;
-    min-height: 40vh;
+    background-color: #406abc;
+    min-height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    font-size: calc(12px + 2vmin);
     color: white;
+}
+.names {
+    font-size: calc(2px + 2vmin);
 }
 
 .App-link {
@@ -129,4 +132,10 @@
 .reset-course-btn {
     background-color: rgb(127, 163, 228);
     text-align: center;
+}
+.insert-plan {
+    font-size: 12px;
+    background-color: white;
+    border: 1px solid green;
+    color: black;
 }
