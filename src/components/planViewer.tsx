@@ -58,7 +58,7 @@ export function PlanViewer({
 
     return (
         <div>
-            <>Select a plan from below to get started:</>
+            <>Select a plan:</>
             <Form.Group controlId="planDrop">
                 <Form.Select
                     data-testid={"PlanSelect"}
@@ -72,12 +72,12 @@ export function PlanViewer({
                     ))}
                 </Form.Select>
             </Form.Group>
-            <>Or create a new plan here:</>
+            <>Create a new plan: </>
             <Button
                 data-testid={"NewPlan"}
                 onClick={flipInsert}
                 variant="success"
-                className="me-8"
+                className="insert-plan"
             >
                 New Plan
             </Button>
