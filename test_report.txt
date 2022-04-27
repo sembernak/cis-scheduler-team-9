@@ -44,10 +44,10 @@
 
 FAIL src/App.test.tsx
   Make a new plan
-    ✕ Clicking New Plan gives a form to enter a title (285 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (97 ms)
-    ✕ Can set new plan title (102 ms)
-    ✕ Insert Semester works (80 ms)
+    ✕ Clicking New Plan gives a form to enter a title (257 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (93 ms)
+    ✕ Can set new plan title (98 ms)
+    ✕ Insert Semester works (76 ms)
 
   ● Make a new plan › Clicking New Plan gives a form to enter a title
 
@@ -62,10 +62,16 @@ FAIL src/App.test.tsx
           [36m<header[39m
             [33mclass[39m=[32m"App-header"[39m
           [36m>[39m
-            [0mUD CISC275 with React Hooks and TypeScript - Allie Platchek, Sam Bernal, and Anissa Spano[0m
+            [0mUD CISC275 Schedule Planner[0m
+            [0m [0m
+            [36m<p[39m
+              [33mclass[39m=[32m"names"[39m
+            [36m>[39m
+              [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
+            [36m</p>[39m
           [36m</header>[39m
           [36m<p>[39m
-            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, ----[0m
+            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
           [36m</p>[39m
           [36m<div[39m
             [33mclass[39m=[32m"schedule"[39m
@@ -73,7 +79,7 @@ FAIL src/App.test.tsx
             [36m<br />[39m
             [36m<p>[39m
               [36m<div>[39m
-                [0mSelect a plan from below to get started:[0m
+                [0mSelect a plan:[0m
                 [36m<div>[39m
                   [36m<select[39m
                     [33mclass[39m=[32m"form-select"[39m
@@ -92,9 +98,9 @@ FAIL src/App.test.tsx
                     [36m</option>[39m
                   [36m</select>[39m
                 [36m</div>[39m
-                [0mOr create a new plan here:[0m
+                [0mCreate a new plan: [0m
                 [36m<button[39m
-                  [33mclass[39m=[32m"me-8 btn btn-success"[39m
+                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
                   [33mdata-testid[39m=[32m"NewPlan"[39m
                   [33mtype[39m=[32m"button"[39m
                 [36m>[39m
@@ -198,10 +204,7 @@ FAIL src/App.test.tsx
                                     [36m<br />[39m
                                     [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
                                     [36m<br />[39m
-                                    [0m[0m
-                                    [36m<div[39m
-                                      [33mclass[39m=[32m"col"[39m
-                                    [36...
+                                    [0m...
 
       16 |         createNew.click();
       17 |         expect(screen.getByLabelText("Plan Title:")).toBeInTheDocument();
@@ -234,10 +237,16 @@ FAIL src/App.test.tsx
           [36m<header[39m
             [33mclass[39m=[32m"App-header"[39m
           [36m>[39m
-            [0mUD CISC275 with React Hooks and TypeScript - Allie Platchek, Sam Bernal, and Anissa Spano[0m
+            [0mUD CISC275 Schedule Planner[0m
+            [0m [0m
+            [36m<p[39m
+              [33mclass[39m=[32m"names"[39m
+            [36m>[39m
+              [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
+            [36m</p>[39m
           [36m</header>[39m
           [36m<p>[39m
-            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, ----[0m
+            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
           [36m</p>[39m
           [36m<div[39m
             [33mclass[39m=[32m"schedule"[39m
@@ -245,7 +254,7 @@ FAIL src/App.test.tsx
             [36m<br />[39m
             [36m<p>[39m
               [36m<div>[39m
-                [0mSelect a plan from below to get started:[0m
+                [0mSelect a plan:[0m
                 [36m<div>[39m
                   [36m<select[39m
                     [33mclass[39m=[32m"form-select"[39m
@@ -264,9 +273,9 @@ FAIL src/App.test.tsx
                     [36m</option>[39m
                   [36m</select>[39m
                 [36m</div>[39m
-                [0mOr create a new plan here:[0m
+                [0mCreate a new plan: [0m
                 [36m<button[39m
-                  [33mclass[39m=[32m"me-8 btn btn-success"[39m
+                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
                   [33mdata-testid[39m=[32m"NewPlan"[39m
                   [33mtype[39m=[32m"button"[39m
                 [36m>[39m
@@ -370,10 +379,7 @@ FAIL src/App.test.tsx
                                     [36m<br />[39m
                                     [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
                                     [36m<br />[39m
-                                    [0m[0m
-                                    [36m<div[39m
-                                      [33mclass[39m=[32m"col"[39m
-                                    [36...
+                                    [0m...
 
       32 |         createNew.click();
       33 |         expect(screen.getByLabelText("Plan Title:")).toBeInTheDocument();
@@ -406,10 +412,16 @@ FAIL src/App.test.tsx
           [36m<header[39m
             [33mclass[39m=[32m"App-header"[39m
           [36m>[39m
-            [0mUD CISC275 with React Hooks and TypeScript - Allie Platchek, Sam Bernal, and Anissa Spano[0m
+            [0mUD CISC275 Schedule Planner[0m
+            [0m [0m
+            [36m<p[39m
+              [33mclass[39m=[32m"names"[39m
+            [36m>[39m
+              [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
+            [36m</p>[39m
           [36m</header>[39m
           [36m<p>[39m
-            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, ----[0m
+            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
           [36m</p>[39m
           [36m<div[39m
             [33mclass[39m=[32m"schedule"[39m
@@ -417,7 +429,7 @@ FAIL src/App.test.tsx
             [36m<br />[39m
             [36m<p>[39m
               [36m<div>[39m
-                [0mSelect a plan from below to get started:[0m
+                [0mSelect a plan:[0m
                 [36m<div>[39m
                   [36m<select[39m
                     [33mclass[39m=[32m"form-select"[39m
@@ -436,9 +448,9 @@ FAIL src/App.test.tsx
                     [36m</option>[39m
                   [36m</select>[39m
                 [36m</div>[39m
-                [0mOr create a new plan here:[0m
+                [0mCreate a new plan: [0m
                 [36m<button[39m
-                  [33mclass[39m=[32m"me-8 btn btn-success"[39m
+                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
                   [33mdata-testid[39m=[32m"NewPlan"[39m
                   [33mtype[39m=[32m"button"[39m
                 [36m>[39m
@@ -542,10 +554,7 @@ FAIL src/App.test.tsx
                                     [36m<br />[39m
                                     [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
                                     [36m<br />[39m
-                                    [0m[0m
-                                    [36m<div[39m
-                                      [33mclass[39m=[32m"col"[39m
-                                    [36...
+                                    [0m...
 
       47 |         const createNew = screen.getByTestId("NewPlan");
       48 |         createNew.click();
@@ -597,5 +606,5 @@ All files                    |    29.5 |    23.91 |   17.35 |      30 |
 Test Suites: 1 failed, 1 total
 Tests:       3 failed, 1 passed, 4 total
 Snapshots:   0 total
-Time:        3.714 s
+Time:        3.333 s
 Ran all test suites.
