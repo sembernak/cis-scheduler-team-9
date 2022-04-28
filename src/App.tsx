@@ -281,39 +281,40 @@ function App(): JSX.Element {
         semesterId: string,
         oldSemesterId: string
     ) {
+        const currentPlans = [...plans];
+        const withoutCourse = currentPlans.map(
+            (newplan: Plan): Plan => ({
+                ...newplan,
+                semesters: newplan.semesters.map(
+                    (semester1: Semester): Semester => ({
+                        ...semester1,
+                        courses: semester1.courses.filter(
+                            (course1: Course): boolean =>
+                                course1.code !== code ||
+                                course1.semesterId !== oldSemesterId
+                        )
+                    })
+                )
+            })
         setPlans(
-            plans.map(
+            withoutCourse.map(
                 (newPlan: Plan): Plan => ({
                     ...newPlan,
                     semesters: newPlan.semesters.map(
-                        (semester: Semester): Semester => {
-                            if (
-                                semester.id === semesterId &&
-                                !contains(code, semester)
-                            ) {
-                                return {
-                                    ...semester,
-                                    courses: [...semester.courses, newCourse]
-                                };
-                            } else if (semester.id === oldSemesterId) {
-                                return {
-                                    ...semester,
-                                    courses: semester.courses.filter(
-                                        (course1: Course): boolean =>
-                                            course1.code !== code
-                                    )
-                                };
-                            } else {
-                                return { ...semester };
-                            }
-                        }
+                        (semester1: Semester): Semester =>
+                            semester1.id === semesterId
+                                ? {
+                                      ...semester1,
+                                      courses: [...semester1.courses, newCourse]
+                                  }
+                                : { ...semester1 }
                     )
                 })
             )
         );
     }
 
-    function contains(code: string, semester: Semester) {
+    /*function contains(code: string, semester: Semester) {
         //helper for addCourse()
         const arr = semester.courses.filter(
             (course: Course) => course.code === code
@@ -324,7 +325,7 @@ function App(): JSX.Element {
         } else {
             return false;
         }
-    }
+    }*/
 
     return (
         <div className="App">
