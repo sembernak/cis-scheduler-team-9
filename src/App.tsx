@@ -11,7 +11,6 @@ import { Plan } from "./interfaces/plan";
 import { Semester } from "./interfaces/semester";
 import { CoursePool } from "./components/coursePool";
 import { Button /*, Container*/ } from "react-bootstrap";
-import { createShorthandPropertyAssignment } from "typescript";
 //import userEvent from "@testing-library/user-event";
 //import { textSpanContainsPosition } from "typescript";
 
@@ -319,7 +318,7 @@ function App(): JSX.Element {
         }*/
     }
 
-    function contains(code: string, semester: Semester) {
+    /*function contains(code: string, semester: Semester) {
         //helper for addCourse()
         const arr = semester.courses.filter(
             (course: Course) => course.code === code
@@ -330,7 +329,7 @@ function App(): JSX.Element {
         } else {
             return false;
         }
-    }
+    }*/
 
     return (
         <div className="App">
