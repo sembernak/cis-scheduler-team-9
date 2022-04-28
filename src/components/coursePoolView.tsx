@@ -27,6 +27,10 @@ export function CoursePoolView({
         setEditing(!editing);
     }
 
+    const handleDragStart = (event: React.DragEvent<HTMLDivElement>) => {
+        event.dataTransfer.setData("text", event.currentTarget.id);
+    };
+
     return editing ? (
         <>
             <CourseEditor
@@ -37,7 +41,21 @@ export function CoursePoolView({
             ></CourseEditor>
         </>
     ) : (
-        <div draggable="true">
+        <div
+            draggable="true"
+            onDragStart={handleDragStart}
+            id={
+                course.code +
+                "&*" +
+                course.title +
+                "&*" +
+                course.description +
+                "&*" +
+                course.credits +
+                "&*" +
+                course.semesterId
+            }
+        >
             <Col>
                 <h3>
                     {course.code} {" - "} {course.title}
