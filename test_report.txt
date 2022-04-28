@@ -44,9 +44,9 @@
 
 FAIL src/App.test.tsx
   Make a new plan
-    ✕ Clicking New Plan gives a form to enter a title (262 ms)
+    ✕ Clicking New Plan gives a form to enter a title (264 ms)
     ✓ Clicking cancel gets rid of Create Plan prompt (95 ms)
-    ✕ Can set new plan title (97 ms)
+    ✕ Can set new plan title (103 ms)
     ✕ Insert Semester works (81 ms)
 
   ● Make a new plan › Clicking New Plan gives a form to enter a title
@@ -577,13 +577,13 @@ FAIL src/App.test.tsx
 -----------------------------|---------|----------|---------|---------|-------------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s             
 -----------------------------|---------|----------|---------|---------|-------------------------------
-All files                    |   30.12 |    26.19 |   17.35 |   30.63 |                               
+All files                    |   29.87 |    26.19 |   17.21 |   30.37 |                               
  src                         |   26.76 |        0 |    2.56 |   27.14 |                               
   App.tsx                    |   26.76 |        0 |    2.56 |   27.14 | 108-306                       
- src/components              |   29.87 |     42.3 |   23.45 |   30.43 |                               
+ src/components              |   29.51 |     42.3 |   23.17 |   30.06 |                               
   courseEditor.tsx           |       0 |      100 |       0 |       0 | 19-106                        
   coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 60-82,115-134                 
-  coursePoolView.tsx         |       0 |        0 |       0 |       0 | 23-30                         
+  coursePoolView.tsx         |       0 |        0 |       0 |       0 | 23-34                         
   courseView.tsx             |      60 |       75 |   33.33 |      60 | 22,53                         
   insertCourse.tsx           |       0 |      100 |       0 |       0 | 19-120                        
   insertPlan.tsx             |      50 |      100 |      50 |      50 | 30-36,53                      
@@ -606,5 +606,5 @@ All files                    |   30.12 |    26.19 |   17.35 |   30.63 |
 Test Suites: 1 failed, 1 total
 Tests:       3 failed, 1 passed, 4 total
 Snapshots:   0 total
-Time:        3.557 s
+Time:        3.897 s
 Ran all test suites.
