@@ -296,6 +296,7 @@ function App(): JSX.Element {
                     })
                 )
             })
+        );
         setPlans(
             withoutCourse.map(
                 (newPlan: Plan): Plan => ({
