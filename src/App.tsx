@@ -11,6 +11,7 @@ import { Plan } from "./interfaces/plan";
 import { Semester } from "./interfaces/semester";
 import { CoursePool } from "./components/coursePool";
 import { Button /*, Container*/ } from "react-bootstrap";
+import { createShorthandPropertyAssignment } from "typescript";
 //import userEvent from "@testing-library/user-event";
 //import { textSpanContainsPosition } from "typescript";
 
@@ -282,36 +283,33 @@ function App(): JSX.Element {
         oldSemesterId: string
     ) {
         const currentPlans = [...plans];
-        const newPlans = plans.map(
-            (newPlan: Plan): Plan => ({
-                ...newPlan,
-                semesters: newPlan.semesters.map(
+        const withoutCourse = currentPlans.map(
+            (newplan: Plan): Plan => ({
+                ...newplan,
+                semesters: newplan.semesters.map(
                     (semester1: Semester): Semester => ({
                         ...semester1,
                         courses: semester1.courses.filter(
                             (course1: Course): boolean =>
-                                course1.code === code &&
-                                course1.semesterId === semesterId,
-                            deleteCourse(code, oldSemesterId)
+                                course1.code !== code ||
+                                course1.semesterId !== oldSemesterId
                         )
                     })
                 )
             })
         );
-        console.log(JSON.stringify(newPlans));
         setPlans(
-            plans.map(
+            withoutCourse.map(
                 (newPlan: Plan): Plan => ({
                     ...newPlan,
                     semesters: newPlan.semesters.map(
-                        (semester: Semester): Semester =>
-                            semester.id === semesterId &&
-                            !contains(code, semester)
+                        (semester1: Semester): Semester =>
+                            semester1.id === semesterId
                                 ? {
-                                      ...semester,
-                                      courses: [...semester.courses, newCourse]
+                                      ...semester1,
+                                      courses: [...semester1.courses, newCourse]
                                   }
-                                : semester
+                                : { ...semester1 }
                     )
                 })
             )
