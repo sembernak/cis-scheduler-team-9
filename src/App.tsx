@@ -296,7 +296,6 @@ function App(): JSX.Element {
                     })
                 )
             })
-        );
         setPlans(
             withoutCourse.map(
                 (newPlan: Plan): Plan => ({
@@ -313,9 +312,6 @@ function App(): JSX.Element {
                 })
             )
         );
-        /*if (currentPlans !== plans) {
-            deleteCourse(code, oldSemesterId);
-        }*/
     }
 
     /*function contains(code: string, semester: Semester) {
@@ -334,13 +330,15 @@ function App(): JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
-                UD CISC275 with React Hooks and TypeScript - Allie Platchek, Sam
-                Bernal, and Anissa Spano
+                UD CISC275 Schedule Planner{" "}
+                <p className="names">
+                    created by Allie Platchek, Sam Bernal, and Anissa Spano
+                </p>
             </header>
             <p>
                 Welcome to Team 9 schedule builder! This application has all the
                 tools you need to create the perfect college course schedule. To
-                get started, ----
+                get started, select a plan from below or create a new one.
             </p>
             <div className="schedule">
                 <br></br>
@@ -363,8 +361,8 @@ function App(): JSX.Element {
                     ></PlanViewer>
                 </p>
             </div>
-            <CoursePool></CoursePool>
-            <Button onClick={makeCSV}>Download CSV</Button>
+            <CoursePool addCourse={addCourse}></CoursePool>
+            <Button onClick={makeCSV}>Download Plan</Button>
         </div>
     );
 }

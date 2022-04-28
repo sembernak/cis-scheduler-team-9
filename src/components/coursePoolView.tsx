@@ -8,11 +8,17 @@ export function CoursePoolView({
     course,
     editCourse,
     deletePoolCourse
-}: {
-    //changeView: () => void;
+}: //addCourse
+{
     course: Course;
     deletePoolCourse: (code: string) => void;
     editCourse: (code: string, newCourse: Course, semesterId: string) => void;
+    addCourse: (
+        code: string,
+        newCourse: Course,
+        semesterId: string,
+        oldSemesterId: string
+    ) => void;
 }): JSX.Element {
     const preRecs = course.prereq.join(", ");
     const [editing, setEditing] = useState<boolean>(false);
@@ -31,7 +37,7 @@ export function CoursePoolView({
             ></CourseEditor>
         </>
     ) : (
-        <>
+        <div draggable="true">
             <Col>
                 <h3>
                     {course.code} {" - "} {course.title}
@@ -48,6 +54,6 @@ export function CoursePoolView({
                 </Col>
             </Col>
             <div></div>
-        </>
+        </div>
     );
 }

@@ -157,21 +157,21 @@ export function SemesterView({
                 <Button
                     onClick={() => deleteSemester(newsemester.id)}
                     variant="danger"
-                    className="me-8"
+                    className="delete-sem-btn"
                 >
                     Delete semester
                 </Button>
                 <Button
                     onClick={flipVisibility}
                     variant="success"
-                    className="me-8"
+                    className="insert-course-btn"
                 >
                     Insert Course
                 </Button>
                 <Button
                     onClick={() => deleteAllCourses(String(semester.id))}
                     variant="danger"
-                    className="me-8"
+                    className="delete-allcourse-btn"
                 >
                     Delete All Courses
                 </Button>
