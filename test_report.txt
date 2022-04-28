@@ -44,10 +44,10 @@
 
 FAIL src/App.test.tsx
   Make a new plan
-    ✕ Clicking New Plan gives a form to enter a title (341 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (162 ms)
-    ✕ Can set new plan title (143 ms)
-    ✕ Insert Semester works (114 ms)
+    ✕ Clicking New Plan gives a form to enter a title (262 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (95 ms)
+    ✕ Can set new plan title (97 ms)
+    ✕ Insert Semester works (81 ms)
 
   ● Make a new plan › Clicking New Plan gives a form to enter a title
 
@@ -577,9 +577,9 @@ FAIL src/App.test.tsx
 -----------------------------|---------|----------|---------|---------|-------------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s             
 -----------------------------|---------|----------|---------|---------|-------------------------------
-All files                    |    29.5 |    23.91 |   17.35 |      30 |                               
- src                         |      25 |        0 |    2.56 |   25.33 |                               
-  App.tsx                    |      25 |        0 |    2.56 |   25.33 | 108-325                       
+All files                    |   30.12 |    26.19 |   17.35 |   30.63 |                               
+ src                         |   26.76 |        0 |    2.56 |   27.14 |                               
+  App.tsx                    |   26.76 |        0 |    2.56 |   27.14 | 108-306                       
  src/components              |   29.87 |     42.3 |   23.45 |   30.43 |                               
   courseEditor.tsx           |       0 |      100 |       0 |       0 | 19-106                        
   coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 60-82,115-134                 
@@ -606,5 +606,5 @@ All files                    |    29.5 |    23.91 |   17.35 |      30 |
 Test Suites: 1 failed, 1 total
 Tests:       3 failed, 1 passed, 4 total
 Snapshots:   0 total
-Time:        4.818 s
+Time:        3.557 s
 Ran all test suites.
