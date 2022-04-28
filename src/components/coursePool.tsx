@@ -34,7 +34,16 @@ for (i in catalog) {
     }
 }
 
-export function CoursePool(): JSX.Element {
+export function CoursePool({
+    addCourse
+}: {
+    addCourse: (
+        code: string,
+        newCourse: Course,
+        semesterId: string,
+        oldSemesterId: string
+    ) => void;
+}): JSX.Element {
     function getDepCourses(department: string) {
         return COURSEPOOL.filter((course: Course): boolean =>
             course.code.includes(department)
@@ -127,6 +136,7 @@ export function CoursePool(): JSX.Element {
                         course={course}
                         deletePoolCourse={deletePoolCourse}
                         editCourse={editPoolCourse}
+                        addCourse={addCourse}
                     ></CoursePoolView>
                 </div>
             ))}

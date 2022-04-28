@@ -360,7 +360,7 @@ function App(): JSX.Element {
                     ></PlanViewer>
                 </p>
             </div>
-            <CoursePool></CoursePool>
+            <CoursePool addCourse={addCourse}></CoursePool>
             <Button onClick={makeCSV}>Download Plan</Button>
         </div>
     );
