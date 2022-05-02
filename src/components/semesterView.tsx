@@ -48,13 +48,24 @@ export function SemesterView({
         setEditing(!editing);
     }
 
+    const cred1 = semester.courses.reduce(
+        (currentCredits: number, course: Course) =>
+            currentCredits + Number(course.credits[1]),
+        0
+    );
+
+    const cred2 = semester.courses.reduce(
+        (currentCredits: number, course: Course) =>
+            currentCredits + Number(course.credits[course.credits.length - 1]),
+        0
+    );
+
     const newsemester = {
         ...semester,
-        totalCredits: semester.courses.reduce(
-            (currentCredits: number, course: Course) =>
-                currentCredits + Number(course.credits),
-            0
-        )
+        totalCredits:
+            cred1 === cred2
+                ? cred1.toString()
+                : cred1.toString() + "-" + cred2.toString()
     };
 
     const [, setDragOver] = React.useState(false);
