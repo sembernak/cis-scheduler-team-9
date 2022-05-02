@@ -1875,27 +1875,6 @@
       at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
 
   console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
     Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
         at div
         at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
@@ -1948,23 +1927,6 @@
 
   console.error
     Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
         at div
         at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
         at p
@@ -2065,27 +2027,6 @@
       at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
 
   console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
     Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
         at div
         at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
@@ -2138,23 +2079,6 @@
 
   console.error
     Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
         at div
         at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
         at p
@@ -2255,27 +2179,6 @@
       at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
 
   console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
     Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
         at div
         at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
@@ -2328,403 +2231,6 @@
 
   console.error
     Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
         at div
         at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
         at p
@@ -2825,27 +2331,6 @@
       at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
 
   console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
     Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
         at div
         at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
@@ -2898,213 +2383,6 @@
 
   console.error
     Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
         at div
         at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
         at p
@@ -3205,7 +2483,594 @@
       at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
 
   console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
         at select
         at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
         at div
@@ -3294,23 +3159,6 @@
       at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
 
   console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
     Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
         at select
         at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
@@ -3375,27 +3223,6 @@
 
   console.error
     Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
         at select
         at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
         at div
@@ -3484,23 +3311,6 @@
       at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
 
   console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
     Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
         at select
         at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
@@ -3565,27 +3375,6 @@
 
   console.error
     Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
         at select
         at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
         at div
@@ -3679,23 +3468,6 @@
 
   console.error
     Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
         at div
         at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
         at p
@@ -3813,27 +3585,6 @@
       at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
 
   console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at select
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
-        at div
-        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
-
-  console.error
     Warning: Encountered two children with the same key, `Test Plan 2`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
         at select
         at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
@@ -3923,23 +3674,6 @@
       at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
 
   console.error
-    Warning: Encountered two children with the same key, `6Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
-        at div
-        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
-        at p
-        at div
-        at div
-        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
-      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
-      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
-      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
-      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
-
-  console.error
     Warning: Encountered two children with the same key, `Test Plan 2`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
         at div
         at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
@@ -3956,1529 +3690,34 @@
       at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
       at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
 
-FAIL src/App.test.tsx (16.899 s)
+FAIL src/App.test.tsx (12.453 s)
   Make a new plan
-    ✓ App renders with welcome message (260 ms)
-    ✓ Clicking New Plan gives a form to enter a title (258 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (94 ms)
-    ✓ Can set new plan title (596 ms)
-    ✓ Insert Semester works (601 ms)
-    ✓ Delete Semester Works (817 ms)
-    ✓ Edit Semester Works (1195 ms)
-    ✓ Edit Semester Works (1332 ms)
-    ✓ Edit Semester cancel button works (1330 ms)
-    ✕ Can delete all semesters (5659 ms)
-    ✕ Can insert a course (991 ms)
-    ✕ Can edit a course (1134 ms)
-
-  ● Make a new plan › Can delete all semesters
-
-    TestingLibraryElementError: Unable to find an accessible element with the role "heading" and name `/Spring - 2022/`
-
-    Here are the accessible roles:
-
-      banner:
-
-      Name "":
-      [36m<header[39m
-        [33mclass[39m=[32m"App-header"[39m
-      [36m/>[39m
-
-      --------------------------------------------------
-      combobox:
-
-      Name "":
-      [36m<select[39m
-        [33mclass[39m=[32m"form-select"[39m
-        [33mdata-testid[39m=[32m"PlanSelect"[39m
-        [33mid[39m=[32m"planDrop"[39m
-      [36m/>[39m
-
-      Name "":
-      [36m<select[39m
-        [33mclass[39m=[32m"form-select"[39m
-      [36m/>[39m
-
-      Name "":
-      [36m<select[39m
-        [33mclass[39m=[32m"form-select"[39m
-      [36m/>[39m
-
-      --------------------------------------------------
-      option:
-
-      Name "Plan 1":
-      [36m<option[39m
-        [33mvalue[39m=[32m"Plan 1"[39m
-      [36m/>[39m
-
-      Name "Plan 2":
-      [36m<option[39m
-        [33mvalue[39m=[32m"Plan 2"[39m
-      [36m/>[39m
-
-      Name "Test Plan 1":
-      [36m<option[39m
-        [33mvalue[39m=[32m"Test Plan 1"[39m
-      [36m/>[39m
-
-      Name "6Test Plan 1":
-      [36m<option[39m
-        [33mvalue[39m=[32m"6Test Plan 1"[39m
-      [36m/>[39m
-
-      Name "Test Plan 1":
-      [36m<option[39m
-        [33mvalue[39m=[32m"Test Plan 1"[39m
-      [36m/>[39m
-
-      Name "Test Plan 1":
-      [36m<option[39m
-        [33mvalue[39m=[32m"Test Plan 1"[39m
-      [36m/>[39m
-
-      Name "Test Plan 1":
-      [36m<option[39m
-        [33mvalue[39m=[32m"Test Plan 1"[39m
-      [36m/>[39m
-
-      Name "Test Plan 1":
-      [36m<option[39m
-        [33mvalue[39m=[32m"Test Plan 1"[39m
-      [36m/>[39m
-
-      Name "6Test Plan 1":
-      [36m<option[39m
-        [33mvalue[39m=[32m"6Test Plan 1"[39m
-      [36m/>[39m
-
-      Name "ACCT":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT"[39m
-      [36m/>[39m
-
-      Name "AGED":
-      [36m<option[39m
-        [33mvalue[39m=[32m"AGED"[39m
-      [36m/>[39m
-
-      Name "AGRI":
-      [36m<option[39m
-        [33mvalue[39m=[32m"AGRI"[39m
-      [36m/>[39m
-
-      Name "AFSC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"AFSC"[39m
-      [36m/>[39m
-
-      Name "AFRA":
-      [36m<option[39m
-        [33mvalue[39m=[32m"AFRA"[39m
-      [36m/>[39m
-
-      Name "ANFS":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ANFS"[39m
-      [36m/>[39m
-
-      Name "ANTH":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ANTH"[39m
-      [36m/>[39m
-
-      Name "APEC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"APEC"[39m
-      [36m/>[39m
-
-      Name "ARAB":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ARAB"[39m
-      [36m/>[39m
-
-      Name "ART":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ART "[39m
-      [36m/>[39m
-
-      Name "ARTC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ARTC"[39m
-      [36m/>[39m
-
-      Name "ARTH":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ARTH"[39m
-      [36m/>[39m
-
-      Name "ARSC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ARSC"[39m
-      [36m/>[39m
-
-      Name "ASIA":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ASIA"[39m
-      [36m/>[39m
-
-      Name "BHAN":
-      [36m<option[39m
-        [33mvalue[39m=[32m"BHAN"[39m
-      [36m/>[39m
-
-      Name "BISC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"BISC"[39m
-      [36m/>[39m
-
-      Name "BMEG":
-      [36m<option[39m
-        [33mvalue[39m=[32m"BMEG"[39m
-      [36m/>[39m
-
-      Name "BREG":
-      [36m<option[39m
-        [33mvalue[39m=[32m"BREG"[39m
-      [36m/>[39m
-
-      Name "BUEC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"BUEC"[39m
-      [36m/>[39m
-
-      Name "BUAD":
-      [36m<option[39m
-        [33mvalue[39m=[32m"BUAD"[39m
-      [36m/>[39m
-
-      Name "DIST":
-      [36m<option[39m
-        [33mvalue[39m=[32m"DIST"[39m
-      [36m/>[39m
-
-      Name "CHEG":
-      [36m<option[39m
-        [33mvalue[39m=[32m"CHEG"[39m
-      [36m/>[39m
-
-      Name "CHEM":
-      [36m<option[39m
-        [33mvalue[39m=[32m"CHEM"[39m
-      [36m/>[39m
-
-      Name "CHIN":
-      [36m<option[39m
-        [33mvalue[39m=[32m"CHIN"[39m
-      [36m/>[39m
-
-      Name "CIEG":
-      [36m<option[39m
-        [33mvalue[39m=[32m"CIEG"[39m
-      [36m/>[39m
-
-      Name "CGSC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"CGSC"[39m
-      [36m/>[39m
-
-      Name "CMLT":
-      [36m<option[39m
-        [33mvalue[39m=[32m"CMLT"[39m
-      [36m/>[39m
-
-      Name "COMM":
-      [36m<option[39m
-        [33mvalue[39m=[32m"COMM"[39m
-      [36m/>[39m
-
-      Name "CSCD":
-      [36m<option[39m
-        [33mvalue[39m=[32m"CSCD"[39m
-      [36m/>[39m
-
-      Name "CISC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"CISC"[39m
-      [36m/>[39m
-
-      Name "CPEG":
-      [36m<option[39m
-        [33mvalue[39m=[32m"CPEG"[39m
-      [36m/>[39m
-
-      Name "CRJU":
-      [36m<option[39m
-        [33mvalue[39m=[32m"CRJU"[39m
-      [36m/>[39m
-
-      Name "DANC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"DANC"[39m
-      [36m/>[39m
-
-      Name "DISA":
-      [36m<option[39m
-        [33mvalue[39m=[32m"DISA"[39m
-      [36m/>[39m
-
-      Name "ECON":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ECON"[39m
-      [36m/>[39m
-
-      Name "EDUC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"EDUC"[39m
-      [36m/>[39m
-
-      Name "ELEG":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ELEG"[39m
-      [36m/>[39m
-
-      Name "ENEP":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ENEP"[39m
-      [36m/>[39m
-
-      Name "EGGG":
-      [36m<option[39m
-        [33mvalue[39m=[32m"EGGG"[39m
-      [36m/>[39m
-
-      Name "ENGL":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ENGL"[39m
-      [36m/>[39m
-
-      Name "ENWC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ENWC"[39m
-      [36m/>[39m
-
-      Name "ENTR":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ENTR"[39m
-      [36m/>[39m
-
-      Name "ENSC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ENSC"[39m
-      [36m/>[39m
-
-      Name "ENVR":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ENVR"[39m
-      [36m/>[39m
-
-      Name "GEOG":
-      [36m<option[39m
-        [33mvalue[39m=[32m"GEOG"[39m
-      [36m/>[39m
-
-      Name "FASH":
-      [36m<option[39m
-        [33mvalue[39m=[32m"FASH"[39m
-      [36m/>[39m
-
-      Name "FINC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"FINC"[39m
-      [36m/>[39m
-
-      Name "FREN":
-      [36m<option[39m
-        [33mvalue[39m=[32m"FREN"[39m
-      [36m/>[39m
-
-      Name "GAME":
-      [36m<option[39m
-        [33mvalue[39m=[32m"GAME"[39m
-      [36m/>[39m
-
-      Name "GEOL":
-      [36m<option[39m
-        [33mvalue[39m=[32m"GEOL"[39m
-      [36m/>[39m
-
-      Name "GRMN":
-      [36m<option[39m
-        [33mvalue[39m=[32m"GRMN"[39m
-      [36m/>[39m
-
-      Name "GREK":
-      [36m<option[39m
-        [33mvalue[39m=[32m"GREK"[39m
-      [36m/>[39m
-
-      Name "HLPR":
-      [36m<option[39m
-        [33mvalue[39m=[32m"HLPR"[39m
-      [36m/>[39m
-
-      Name "HDES":
-      [36m<option[39m
-        [33mvalue[39m=[32m"HDES"[39m
-      [36m/>[39m
-
-      Name "HLTH":
-      [36m<option[39m
-        [33mvalue[39m=[32m"HLTH"[39m
-      [36m/>[39m
-
-      Name "HEBR":
-      [36m<option[39m
-        [33mvalue[39m=[32m"HEBR"[39m
-      [36m/>[39m
-
-      Name "HIST":
-      [36m<option[39m
-        [33mvalue[39m=[32m"HIST"[39m
-      [36m/>[39m
-
-      Name "HONR":
-      [36m<option[39m
-        [33mvalue[39m=[32m"HONR"[39m
-      [36m/>[39m
-
-      Name "HOSP":
-      [36m<option[39m
-        [33mvalue[39m=[32m"HOSP"[39m
-      [36m/>[39m
-
-      Name "HDFS":
-      [36m<option[39m
-        [33mvalue[39m=[32m"HDFS"[39m
-      [36m/>[39m
-
-      Name "ITAL":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ITAL"[39m
-      [36m/>[39m
-
-      Name "JAPN":
-      [36m<option[39m
-        [33mvalue[39m=[32m"JAPN"[39m
-      [36m/>[39m
-
-      Name "JWST":
-      [36m<option[39m
-        [33mvalue[39m=[32m"JWST"[39m
-      [36m/>[39m
-
-      Name "JOUR":
-      [36m<option[39m
-        [33mvalue[39m=[32m"JOUR"[39m
-      [36m/>[39m
-
-      Name "KAAP":
-      [36m<option[39m
-        [33mvalue[39m=[32m"KAAP"[39m
-      [36m/>[39m
-
-      Name "LARC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"LARC"[39m
-      [36m/>[39m
-
-      Name "LLCU":
-      [36m<option[39m
-        [33mvalue[39m=[32m"LLCU"[39m
-      [36m/>[39m
-
-      Name "LATN":
-      [36m<option[39m
-        [33mvalue[39m=[32m"LATN"[39m
-      [36m/>[39m
-
-      Name "LAMS":
-      [36m<option[39m
-        [33mvalue[39m=[32m"LAMS"[39m
-      [36m/>[39m
-
-      Name "LEAD":
-      [36m<option[39m
-        [33mvalue[39m=[32m"LEAD"[39m
-      [36m/>[39m
-
-      Name "LEST":
-      [36m<option[39m
-        [33mvalue[39m=[32m"LEST"[39m
-      [36m/>[39m
-
-      Name "LING":
-      [36m<option[39m
-        [33mvalue[39m=[32m"LING"[39m
-      [36m/>[39m
-
-      Name "MISY":
-      [36m<option[39m
-        [33mvalue[39m=[32m"MISY"[39m
-      [36m/>[39m
-
-      Name "MAST":
-      [36m<option[39m
-        [33mvalue[39m=[32m"MAST"[39m
-      [36m/>[39m
-
-      Name "MATH":
-      [36m<option[39m
-        [33mvalue[39m=[32m"MATH"[39m
-      [36m/>[39m
-
-      Name "MCST":
-      [36m<option[39m
-        [33mvalue[39m=[32m"MCST"[39m
-      [36m/>[39m
-
-      Name "MSEG":
-      [36m<option[39m
-        [33mvalue[39m=[32m"MSEG"[39m
-      [36m/>[39m
-
-      Name "MEEG":
-      [36m<option[39m
-        [33mvalue[39m=[32m"MEEG"[39m
-      [36m/>[39m
-
-      Name "MMSC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"MMSC"[39m
-      [36m/>[39m
-
-      Name "MLSC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"MLSC"[39m
-      [36m/>[39m
-
-      Name "MSST":
-      [36m<option[39m
-        [33mvalue[39m=[32m"MSST"[39m
-      [36m/>[39m
-
-      Name "MUSC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"MUSC"[39m
-      [36m/>[39m
-
-      Name "MUED":
-      [36m<option[39m
-        [33mvalue[39m=[32m"MUED"[39m
-      [36m/>[39m
-
-      Name "NSCI":
-      [36m<option[39m
-        [33mvalue[39m=[32m"NSCI"[39m
-      [36m/>[39m
-
-      Name "NURS":
-      [36m<option[39m
-        [33mvalue[39m=[32m"NURS"[39m
-      [36m/>[39m
-
-      Name "NTDT":
-      [36m<option[39m
-        [33mvalue[39m=[32m"NTDT"[39m
-      [36m/>[39m
-
-      Name "PHIL":
-      [36m<option[39m
-        [33mvalue[39m=[32m"PHIL"[39m
-      [36m/>[39m
-
-      Name "PHYT":
-      [36m<option[39m
-        [33mvalue[39m=[32m"PHYT"[39m
-      [36m/>[39m
-
-      Name "PHYS":
-      [36m<option[39m
-        [33mvalue[39m=[32m"PHYS"[39m
-      [36m/>[39m
-
-      Name "PLSC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"PLSC"[39m
-      [36m/>[39m
-
-      Name "POSC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"POSC"[39m
-      [36m/>[39m
-
-      Name "PORT":
-      [36m<option[39m
-        [33mvalue[39m=[32m"PORT"[39m
-      [36m/>[39m
-
-      Name "PSYC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"PSYC"[39m
-      [36m/>[39m
-
-      Name "RUSS":
-      [36m<option[39m
-        [33mvalue[39m=[32m"RUSS"[39m
-      [36m/>[39m
-
-      Name "SCEN":
-      [36m<option[39m
-        [33mvalue[39m=[32m"SCEN"[39m
-      [36m/>[39m
-
-      Name "SOCI":
-      [36m<option[39m
-        [33mvalue[39m=[32m"SOCI"[39m
-      [36m/>[39m
-
-      Name "SPAN":
-      [36m<option[39m
-        [33mvalue[39m=[32m"SPAN"[39m
-      [36m/>[39m
-
-      Name "SPTM":
-      [36m<option[39m
-        [33mvalue[39m=[32m"SPTM"[39m
-      [36m/>[39m
-
-      Name "STAT":
-      [36m<option[39m
-        [33mvalue[39m=[32m"STAT"[39m
-      [36m/>[39m
-
-      Name "THEA":
-      [36m<option[39m
-        [33mvalue[39m=[32m"THEA"[39m
-      [36m/>[39m
-
-      Name "UNIV":
-      [36m<option[39m
-        [33mvalue[39m=[32m"UNIV"[39m
-      [36m/>[39m
-
-      Name "SPPA":
-      [36m<option[39m
-        [33mvalue[39m=[32m"SPPA"[39m
-      [36m/>[39m
-
-      Name "UAPP":
-      [36m<option[39m
-        [33mvalue[39m=[32m"UAPP"[39m
-      [36m/>[39m
-
-      Name "WOMS":
-      [36m<option[39m
-        [33mvalue[39m=[32m"WOMS"[39m
-      [36m/>[39m
-
-      Name "BINF":
-      [36m<option[39m
-        [33mvalue[39m=[32m"BINF"[39m
-      [36m/>[39m
-
-      Name "BMSC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"BMSC"[39m
-      [36m/>[39m
-
-      Name "BMBA":
-      [36m<option[39m
-        [33mvalue[39m=[32m"BMBA"[39m
-      [36m/>[39m
-
-      Name "EAMC":
-      [36m<option[39m
-        [33mvalue[39m=[32m"EAMC"[39m
-      [36m/>[39m
-
-      Name "SMED":
-      [36m<option[39m
-        [33mvalue[39m=[32m"SMED"[39m
-      [36m/>[39m
-
-      Name "EDLM":
-      [36m<option[39m
-        [33mvalue[39m=[32m"EDLM"[39m
-      [36m/>[39m
-
-      Name "EPID":
-      [36m<option[39m
-        [33mvalue[39m=[32m"EPID"[39m
-      [36m/>[39m
-
-      Name "EVAL":
-      [36m<option[39m
-        [33mvalue[39m=[32m"EVAL"[39m
-      [36m/>[39m
-
-      Name "FSAN":
-      [36m<option[39m
-        [33mvalue[39m=[32m"FSAN"[39m
-      [36m/>[39m
-
-      Name "HSAD":
-      [36m<option[39m
-        [33mvalue[39m=[32m"HSAD"[39m
-      [36m/>[39m
-
-      Name "MALS":
-      [36m<option[39m
-        [33mvalue[39m=[32m"MALS"[39m
-      [36m/>[39m
-
-      Name "PRES":
-      [36m<option[39m
-        [33mvalue[39m=[32m"PRES"[39m
-      [36m/>[39m
-
-      Name "PCS":
-      [36m<option[39m
-        [33mvalue[39m=[32m"PCS "[39m
-      [36m/>[39m
-
-      Name "ACCT 166":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 166"[39m
-      [36m/>[39m
-
-      Name "ACCT 200":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 200"[39m
-      [36m/>[39m
-
-      Name "ACCT 207":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 207"[39m
-      [36m/>[39m
-
-      Name "ACCT 208":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 208"[39m
-      [36m/>[39m
-
-      Name "ACCT 266":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 266"[39m
-      [36m/>[39m
-
-      Name "ACCT 267":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 267"[39m
-      [36m/>[39m
-
-      Name "ACCT 302":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 302"[39m
-      [36m/>[39m
-
-      Name "ACCT 305":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 305"[39m
-      [36m/>[39m
-
-      Name "ACCT 313":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 313"[39m
-      [36m/>[39m
-
-      Name "ACCT 315":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 315"[39m
-      [36m/>[39m
-
-      Name "ACCT 316":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 316"[39m
-      [36m/>[39m
-
-      Name "ACCT 320":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 320"[39m
-      [36m/>[39m
-
-      Name "ACCT 327":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 327"[39m
-      [36m/>[39m
-
-      Name "ACCT 350":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 350"[39m
-      [36m/>[39m
-
-      Name "ACCT 351":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 351"[39m
-      [36m/>[39m
-
-      Name "ACCT 352":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 352"[39m
-      [36m/>[39m
-
-      Name "ACCT 363":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 363"[39m
-      [36m/>[39m
-
-      Name "ACCT 364":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 364"[39m
-      [36m/>[39m
-
-      Name "ACCT 366":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 366"[39m
-      [36m/>[39m
-
-      Name "ACCT 367":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 367"[39m
-      [36m/>[39m
-
-      Name "ACCT 395":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 395"[39m
-      [36m/>[39m
-
-      Name "ACCT 402":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 402"[39m
-      [36m/>[39m
-
-      Name "ACCT 405":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 405"[39m
-      [36m/>[39m
-
-      Name "ACCT 410":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 410"[39m
-      [36m/>[39m
-
-      Name "ACCT 413":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 413"[39m
-      [36m/>[39m
-
-      Name "ACCT 414":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 414"[39m
-      [36m/>[39m
-
-      Name "ACCT 415":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 415"[39m
-      [36m/>[39m
-
-      Name "ACCT 416":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 416"[39m
-      [36m/>[39m
-
-      Name "ACCT 417":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 417"[39m
-      [36m/>[39m
-
-      Name "ACCT 418":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 418"[39m
-      [36m/>[39m
-
-      Name "ACCT 420":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 420"[39m
-      [36m/>[39m
-
-      Name "ACCT 425":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 425"[39m
-      [36m/>[39m
-
-      Name "ACCT 433":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 433"[39m
-      [36m/>[39m
-
-      Name "ACCT 450":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 450"[39m
-      [36m/>[39m
-
-      Name "ACCT 457":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 457"[39m
-      [36m/>[39m
-
-      Name "ACCT 466":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 466"[39m
-      [36m/>[39m
-
-      Name "ACCT 467":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 467"[39m
-      [36m/>[39m
-
-      Name "ACCT 483":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 483"[39m
-      [36m/>[39m
-
-      Name "ACCT 516":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 516"[39m
-      [36m/>[39m
-
-      Name "ACCT 567":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 567"[39m
-      [36m/>[39m
-
-      Name "ACCT 600":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 600"[39m
-      [36m/>[39m
-
-      Name "ACCT 601":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 601"[39m
-      [36m/>[39m
-
-      Name "ACCT 602":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 602"[39m
-      [36m/>[39m
-
-      Name "ACCT 604":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 604"[39m
-      [36m/>[39m
-
-      Name "ACCT 605":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 605"[39m
-      [36m/>[39m
-
-      Name "ACCT 606":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 606"[39m
-      [36m/>[39m
-
-      Name "ACCT 610":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 610"[39m
-      [36m/>[39m
-
-      Name "ACCT 611":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 611"[39m
-      [36m/>[39m
-
-      Name "ACCT 612":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 612"[39m
-      [36m/>[39m
-
-      Name "ACCT 613":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 613"[39m
-      [36m/>[39m
-
-      Name "ACCT 614":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 614"[39m
-      [36m/>[39m
-
-      Name "ACCT 615":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 615"[39m
-      [36m/>[39m
-
-      Name "ACCT 617":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 617"[39m
-      [36m/>[39m
-
-      Name "ACCT 618":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 618"[39m
-      [36m/>[39m
-
-      Name "ACCT 620":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 620"[39m
-      [36m/>[39m
-
-      Name "ACCT 625":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 625"[39m
-      [36m/>[39m
-
-      Name "ACCT 633":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 633"[39m
-      [36m/>[39m
-
-      Name "ACCT 636":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 636"[39m
-      [36m/>[39m
-
-      Name "ACCT 653":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 653"[39m
-      [36m/>[39m
-
-      Name "ACCT 657":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 657"[39m
-      [36m/>[39m
-
-      Name "ACCT 666":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 666"[39m
-      [36m/>[39m
-
-      Name "ACCT 667":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 667"[39m
-      [36m/>[39m
-
-      Name "ACCT 683":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 683"[39m
-      [36m/>[39m
-
-      Name "ACCT 806":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 806"[39m
-      [36m/>[39m
-
-      Name "ACCT 810":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 810"[39m
-      [36m/>[39m
-
-      Name "ACCT 817":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 817"[39m
-      [36m/>[39m
-
-      Name "ACCT 840":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 840"[39m
-      [36m/>[39m
-
-      Name "ACCT 866":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 866"[39m
-      [36m/>[39m
-
-      Name "ACCT 867":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 867"[39m
-      [36m/>[39m
-
-      Name "ACCT 868":
-      [36m<option[39m
-        [33mvalue[39m=[32m"ACCT 868"[39m
-      [36m/>[39m
-
-      --------------------------------------------------
-      button:
-
-      Name "New Plan":
-      [36m<button[39m
-        [33mclass[39m=[32m"insert-plan btn btn-success"[39m
-        [33mdata-testid[39m=[32m"NewPlan"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete semester":
-      [36m<button[39m
-        [33mclass[39m=[32m"delete-sem-btn btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Insert Course":
-      [36m<button[39m
-        [33mclass[39m=[32m"insert-course-btn btn btn-success"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete All Courses":
-      [36m<button[39m
-        [33mclass[39m=[32m"delete-allcourse-btn btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Edit Semester":
-      [36m<button[39m
-        [33mclass[39m=[32m"edit-sem-btn btn btn-primary btn-sm"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete Plan":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Edit Plan":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-primary"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Insert Semester":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-success"[39m
-        [33mdata-testid[39m=[32m"InsertSemesterTest Plan 1"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete All Semesters":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete semester":
-      [36m<button[39m
-        [33mclass[39m=[32m"delete-sem-btn btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Insert Course":
-      [36m<button[39m
-        [33mclass[39m=[32m"insert-course-btn btn btn-success"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete All Courses":
-      [36m<button[39m
-        [33mclass[39m=[32m"delete-allcourse-btn btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Edit Semester":
-      [36m<button[39m
-        [33mclass[39m=[32m"edit-sem-btn btn btn-primary btn-sm"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete Plan":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Edit Plan":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-primary"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Insert Semester":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-success"[39m
-        [33mdata-testid[39m=[32m"InsertSemesterTest Plan 1"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete All Semesters":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete semester":
-      [36m<button[39m
-        [33mclass[39m=[32m"delete-sem-btn btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Insert Course":
-      [36m<button[39m
-        [33mclass[39m=[32m"insert-course-btn btn btn-success"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete All Courses":
-      [36m<button[39m
-        [33mclass[39m=[32m"delete-allcourse-btn btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Edit Semester":
-      [36m<button[39m
-        [33mclass[39m=[32m"edit-sem-btn btn btn-primary btn-sm"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete Plan":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Edit Plan":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-primary"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Insert Semester":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-success"[39m
-        [33mdata-testid[39m=[32m"InsertSemesterTest Plan 1"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete All Semesters":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete semester":
-      [36m<button[39m
-        [33mclass[39m=[32m"delete-sem-btn btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Insert Course":
-      [36m<button[39m
-        [33mclass[39m=[32m"insert-course-btn btn btn-success"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete All Courses":
-      [36m<button[39m
-        [33mclass[39m=[32m"delete-allcourse-btn btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Edit Semester":
-      [36m<button[39m
-        [33mclass[39m=[32m"edit-sem-btn btn btn-primary btn-sm"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete Plan":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Edit Plan":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-primary"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Insert Semester":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-success"[39m
-        [33mdata-testid[39m=[32m"InsertSemesterTest Plan 1"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete All Semesters":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete semester":
-      [36m<button[39m
-        [33mclass[39m=[32m"delete-sem-btn btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Insert Course":
-      [36m<button[39m
-        [33mclass[39m=[32m"insert-course-btn btn btn-success"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete All Courses":
-      [36m<button[39m
-        [33mclass[39m=[32m"delete-allcourse-btn btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Edit Semester":
-      [36m<button[39m
-        [33mclass[39m=[32m"edit-sem-btn btn btn-primary btn-sm"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete Plan":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Edit Plan":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-primary"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Insert Semester":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-success"[39m
-        [33mdata-testid[39m=[32m"InsertSemesterTest Plan 1"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Delete All Semesters":
-      [36m<button[39m
-        [33mclass[39m=[32m"me-8 btn btn-danger"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Add Course":
-      [36m<button[39m
-        [33mclass[39m=[32m"btn btn-primary"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      Name "Download Plan":
-      [36m<button[39m
-        [33mclass[39m=[32m"btn btn-primary"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      --------------------------------------------------
-      heading:
-
-      Name "Test Plan 1":
-      [36m<h3 />[39m
-
-      Name "Summer - 2022":
-      [36m<h3 />[39m
-
-      Name "Test Plan 1":
-      [36m<h3 />[39m
-
-      Name "Summer - 2022":
-      [36m<h3 />[39m
-
-      Name "Test Plan 1":
-      [36m<h3 />[39m
-
-      Name "Summer - 2022":
-      [36m<h3 />[39m
-
-      Name "Test Plan 1":
-      [36m<h3 />[39m
-
-      Name "Summer - 2022":
-      [36m<h3 />[39m
-
-      Name "Test Plan 1":
-      [36m<h3 />[39m
-
-      Name "Summer - 2022":
-      [36m<h3 />[39m
-
-      --------------------------------------------------
-      list:
-
-      Name "":
-      [36m<ul />[39m
-
-      --------------------------------------------------
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div[39m
-          [33mclass[39m=[32m"App"[39m
-        [36m>[39m
-          [36m<header[39m
-            [33mclass[39m=[32m"App-header"[39m
-          [36m>[39m
-            [0mUD CISC275 Schedule Planner[0m
-            [0m [0m
-            [36m<p[39m
-              [33mclass[39m=[32m"names"[39m
-            [36m>[39m
-              [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
-            [36m</p>[39m
-          [36m</header>[39m
-          [36m<p>[39m
-            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
-          [36m</p>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"schedule"[39m
-          [36m>[39m
-            [36m<br />[39m
-            [36m<p>[39m
-              [36m<div>[39m
-                [0mSelect a plan:[0m
-                [36m<div>[39m
-                  [36m<select[39m
-                    [33mclass[39m=[32m"form-select"[39m
-                    [33mdata-testid[39m=[32m"PlanSelect"[39m
-                    [33mid[39m=[32m"planDrop"[39m
-                  [36m>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 1"[39m
-                    [36m>[39m
-                      [0mPlan 1[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 2"[39m
-                    [36m>[39m
-                      [0mPlan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 1"[39m
-                    [36m>[39m
-                      [0mTest Plan 1[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"6Test Plan 1"[39m
-                    [36m>[39m
-                      [0m6Test Plan 1[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 1"[39m
-                    [36m>[39m
-                      [0mTest Plan 1[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 1"[39m
-                    [36m>[39m
-                      [0mTest Plan 1[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 1"[39m
-                    [36m>[39m
-                      [0mTest Plan 1[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 1"[39m
-                    [36m>[39m
-                      [0mTest Plan 1[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"6Test Plan 1"[39m
-                    [36m>[39m
-                      [0m6Test Plan 1[0m
-                    [36m</option>[39m
-                  [36m</select>[39m
-                [36m</div>[39m
-                [0mCreate a new plan: [0m
-                [36m<button[39m
-                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
-                  [33mdata-testid[39m=[32m"NewPlan"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mNew Plan[0m
-                [36m</button>[39m
-                [36m<div[39m
-                  [33maria-hidden[39m=[32m"true"[39m
-                  [33mhidden[39m=[32m""[39m
-                [36m>[39m
-                  [36m<div>[39m
-                    [36m<h3>[39m
-                      [0mPlan 1[0m
-                    [36m</h3>[39m
-                    [36m<div[39m
-                      [33mclass[39m=[32m"container"[39m
-                    [36m>[39m
-                      [36m<div[39m
-                        [33mclass[39m=[32m"row row-cols-md-2 row-cols-sm-1"[39m
-                      [36m>[39m
-                        [36m<div[39m
-                          [33mclass[39m=[32m"row-equal col"[39m
-                        [36m>[39m
-                          [36m<div[39m
-                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
-                          [36m>[39m
-                            [36m<div[39m
-                              [33mclass[39m=[32m"semester-view container"[39m
-                            [36m>[39m
-                              [36m<div[39m
-                                [33mid[39m=[32m"Spring2020Plan 1"[39m
-                              [36m>[39m
-                                [36m<h3>[39m
-                                  [0mSpring - 2020[0m
-                                  [36m<br />[39m
-                                [36m</h3>[39m
-                                [0m10[0m
-                                [0m [0m
-                                [0m credits[0m
-                                [0m                       [0m
-                                [36m<div[39m
-                                  [33mdraggable[39m=[32m"true"[39m
-                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1"[39m
-                                [36m>[39m
-                                  [36m<div[39m
-                                    [33mclass[39m=[32m"col"[39m
-                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
-                                  [36m>[39m
-                                    [36m<h3>[39m
-                                      [0mACCT 200[0m
-                                      [0m [0m
-                                      [0m - [0m
-                                      [0m [0m
-                                      [0mSurvey of Accounting[0m
-                                    [36m</h3>[39m
-                                    [0m 4[0m
-                                    [0m [0m
-                                    [0m credits[0m
-                                    [36m<br />[39m
-                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
-                                    [36m<br />[39m
-                                    [0m[0m
-                                    [36m<div[39m
-                                      [33mclass[39m=[32m"col"[39m
-                                    [36m>[39m
-                                      [36m<div[39m
-                                        [33mclass[39m=[32m"row"[39m
-                                      [36m>[39m
-                                        [36m<div>[39m
-                                          [36m<button[39m
-                      ...
-
-      277 |         screen.getByRole("button", { name: "Save", hidden: false }).click();
-      278 |         expect(
-    > 279 |             screen.getAllByRole("heading", {
-          |                    ^
-      280 |                 name: /Spring - 2022/,
-      281 |                 hidden: false
-      282 |             })
-
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
-      at getAllByRole (node_modules/@testing-library/dom/dist/query-helpers.js:130:15)
-      at Object.<anonymous> (src/App.test.tsx:279:20)
-      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
-      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
-      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
-      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+    ✓ App renders with welcome message (263 ms)
+    ✓ Clicking New Plan gives a form to enter a title (251 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (89 ms)
+    ✓ Can set new plan title (584 ms)
+    ✓ Insert Semester works (557 ms)
+    ✓ Delete Semester Works (871 ms)
+    ✓ Edit Semester Works (1374 ms)
+    ✓ Edit Semester Works (1352 ms)
+    ✓ Edit Semester cancel button works (1261 ms)
+    ✓ Can delete all semesters (1265 ms)
+    ✕ Can insert a course (943 ms)
+    ✕ Can edit a course (1097 ms)
 
   ● Make a new plan › Can insert a course
 
     TypeError: Cannot read properties of undefined (reading 'click')
 
-      353 |         });
-      354 |         expect(insertButton).toBeInTheDocument;
-    > 355 |         insertButton[0].click();
+      356 |         });
+      357 |         expect(insertButton).toBeInTheDocument;
+    > 358 |         insertButton[0].click();
           |                         ^
-      356 |         const setCode = screen.getByLabelText("Course Code: ");
-      357 |         const setTitle = screen.getByLabelText("Course Title: ");
-      358 |         const setDes = screen.getByLabelText("Course Description: ");
+      359 |         const setCode = screen.getByLabelText("Course Code: ");
+      360 |         const setTitle = screen.getByLabelText("Course Title: ");
+      361 |         const setDes = screen.getByLabelText("Course Description: ");
 
-      at Object.<anonymous> (src/App.test.tsx:355:25)
+      at Object.<anonymous> (src/App.test.tsx:358:25)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -5562,9 +3801,9 @@ FAIL src/App.test.tsx (16.899 s)
                       [0mTest Plan 1[0m
                     [36m</option>[39m
                     [36m<option[39m
-                      [33mvalue[39m=[32m"6Test Plan 1"[39m
+                      [33mvalue[39m=[32m"6Test Plan 2"[39m
                     [36m>[39m
-                      [0m6Test Plan 1[0m
+                      [0m6Test Plan 2[0m
                     [36m</option>[39m
                     [36m<option[39m
                       [33mvalue[39m=[32m"Test Plan 2"[39m
@@ -5645,19 +3884,19 @@ FAIL src/App.test.tsx (16.899 s)
                                     [36m<div[39m
                ...
 
-      408 |         expect(insertButton).toBeInTheDocument;
-      409 |         insertButton[0].click();
-    > 410 |         const setCode = screen.getByLabelText("Course Code: ");
+      411 |         expect(insertButton).toBeInTheDocument;
+      412 |         insertButton[0].click();
+    > 413 |         const setCode = screen.getByLabelText("Course Code: ");
           |                                ^
-      411 |         const setTitle = screen.getByLabelText("Course Title: ");
-      412 |         const setDes = screen.getByLabelText("Course Description: ");
-      413 |         const setCredits = screen.getByLabelText("Credits: ");
+      414 |         const setTitle = screen.getByLabelText("Course Title: ");
+      415 |         const setDes = screen.getByLabelText("Course Description: ");
+      416 |         const setCredits = screen.getByLabelText("Credits: ");
 
       at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
       at getAllByLabelText (node_modules/@testing-library/dom/dist/queries/label-text.js:116:38)
       at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
       at getByLabelText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/App.test.tsx:410:32)
+      at Object.<anonymous> (src/App.test.tsx:413:32)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -5666,10 +3905,10 @@ FAIL src/App.test.tsx (16.899 s)
 -----------------------------|---------|----------|---------|---------|-------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s       
 -----------------------------|---------|----------|---------|---------|-------------------------
-All files                    |   48.44 |    36.53 |    37.5 |   49.21 |                         
- src                         |   35.29 |    16.66 |   22.72 |   35.71 |                         
-  App.tsx                    |   35.29 |    16.66 |   22.72 |   35.71 | 108-151,167-228,266-346 
- src/components              |   53.84 |    53.57 |   44.57 |   54.81 |                         
+All files                    |      50 |    36.53 |   40.62 |   50.78 |                         
+ src                         |   38.82 |    16.66 |   29.54 |   39.28 |                         
+  App.tsx                    |   38.82 |    16.66 |   29.54 |   39.28 | 108-151,181-228,266-346 
+ src/components              |   54.43 |    53.57 |   45.78 |   55.42 |                         
   courseEditor.tsx           |       0 |      100 |       0 |       0 | 19-106                  
   coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 60-82,115-134           
   coursePoolView.tsx         |       0 |        0 |       0 |       0 | 23-34                   
@@ -5678,7 +3917,7 @@ All files                    |   48.44 |    36.53 |    37.5 |   49.21 |
   insertPlan.tsx             |     100 |      100 |     100 |     100 |                         
   insertSemester.tsx         |   91.66 |      100 |      80 |   91.66 | 39                      
   planEditor.tsx             |       0 |      100 |       0 |       0 | 19-56                   
-  planView.tsx               |    62.5 |       75 |      50 |    62.5 | 45,83-101               
+  planView.tsx               |      75 |       75 |   66.66 |      75 | 45,83                   
   planViewer.tsx             |    87.5 |    66.66 |     100 |    87.5 | 48                      
   recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                         
   recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                       
@@ -5693,7 +3932,7 @@ All files                    |   48.44 |    36.53 |    37.5 |   49.21 |
   semester.ts                |       0 |        0 |       0 |       0 |                         
 -----------------------------|---------|----------|---------|---------|-------------------------
 Test Suites: 1 failed, 1 total
-Tests:       3 failed, 9 passed, 12 total
+Tests:       2 failed, 10 passed, 12 total
 Snapshots:   0 total
-Time:        17.564 s
+Time:        13.195 s
 Ran all test suites.
