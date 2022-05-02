@@ -26,7 +26,7 @@ export function InsertSemester({
     const newSemester = {
         season: season,
         year: year,
-        totalCredits: 0,
+        totalCredits: "",
         courses: courses,
         id: season + String(year) + plan.id,
         planId: plan.id

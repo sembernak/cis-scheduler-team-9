@@ -62,7 +62,7 @@ const course5 = {
 const exampleSem2 = {
     season: "Spring",
     year: 2020,
-    totalCredits: 15,
+    totalCredits: "15",
     courses: [course1, course2, course3],
     id: "Spring2020Plan 1",
     planId: "Plan 1"
@@ -71,7 +71,7 @@ const exampleSem2 = {
 const exampleSem3 = {
     season: "Winter",
     year: 2019,
-    totalCredits: 6,
+    totalCredits: "6",
     courses: [course4],
     id: "Winter2019Plan 1",
     planId: "Plan 1"
@@ -80,7 +80,7 @@ const exampleSem3 = {
 const exampleSem4 = {
     season: "Winter",
     year: 2019,
-    totalCredits: 6,
+    totalCredits: "6",
     courses: [course5],
     id: "Winter2019Plan 2",
     planId: "Plan 2"
