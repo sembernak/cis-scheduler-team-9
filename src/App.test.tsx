@@ -252,6 +252,67 @@ describe("Make a new plan", () => {
         const editedSem = screen.queryAllByText(/Fall - 2015/);
         expect(editedSem[0]).not.toBeInTheDocument; //new edited semester is visible
     });
+    test("Can delete all semesters", () => {
+        //does not work fully
+        const createNew = screen.getByTestId("NewPlan");
+        createNew.click();
+        const enterId = screen.getByLabelText("Plan Title:");
+        userEvent.type(enterId, "6"); //get rid of this when ids become automatic
+        const enterTitle = screen.getByLabelText("Plan Title:");
+        userEvent.type(enterTitle, "Test Plan 1");
+        const save = screen.getByText("Save");
+        save.click();
+        const drop = screen.getByTestId("PlanSelect");
+        userEvent.selectOptions(drop, "Test Plan 1");
+        const newSemesters = screen.getAllByTestId("InsertSemesterTest Plan 1");
+        const newSemester1 = newSemesters[0]; //if the tests mysteriously break this is the reason
+        const newSemester2 = newSemesters[1];
+        newSemester1.click();
+        const setSeason1 = screen.getByLabelText("Semester Season:");
+        const setYear1 = screen.getByLabelText("Semester Year:");
+        userEvent.clear(setSeason1);
+        userEvent.clear(setYear1);
+        userEvent.type(setSeason1, "Summer");
+        userEvent.type(setYear1, "2022");
+        screen.getByRole("button", { name: "Save", hidden: false }).click();
+        expect(
+            screen.getAllByRole("heading", {
+                name: /Spring - 2022/,
+                hidden: false
+            })
+        ).toBeInTheDocument;
+        newSemester2.click();
+        const setSeason2 = screen.getByLabelText("Semester Season:");
+        const setYear2 = screen.getByLabelText("Semester Year:");
+        userEvent.clear(setSeason2);
+        userEvent.clear(setYear2);
+        userEvent.type(setSeason2, "Fall");
+        userEvent.type(setYear2, "2023");
+        screen.getByRole("button", { name: "Save", hidden: false }).click();
+        expect(
+            screen.getAllByRole("heading", {
+                name: /Fall - 2023/,
+                hidden: false
+            })
+        ).toBeInTheDocument;
+        const deleteAllSem = screen.getAllByRole("button", {
+            name: "Delete All Semesters",
+            hidden: false
+        });
+        deleteAllSem[0].click();
+        expect(
+            screen.queryAllByRole("heading", {
+                name: /Spring - 2022/,
+                hidden: false
+            })
+        ).not.toBeInTheDocument;
+        expect(
+            screen.queryAllByRole("heading", {
+                name: /Fall - 2023/,
+                hidden: false
+            })
+        ).not.toBeInTheDocument;
+    });
     test("Can insert a course", () => {
         //NOTE: this one is not working yet
         //make a new plan
@@ -308,6 +369,7 @@ describe("Make a new plan", () => {
         expect(screen.getAllByText("3 credits")).toBeInTheDocument;
     });
     test("Can edit a course", () => {
+        //not working for same reason as above -> insert button click()
         const createNew = screen.getByTestId("NewPlan");
         createNew.click();
         const enterTitle = screen.getByLabelText("Plan Title:");
