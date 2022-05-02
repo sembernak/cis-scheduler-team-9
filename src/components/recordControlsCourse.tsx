@@ -13,7 +13,7 @@ export function RecordControlsCourse({
                 size="sm"
                 onClick={changeEditing}
             >
-                Edit
+                Edit Course
             </Button>
         </div>
     );
