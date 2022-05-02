@@ -281,52 +281,70 @@ function App(): JSX.Element {
         semesterId: string,
         oldSemesterId: string
     ) {
-        const currentPlans = [...plans];
-        const withoutCourse = currentPlans.map(
-            (newplan: Plan): Plan => ({
-                ...newplan,
-                semesters: newplan.semesters.map(
-                    (semester1: Semester): Semester => ({
-                        ...semester1,
-                        courses: semester1.courses.filter(
-                            (course1: Course): boolean =>
-                                course1.code !== code ||
-                                course1.semesterId !== oldSemesterId
+        if (!contains(code, semesterId)) {
+            const currentPlans = [...plans];
+            const withoutCourse = currentPlans.map(
+                (newplan: Plan): Plan => ({
+                    ...newplan,
+                    semesters: newplan.semesters.map(
+                        (semester1: Semester): Semester => ({
+                            ...semester1,
+                            courses: semester1.courses.filter(
+                                (course1: Course): boolean =>
+                                    course1.code !== code ||
+                                    course1.semesterId !== oldSemesterId
+                            )
+                        })
+                    )
+                })
+            );
+            setPlans(
+                withoutCourse.map(
+                    (newPlan: Plan): Plan => ({
+                        ...newPlan,
+                        semesters: newPlan.semesters.map(
+                            (semester1: Semester): Semester =>
+                                semester1.id === semesterId
+                                    ? {
+                                          ...semester1,
+                                          courses: [
+                                              ...semester1.courses,
+                                              newCourse
+                                          ]
+                                      }
+                                    : { ...semester1 }
                         )
                     })
                 )
-            })
-        );
-        setPlans(
-            withoutCourse.map(
-                (newPlan: Plan): Plan => ({
-                    ...newPlan,
-                    semesters: newPlan.semesters.map(
-                        (semester1: Semester): Semester =>
-                            semester1.id === semesterId
-                                ? {
-                                      ...semester1,
-                                      courses: [...semester1.courses, newCourse]
-                                  }
-                                : { ...semester1 }
-                    )
-                })
-            )
-        );
+            );
+        }
     }
 
-    /*function contains(code: string, semester: Semester) {
+    function contains(code: string, semesterID: string) {
         //helper for addCourse()
-        const arr = semester.courses.filter(
-            (course: Course) => course.code === code
+        const currentPlan = plans.find((plan: Plan) =>
+            plan.semesters.some(
+                (semester: Semester): boolean => semester.id === semesterID
+            )
         );
-        if (arr.length > 0) {
-            //the course is not already in the semester
-            return true;
-        } else {
-            return false;
+        if (currentPlan) {
+            const searchSem = currentPlan.semesters.find(
+                (semester: Semester) => semester.id === semesterID
+            );
+            if (searchSem) {
+                const arr = searchSem.courses.filter(
+                    (course: Course) => course.code === code
+                );
+                if (arr.length > 0) {
+                    //the course is not already in the semester
+                    return true;
+                } else {
+                    return false;
+                }
+            }
         }
-    }*/
+        return false;
+    }
 
     return (
         <div className="App">
