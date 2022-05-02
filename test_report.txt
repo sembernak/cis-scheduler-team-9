@@ -44,10 +44,10 @@
 
 FAIL src/App.test.tsx
   Make a new plan
-    ✕ Clicking New Plan gives a form to enter a title (264 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (95 ms)
-    ✕ Can set new plan title (103 ms)
-    ✕ Insert Semester works (81 ms)
+    ✕ Clicking New Plan gives a form to enter a title (368 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (152 ms)
+    ✕ Can set new plan title (152 ms)
+    ✕ Insert Semester works (121 ms)
 
   ● Make a new plan › Clicking New Plan gives a form to enter a title
 
@@ -577,10 +577,10 @@ FAIL src/App.test.tsx
 -----------------------------|---------|----------|---------|---------|-------------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s             
 -----------------------------|---------|----------|---------|---------|-------------------------------
-All files                    |   29.87 |    26.19 |   17.21 |   30.37 |                               
+All files                    |   30.73 |    27.27 |   17.88 |   31.25 |                               
  src                         |   26.76 |        0 |    2.56 |   27.14 |                               
   App.tsx                    |   26.76 |        0 |    2.56 |   27.14 | 108-306                       
- src/components              |   29.51 |     42.3 |   23.17 |   30.06 |                               
+ src/components              |   30.76 |    42.85 |   24.09 |   31.32 |                               
   courseEditor.tsx           |       0 |      100 |       0 |       0 | 19-106                        
   coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 60-82,115-134                 
   coursePoolView.tsx         |       0 |        0 |       0 |       0 | 23-34                         
@@ -595,7 +595,7 @@ All files                    |   29.87 |    26.19 |   17.21 |   30.37 |
   recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                             
   recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                               
   semesterEditor.tsx         |       0 |      100 |       0 |       0 | 21-73                         
-  semesterView.tsx           |   33.33 |       50 |      25 |   35.29 | 44-48,67,71-72,76-103,158-172 
+  semesterView.tsx           |   38.46 |       50 |   30.76 |   40.54 | 44-48,78,82-83,87-114,169-183 
  src/helper_functions        |     100 |      100 |     100 |     100 |                               
   unpackJSON.tsx             |     100 |      100 |     100 |     100 |                               
  src/interfaces              |       0 |        0 |       0 |       0 |                               
@@ -606,5 +606,5 @@ All files                    |   29.87 |    26.19 |   17.21 |   30.37 |
 Test Suites: 1 failed, 1 total
 Tests:       3 failed, 1 passed, 4 total
 Snapshots:   0 total
-Time:        3.897 s
+Time:        4.589 s
 Ran all test suites.
