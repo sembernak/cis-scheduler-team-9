@@ -3024,6 +3024,158 @@
       at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
       at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
       at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
+      at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `Test Plan 1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at select
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormSelect.js:23:3
+        at div
+        at /home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
+        at div
+        at PlanViewer (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/components/planViewer.tsx:12:5)
+        at p
+        at div
+        at div
+        at App (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.tsx:104:31)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
       at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
       at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
 
@@ -3690,42 +3842,44 @@
       at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16997:28)
       at updateFragment (node_modules/react-dom/cjs/react-dom.development.js:17294:3)
 
-FAIL src/App.test.tsx (12.453 s)
+FAIL src/App.test.tsx (12.991 s)
   Make a new plan
-    ✓ App renders with welcome message (263 ms)
+    ✓ App renders with welcome message (268 ms)
     ✓ Clicking New Plan gives a form to enter a title (251 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (89 ms)
-    ✓ Can set new plan title (584 ms)
-    ✓ Insert Semester works (557 ms)
-    ✓ Delete Semester Works (871 ms)
-    ✓ Edit Semester Works (1374 ms)
-    ✓ Edit Semester Works (1352 ms)
-    ✓ Edit Semester cancel button works (1261 ms)
-    ✓ Can delete all semesters (1265 ms)
-    ✕ Can insert a course (943 ms)
-    ✕ Can edit a course (1097 ms)
-
-  ● Make a new plan › Can insert a course
-
-    TypeError: Cannot read properties of undefined (reading 'click')
-
-      356 |         });
-      357 |         expect(insertButton).toBeInTheDocument;
-    > 358 |         insertButton[0].click();
-          |                         ^
-      359 |         const setCode = screen.getByLabelText("Course Code: ");
-      360 |         const setTitle = screen.getByLabelText("Course Title: ");
-      361 |         const setDes = screen.getByLabelText("Course Description: ");
-
-      at Object.<anonymous> (src/App.test.tsx:358:25)
-      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
-      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
-      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
-      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+    ✓ Clicking cancel gets rid of Create Plan prompt (91 ms)
+    ✓ Can set new plan title (582 ms)
+    ✓ Insert Semester works (529 ms)
+    ✓ Delete Semester Works (779 ms)
+    ✓ Edit Semester Works (1114 ms)
+    ✓ Edit Semester Works (1185 ms)
+    ✓ Edit Semester cancel button works (1251 ms)
+    ✓ Can delete all semesters (1318 ms)
+    ✓ Can insert a course (1356 ms)
+    ✕ Can edit a course (1647 ms)
 
   ● Make a new plan › Can edit a course
 
-    TestingLibraryElementError: Unable to find a label with the text of: Course Code: 
+    TestingLibraryElementError: Found multiple elements with the role "button" and name "Save"
+
+    Here are the matching elements:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"me-4 btn btn-success"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mSave[0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"me-4 btn btn-success"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mSave[0m
+    [36m</button>[39m
+
+    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
 
     Ignored nodes: comments, <script />, <style />
     [36m<body>[39m
@@ -3884,19 +4038,20 @@ FAIL src/App.test.tsx (12.453 s)
                                     [36m<div[39m
                ...
 
-      411 |         expect(insertButton).toBeInTheDocument;
-      412 |         insertButton[0].click();
-    > 413 |         const setCode = screen.getByLabelText("Course Code: ");
-          |                                ^
-      414 |         const setTitle = screen.getByLabelText("Course Title: ");
-      415 |         const setDes = screen.getByLabelText("Course Description: ");
-      416 |         const setCredits = screen.getByLabelText("Credits: ");
+      418 |         userEvent.type(setDes, "Introduction to organic chemistry principles");
+      419 |         userEvent.type(setCredits, "3");
+    > 420 |         screen.getByRole("button", { name: "Save", hidden: false }).click();
+          |                ^
+      421 |         // edit this course using edit course button
+      422 |         const editButton = screen.getByRole("button", {
+      423 |             name: "Edit Course"
 
       at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at getAllByLabelText (node_modules/@testing-library/dom/dist/queries/label-text.js:116:38)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
-      at getByLabelText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/App.test.tsx:413:32)
+      at getElementError (node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
+      at getMultipleElementsFoundError (node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:66:13
+      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/App.test.tsx:420:16)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -3905,15 +4060,15 @@ FAIL src/App.test.tsx (12.453 s)
 -----------------------------|---------|----------|---------|---------|-------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s       
 -----------------------------|---------|----------|---------|---------|-------------------------
-All files                    |      50 |    36.53 |   40.62 |   50.78 |                         
- src                         |   38.82 |    16.66 |   29.54 |   39.28 |                         
-  App.tsx                    |   38.82 |    16.66 |   29.54 |   39.28 | 108-151,181-228,266-346 
- src/components              |   54.43 |    53.57 |   45.78 |   55.42 |                         
+All files                    |   54.26 |     42.3 |   47.65 |   55.11 |                         
+ src                         |   43.52 |       25 |   38.63 |   44.04 |                         
+  App.tsx                    |   43.52 |       25 |   38.63 |   44.04 | 108-151,181-209,266-346 
+ src/components              |   58.57 |    57.14 |    51.8 |   59.63 |                         
   courseEditor.tsx           |       0 |      100 |       0 |       0 | 19-106                  
   coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 60-82,115-134           
   coursePoolView.tsx         |       0 |        0 |       0 |       0 | 23-34                   
   courseView.tsx             |      60 |       75 |   33.33 |      60 | 22,53                   
-  insertCourse.tsx           |   46.66 |      100 |   14.28 |   46.66 | 39-61,78-120            
+  insertCourse.tsx           |   93.33 |      100 |   85.71 |   93.33 | 39                      
   insertPlan.tsx             |     100 |      100 |     100 |     100 |                         
   insertSemester.tsx         |   91.66 |      100 |      80 |   91.66 | 39                      
   planEditor.tsx             |       0 |      100 |       0 |       0 | 19-56                   
@@ -3923,7 +4078,7 @@ All files                    |      50 |    36.53 |   40.62 |   50.78 |
   recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                       
   recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                         
   semesterEditor.tsx         |   91.66 |      100 |   83.33 |   91.66 | 33                      
-  semesterView.tsx           |   46.15 |    83.33 |   53.84 |   48.64 | 78,82-83,87-114,183     
+  semesterView.tsx           |   46.15 |      100 |   53.84 |   48.64 | 78,82-83,87-114,183     
  src/helper_functions        |     100 |      100 |     100 |     100 |                         
   unpackJSON.tsx             |     100 |      100 |     100 |     100 |                         
  src/interfaces              |       0 |        0 |       0 |       0 |                         
@@ -3932,7 +4087,7 @@ All files                    |      50 |    36.53 |   40.62 |   50.78 |
   semester.ts                |       0 |        0 |       0 |       0 |                         
 -----------------------------|---------|----------|---------|---------|-------------------------
 Test Suites: 1 failed, 1 total
-Tests:       2 failed, 10 passed, 12 total
+Tests:       1 failed, 11 passed, 12 total
 Snapshots:   0 total
-Time:        13.195 s
+Time:        13.605 s
 Ran all test suites.
