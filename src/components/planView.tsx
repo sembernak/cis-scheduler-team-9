@@ -59,7 +59,7 @@ export function PlanView({
         <div>
             <h3>{plan.title}</h3>
             <Container>
-                <Row md={2} sm={1}>
+                <Row lg={2} md={1}>
                     {plan.semesters.map((Semester: Semester) => (
                         <Col className={"row-equal"} key={Semester.id}>
                             <div className="bg-light border m-2 p-2 contains-semester">

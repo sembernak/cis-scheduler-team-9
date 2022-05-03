@@ -50,13 +50,16 @@ export function SemesterView({
 
     const cred1 = semester.courses.reduce(
         (currentCredits: number, course: Course) =>
-            currentCredits + Number(course.credits[1]),
+            currentCredits + Number(course.credits.trim().charAt(0)),
         0
     );
 
     const cred2 = semester.courses.reduce(
         (currentCredits: number, course: Course) =>
-            currentCredits + Number(course.credits[course.credits.length - 1]),
+            currentCredits +
+            Number(
+                course.credits.trim().charAt(course.credits.trim().length - 1)
+            ),
         0
     );
 

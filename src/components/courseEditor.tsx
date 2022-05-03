@@ -46,7 +46,7 @@ export function CourseEditor({
                 <Col>
                     {/* credits */}
                     <Form.Group controlId="formCourseCredits" as={Row}>
-                        <Form.Label column sm={2}>
+                        <Form.Label column sm={3}>
                             Credits:
                         </Form.Label>
                         <Col>
@@ -65,7 +65,7 @@ export function CourseEditor({
                         data-testid={"T" + course.code}
                         as={Row}
                     >
-                        <Form.Label column sm={2}>
+                        <Form.Label column sm={3}>
                             Title:
                         </Form.Label>
                         <Col>
@@ -79,7 +79,7 @@ export function CourseEditor({
                     </Form.Group>
                     {/* Description */}
                     <Form.Group controlId="formCourseDescription" as={Row}>
-                        <Form.Label column sm={2}>
+                        <Form.Label column sm={3}>
                             Description:
                         </Form.Label>
                         <Col>
