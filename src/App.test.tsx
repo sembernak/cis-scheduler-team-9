@@ -259,56 +259,59 @@ describe("Make a new plan", () => {
         const enterId = screen.getByLabelText("Plan Title:");
         userEvent.type(enterId, "6"); //get rid of this when ids become automatic
         const enterTitle = screen.getByLabelText("Plan Title:");
-        userEvent.type(enterTitle, "Test Plan 1");
+        userEvent.type(enterTitle, "Test Plan 2");
         const save = screen.getByText("Save");
         save.click();
         const drop = screen.getByTestId("PlanSelect");
-        userEvent.selectOptions(drop, "Test Plan 1");
-        const newSemesters = screen.getAllByTestId("InsertSemesterTest Plan 1");
-        const newSemester1 = newSemesters[0]; //if the tests mysteriously break this is the reason
-        const newSemester2 = newSemesters[1];
-        newSemester1.click();
-        const setSeason1 = screen.getByLabelText("Semester Season:");
-        const setYear1 = screen.getByLabelText("Semester Year:");
-        userEvent.clear(setSeason1);
-        userEvent.clear(setYear1);
-        userEvent.type(setSeason1, "Summer");
-        userEvent.type(setYear1, "2022");
+        userEvent.selectOptions(drop, "6Test Plan 2");
+        const newSemester = screen.getByTestId("InsertSemester6Test Plan 2");
+        newSemester.click();
+        const setSeason = screen.getByLabelText("Semester Season:");
+        const setYear = screen.getByLabelText("Semester Year:");
+        expect(setSeason).toBeInTheDocument;
+        expect(setYear).toBeInTheDocument;
+        userEvent.clear(setSeason);
+        userEvent.clear(setYear);
+        userEvent.type(setSeason, "Spring");
+        userEvent.type(setYear, "2020");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
         expect(
             screen.getAllByRole("heading", {
-                name: /Spring - 2022/,
+                name: /Spring - 2020/,
                 hidden: false
             })
         ).toBeInTheDocument;
+        const newSemester2 = screen.getByTestId("InsertSemester6Test Plan 2");
         newSemester2.click();
         const setSeason2 = screen.getByLabelText("Semester Season:");
         const setYear2 = screen.getByLabelText("Semester Year:");
+        expect(setSeason2).toBeInTheDocument;
+        expect(setYear2).toBeInTheDocument;
         userEvent.clear(setSeason2);
         userEvent.clear(setYear2);
         userEvent.type(setSeason2, "Fall");
-        userEvent.type(setYear2, "2023");
+        userEvent.type(setYear2, "2021");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
         expect(
             screen.getAllByRole("heading", {
-                name: /Fall - 2023/,
+                name: /Fall - 2021/,
                 hidden: false
             })
         ).toBeInTheDocument;
-        const deleteAllSem = screen.getAllByRole("button", {
+        const deleteAllSem = screen.getByRole("button", {
             name: "Delete All Semesters",
             hidden: false
         });
-        deleteAllSem[0].click();
+        deleteAllSem.click();
         expect(
             screen.queryAllByRole("heading", {
-                name: /Spring - 2022/,
+                name: /Spring - 2020/,
                 hidden: false
             })
         ).not.toBeInTheDocument;
         expect(
             screen.queryAllByRole("heading", {
-                name: /Fall - 2023/,
+                name: /Fall - 2021/,
                 hidden: false
             })
         ).not.toBeInTheDocument;
@@ -343,30 +346,29 @@ describe("Make a new plan", () => {
                 hidden: false
             })
         ).toBeInTheDocument; //initially semester is in the document
-        screen
-            .getAllByRole("button", { name: "Edit Semester", hidden: false })[0]
-            .click();
         //add course
-        const insertButton = screen.queryAllByRole("button", {
+        const insertButton = screen.getByRole("button", {
             name: "Insert Course",
             hidden: false
         });
         expect(insertButton).toBeInTheDocument;
-        insertButton[0].click();
-        const setCode = screen.getByLabelText("Course Code: ");
-        const setTitle = screen.getByLabelText("Course Title: ");
-        const setDes = screen.getByLabelText("Course Description: ");
-        const setCredits = screen.getByLabelText("Credits: ");
-        userEvent.type(setCode, "CHEM331");
-        userEvent.type(setTitle, "Organic Chemsitry");
+        insertButton.click();
+        const setCode = screen.getByLabelText("Course Code:");
+        const setTitle = screen.getByLabelText("Course Title:");
+        const setDes = screen.getByLabelText("Course Description:");
+        const setCredits = screen.getByLabelText("Credits:");
+        userEvent.type(setCode, "CHEM 331");
+        userEvent.type(setTitle, "Organic Chemistry");
         userEvent.type(setDes, "Introduction to organic chemistry principles");
         userEvent.type(setCredits, "3");
+        screen.getByRole("button", { name: "Save", hidden: false }).click();
         //need to finish this test
-        expect(screen.getByText("CHEM331")).toBeInTheDocument;
-        expect(screen.getByText("Organic Chemsitry")).toBeInTheDocument;
-        expect(screen.getByText("Introduction to organic chemistry principles"))
-            .toBeInTheDocument;
-        expect(screen.getAllByText("3 credits")).toBeInTheDocument;
+        const linkElement = screen.getByText(/CHEM 331 - Organic Chemistry/i);
+        expect(linkElement).toBeInTheDocument();
+        const descriptionElement = screen.getByText(
+            /Introduction to organic chemistry principles/i
+        );
+        expect(descriptionElement).toBeInTheDocument;
     });
     test("Can edit a course", () => {
         //not working for same reason as above -> insert button click()
@@ -407,20 +409,21 @@ describe("Make a new plan", () => {
         });
         expect(insertButton).toBeInTheDocument;
         insertButton[0].click();
-        const setCode = screen.getByLabelText("Course Code: ");
-        const setTitle = screen.getByLabelText("Course Title: ");
-        const setDes = screen.getByLabelText("Course Description: ");
-        const setCredits = screen.getByLabelText("Credits: ");
+        const setCode = screen.getByLabelText("Course Code:");
+        const setTitle = screen.getByLabelText("Course Title:");
+        const setDes = screen.getByLabelText("Course Description:");
+        const setCredits = screen.getByLabelText("Credits:");
         userEvent.type(setCode, "CHEM331");
         userEvent.type(setTitle, "Organic Chemsitry");
         userEvent.type(setDes, "Introduction to organic chemistry principles");
         userEvent.type(setCredits, "3");
+        screen.getByRole("button", { name: "Save", hidden: false }).click();
         // edit this course using edit course button
-        const editButton = screen.queryAllByRole("button", {
+        const editButton = screen.getByRole("button", {
             name: "Edit Course"
         });
         expect(editButton).toBeInTheDocument;
-        editButton[0].click();
+        editButton.click();
         const newCredits = screen.getByLabelText("Credits: ");
         const newTitle = screen.getByLabelText("Course Title: ");
         const newDes = screen.getByLabelText("Course Description: ");
