@@ -94,7 +94,7 @@ export function InsertCourse({
             {/* Description */}
             <Form.Group controlId="formCourseDescription" as={Row}>
                 <Form.Label column sm={3}>
-                    Descritpion:
+                    Description:
                 </Form.Label>
                 <Col>
                     <Form.Control

@@ -20,8 +20,6 @@ describe("Make a new plan", () => {
         const createNew = screen.getByTestId("NewPlan");
         createNew.click();
         expect(screen.getByLabelText("Plan Title:")).toBeInTheDocument();
-        const enterId = screen.getByLabelText("Plan Title:");
-        userEvent.type(enterId, "6"); //get rid of this when ids become automatic
         const enterTitle = screen.getByLabelText("Plan Title:");
         userEvent.type(enterTitle, "Test Plan 1");
     });
@@ -37,27 +35,25 @@ describe("Make a new plan", () => {
         createNew.click();
         expect(screen.getByLabelText("Plan Title:")).toBeInTheDocument();
         const enterTitle = screen.getByLabelText("Plan Title:");
-        userEvent.type(enterTitle, "Test Plan 1");
+        userEvent.type(enterTitle, "Test Plan 2");
         const save = screen.getByText("Save");
         save.click();
         const drop = screen.getByTestId("PlanSelect");
-        userEvent.selectOptions(drop, "Test Plan 1");
-        expect(screen.getByRole("option", { name: "Test Plan 1" }).ariaSelected)
+        userEvent.selectOptions(drop, "Test Plan 2");
+        expect(screen.getByRole("option", { name: "Test Plan 2" }).ariaSelected)
             .toBeTruthy;
-        expect(screen.queryAllByText("Test Plan 1").length).toBe(2);
+        expect(screen.queryAllByText("Test Plan 2").length).toBe(2);
     });
     test("Insert Semester works", () => {
         const createNew = screen.getByTestId("NewPlan");
         createNew.click();
-        const enterId = screen.getByLabelText("Plan Title:");
-        userEvent.type(enterId, "6"); //get rid of this when ids become automatic
         const enterTitle = screen.getByLabelText("Plan Title:");
-        userEvent.type(enterTitle, "Test Plan 1");
+        userEvent.type(enterTitle, "Test Plan 3");
         const save = screen.getByText("Save");
         save.click();
         const drop = screen.getByTestId("PlanSelect");
-        userEvent.selectOptions(drop, "Test Plan 1");
-        const newSemesters = screen.getAllByTestId("InsertSemesterTest Plan 1");
+        userEvent.selectOptions(drop, "Test Plan 3");
+        const newSemesters = screen.getAllByTestId("InsertSemesterTest Plan 3");
         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
         newSemester.click();
         const setSeason = screen.getByLabelText("Semester Season:");
@@ -81,12 +77,12 @@ describe("Make a new plan", () => {
         const createNew = screen.getByTestId("NewPlan");
         createNew.click();
         const enterTitle = screen.getByLabelText("Plan Title:");
-        userEvent.type(enterTitle, "Test Plan 1");
+        userEvent.type(enterTitle, "Test Plan 4");
         const save = screen.getByText("Save");
         save.click();
         const drop = screen.getByTestId("PlanSelect");
-        userEvent.selectOptions(drop, "Test Plan 1");
-        const newSemesters = screen.getAllByTestId("InsertSemesterTest Plan 1");
+        userEvent.selectOptions(drop, "Test Plan 4");
+        const newSemesters = screen.getAllByTestId("InsertSemesterTest Plan 4");
         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
         //make a new semester
         newSemester.click();
@@ -122,12 +118,12 @@ describe("Make a new plan", () => {
         const createNew = screen.getByTestId("NewPlan");
         createNew.click();
         const enterTitle = screen.getByLabelText("Plan Title:");
-        userEvent.type(enterTitle, "Test Plan 1");
+        userEvent.type(enterTitle, "Test Plan 5");
         const save = screen.getByText("Save");
         save.click();
         const drop = screen.getByTestId("PlanSelect");
-        userEvent.selectOptions(drop, "Test Plan 1");
-        const newSemesters = screen.getAllByTestId("InsertSemesterTest Plan 1");
+        userEvent.selectOptions(drop, "Test Plan 5");
+        const newSemesters = screen.getAllByTestId("InsertSemesterTest Plan 5");
         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
         //make a new semester
         newSemester.click();
@@ -167,12 +163,12 @@ describe("Make a new plan", () => {
         const createNew = screen.getByTestId("NewPlan");
         createNew.click();
         const enterTitle = screen.getByLabelText("Plan Title:");
-        userEvent.type(enterTitle, "Test Plan 1");
+        userEvent.type(enterTitle, "Test Plan 6");
         const save = screen.getByText("Save");
         save.click();
         const drop = screen.getByTestId("PlanSelect");
-        userEvent.selectOptions(drop, "Test Plan 1");
-        const newSemesters = screen.getAllByTestId("InsertSemesterTest Plan 1");
+        userEvent.selectOptions(drop, "Test Plan 6");
+        const newSemesters = screen.getAllByTestId("InsertSemesterTest Plan 6");
         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
         //make a new semester
         newSemester.click();
@@ -212,12 +208,12 @@ describe("Make a new plan", () => {
         const createNew = screen.getByTestId("NewPlan");
         createNew.click();
         const enterTitle = screen.getByLabelText("Plan Title:");
-        userEvent.type(enterTitle, "Test Plan 1");
+        userEvent.type(enterTitle, "Test Plan 7");
         const save = screen.getByText("Save");
         save.click();
         const drop = screen.getByTestId("PlanSelect");
-        userEvent.selectOptions(drop, "Test Plan 1");
-        const newSemesters = screen.getAllByTestId("InsertSemesterTest Plan 1");
+        userEvent.selectOptions(drop, "Test Plan 7");
+        const newSemesters = screen.getAllByTestId("InsertSemesterTest Plan 7");
         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
         //make a new semester
         newSemester.click();
@@ -256,15 +252,13 @@ describe("Make a new plan", () => {
         //does not work fully
         const createNew = screen.getByTestId("NewPlan");
         createNew.click();
-        const enterId = screen.getByLabelText("Plan Title:");
-        userEvent.type(enterId, "6"); //get rid of this when ids become automatic
         const enterTitle = screen.getByLabelText("Plan Title:");
-        userEvent.type(enterTitle, "Test Plan 2");
+        userEvent.type(enterTitle, "Test Plan 8");
         const save = screen.getByText("Save");
         save.click();
         const drop = screen.getByTestId("PlanSelect");
-        userEvent.selectOptions(drop, "6Test Plan 2");
-        const newSemester = screen.getByTestId("InsertSemester6Test Plan 2");
+        userEvent.selectOptions(drop, "Test Plan 8");
+        const newSemester = screen.getByTestId("InsertSemesterTest Plan 8");
         newSemester.click();
         const setSeason = screen.getByLabelText("Semester Season:");
         const setYear = screen.getByLabelText("Semester Year:");
@@ -281,7 +275,7 @@ describe("Make a new plan", () => {
                 hidden: false
             })
         ).toBeInTheDocument;
-        const newSemester2 = screen.getByTestId("InsertSemester6Test Plan 2");
+        const newSemester2 = screen.getByTestId("InsertSemesterTest Plan 8");
         newSemester2.click();
         const setSeason2 = screen.getByLabelText("Semester Season:");
         const setYear2 = screen.getByLabelText("Semester Year:");
@@ -322,12 +316,12 @@ describe("Make a new plan", () => {
         const createNew = screen.getByTestId("NewPlan");
         createNew.click();
         const enterTitle = screen.getByLabelText("Plan Title:");
-        userEvent.type(enterTitle, "Test Plan 2");
+        userEvent.type(enterTitle, "Test Plan 9");
         const save = screen.getByText("Save");
         save.click();
         const drop = screen.getByTestId("PlanSelect");
-        userEvent.selectOptions(drop, "Test Plan 2");
-        const newSemesters = screen.getAllByTestId("InsertSemesterTest Plan 2");
+        userEvent.selectOptions(drop, "Test Plan 9");
+        const newSemesters = screen.getAllByTestId("InsertSemesterTest Plan 9");
         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
         //make a new semester
         newSemester.click();
@@ -353,9 +347,9 @@ describe("Make a new plan", () => {
         });
         expect(insertButton).toBeInTheDocument;
         insertButton.click();
-        const setCode = screen.getByLabelText("Course Code:");
-        const setTitle = screen.getByLabelText("Course Title:");
-        const setDes = screen.getByLabelText("Course Description:");
+        const setCode = screen.getByLabelText("Code:");
+        const setTitle = screen.getByLabelText("Title:");
+        const setDes = screen.getByLabelText("Description:");
         const setCredits = screen.getByLabelText("Credits:");
         userEvent.type(setCode, "CHEM 331");
         userEvent.type(setTitle, "Organic Chemistry");
@@ -375,12 +369,14 @@ describe("Make a new plan", () => {
         const createNew = screen.getByTestId("NewPlan");
         createNew.click();
         const enterTitle = screen.getByLabelText("Plan Title:");
-        userEvent.type(enterTitle, "Test Plan 2");
+        userEvent.type(enterTitle, "Test Plan 10");
         const save = screen.getByText("Save");
         save.click();
         const drop = screen.getByTestId("PlanSelect");
-        userEvent.selectOptions(drop, "Test Plan 2");
-        const newSemesters = screen.getAllByTestId("InsertSemesterTest Plan 2");
+        userEvent.selectOptions(drop, "Test Plan 10");
+        const newSemesters = screen.getAllByTestId(
+            "InsertSemesterTest Plan 10"
+        );
         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
         //make a new semester
         newSemester.click();
@@ -399,9 +395,6 @@ describe("Make a new plan", () => {
                 hidden: false
             })
         ).toBeInTheDocument; //initially semester is in the document
-        screen
-            .getAllByRole("button", { name: "Edit Semester", hidden: false })[0]
-            .click();
         //add course
         const insertButton = screen.queryAllByRole("button", {
             name: "Insert Course",
@@ -409,31 +402,171 @@ describe("Make a new plan", () => {
         });
         expect(insertButton).toBeInTheDocument;
         insertButton[0].click();
-        const setCode = screen.getByLabelText("Course Code:");
-        const setTitle = screen.getByLabelText("Course Title:");
-        const setDes = screen.getByLabelText("Course Description:");
+        const setCode = screen.getByLabelText("Code:");
+        const setTitle = screen.getByLabelText("Title:");
+        const setDes = screen.getByLabelText("Description:");
         const setCredits = screen.getByLabelText("Credits:");
         userEvent.type(setCode, "CHEM331");
         userEvent.type(setTitle, "Organic Chemsitry");
         userEvent.type(setDes, "Introduction to organic chemistry principles");
         userEvent.type(setCredits, "3");
-        screen.getByRole("button", { name: "Save", hidden: false }).click();
+        const saveButton = screen.getAllByRole("button", {
+            name: "Save",
+            hidden: false
+        });
+        saveButton[saveButton.length - 1].click();
         // edit this course using edit course button
         const editButton = screen.getByRole("button", {
             name: "Edit Course"
         });
         expect(editButton).toBeInTheDocument;
         editButton.click();
-        const newCredits = screen.getByLabelText("Credits: ");
-        const newTitle = screen.getByLabelText("Course Title: ");
-        const newDes = screen.getByLabelText("Course Description: ");
+        const newCredits = screen.getByLabelText("Credits:");
+        const newTitle = screen.getByLabelText("Title:");
+        const newDes = screen.getByLabelText("Description:");
         userEvent.type(newCredits, "2");
         userEvent.type(newTitle, "CHEM101");
         userEvent.type(newDes, "Not original course");
+        const saveButton2 = screen.getAllByRole("button", {
+            name: "Save",
+            hidden: false
+        });
+        saveButton2[saveButton2.length - 1].click();
+        expect(screen.getAllByText(/2 credits/i)).toBeInTheDocument;
+        expect(screen.getByText(/CHEM101/i)).toBeInTheDocument;
+        expect(screen.getByText(/Not original course/i)).toBeInTheDocument;
+    });
+    test("Can edit a plan", () => {
+        //testing edit plan button
+        const createNew = screen.getByTestId("NewPlan");
+        createNew.click();
+        const enterTitle = screen.getByLabelText("Plan Title:");
+        userEvent.type(enterTitle, "Test Plan 11");
+        const save = screen.getByText("Save");
+        save.click();
+        const drop = screen.getByTestId("PlanSelect");
+        userEvent.selectOptions(drop, "Test Plan 11");
+        const editButton = screen.getByRole("button", {
+            name: "Edit Plan"
+        });
+        expect(editButton).toBeInTheDocument;
+        editButton.click();
+        const newTitle = screen.getByLabelText("Plan Title:");
+        userEvent.type(newTitle, "Plan is changed");
+        const saveButton2 = screen.getAllByRole("button", {
+            name: "Save",
+            hidden: false
+        });
+        saveButton2[saveButton2.length - 1].click();
+        expect(screen.getAllByText(/Plan is changed/i)).toBeInTheDocument;
+    });
+    test("Plan editor cancel button works", () => {
+        //testing edit plan button
+        const createNew = screen.getByTestId("NewPlan");
+        createNew.click();
+        const enterTitle = screen.getByLabelText("Plan Title:");
+        userEvent.type(enterTitle, "Test Plan 12");
+        const save = screen.getByText("Save");
+        save.click();
+        const drop = screen.getByTestId("PlanSelect");
+        userEvent.selectOptions(drop, "Test Plan 12");
+        const editButton = screen.getByRole("button", {
+            name: "Edit Plan"
+        });
+        expect(editButton).toBeInTheDocument;
+        editButton.click();
+        const newTitle = screen.getByLabelText("Plan Title:");
+        userEvent.type(newTitle, "Plan is changed");
+        const saveButton2 = screen.getAllByRole("button", {
+            name: "Cancel",
+            hidden: false
+        });
+        saveButton2[saveButton2.length - 1].click();
+        expect(screen.queryByText(/Plan is changed/i)).not.toBeInTheDocument; //cancel button was pushed so title should not change
+    });
+    test("Delete all courses button works", () => {
+        //NOTE: this one is not working yet
+        //make a new plan
+        const createNew = screen.getByTestId("NewPlan");
+        createNew.click();
+        const enterTitle = screen.getByLabelText("Plan Title:");
+        userEvent.type(enterTitle, "Test Plan 13");
+        const save = screen.getByText("Save");
+        save.click();
+        const drop = screen.getByTestId("PlanSelect");
+        userEvent.selectOptions(drop, "Test Plan 13");
+        const newSemesters = screen.getAllByTestId(
+            "InsertSemesterTest Plan 13"
+        );
+        const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
+        //make a new semester
+        newSemester.click();
+        const setSeason = screen.getByLabelText("Semester Season:");
+        const setYear = screen.getByLabelText("Semester Year:");
+        expect(setSeason).toBeInTheDocument;
+        expect(setYear).toBeInTheDocument;
+        userEvent.clear(setSeason);
+        userEvent.clear(setYear);
+        userEvent.type(setSeason, "Winter");
+        userEvent.type(setYear, "2020");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
-        expect(screen.getByText("CHEM101")).toBeInTheDocument;
-        expect(screen.getByText("Not original course")).toBeInTheDocument;
-        expect(screen.getAllByText("2 credits")).toBeInTheDocument;
+        expect(
+            screen.getAllByRole("heading", {
+                name: /Winter - 2020/,
+                hidden: false
+            })
+        ).toBeInTheDocument; //initially semester is in the document
+        //add course
+        const insertButton = screen.getByRole("button", {
+            name: "Insert Course",
+            hidden: false
+        });
+        expect(insertButton).toBeInTheDocument;
+        insertButton.click();
+        const setCode = screen.getByLabelText("Code:");
+        const setTitle = screen.getByLabelText("Title:");
+        const setDes = screen.getByLabelText("Description:");
+        const setCredits = screen.getByLabelText("Credits:");
+        userEvent.type(setCode, "CHEM 331");
+        userEvent.type(setTitle, "Organic Chemistry");
+        userEvent.type(setDes, "Introduction to organic chemistry principles");
+        userEvent.type(setCredits, "3");
+        screen.getByRole("button", { name: "Save", hidden: false }).click();
+        const insertButton1 = screen.getByRole("button", {
+            name: "Insert Course",
+            hidden: false
+        });
+        expect(insertButton1).toBeInTheDocument;
+        insertButton.click();
+        //add a second course
+        const setCode2 = screen.getByLabelText("Code:");
+        const setTitle2 = screen.getByLabelText("Title:");
+        const setDes2 = screen.getByLabelText("Description:");
+        const setCredits2 = screen.getByLabelText("Credits:");
+        userEvent.type(setCode2, "CHEG 342");
+        userEvent.type(setTitle2, "Heat and Mass Transfer");
+        userEvent.type(setDes2, "Introduction to heat and mass transfer");
+        userEvent.type(setCredits2, "4");
+        screen.getByRole("button", { name: "Save", hidden: false }).click();
+        const linkElement = screen.getByText(
+            /CHEG 342 - Heat and Mass Transfer/i
+        );
+        expect(linkElement).toBeInTheDocument();
+        const descriptionElement = screen.getByText(
+            /Introduction to heat and mass transfer/i
+        );
+        expect(descriptionElement).toBeInTheDocument;
+        //checked that both courses appeared- now can delete them
+        screen
+            .getAllByRole("button", {
+                name: "Delete All Courses",
+                hidden: false
+            })[0]
+            .click();
+        expect(
+            screen.queryByText(/CHEG 342 - Heat and Mass Transfer/i)
+        ).not.toBeInTheDocument();
+        expect(screen.queryByText(/CHEM331/i)).not.toBeInTheDocument();
     });
     /*test("Create Courses Manually", () => {
         const createNew = screen.getByTestId("NewPlan");

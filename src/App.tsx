@@ -361,7 +361,7 @@ function App(): JSX.Element {
             </p>
             <div className="schedule">
                 <br></br>
-                <p>
+                <div>
                     <PlanViewer
                         deleteAllCourses={deleteAllCourses}
                         select={select}
@@ -378,7 +378,7 @@ function App(): JSX.Element {
                         resetCourse={resetCourse}
                         addCourse={addCourse}
                     ></PlanViewer>
-                </p>
+                </div>
             </div>
             <CoursePool addCourse={addCourse}></CoursePool>
             <Button onClick={makeCSV}>Download Plan</Button>
