@@ -5,4 +5,5 @@ export interface Course {
     description: string;
     credits: string;
     semesterId: string;
+    requirements: string[];
 }

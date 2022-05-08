@@ -350,11 +350,11 @@ describe("Make a new plan", () => {
         const setCode = screen.getByLabelText("Code:");
         const setTitle = screen.getByLabelText("Title:");
         const setDes = screen.getByLabelText("Description:");
-        const setCredits = screen.getByLabelText("Credits:");
+        const setCredits = screen.getAllByLabelText("Credits:");
         userEvent.type(setCode, "CHEM 331");
         userEvent.type(setTitle, "Organic Chemistry");
         userEvent.type(setDes, "Introduction to organic chemistry principles");
-        userEvent.type(setCredits, "3");
+        userEvent.type(setCredits[0], "3");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
         //need to finish this test
         const linkElement = screen.getByText(/CHEM 331 - Organic Chemistry/i);
@@ -405,11 +405,11 @@ describe("Make a new plan", () => {
         const setCode = screen.getByLabelText("Code:");
         const setTitle = screen.getByLabelText("Title:");
         const setDes = screen.getByLabelText("Description:");
-        const setCredits = screen.getByLabelText("Credits:");
+        const setCredits = screen.getAllByLabelText("Credits:");
         userEvent.type(setCode, "CHEM331");
         userEvent.type(setTitle, "Organic Chemsitry");
         userEvent.type(setDes, "Introduction to organic chemistry principles");
-        userEvent.type(setCredits, "3");
+        userEvent.type(setCredits[0], "3");
         const saveButton = screen.getAllByRole("button", {
             name: "Save",
             hidden: false
@@ -421,10 +421,10 @@ describe("Make a new plan", () => {
         });
         expect(editButton).toBeInTheDocument;
         editButton.click();
-        const newCredits = screen.getByLabelText("Credits:");
+        const newCredits = screen.getAllByLabelText("Credits:");
         const newTitle = screen.getByLabelText("Title:");
         const newDes = screen.getByLabelText("Description:");
-        userEvent.type(newCredits, "2");
+        userEvent.type(newCredits[0], "2");
         userEvent.type(newTitle, "CHEM101");
         userEvent.type(newDes, "Not original course");
         const saveButton2 = screen.getAllByRole("button", {
@@ -435,6 +435,90 @@ describe("Make a new plan", () => {
         expect(screen.getAllByText(/2 credits/i)).toBeInTheDocument;
         expect(screen.getByText(/CHEM101/i)).toBeInTheDocument;
         expect(screen.getByText(/Not original course/i)).toBeInTheDocument;
+    });
+    test("Can set and fulfill requirements", () => {
+        //not working for same reason as above -> insert button click()
+        const createNew = screen.getByTestId("NewPlan");
+        createNew.click();
+        const enterTitle = screen.getByLabelText("Plan Title:");
+        userEvent.type(enterTitle, "Test Plan 16");
+        const save = screen.getByText("Save");
+        save.click();
+        const drop = screen.getByTestId("PlanSelect");
+        userEvent.selectOptions(drop, "Test Plan 16");
+        const newSemesters = screen.getAllByTestId(
+            "InsertSemesterTest Plan 16"
+        );
+        const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
+        //make a new semester
+        newSemester.click();
+        const setSeason = screen.getByLabelText("Semester Season:");
+        const setYear = screen.getByLabelText("Semester Year:");
+        expect(setSeason).toBeInTheDocument;
+        expect(setYear).toBeInTheDocument;
+        userEvent.clear(setSeason);
+        userEvent.clear(setYear);
+        userEvent.type(setSeason, "Winter");
+        userEvent.type(setYear, "2020");
+        screen.getByRole("button", { name: "Save", hidden: false }).click();
+        expect(
+            screen.getAllByRole("heading", {
+                name: /Winter - 2020/,
+                hidden: false
+            })
+        ).toBeInTheDocument; //initially semester is in the document
+        //add course
+        const insertButton = screen.queryAllByRole("button", {
+            name: "Insert Course",
+            hidden: false
+        });
+        expect(insertButton).toBeInTheDocument;
+        insertButton[0].click();
+        const setCode = screen.getByLabelText("Code:");
+        const setTitle = screen.getByLabelText("Title:");
+        const setDes = screen.getByLabelText("Description:");
+        const setCredits = screen.getAllByLabelText("Credits:");
+        userEvent.type(setCode, "CHEM331");
+        userEvent.type(setTitle, "Organic Chemsitry");
+        userEvent.type(setDes, "Introduction to organic chemistry principles");
+        userEvent.type(setCredits[0], "3");
+        const saveButton = screen.getAllByRole("button", {
+            name: "Save",
+            hidden: false
+        });
+        saveButton[saveButton.length - 1].click();
+        // edit this course using edit course button
+        const editButton = screen.getByRole("button", {
+            name: "Edit Course"
+        });
+        expect(editButton).toBeInTheDocument;
+        editButton.click();
+        const newCredits = screen.getAllByLabelText("Credits:");
+        const newTitle = screen.getByLabelText("Title:");
+        const newDes = screen.getByLabelText("Description:");
+        const newReq = screen.getAllByPlaceholderText("New Requirement");
+        userEvent.type(newCredits[0], "2");
+        userEvent.type(newTitle, "CHEM101");
+        userEvent.type(newDes, "Not original course");
+        userEvent.type(newReq[0], "TestReq");
+        const addReq = screen.getAllByText("Add Requirement");
+        addReq[0].click();
+        const saveButton2 = screen.getAllByRole("button", {
+            name: "Save",
+            hidden: false
+        });
+        saveButton2[saveButton2.length - 1].click();
+        expect(screen.getAllByText(/2 credits/i)).toBeInTheDocument;
+        expect(screen.getByText(/CHEM101/i)).toBeInTheDocument;
+        expect(screen.getByText(/Not original course/i)).toBeInTheDocument;
+        expect(screen.getByText(/TestReq/i)).toBeInTheDocument;
+        const newGlobReq = screen.getAllByPlaceholderText("New Requirement");
+        userEvent.type(newGlobReq[newGlobReq.length - 1], "TestReq");
+        const credCount = screen.getAllByLabelText("Credits:");
+        userEvent.type(credCount[credCount.length - 1], "3");
+        const addGlobReq = screen.getAllByText("Add Requirement");
+        addGlobReq[addGlobReq.length - 1].click();
+        expect(screen.getByText(/Yes/i)).toBeInTheDocument;
     });
     test("Can edit a plan", () => {
         //testing edit plan button
@@ -526,11 +610,11 @@ describe("Make a new plan", () => {
         const setCode = screen.getByLabelText("Code:");
         const setTitle = screen.getByLabelText("Title:");
         const setDes = screen.getByLabelText("Description:");
-        const setCredits = screen.getByLabelText("Credits:");
+        const setCredits = screen.getAllByLabelText("Credits:");
         userEvent.type(setCode, "CHEM 331");
         userEvent.type(setTitle, "Organic Chemistry");
         userEvent.type(setDes, "Introduction to organic chemistry principles");
-        userEvent.type(setCredits, "3");
+        userEvent.type(setCredits[0], "3");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
         const insertButton1 = screen.getByRole("button", {
             name: "Insert Course",
@@ -542,11 +626,11 @@ describe("Make a new plan", () => {
         const setCode2 = screen.getByLabelText("Code:");
         const setTitle2 = screen.getByLabelText("Title:");
         const setDes2 = screen.getByLabelText("Description:");
-        const setCredits2 = screen.getByLabelText("Credits:");
+        const setCredits2 = screen.getAllByLabelText("Credits:");
         userEvent.type(setCode2, "CHEG 342");
         userEvent.type(setTitle2, "Heat and Mass Transfer");
         userEvent.type(setDes2, "Introduction to heat and mass transfer");
-        userEvent.type(setCredits2, "4");
+        userEvent.type(setCredits2[1], "4");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
         const linkElement = screen.getByText(
             /CHEG 342 - Heat and Mass Transfer/i

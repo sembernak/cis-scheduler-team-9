@@ -107,7 +107,8 @@ export function SemesterView({
             prereq: [],
             description: courseDescription,
             credits: courseCredits,
-            semesterId: newSemesterId.id
+            semesterId: newSemesterId.id,
+            requirements: []
         };
 
         addCourse(courseCode, newCourse, newSemesterId.id, courseSemesterId);

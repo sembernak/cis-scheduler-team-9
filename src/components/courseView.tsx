@@ -16,6 +16,7 @@ export function CourseView({
     resetCourse: (code: string, semesterId: string) => void;
 }): JSX.Element {
     const preRecs = course.prereq.join(", ");
+    const requirements = course.requirements.join(", ");
     const [editing, setEditing] = useState<boolean>(false);
 
     function changeEditing() {
@@ -42,6 +43,10 @@ export function CourseView({
                 {course.description}
                 <br></br>
                 {preRecs.length === 0 ? "" : "Prerequisites: " + preRecs}
+                <br></br>
+                {requirements.length === 0
+                    ? ""
+                    : "Degree Requirements: " + requirements}
                 <Col>
                     <Row>
                         <RecordControlsCourse

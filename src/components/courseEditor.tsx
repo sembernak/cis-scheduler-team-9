@@ -1,5 +1,14 @@
 import React, { useState } from "react";
-import { Button, Container, Row, Col, Form } from "react-bootstrap";
+import {
+    Button,
+    Container,
+    Row,
+    Col,
+    Form,
+    InputGroup,
+    FormControl,
+    FormLabel
+} from "react-bootstrap";
 //import { Quiz } from "../interfaces/quiz";
 import { Course } from "../interfaces/course";
 
@@ -20,6 +29,10 @@ export function CourseEditor({
     const [title, setTitle] = useState<string>(course.title);
     const [credits, setCredits] = useState<string>(course.credits);
     const [description, setDescription] = useState<string>(course.description);
+    const [preReqs, setPreReqs] = useState<string[]>(course.prereq);
+    const [newPreReq, setNewPR] = useState<string>("");
+    const [requires, setRequires] = useState<string[]>(course.requirements);
+    const [newRequire, setNewRequire] = useState<string>("");
 
     function save() {
         editCourse(
@@ -29,7 +42,9 @@ export function CourseEditor({
                 title: title,
                 description: description,
                 code: code,
-                credits: credits
+                credits: credits,
+                prereq: preReqs,
+                requirements: requires
             },
             course.semesterId
         );
@@ -39,6 +54,46 @@ export function CourseEditor({
     function cancel() {
         changeEditing();
     }
+
+    function newPRFunction(event: React.ChangeEvent<HTMLInputElement>) {
+        setNewPR(event.target.value);
+    }
+
+    function manageNewPR() {
+        setPreReqs([...preReqs, newPreReq]);
+        setNewPR("");
+    }
+
+    /*function manageCurrentPR(
+        event: React.ChangeEvent<HTMLInputElement>,
+        key: string
+    ) {
+        setPreReqs(
+            preReqs.map((item: string): string =>
+                item === key ? event.target.value : item
+            )
+        );
+    }*/
+
+    function newRequireFunction(event: React.ChangeEvent<HTMLInputElement>) {
+        setNewRequire(event.target.value);
+    }
+
+    function manageNewRequire() {
+        setRequires([...requires, newRequire]);
+        setNewRequire("");
+    }
+
+    /*function manageCurrentPR(
+        event: React.ChangeEvent<HTMLInputElement>,
+        key: string
+    ) {
+        setRequires(
+            requires.map((item: string): string =>
+                item === key ? event.target.value : item
+            )
+        );
+    }*/
 
     return (
         <Container>
@@ -94,7 +149,90 @@ export function CourseEditor({
                             />
                         </Col>
                     </Form.Group>
-                    {/*did NOT add editing for prereqs yet- will more more complex since it will have to be a list*/}
+                    {/*prereqs*/}
+                    <br></br>
+                    <FormLabel>PreReqs:</FormLabel>
+                    {preReqs.map(
+                        (prereq: string): JSX.Element => (
+                            <InputGroup key={prereq}>
+                                <FormControl
+                                    readOnly
+                                    defaultValue={prereq}
+                                    /*onChange={(
+                                        event: React.ChangeEvent<HTMLInputElement>
+                                    ) => manageCurrentPR(event, prereq)}
+                                    This works but is annoying to use ^*/
+                                />
+                                <Button
+                                    onClick={() =>
+                                        setPreReqs(
+                                            preReqs.filter(
+                                                (item: string): boolean =>
+                                                    item !== prereq
+                                            )
+                                        )
+                                    }
+                                >
+                                    X
+                                </Button>
+                            </InputGroup>
+                        )
+                    )}
+                    <InputGroup>
+                        <FormControl
+                            placeholder="New PreReq"
+                            value={newPreReq}
+                            onChange={newPRFunction}
+                        />
+                        <Button
+                            variant="outline-secondary"
+                            onClick={manageNewPR}
+                        >
+                            Add PreReq
+                        </Button>
+                    </InputGroup>
+                    {/*requirements*/}
+                    <br></br>
+                    <FormLabel>Degree Requirements:</FormLabel>
+                    {requires.map(
+                        (req: string): JSX.Element => (
+                            <InputGroup key={req}>
+                                <FormControl
+                                    readOnly
+                                    value={req}
+                                    /*onChange={(
+                                        event: React.ChangeEvent<HTMLInputElement>
+                                    ) => manageCurrentPR(event, prereq)}
+                                    This works but is annoying to use ^*/
+                                />
+                                <Button
+                                    onClick={() =>
+                                        setRequires(
+                                            requires.filter(
+                                                (item: string): boolean =>
+                                                    item !== req
+                                            )
+                                        )
+                                    }
+                                >
+                                    X
+                                </Button>
+                            </InputGroup>
+                        )
+                    )}
+                    <InputGroup>
+                        <FormControl
+                            placeholder="New Requirement"
+                            value={newRequire}
+                            onChange={newRequireFunction}
+                        />
+                        <Button
+                            variant="outline-secondary"
+                            onClick={manageNewRequire}
+                        >
+                            Add Requirement
+                        </Button>
+                    </InputGroup>
                     <Button onClick={save} variant="success" className="me-4">
                         Save
                     </Button>

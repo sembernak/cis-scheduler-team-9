@@ -1,6 +1,15 @@
 import { useState } from "react";
 import React from "react";
-import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import {
+    Button,
+    Container,
+    Row,
+    Col,
+    Form,
+    FormLabel,
+    InputGroup,
+    FormControl
+} from "react-bootstrap";
 import { Course } from "../interfaces/course";
 import { Semester } from "../interfaces/semester";
 
@@ -21,15 +30,20 @@ export function InsertCourse({
     const [description, setDescription] = useState<string>("");
     const [credits, setCredits] = useState<string>("");
     //const [editing, setEditing] = useState<boolean>(false);
+    const [preReqs, setPreReqs] = useState<string[]>([]);
+    const [newPreReq, setNewPR] = useState<string>("");
+    const [requires, setRequires] = useState<string[]>([]);
+    const [newRequire, setNewRequire] = useState<string>("");
     const semesterId = String(semester.id);
 
     const newCourse = {
         code: code,
         title: title,
-        prereq: [],
+        prereq: [""],
         description: description,
         credits: credits,
-        semesterId: semesterId
+        semesterId: semesterId,
+        requirements: [""]
     };
 
     //function changeEditing() {
@@ -43,12 +57,12 @@ export function InsertCourse({
         editCourse(
             newCourse.code,
             {
-                ...newCourse,
                 code: code,
                 title: title,
-                prereq: [],
+                prereq: preReqs,
                 description: description,
                 credits: credits,
+                requirements: requires,
                 semesterId: semesterId
             },
             semesterId
@@ -59,6 +73,24 @@ export function InsertCourse({
             courses: [...semester.courses, newCourse]
         });
         flipVisibility();
+    }
+
+    function newPRFunction(event: React.ChangeEvent<HTMLInputElement>) {
+        setNewPR(event.target.value);
+    }
+
+    function manageNewPR() {
+        setPreReqs([...preReqs, newPreReq]);
+        setNewPR("");
+    }
+
+    function newRequireFunction(event: React.ChangeEvent<HTMLInputElement>) {
+        setNewRequire(event.target.value);
+    }
+
+    function manageNewRequire() {
+        setRequires([...requires, newRequire]);
+        setNewRequire("");
     }
 
     return (
@@ -119,6 +151,81 @@ export function InsertCourse({
                     />
                 </Col>
             </Form.Group>
+            {/*prereqs*/}
+            {preReqs.map(
+                (prereq: string): JSX.Element => (
+                    <InputGroup key={prereq}>
+                        <FormControl
+                            readOnly
+                            value={prereq}
+                            /*onChange={(
+                                        event: React.ChangeEvent<HTMLInputElement>
+                                    ) => manageCurrentPR(event, prereq)}
+                                    This works but is annoying to use ^*/
+                        />
+                        <Button
+                            onClick={() =>
+                                setPreReqs(
+                                    preReqs.filter(
+                                        (item: string): boolean =>
+                                            item !== prereq
+                                    )
+                                )
+                            }
+                        >
+                            X
+                        </Button>
+                    </InputGroup>
+                )
+            )}
+            <InputGroup>
+                <FormControl
+                    placeholder="New PreReq"
+                    value={newPreReq}
+                    onChange={newPRFunction}
+                />
+                <Button variant="outline-secondary" onClick={manageNewPR}>
+                    Add PreReq
+                </Button>
+            </InputGroup>
+            {/*requirements*/}
+            <br></br>
+            <FormLabel>Degree Requirements:</FormLabel>
+            {requires.map(
+                (req: string): JSX.Element => (
+                    <InputGroup key={req}>
+                        <FormControl
+                            readOnly
+                            value={req}
+                            /*onChange={(
+                                        event: React.ChangeEvent<HTMLInputElement>
+                                    ) => manageCurrentPR(event, prereq)}
+                                    This works but is annoying to use ^*/
+                        />
+                        <Button
+                            onClick={() =>
+                                setRequires(
+                                    requires.filter(
+                                        (item: string): boolean => item !== req
+                                    )
+                                )
+                            }
+                        >
+                            X
+                        </Button>
+                    </InputGroup>
+                )
+            )}
+            <InputGroup>
+                <FormControl
+                    placeholder="New Requirement"
+                    value={newRequire}
+                    onChange={newRequireFunction}
+                />
+                <Button variant="outline-secondary" onClick={manageNewRequire}>
+                    Add Requirement
+                </Button>
+            </InputGroup>
             <Button onClick={save} variant="success" className="me-4">
                 Save
             </Button>
