@@ -11,6 +11,8 @@ import { Plan } from "./interfaces/plan";
 import { Semester } from "./interfaces/semester";
 import { CoursePool } from "./components/coursePool";
 import { Button /*, Container*/ } from "react-bootstrap";
+import { Requirements } from "./components/requirements";
+import { Requirement } from "./interfaces/requirement";
 //import userEvent from "@testing-library/user-event";
 //import { textSpanContainsPosition } from "typescript";
 
@@ -23,7 +25,8 @@ const COURSELIST = [
         description:
             "I couldn't figure out another way to type this variable properly",
         credits: "1",
-        semesterId: ""
+        semesterId: "",
+        requirements: [""]
     }
 ];
 COURSELIST.pop();
@@ -103,6 +106,7 @@ const PLANS = [examplePlan1, examplePlan2];
 function App(): JSX.Element {
     const [plans, setPlans] = useState<Plan[]>(PLANS);
     const [selection, select] = useState<string>(PLANS[0].title);
+    const [requires, setRequires] = useState<Requirement[]>([]);
 
     function makeCSV() {
         let csvContent = "data:text/csv;charset=utf-8, ";
@@ -382,6 +386,15 @@ function App(): JSX.Element {
             </div>
             <CoursePool addCourse={addCourse}></CoursePool>
             <Button onClick={makeCSV}>Download Plan</Button>
+            <Requirements
+                plan={
+                    plans.find(
+                        (plan: Plan): boolean => plan.title === selection
+                    ) as Plan
+                }
+                requires={requires}
+                setRequires={setRequires}
+            ></Requirements>
         </div>
     );
 }

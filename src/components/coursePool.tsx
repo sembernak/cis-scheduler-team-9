@@ -22,7 +22,8 @@ const COURSEPOOL = [
         description:
             "I couldn't figure out another way to type this variable properly",
         credits: "1",
-        semesterId: "pool"
+        semesterId: "pool",
+        requirements: [""]
     }
 ];
 COURSEPOOL.pop();
