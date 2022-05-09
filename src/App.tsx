@@ -100,14 +100,24 @@ const examplePlan2 = {
     semesters: [exampleSem4],
     id: "Plan 2"
 };
-
+//save data information
 const PLANS = [examplePlan1, examplePlan2];
+let loadedData = PLANS; //initial save data = initial plan
+const saveDataKey = "MyPageData";
+const previousData = localStorage.getItem(saveDataKey);
+// If the data doesn't exist, `getItem` returns null
+if (previousData !== null) {
+    loadedData = JSON.parse(previousData);
+}
 
 function App(): JSX.Element {
-    const [plans, setPlans] = useState<Plan[]>(PLANS);
+    const [plans, setPlans] = useState<Plan[]>(loadedData);
     const [selection, select] = useState<string>(PLANS[0].title);
     const [requires, setRequires] = useState<Requirement[]>([]);
 
+    function saveData() {
+        localStorage.setItem(saveDataKey, JSON.stringify(plans));
+    }
     function makeCSV() {
         let csvContent = "data:text/csv;charset=utf-8, ";
         csvContent =
@@ -386,6 +396,7 @@ function App(): JSX.Element {
             </div>
             <CoursePool addCourse={addCourse}></CoursePool>
             <Button onClick={makeCSV}>Download Plan</Button>
+            <Button onClick={saveData}>Save Data</Button>
             <Requirements
                 plan={
                     plans.find(
