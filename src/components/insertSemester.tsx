@@ -38,8 +38,7 @@ export function InsertSemester({
     }
     function save() {
         //new empty semester updated when user saves
-        newSemester.id =
-            newSemester.season + String(newSemester.year) + newSemester.planId;
+        newSemester.id = season + year + newSemester.planId;
         editSemester(newSemester.id, {
             ...newSemester,
             season: season,
@@ -64,12 +63,25 @@ export function InsertSemester({
                             Season:
                         </Form.Label>
                         <Col>
-                            <Form.Control
+                            <Form.Select
                                 value={season}
                                 onChange={(
-                                    event: React.ChangeEvent<HTMLInputElement>
+                                    event: React.ChangeEvent<HTMLSelectElement>
                                 ) => setSeason(event.target.value)}
-                            />
+                            >
+                                <option key={"Winter"} value={"Winter"}>
+                                    Winter
+                                </option>
+                                <option key={"Spring"} value={"Spring"}>
+                                    Spring
+                                </option>
+                                <option key={"Summer"} value={"Summer"}>
+                                    Summer
+                                </option>
+                                <option key={"Fall"} value={"Fall"}>
+                                    Fall
+                                </option>
+                            </Form.Select>
                         </Col>
                     </Form.Group>
                     {/* Year */}
