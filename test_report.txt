@@ -2,24 +2,24 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-FAIL src/App.test.tsx (7 s)
+FAIL src/App.test.tsx (10.162 s)
   Make a new plan
-    ✓ App renders with welcome message (145 ms)
-    ✓ Clicking New Plan gives a form to enter a title (208 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (102 ms)
-    ✓ Can set new plan title (602 ms)
-    ✕ Insert Semester works (195 ms)
-    ✕ Delete Semester Works (186 ms)
-    ✕ Edit Semester Works (161 ms)
-    ✕ Edit Semester Works (181 ms)
-    ✕ Edit Semester cancel button works (170 ms)
-    ✕ Can delete all semesters (190 ms)
-    ✕ Can insert a course (187 ms)
-    ✕ Can edit a course (174 ms)
-    ✕ Can set and fulfill requirements (177 ms)
-    ✓ Can edit a plan (708 ms)
-    ✓ Plan editor cancel button works (622 ms)
-    ✕ Delete all courses button works (169 ms)
+    ✓ App renders with welcome message (203 ms)
+    ✓ Clicking New Plan gives a form to enter a title (301 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (145 ms)
+    ✓ Can set new plan title (854 ms)
+    ✕ Insert Semester works (295 ms)
+    ✕ Delete Semester Works (282 ms)
+    ✕ Edit Semester Works (256 ms)
+    ✕ Edit Semester Works (273 ms)
+    ✕ Edit Semester cancel button works (287 ms)
+    ✕ Can delete all semesters (287 ms)
+    ✕ Can insert a course (271 ms)
+    ✕ Can edit a course (254 ms)
+    ✕ Can set and fulfill requirements (266 ms)
+    ✓ Can edit a plan (998 ms)
+    ✓ Plan editor cancel button works (1023 ms)
+    ✕ Delete all courses button works (294 ms)
 
   ● Make a new plan › Insert Semester works
 
@@ -1305,38 +1305,7 @@ FAIL src/App.test.tsx (7 s)
                       [0mTest Plan 7[0m
                     [36m</option>[39m
                     [36m<option[39m
-      -----------------------------|---------|----------|---------|---------|---------------------------------------
-File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                     
------------------------------|---------|----------|---------|---------|---------------------------------------
-All files                    |   36.33 |       30 |   23.17 |    36.8 |                                       
- src                         |   32.25 |    11.53 |   10.86 |    32.6 |                                       
-  App.tsx                    |   32.25 |    11.53 |   10.86 |    32.6 | 108,117-240,260-266,278-358           
- src/components              |   36.91 |    44.11 |   27.35 |   37.44 |                                       
-  courseEditor.tsx           |       0 |      100 |       0 |       0 | 28-244                                
-  coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 61-83,116-135                         
-  coursePoolView.tsx         |       0 |        0 |       0 |       0 | 23-50                                 
-  courseView.tsx             |   66.66 |    66.66 |   33.33 |   66.66 | 23,58                                 
-  insertCourse.tsx           |       0 |      100 |       0 |       0 | 28-205                                
-  insertPlan.tsx             |     100 |      100 |     100 |     100 |                                       
-  insertSemester.tsx         |   41.66 |      100 |      20 |   41.66 | 37-54,71-85                           
-  planEditor.tsx             |      75 |      100 |   57.14 |   81.81 | 30-31                                 
-  planView.tsx               |      75 |      100 |   66.66 |      75 | 83-101                                
-  planViewer.tsx             |    87.5 |    66.66 |     100 |    87.5 | 48                                    
-  recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                                       
-  recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                                     
-  recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                                       
-  requirements.tsx           |   21.42 |        0 |      10 |   21.42 | 29-50,57-114                          
-  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 19-70                                 
-  semesterView.tsx           |   44.44 |       50 |   31.25 |   47.05 | 44-48,84,88-89,93-112,144-159,181-195 
- src/helper_functions        |     100 |      100 |     100 |     100 |                                       
-  unpackJSON.tsx             |     100 |      100 |     100 |     100 |                                       
- src/interfaces              |       0 |        0 |       0 |       0 |                                       
-  course.ts                  |       0 |        0 |       0 |       0 |                                       
-  plan.ts                    |       0 |        0 |       0 |       0 |                                       
-  requirement.ts             |       0 |        0 |       0 |       0 |                                       
-  semester.ts                |       0 |        0 |       0 |       0 |                                       
------------------------------|---------|----------|---------|---------|---------------------------------------
-                [33mvalue[39m=[32m"Test Plan 8"[39m
+                      [33mvalue[39m=[32m"Test Plan 8"[39m
                     [36m>[39m
                       [0mTest Plan 8[0m
                     [36m</option>[39m
@@ -1497,7 +1466,38 @@ All files                    |   36.33 |       30 |   23.17 |    36.8 |
                     [36m<option[39m
                       [33mvalue[39m=[32m"Test Plan 4"[39m
                     [36m>[39m
-                      [0mTest Plan 4[0m
+                      [0mTest Pla-----------------------------|---------|----------|---------|---------|-----------------------------------------
+File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                       
+-----------------------------|---------|----------|---------|---------|-----------------------------------------
+All files                    |   36.36 |    29.03 |   23.07 |   36.82 |                                         
+ src                         |   32.67 |    10.71 |   11.76 |      33 |                                         
+  App.tsx                    |   32.67 |    10.71 |   11.76 |      33 | 108,117-120,126,134-260,288-295,308-388 
+ src/components              |   36.91 |    44.11 |   27.35 |   37.44 |                                         
+  courseEditor.tsx           |       0 |      100 |       0 |       0 | 28-244                                  
+  coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 61-83,116-135                           
+  coursePoolView.tsx         |       0 |        0 |       0 |       0 | 23-50                                   
+  courseView.tsx             |   66.66 |    66.66 |   33.33 |   66.66 | 23,58                                   
+  insertCourse.tsx           |       0 |      100 |       0 |       0 | 28-205                                  
+  insertPlan.tsx             |     100 |      100 |     100 |     100 |                                         
+  insertSemester.tsx         |   41.66 |      100 |      20 |   41.66 | 37-53,70-97                             
+  planEditor.tsx             |      75 |      100 |   57.14 |   81.81 | 30-31                                   
+  planView.tsx               |      75 |      100 |   66.66 |      75 | 83-101                                  
+  planViewer.tsx             |    87.5 |    66.66 |     100 |    87.5 | 48                                      
+  recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                                         
+  recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                                       
+  recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                                         
+  requirements.tsx           |   21.42 |        0 |      10 |   21.42 | 29-50,57-114                            
+  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 19-83                                   
+  semesterView.tsx           |   44.44 |       50 |   31.25 |   47.05 | 44-48,84,88-89,93-112,144-159,181-195   
+ src/helper_functions        |     100 |      100 |     100 |     100 |                                         
+  unpackJSON.tsx             |     100 |      100 |     100 |     100 |                                         
+ src/interfaces              |       0 |        0 |       0 |       0 |                                         
+  course.ts                  |       0 |        0 |       0 |       0 |                                         
+  plan.ts                    |       0 |        0 |       0 |       0 |                                         
+  requirement.ts             |       0 |        0 |       0 |       0 |                                         
+  semester.ts                |       0 |        0 |       0 |       0 |                                         
+-----------------------------|---------|----------|---------|---------|-----------------------------------------
+n 4[0m
                     [36m</option>[39m
                     [36m<option[39m
                       [33mvalue[39m=[32m"Test Plan 5"[39m
@@ -1809,5 +1809,5 @@ All files                    |   36.33 |       30 |   23.17 |    36.8 |
 Test Suites: 1 failed, 1 total
 Tests:       10 failed, 6 passed, 16 total
 Snapshots:   0 total
-Time:        7.638 s
+Time:        11.075 s
 Ran all test suites.
