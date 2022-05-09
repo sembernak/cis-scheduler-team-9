@@ -2,32 +2,32 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-PASS src/App.test.tsx (18.897 s)
+PASS src/App.test.tsx (18.833 s)
   Make a new plan
-    ✓ App renders with welcome message (145 ms)
-    ✓ Clicking New Plan gives a form to enter a title (208 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (95 ms)
-    ✓ Can set new plan title (591 ms)
-    ✓ Insert Semester works (544 ms)
-    ✓ Delete Semester Works (736 ms)
-    ✓ Edit Semester Works (1008 ms)
-    ✓ Edit Semester Works (1069 ms)
-    ✓ Edit Semester cancel button works (1024 ms)
-    ✓ Can delete all semesters (1195 ms)
-    ✓ Can insert a course (1297 ms)
-    ✓ Can edit a course (2120 ms)
-    ✓ Can set and fulfill requirements (2212 ms)
-    ✓ Can edit a plan (610 ms)
-    ✓ Plan editor cancel button works (665 ms)
-    ✓ Delete all courses button works (2528 ms)
+    ✓ App renders with welcome message (144 ms)
+    ✓ Clicking New Plan gives a form to enter a title (209 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (120 ms)
+    ✓ Can set new plan title (616 ms)
+    ✓ Insert Semester works (531 ms)
+    ✓ Delete Semester Works (751 ms)
+    ✓ Edit Semester Works (1012 ms)
+    ✓ Edit Semester Works (1114 ms)
+    ✓ Edit Semester cancel button works (1037 ms)
+    ✓ Can delete all semesters (1199 ms)
+    ✓ Can insert a course (1281 ms)
+    ✓ Can edit a course (2081 ms)
+    ✓ Can set and fulfill requirements (2201 ms)
+    ✓ Can edit a plan (598 ms)
+    ✓ Plan editor cancel button works (677 ms)
+    ✓ Delete all courses button works (2470 ms)
 
 -----------------------------|---------|----------|---------|---------|-------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s       
 -----------------------------|---------|----------|---------|---------|-------------------------
-All files                    |   63.19 |    51.72 |    56.6 |   64.02 |                         
+All files                    |   62.82 |    51.72 |   57.14 |   63.63 |                         
  src                         |   49.42 |    33.33 |   48.88 |      50 |                         
   App.tsx                    |   49.42 |    33.33 |   48.88 |      50 | 112-155,185-194,270-350 
- src/components              |   68.05 |     64.7 |   59.29 |   69.01 |                         
+ src/components              |   67.42 |     64.7 |      60 |   68.34 |                         
   courseEditor.tsx           |   67.85 |      100 |   52.94 |   67.85 | 55-64,168-171,210-244   
   coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 61-83,116-135           
   coursePoolView.tsx         |       0 |        0 |       0 |       0 | 23-34                   
@@ -43,7 +43,7 @@ All files                    |   63.19 |    51.72 |    56.6 |   64.02 |
   recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                         
   requirements.tsx           |   85.71 |       50 |      80 |   85.71 | 67-70                   
   semesterEditor.tsx         |   91.66 |      100 |   83.33 |   91.66 | 33                      
-  semesterView.tsx           |   48.71 |      100 |   61.53 |   51.35 | 81,85-86,90-118         
+  semesterView.tsx           |   47.72 |      100 |   66.66 |      50 | 81,85-86,90-122         
  src/helper_functions        |     100 |      100 |     100 |     100 |                         
   unpackJSON.tsx             |     100 |      100 |     100 |     100 |                         
  src/interfaces              |       0 |        0 |       0 |       0 |                         
@@ -55,5 +55,5 @@ All files                    |   63.19 |    51.72 |    56.6 |   64.02 |
 Test Suites: 1 passed, 1 total
 Tests:       16 passed, 16 total
 Snapshots:   0 total
-Time:        19.541 s
+Time:        19.46 s
 Ran all test suites.
