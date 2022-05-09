@@ -115,6 +115,23 @@ function App(): JSX.Element {
     const [selection, select] = useState<string>(PLANS[0].title);
     const [requires, setRequires] = useState<Requirement[]>([]);
 
+    function compareSeason(a: string, b: string): number {
+        const numerify = ["Winter", "Spring", "Summer", "Fall"];
+        return (
+            numerify.findIndex((item: string): boolean => item === a) -
+            numerify.findIndex((item: string): boolean => item === b)
+        );
+    }
+    function sortSemesters(start: Semester[]): Semester[] {
+        const toSort = [...start];
+        toSort.sort((a: Semester, b: Semester): number =>
+            a.year === b.year
+                ? compareSeason(a.season, b.season)
+                : a.year - b.year
+        );
+        return toSort;
+    }
+
     function saveData() {
         localStorage.setItem(saveDataKey, JSON.stringify(plans));
     }
@@ -170,8 +187,11 @@ function App(): JSX.Element {
             plans.map(
                 (newplan: Plan): Plan => ({
                     ...newplan,
-                    semesters: newplan.semesters.filter(
-                        (semester1: Semester): boolean => semester1.id !== id
+                    semesters: sortSemesters(
+                        newplan.semesters.filter(
+                            (semester1: Semester): boolean =>
+                                semester1.id !== id
+                        )
                     )
                 })
             )
@@ -253,7 +273,15 @@ function App(): JSX.Element {
 
     function editPlan(id: string, newPlan: Plan) {
         setPlans(
-            plans.map((plan: Plan): Plan => (plan.id === id ? newPlan : plan))
+            plans.map(
+                (plan: Plan): Plan =>
+                    plan.id === id
+                        ? {
+                              ...newPlan,
+                              semesters: sortSemesters(newPlan.semesters)
+                          }
+                        : plan
+            )
         );
         select(newPlan.title);
     }
@@ -263,9 +291,11 @@ function App(): JSX.Element {
             plans.map(
                 (newPlan: Plan): Plan => ({
                     ...newPlan,
-                    semesters: newPlan.semesters.map(
-                        (semester: Semester): Semester =>
-                            semester.id === id ? newSemester : semester
+                    semesters: sortSemesters(
+                        newPlan.semesters.map(
+                            (semester: Semester): Semester =>
+                                semester.id === id ? newSemester : semester
+                        )
                     )
                 })
             )
