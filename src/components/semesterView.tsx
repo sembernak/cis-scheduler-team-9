@@ -94,21 +94,25 @@ export function SemesterView({
         const courseDescription = courseInfo[2];
         const courseCredits = courseInfo[3];
         const courseSemesterId = courseInfo[4]; //original semester the course is from
-        const newSemesterId = event.currentTarget as Element; //semester where the course was dropped
-        console.log("new id:" + newSemesterId.id);
-        console.log("code:" + courseCode);
-        console.log("old id:" + courseSemesterId);
 
-        //deleteCourse(courseCode, courseSemesterId);
+        const courseReq = courseInfo[5]; //list of reqs
+        const newCourseReq = courseReq.split("%*");
+        const finalCourseReq = newCourseReq.slice(0, newCourseReq.length - 1); //last digit will be a comma that we dont want
+
+        const coursePre = courseInfo[6];
+        const newCoursePre = coursePre.split("%*");
+        const finalCoursePre = newCoursePre.slice(0, newCoursePre.length - 1); //last digit will be a comma that we dont want
+
+        const newSemesterId = event.currentTarget as Element; //semester where the course was dropped
 
         const newCourse = {
             code: courseCode,
             title: courseTitle,
-            prereq: [],
+            prereq: finalCoursePre,
             description: courseDescription,
             credits: courseCredits,
             semesterId: newSemesterId.id,
-            requirements: []
+            requirements: finalCourseReq
         };
 
         addCourse(courseCode, newCourse, newSemesterId.id, courseSemesterId);
@@ -156,7 +160,19 @@ export function SemesterView({
                             "&*" +
                             course.credits +
                             "&*" +
-                            course.semesterId
+                            course.semesterId +
+                            "&*" +
+                            course.requirements.reduce(
+                                (currentString: string, str: string) =>
+                                    currentString + str + "%*",
+                                ""
+                            ) +
+                            "&*" +
+                            course.prereq.reduce(
+                                (currentString: string, str: string) =>
+                                    currentString + str + "%*",
+                                ""
+                            )
                         }
                     >
                         <CourseView
