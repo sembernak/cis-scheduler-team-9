@@ -3,6 +3,7 @@ import {
     Button,
     Container,
     Col,
+    Row,
     InputGroup,
     FormControl,
     FormLabel
@@ -36,11 +37,12 @@ export function Requirements({
     function checkFulfilled(req: string, needCred: number) {
         const compCred = plan.semesters.reduce(
             (total: number, semester: Semester) =>
+                total +
                 semester.courses.reduce(
                     (subTotal: number, course: Course) =>
                         course.requirements.includes(req)
-                            ? parseInt(course.credits.trim()[0])
-                            : 0,
+                            ? subTotal + parseInt(course.credits.trim()[0])
+                            : subTotal,
                     0
                 ),
             0
@@ -52,39 +54,47 @@ export function Requirements({
             <FormLabel>Degree Requirements:</FormLabel>
             {requires.map(
                 (req: Requirement): JSX.Element => (
-                    <InputGroup key={req.name}>
-                        <FormControl
-                            readOnly
-                            value={req.name}
-                            /*onChange={(
+                    <Container key={req.name}>
+                        <Row>
+                            <Col md={10}>
+                                <FormControl
+                                    readOnly
+                                    value={req.name}
+                                    /*onChange={(
                                         event: React.ChangeEvent<HTMLInputElement>
                                     ) => manageCurrentPR(event, prereq)}
                                     This works but is annoying to use ^*/
-                        />
-                        <p>Required Credits: {req.credits}</p>
-                        <Button
-                            onClick={() =>
-                                setRequires(
-                                    requires.filter(
-                                        (item: Requirement): boolean =>
-                                            item.name !== req.name
-                                    )
-                                )
-                            }
-                        >
-                            X
-                        </Button>
-                        <p>
-                            Met?{" "}
-                            {checkFulfilled(req.name, req.credits)
-                                ? "Yes"
-                                : "No"}
-                        </p>
-                    </InputGroup>
+                                />
+                            </Col>
+                            <Col md={1}>
+                                <Button
+                                    onClick={() =>
+                                        setRequires(
+                                            requires.filter(
+                                                (item: Requirement): boolean =>
+                                                    item.name !== req.name
+                                            )
+                                        )
+                                    }
+                                >
+                                    X
+                                </Button>
+                            </Col>
+                            <Col md={1}>
+                                <p>Required Credits: {req.credits}</p>
+                                <p>
+                                    Met?{" "}
+                                    {checkFulfilled(req.name, req.credits)
+                                        ? "Yes"
+                                        : "No"}
+                                </p>
+                            </Col>
+                        </Row>
+                    </Container>
                 )
             )}
             <InputGroup as={Container}>
-                <Col md={5}>
+                <Col md={8}>
                     <FormControl
                         placeholder="New Requirement"
                         value={newRequire}
@@ -94,7 +104,7 @@ export function Requirements({
                 <Col md={1}>
                     <FormLabel>Credits: </FormLabel>
                 </Col>
-                <Col>
+                <Col md={1}>
                     <FormControl
                         aria-label="Credits: "
                         type="number"
@@ -104,7 +114,7 @@ export function Requirements({
                         ) => setCredits(parseInt(event.target.value))}
                     />
                 </Col>
-                <Col>
+                <Col md={2}>
                     <Button
                         variant="outline-secondary"
                         onClick={manageNewRequire}
