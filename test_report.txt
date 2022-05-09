@@ -2,58 +2,1812 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-PASS src/App.test.tsx (19.051 s)
+FAIL src/App.test.tsx (10.8 s)
   Make a new plan
-    ✓ App renders with welcome message (146 ms)
-    ✓ Clicking New Plan gives a form to enter a title (208 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (103 ms)
-    ✓ Can set new plan title (590 ms)
-    ✓ Insert Semester works (553 ms)
-    ✓ Delete Semester Works (750 ms)
-    ✓ Edit Semester Works (1042 ms)
-    ✓ Edit Semester Works (1086 ms)
-    ✓ Edit Semester cancel button works (1035 ms)
-    ✓ Can delete all semesters (1207 ms)
-    ✓ Can insert a course (1332 ms)
-    ✓ Can edit a course (2124 ms)
-    ✓ Can set and fulfill requirements (2268 ms)
-    ✓ Can edit a plan (630 ms)
-    ✓ Plan editor cancel button works (673 ms)
-    ✓ Delete all courses button works (2555 ms)
+    ✓ App renders with welcome message (215 ms)
+    ✓ Clicking New Plan gives a form to enter a title (312 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (153 ms)
+    ✓ Can set new plan title (941 ms)
+    ✕ Insert Semester works (290 ms)
+    ✕ Delete Semester Works (307 ms)
+    ✕ Edit Semester Works (267 ms)
+    ✕ Edit Semester Works (314 ms)
+    ✕ Edit Semester cancel button works (281 ms)
+    ✕ Can delete all semesters (284 ms)
+    ✕ Can insert a course (289 ms)
+    ✕ Can edit a course (260 ms)
+    ✕ Can set and fulfill requirements (269 ms)
+    ✓ Can edit a plan (1054 ms)
+    ✓ Plan editor cancel button works (1001 ms)
+    ✕ Delete all courses button works (291 ms)
 
------------------------------|---------|----------|---------|---------|-----------------------------
-File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s           
------------------------------|---------|----------|---------|---------|-----------------------------
-All files                    |   62.89 |    51.66 |   56.79 |   63.69 |                             
- src                         |   50.53 |    34.61 |   47.82 |   51.08 |                             
-  App.tsx                    |   50.53 |    34.61 |   47.82 |   51.08 | 110,119-165,195-204,280-360 
- src/components              |   67.42 |     64.7 |      60 |   68.34 |                             
-  courseEditor.tsx           |   67.85 |      100 |   52.94 |   67.85 | 55-64,168-171,210-244       
-  coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 61-83,116-135               
-  coursePoolView.tsx         |       0 |        0 |       0 |       0 | 23-34                       
-  courseView.tsx             |   83.33 |      100 |   66.66 |   83.33 | 58                          
-  insertCourse.tsx           |   58.06 |      100 |   35.29 |   58.06 | 53,79-93,157-209            
-  insertPlan.tsx             |     100 |      100 |     100 |     100 |                             
-  insertSemester.tsx         |   91.66 |      100 |      80 |   91.66 | 39                          
-  planEditor.tsx             |      75 |      100 |   57.14 |   81.81 | 30-31                       
-  planView.tsx               |    87.5 |      100 |   83.33 |    87.5 | 83                          
-  planViewer.tsx             |    87.5 |    66.66 |     100 |    87.5 | 48                          
-  recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                             
-  recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                           
-  recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                             
-  requirements.tsx           |   85.71 |       50 |      80 |   85.71 | 72-75                       
-  semesterEditor.tsx         |   91.66 |      100 |   83.33 |   91.66 | 33                          
-  semesterView.tsx           |   47.72 |      100 |   66.66 |      50 | 81,85-86,90-122             
- src/helper_functions        |     100 |      100 |     100 |     100 |                             
-  unpackJSON.tsx             |     100 |      100 |     100 |     100 |                             
- src/interfaces              |       0 |        0 |       0 |       0 |                             
-  course.ts                  |       0 |        0 |       0 |       0 |                             
-  plan.ts                    |       0 |        0 |       0 |       0 |                             
-  requirement.ts             |       0 |        0 |       0 |       0 |                             
-  semester.ts                |       0 |        0 |       0 |       0 |                             
------------------------------|---------|----------|---------|---------|-----------------------------
-Test Suites: 1 passed, 1 total
-Tests:       16 passed, 16 total
+  ● Make a new plan › Insert Semester works
+
+    TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mUD CISC275 Schedule Planner[0m
+            [0m [0m
+            [36m<p[39m
+              [33mclass[39m=[32m"names"[39m
+            [36m>[39m
+              [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
+            [36m</p>[39m
+          [36m</header>[39m
+          [36m<p>[39m
+            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"schedule"[39m
+          [36m>[39m
+            [36m<br />[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [0mSelect a plan:[0m
+                [36m<div>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mdata-testid[39m=[32m"PlanSelect"[39m
+                    [33mid[39m=[32m"planDrop"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 1"[39m
+                    [36m>[39m
+                      [0mPlan 1[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 2"[39m
+                    [36m>[39m
+                      [0mPlan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 2"[39m
+                    [36m>[39m
+                      [0mTest Plan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 3"[39m
+                    [36m>[39m
+                      [0mTest Plan 3[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+                [0mCreate a new plan: [0m
+                [36m<button[39m
+                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                  [33mdata-testid[39m=[32m"NewPlan"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mNew Plan[0m
+                [36m</button>[39m
+                [36m<div[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mhidden[39m=[32m""[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mPlan 1[0m
+                    [36m</h3>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                              [36m>[39m
+                                [36m<h3>[39m
+                                  [0mSpring - 2020[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m10[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div[39m
+                                  [33mdraggable[39m=[32m"true"[39m
+                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mSurvey of Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 4[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"row"[39m
+                                      [36m>[39m
+                                        [36m<div>[39m
+                                          [36m<button[39m
+                                            [33mclass[39m=[32m"edit-course-btn btn btn-primary btn-sm"[39m
+                                            [33mtype[39m=[32m"button"[39m
+                                          [36m>[39m
+                                            [0mEdit Course[0m
+                                          [36m</button>[39m
+                                        [36m</div>[39m
+                                      [36m</div>[39m
+                                      [36m<button[39m
+                                        [33mclass[39m=[32m"reset-course-btn btn btn-primary"[39m
+                                        [33mtype[39m=[32m"button"[39m
+                                      [36m>[39m
+                                        [0mReset to Default[0m
+                                      [36m</button>[39m
+                                    [36m</div>[39m
+                ...
+
+      57 |         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
+      58 |         newSemester.click();
+    > 59 |         const setSeason = screen.getByLabelText("Semester Season:");
+         |                                  ^
+      60 |         const setYear = screen.getByLabelText("Semester Year:");
+      61 |         expect(setSeason).toBeInTheDocument;
+      62 |         expect(setYear).toBeInTheDocument;
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getAllByLabelText (node_modules/@testing-library/dom/dist/queries/label-text.js:116:38)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByLabelText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/App.test.tsx:59:34)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Make a new plan › Delete Semester Works
+
+    TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mUD CISC275 Schedule Planner[0m
+            [0m [0m
+            [36m<p[39m
+              [33mclass[39m=[32m"names"[39m
+            [36m>[39m
+              [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
+            [36m</p>[39m
+          [36m</header>[39m
+          [36m<p>[39m
+            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"schedule"[39m
+          [36m>[39m
+            [36m<br />[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [0mSelect a plan:[0m
+                [36m<div>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mdata-testid[39m=[32m"PlanSelect"[39m
+                    [33mid[39m=[32m"planDrop"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 1"[39m
+                    [36m>[39m
+                      [0mPlan 1[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 2"[39m
+                    [36m>[39m
+                      [0mPlan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 2"[39m
+                    [36m>[39m
+                      [0mTest Plan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 3"[39m
+                    [36m>[39m
+                      [0mTest Plan 3[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 4"[39m
+                    [36m>[39m
+                      [0mTest Plan 4[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+                [0mCreate a new plan: [0m
+                [36m<button[39m
+                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                  [33mdata-testid[39m=[32m"NewPlan"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mNew Plan[0m
+                [36m</button>[39m
+                [36m<div[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mhidden[39m=[32m""[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mPlan 1[0m
+                    [36m</h3>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                              [36m>[39m
+                                [36m<h3>[39m
+                                  [0mSpring - 2020[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m10[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div[39m
+                                  [33mdraggable[39m=[32m"true"[39m
+                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mSurvey of Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 4[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"row"[39m
+                                      [36m>[39m
+                                        [36m<div>[39m
+                                          [36m<button[39m
+                                            [33mclass[39m=[32m"edit-course-btn btn btn-primary btn-sm"[39m
+                                            [33mtype[39m=[32m"button"[39m
+                                          [36m>[39m
+                                            [0mEdit Course[0m
+                                          [36m</button>[39m
+                                        [36m</div>[39m
+                                      [36m</div>[39m
+                                      [36m<button[39m
+                                        [33mclass[39m=[32m"reset-course-btn btn btn-primary"[39m
+                                        [33mtype[39m=[32m"button"[39m
+                                ...
+
+      87 |         //make a new semester
+      88 |         newSemester.click();
+    > 89 |         const setSeason = screen.getByLabelText("Semester Season:");
+         |                                  ^
+      90 |         const setYear = screen.getByLabelText("Semester Year:");
+      91 |         expect(setSeason).toBeInTheDocument;
+      92 |         expect(setYear).toBeInTheDocument;
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getAllByLabelText (node_modules/@testing-library/dom/dist/queries/label-text.js:116:38)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByLabelText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/App.test.tsx:89:34)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Make a new plan › Edit Semester Works
+
+    TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mUD CISC275 Schedule Planner[0m
+            [0m [0m
+            [36m<p[39m
+              [33mclass[39m=[32m"names"[39m
+            [36m>[39m
+              [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
+            [36m</p>[39m
+          [36m</header>[39m
+          [36m<p>[39m
+            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"schedule"[39m
+          [36m>[39m
+            [36m<br />[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [0mSelect a plan:[0m
+                [36m<div>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mdata-testid[39m=[32m"PlanSelect"[39m
+                    [33mid[39m=[32m"planDrop"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 1"[39m
+                    [36m>[39m
+                      [0mPlan 1[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 2"[39m
+                    [36m>[39m
+                      [0mPlan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 2"[39m
+                    [36m>[39m
+                      [0mTest Plan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 3"[39m
+                    [36m>[39m
+                      [0mTest Plan 3[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 4"[39m
+                    [36m>[39m
+                      [0mTest Plan 4[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 5"[39m
+                    [36m>[39m
+                      [0mTest Plan 5[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+                [0mCreate a new plan: [0m
+                [36m<button[39m
+                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                  [33mdata-testid[39m=[32m"NewPlan"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mNew Plan[0m
+                [36m</button>[39m
+                [36m<div[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mhidden[39m=[32m""[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mPlan 1[0m
+                    [36m</h3>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                              [36m>[39m
+                                [36m<h3>[39m
+                                  [0mSpring - 2020[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m10[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div[39m
+                                  [33mdraggable[39m=[32m"true"[39m
+                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mSurvey of Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 4[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"row"[39m
+                                      [36m>[39m
+                                        [36m<div>[39m
+                                          [36m<button[39m
+                                            [33mclass[39m=[32m"edit-course-btn btn btn-primary btn-sm"[39m
+                                            [33mtype[39m=[32m"button"[39m
+                                          [36m>[39m
+                                            [0mEdit Course[0m
+                                          [36m</button>[39m
+                                        [36m</div>[39m
+                                      [36m</div>[39m
+                                      [36m<button[39m
+     ...
+
+      128 |         //make a new semester
+      129 |         newSemester.click();
+    > 130 |         const setSeason = screen.getByLabelText("Semester Season:");
+          |                                  ^
+      131 |         const setYear = screen.getByLabelText("Semester Year:");
+      132 |         expect(setSeason).toBeInTheDocument;
+      133 |         expect(setYear).toBeInTheDocument;
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getAllByLabelText (node_modules/@testing-library/dom/dist/queries/label-text.js:116:38)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByLabelText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/App.test.tsx:130:34)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Make a new plan › Edit Semester Works
+
+    TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mUD CISC275 Schedule Planner[0m
+            [0m [0m
+            [36m<p[39m
+              [33mclass[39m=[32m"names"[39m
+            [36m>[39m
+              [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
+            [36m</p>[39m
+          [36m</header>[39m
+          [36m<p>[39m
+            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"schedule"[39m
+          [36m>[39m
+            [36m<br />[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [0mSelect a plan:[0m
+                [36m<div>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mdata-testid[39m=[32m"PlanSelect"[39m
+                    [33mid[39m=[32m"planDrop"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 1"[39m
+                    [36m>[39m
+                      [0mPlan 1[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 2"[39m
+                    [36m>[39m
+                      [0mPlan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 2"[39m
+                    [36m>[39m
+                      [0mTest Plan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 3"[39m
+                    [36m>[39m
+                      [0mTest Plan 3[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 4"[39m
+                    [36m>[39m
+                      [0mTest Plan 4[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 5"[39m
+                    [36m>[39m
+                      [0mTest Plan 5[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 6"[39m
+                    [36m>[39m
+                      [0mTest Plan 6[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+                [0mCreate a new plan: [0m
+                [36m<button[39m
+                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                  [33mdata-testid[39m=[32m"NewPlan"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mNew Plan[0m
+                [36m</button>[39m
+                [36m<div[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mhidden[39m=[32m""[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mPlan 1[0m
+                    [36m</h3>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                              [36m>[39m
+                                [36m<h3>[39m
+                                  [0mSpring - 2020[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m10[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div[39m
+                                  [33mdraggable[39m=[32m"true"[39m
+                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mSurvey of Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 4[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"row"[39m
+                                      [36m>[39m
+                                        [36m<div>[39m
+                                          [36m<button[39m
+                                            [33mclass[39m=[32m"edit-course-btn btn btn-primary btn-sm"[39m
+                                            [33mtype[39m=[32m"button"[39m
+                                          [36m>[39m
+                                            [0mEdit Course[0m
+                         ...
+
+      173 |         //make a new semester
+      174 |         newSemester.click();
+    > 175 |         const setSeason = screen.getByLabelText("Semester Season:");
+          |                                  ^
+      176 |         const setYear = screen.getByLabelText("Semester Year:");
+      177 |         expect(setSeason).toBeInTheDocument;
+      178 |         expect(setYear).toBeInTheDocument;
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getAllByLabelText (node_modules/@testing-library/dom/dist/queries/label-text.js:116:38)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByLabelText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/App.test.tsx:175:34)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Make a new plan › Edit Semester cancel button works
+
+    TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mUD CISC275 Schedule Planner[0m
+            [0m [0m
+            [36m<p[39m
+              [33mclass[39m=[32m"names"[39m
+            [36m>[39m
+              [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
+            [36m</p>[39m
+          [36m</header>[39m
+          [36m<p>[39m
+            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"schedule"[39m
+          [36m>[39m
+            [36m<br />[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [0mSelect a plan:[0m
+                [36m<div>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mdata-testid[39m=[32m"PlanSelect"[39m
+                    [33mid[39m=[32m"planDrop"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 1"[39m
+                    [36m>[39m
+                      [0mPlan 1[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 2"[39m
+                    [36m>[39m
+                      [0mPlan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 2"[39m
+                    [36m>[39m
+                      [0mTest Plan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 3"[39m
+                    [36m>[39m
+                      [0mTest Plan 3[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 4"[39m
+                    [36m>[39m
+                      [0mTest Plan 4[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 5"[39m
+                    [36m>[39m
+                      [0mTest Plan 5[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 6"[39m
+                    [36m>[39m
+                      [0mTest Plan 6[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 7"[39m
+                    [36m>[39m
+                      [0mTest Plan 7[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+                [0mCreate a new plan: [0m
+                [36m<button[39m
+                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                  [33mdata-testid[39m=[32m"NewPlan"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mNew Plan[0m
+                [36m</button>[39m
+                [36m<div[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mhidden[39m=[32m""[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mPlan 1[0m
+                    [36m</h3>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                              [36m>[39m
+                                [36m<h3>[39m
+                                  [0mSpring - 2020[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m10[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div[39m
+                                  [33mdraggable[39m=[32m"true"[39m
+                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mSurvey of Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 4[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"row"[39m
+                                      [36m>[39m
+                                        [36m<div>[39m
+                                          [36m<button[39m
+                                            [33mclass[39m=[32m"edit-course-btn btn btn-primary btn-sm"[39m
+               ...
+
+      218 |         //make a new semester
+      219 |         newSemester.click();
+    > 220 |         const setSeason = screen.getByLabelText("Semester Season:");
+          |                                  ^
+      221 |         const setYear = screen.getByLabelText("Semester Year:");
+      222 |         expect(setSeason).toBeInTheDocument;
+      223 |         expect(setYear).toBeInTheDocument;
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getAllByLabelText (node_modules/@testing-library/dom/dist/queries/label-text.js:116:38)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByLabelText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/App.test.tsx:220:34)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Make a new plan › Can delete all semesters
+
+    TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mUD CISC275 Schedule Planner[0m
+            [0m [0m
+            [36m<p[39m
+              [33mclass[39m=[32m"names"[39m
+            [36m>[39m
+              [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
+            [36m</p>[39m
+          [36m</header>[39m
+          [36m<p>[39m
+            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"schedule"[39m
+          [36m>[39m
+            [36m<br />[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [0mSelect a plan:[0m
+                [36m<div>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mdata-testid[39m=[32m"PlanSelect"[39m
+                    [33mid[39m=[32m"planDrop"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 1"[39m
+                    [36m>[39m
+                      [0mPlan 1[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 2"[39m
+                    [36m>[39m
+                      [0mPlan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 2"[39m
+                    [36m>[39m
+                      [0mTest Plan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 3"[39m
+                    [36m>[39m
+                      [0mTest Plan 3[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 4"[39m
+                    [36m>[39m
+                      [0mTest Plan 4[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 5"[39m
+                    [36m>[39m
+                      [0mTest Plan 5[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 6"[39m
+                    [36m>[39m
+                      [0mTest Plan 6[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 7"[39m
+                    [36m>[39m
+                      [0mTest Plan 7[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 8"[39m
+                    [36m>[39m
+                      [0mTest Plan 8[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+                [0mCreate a new plan: [0m
+                [36m<button[39m
+                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                  [33mdata-testid[39m=[32m"NewPlan"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mNew Plan[0m
+                [36m</button>[39m
+                [36m<div[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mhidden[39m=[32m""[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mPlan 1[0m
+                    [36m</h3>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                              [36m>[39m
+                                [36m<h3>[39m
+                                  [0mSpring - 2020[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m10[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div[39m
+                                  [33mdraggable[39m=[32m"true"[39m
+                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mSurvey of Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 4[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+                                      [36m<div[39m
+                                        [33mclass[39m=[32m"row"[39m
+                                      [36m>[39m
+                                    ...
+
+      261 |         const newSemester = screen.getByTestId("InsertSemesterTest Plan 8");
+      262 |         newSemester.click();
+    > 263 |         const setSeason = screen.getByLabelText("Semester Season:");
+          |                                  ^
+      264 |         const setYear = screen.getByLabelText("Semester Year:");
+      265 |         expect(setSeason).toBeInTheDocument;
+      266 |         expect(setYear).toBeInTheDocument;
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getAllByLabelText (node_modules/@testing-library/dom/dist/queries/label-text.js:116:38)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByLabelText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/App.test.tsx:263:34)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Make a new plan › Can insert a course
+
+    TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mUD CISC275 Schedule Planner[0m
+            [0m [0m
+            [36m<p[39m
+              [33mclass[39m=[32m"names"[39m
+            [36m>[39m
+              [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
+            [36m</p>[39m
+          [36m</header>[39m
+          [36m<p>[39m
+            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"schedule"[39m
+          [36m>[39m
+            [36m<br />[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [0mSelect a plan:[0m
+                [36m<div>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mdata-testid[39m=[32m"PlanSelect"[39m
+                    [33mid[39m=[32m"planDrop"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 1"[39m
+                    [36m>[39m
+                      [0mPlan 1[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 2"[39m
+                    [36m>[39m
+                      [0mPlan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 2"[39m
+                    [36m>[39m
+                      [0mTest Plan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 3"[39m
+                    [36m>[39m
+                      [0mTest Plan 3[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 4"[39m
+                    [36m>[39m
+                      [0mTest Plan 4[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 5"[39m
+                    [36m>[39m
+                      [0mTest Plan 5[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 6"[39m
+                    [36m>[39m
+                      [0mTest Plan 6[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 7"[39m
+                    [36m>[39m
+                      [0mTest Plan 7[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 8"[39m
+                    [36m>[39m
+                      [0mTest Plan 8[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 9"[39m
+                    [36m>[39m
+                      [0mTest Plan 9[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+                [0mCreate a new plan: [0m
+                [36m<button[39m
+                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                  [33mdata-testid[39m=[32m"NewPlan"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mNew Plan[0m
+                [36m</button>[39m
+                [36m<div[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mhidden[39m=[32m""[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mPlan 1[0m
+                    [36m</h3>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                              [36m>[39m
+                                [36m<h3>[39m
+                                  [0mSpring - 2020[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m10[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div[39m
+                                  [33mdraggable[39m=[32m"true"[39m
+                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mSurvey of Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 4[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                    [36m>[39m
+     ...
+
+      326 |         //make a new semester
+      327 |         newSemester.click();
+    > 328 |         const setSeason = screen.getByLabelText("Semester Season:");
+          |                                  ^
+      329 |         const setYear = screen.getByLabelText("Semester Year:");
+      330 |         expect(setSeason).toBeInTheDocument;
+      331 |         expect(setYear).toBeInTheDocument;
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getAllByLabelText (node_modules/@testing-library/dom/dist/queries/label-text.js:116:38)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByLabelText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/App.test.tsx:328:34)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Make a new plan › Can edit a course
+
+    TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mUD CISC275 Schedule Planner[0m
+            [0m [0m
+            [36m<p[39m
+              [33mclass[39m=[32m"names"[39m
+            [36m>[39m
+              [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
+            [36m</p>[39m
+          [36m</header>[39m
+          [36m<p>[39m
+            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"schedule"[39m
+          [36m>[39m
+            [36m<br />[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [0mSelect a plan:[0m
+                [36m<div>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mdata-testid[39m=[32m"PlanSelect"[39m
+                    [33mid[39m=[32m"planDrop"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 1"[39m
+                    [36m>[39m
+                      [0mPlan 1[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 2"[39m
+                    [36m>[39m
+                      [0mPlan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 2"[39m
+                    [36m>[39m
+                      [0mTest Plan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 3"[39m
+                    [36m>[39m
+                      [0mTest Plan 3[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 4"[39m
+                    [36m>[39m
+                      [0mTest Plan 4[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 5"[39m
+                    [36m>[39m
+                      [0mTest Plan 5[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 6"[39m
+                    [36m>[39m
+                      [0mTest Plan 6[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 7"[39m
+                    [36m>[39m
+                      [0mTest Plan 7[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 8"[39m
+                    [36m>[39m
+                      [0mTest Plan 8[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 9"[39m
+                    [36m>[39m
+                      [0mTest Plan 9[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 10"[39m
+                    [36m>[39m
+                      [0mTest Plan 10[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+                [0mCreate a new plan: [0m
+                [36m<button[39m
+                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                  [33mdata-testid[39m=[32m"NewPlan"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mNew Plan[0m
+                [36m</button>[39m
+                [36m<div[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mhidden[39m=[32m""[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mPlan 1[0m
+                    [36m</h3>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                              [36m>[39m
+                                [36m<h3>[39m
+                                  [0mSpring - 2020[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m10[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div[39m
+                                  [33mdraggable[39m=[32m"true"[39m
+                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mSurvey of Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 4[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                    [36m<br />[39m
+                                    [0m[0m
+                                    [36m<br />[39m
+       ...
+
+      381 |         //make a new semester
+      382 |         newSemester.click();
+    > 383 |         const setSeason = screen.getByLabelText("Semester Season:");
+          |                                  ^
+      384 |         const setYear = screen.getByLabelText("Semester Year:");
+      385 |         expect(setSeason).toBeInTheDocument;
+      386 |         expect(setYear).toBeInTheDocument;
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getAllByLabelText (node_modules/@testing-library/dom/dist/queries/label-text.js:116:38)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByLabelText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/App.test.tsx:383:34)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Make a new plan › Can set and fulfill requirements
+
+    TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mUD CISC275 Schedule Planner[0m
+            [0m [0m
+            [36m<p[39m
+              [33mclass[39m=[32m"names"[39m
+            [36m>[39m
+              [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
+            [36m</p>[39m
+          [36m</header>[39m
+          [36m<p>[39m
+            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"schedule"[39m
+          [36m>[39m
+            [36m<br />[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [0mSelect a plan:[0m
+                [36m<div>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mdata-testid[39m=[32m"PlanSelect"[39m
+                    [33mid[39m=[32m"planDrop"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 1"[39m
+                    [36m>[39m
+                      [0mPlan 1[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 2"[39m
+                    [36m>[39m
+                      [0mPlan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 2"[39m
+                    [36m>[39m
+                      [0mTest Plan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 3"[39m
+                    [36m>[39m
+                      [0mTest Plan 3[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 4"[39m
+                    [36m>[39m
+                      [0mTest Pla-----------------------------|---------|----------|---------|---------|-----------------------------------
+File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                 
+-----------------------------|---------|----------|---------|---------|-----------------------------------
+All files                    |   35.53 |       30 |   23.45 |   35.98 |                                   
+ src                         |   32.25 |    11.53 |   10.86 |    32.6 |                                   
+  App.tsx                    |   32.25 |    11.53 |   10.86 |    32.6 | 108,117-240,260-266,278-358       
+ src/components              |   35.74 |    44.11 |   27.82 |   36.23 |                                   
+  courseEditor.tsx           |       0 |      100 |       0 |       0 | 28-244                            
+  coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 61-83,116-135                     
+  coursePoolView.tsx         |       0 |        0 |       0 |       0 | 23-34                             
+  courseView.tsx             |   66.66 |    66.66 |   33.33 |   66.66 | 23,58                             
+  insertCourse.tsx           |       0 |      100 |       0 |       0 | 28-205                            
+  insertPlan.tsx             |     100 |      100 |     100 |     100 |                                   
+  insertSemester.tsx         |   41.66 |      100 |      20 |   41.66 | 37-54,71-85                       
+  planEditor.tsx             |      75 |      100 |   57.14 |   81.81 | 30-31                             
+  planView.tsx               |      75 |      100 |   66.66 |      75 | 83-101                            
+  planViewer.tsx             |    87.5 |    66.66 |     100 |    87.5 | 48                                
+  recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                                   
+  recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                                 
+  recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                                   
+  requirements.tsx           |   21.42 |        0 |      10 |   21.42 | 29-50,57-114                      
+  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 19-70                             
+  semesterView.tsx           |   36.36 |       50 |   33.33 |   38.09 | 44-48,81,85-86,90-122,167,189-203 
+ src/helper_functions        |     100 |      100 |     100 |     100 |                                   
+  unpackJSON.tsx             |     100 |      100 |     100 |     100 |                                   
+ src/interfaces              |       0 |        0 |       0 |       0 |                                   
+  course.ts                  |       0 |        0 |       0 |       0 |                                   
+  plan.ts                    |       0 |        0 |       0 |       0 |                                   
+  requirement.ts             |       0 |        0 |       0 |       0 |                                   
+  semester.ts                |       0 |        0 |       0 |       0 |                                   
+-----------------------------|---------|----------|---------|---------|-----------------------------------
+n 4[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 5"[39m
+                    [36m>[39m
+                      [0mTest Plan 5[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 6"[39m
+                    [36m>[39m
+                      [0mTest Plan 6[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 7"[39m
+                    [36m>[39m
+                      [0mTest Plan 7[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 8"[39m
+                    [36m>[39m
+                      [0mTest Plan 8[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 9"[39m
+                    [36m>[39m
+                      [0mTest Plan 9[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 10"[39m
+                    [36m>[39m
+                      [0mTest Plan 10[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 16"[39m
+                    [36m>[39m
+                      [0mTest Plan 16[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+                [0mCreate a new plan: [0m
+                [36m<button[39m
+                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                  [33mdata-testid[39m=[32m"NewPlan"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mNew Plan[0m
+                [36m</button>[39m
+                [36m<div[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mhidden[39m=[32m""[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mPlan 1[0m
+                    [36m</h3>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                              [36m>[39m
+                                [36m<h3>[39m
+                                  [0mSpring - 2020[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m10[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div[39m
+                                  [33mdraggable[39m=[32m"true"[39m
+                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+                                      [0mSurvey of Accounting[0m
+                                    [36m</h3>[39m
+                                    [0m 4[0m
+                                    [0m [0m
+                                    [0m credits[0m
+                                    [36m<br />[39m
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, ...
+
+      453 |         //make a new semester
+      454 |         newSemester.click();
+    > 455 |         const setSeason = screen.getByLabelText("Semester Season:");
+          |                                  ^
+      456 |         const setYear = screen.getByLabelText("Semester Year:");
+      457 |         expect(setSeason).toBeInTheDocument;
+      458 |         expect(setYear).toBeInTheDocument;
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getAllByLabelText (node_modules/@testing-library/dom/dist/queries/label-text.js:116:38)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByLabelText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/App.test.tsx:455:34)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Make a new plan › Delete all courses button works
+
+    TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mUD CISC275 Schedule Planner[0m
+            [0m [0m
+            [36m<p[39m
+              [33mclass[39m=[32m"names"[39m
+            [36m>[39m
+              [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
+            [36m</p>[39m
+          [36m</header>[39m
+          [36m<p>[39m
+            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"schedule"[39m
+          [36m>[39m
+            [36m<br />[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [0mSelect a plan:[0m
+                [36m<div>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mdata-testid[39m=[32m"PlanSelect"[39m
+                    [33mid[39m=[32m"planDrop"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 1"[39m
+                    [36m>[39m
+                      [0mPlan 1[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Plan 2"[39m
+                    [36m>[39m
+                      [0mPlan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 2"[39m
+                    [36m>[39m
+                      [0mTest Plan 2[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 3"[39m
+                    [36m>[39m
+                      [0mTest Plan 3[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 4"[39m
+                    [36m>[39m
+                      [0mTest Plan 4[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 5"[39m
+                    [36m>[39m
+                      [0mTest Plan 5[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 6"[39m
+                    [36m>[39m
+                      [0mTest Plan 6[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 7"[39m
+                    [36m>[39m
+                      [0mTest Plan 7[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 8"[39m
+                    [36m>[39m
+                      [0mTest Plan 8[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 9"[39m
+                    [36m>[39m
+                      [0mTest Plan 9[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 10"[39m
+                    [36m>[39m
+                      [0mTest Plan 10[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 16"[39m
+                    [36m>[39m
+                      [0mTest Plan 16[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 11"[39m
+                    [36m>[39m
+                      [0mTest Plan 11[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 12"[39m
+                    [36m>[39m
+                      [0mTest Plan 12[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Test Plan 13"[39m
+                    [36m>[39m
+                      [0mTest Plan 13[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+                [0mCreate a new plan: [0m
+                [36m<button[39m
+                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                  [33mdata-testid[39m=[32m"NewPlan"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mNew Plan[0m
+                [36m</button>[39m
+                [36m<div[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mhidden[39m=[32m""[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mPlan 1[0m
+                    [36m</h3>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"container"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row-equal col"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"semester-view container"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                              [36m>[39m
+                                [36m<h3>[39m
+                                  [0mSpring - 2020[0m
+                                  [36m<br />[39m
+                                [36m</h3>[39m
+                                [0m10[0m
+                                [0m [0m
+                                [0m credits[0m
+                                [0m                       [0m
+                                [36m<div[39m
+                                  [33mdraggable[39m=[32m"true"[39m
+                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                [36m>[39m
+                                  [36m<div[39m
+                                    [33mclass[39m=[32m"col"[39m
+                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                  [36m>[39m
+                                    [36m<h3>[39m
+                                      [0mACCT 200[0m
+                                      [0m [0m
+                                      [0m - [0m
+                                      [0m [0m
+             ...
+
+      586 |         //make a new semester
+      587 |         newSemester.click();
+    > 588 |         const setSeason = screen.getByLabelText("Semester Season:");
+          |                                  ^
+      589 |         const setYear = screen.getByLabelText("Semester Year:");
+      590 |         expect(setSeason).toBeInTheDocument;
+      591 |         expect(setYear).toBeInTheDocument;
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getAllByLabelText (node_modules/@testing-library/dom/dist/queries/label-text.js:116:38)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByLabelText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/App.test.tsx:588:34)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+Test Suites: 1 failed, 1 total
+Tests:       10 failed, 6 passed, 16 total
 Snapshots:   0 total
-Time:        19.693 s
+Time:        11.743 s
 Ran all test suites.
