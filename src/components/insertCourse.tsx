@@ -29,7 +29,6 @@ export function InsertCourse({
     const [code, setCode] = useState<string>("");
     const [description, setDescription] = useState<string>("");
     const [credits, setCredits] = useState<string>("");
-    //const [editing, setEditing] = useState<boolean>(false);
     const [preReqs, setPreReqs] = useState<string[]>([]);
     const [newPreReq, setNewPR] = useState<string>("");
     const [requires, setRequires] = useState<string[]>([]);
@@ -46,9 +45,6 @@ export function InsertCourse({
         requirements: [""]
     };
 
-    //function changeEditing() {
-    //    setEditing(!editing);
-    //}
     function cancel() {
         flipVisibility();
     }

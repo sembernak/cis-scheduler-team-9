@@ -210,7 +210,6 @@ export function SemesterView({
                     <InsertCourse
                         semester={newsemester}
                         flipVisibility={flipVisibility}
-                        //editPlan={editPlan}
                         editCourse={editCourse}
                         editSemester={editSemester}
                     ></InsertCourse>

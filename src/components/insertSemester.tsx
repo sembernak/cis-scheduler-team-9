@@ -19,9 +19,7 @@ export function InsertSemester({
     //new instance of semester created
     const [season, setSeason] = useState<string>("Spring");
     const [year, setYear] = useState<number>(2020);
-    //const [totalCredits, setTotalCredits] = useState<number>(0);
     const [courses /*, setCourses*/] = useState<Course[]>([]);
-    //const [editing, setEditing] = useState<boolean>(false);
 
     const newSemester = {
         season: season,
@@ -63,7 +61,7 @@ export function InsertSemester({
                     {/* Season */}
                     <Form.Group controlId="formSemesterSeason" as={Row}>
                         <Form.Label column sm={2}>
-                            Semester Season:
+                            Season:
                         </Form.Label>
                         <Col>
                             <Form.Control
@@ -77,7 +75,7 @@ export function InsertSemester({
                     {/* Year */}
                     <Form.Group controlId="formSemesterYear" as={Row}>
                         <Form.Label column sm={2}>
-                            Semester Year:
+                            Year:
                         </Form.Label>
                         <Col>
                             <Form.Control

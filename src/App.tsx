@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import unpackJson from "./helper_functions/unpackJSON";
 import catalog from "./catalog.json";
 import "./App.css";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-// need to remove this later!!!!!!!!
 import { Course } from "./interfaces/course";
 import { PlanViewer } from "./components/planViewer";
 import { Plan } from "./interfaces/plan";

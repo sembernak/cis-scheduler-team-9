@@ -5,8 +5,6 @@ import { Course } from "../interfaces/course";
 import { Semester } from "../interfaces/semester";
 import { Plan } from "../interfaces/plan";
 
-//chnaging credits does not fully work yet
-
 export function SemestorEditor({
     changeEditing,
     semester,
@@ -20,7 +18,6 @@ export function SemestorEditor({
 }): JSX.Element {
     const [season, setSeason] = useState<string>(semester.season);
     const [year, setYear] = useState<number>(semester.year);
-    //const [totalCredits, setTotalCredits] = useState<number>(0);
     const [courses /*, setCourses*/] = useState<Course[]>(semester.courses);
 
     function cancel() {
@@ -49,7 +46,7 @@ export function SemestorEditor({
                     {/* Season */}
                     <Form.Group controlId="formSemesterSeason" as={Row}>
                         <Form.Label column sm={2}>
-                            Semester Season:
+                            Season:
                         </Form.Label>
                         <Col>
                             <Form.Control
@@ -63,7 +60,7 @@ export function SemestorEditor({
                     {/* Year */}
                     <Form.Group controlId="formSemesterYear" as={Row}>
                         <Form.Label column sm={2}>
-                            Semester Year:
+                            Year:
                         </Form.Label>
                         <Col>
                             <Form.Control
