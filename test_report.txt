@@ -2,24 +2,24 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-PASS src/App.test.tsx (18.833 s)
+PASS src/App.test.tsx (22.766 s)
   Make a new plan
-    ✓ App renders with welcome message (144 ms)
-    ✓ Clicking New Plan gives a form to enter a title (209 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (120 ms)
-    ✓ Can set new plan title (616 ms)
-    ✓ Insert Semester works (531 ms)
-    ✓ Delete Semester Works (751 ms)
-    ✓ Edit Semester Works (1012 ms)
-    ✓ Edit Semester Works (1114 ms)
-    ✓ Edit Semester cancel button works (1037 ms)
-    ✓ Can delete all semesters (1199 ms)
-    ✓ Can insert a course (1281 ms)
-    ✓ Can edit a course (2081 ms)
-    ✓ Can set and fulfill requirements (2201 ms)
-    ✓ Can edit a plan (598 ms)
-    ✓ Plan editor cancel button works (677 ms)
-    ✓ Delete all courses button works (2470 ms)
+    ✓ App renders with welcome message (172 ms)
+    ✓ Clicking New Plan gives a form to enter a title (265 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (122 ms)
+    ✓ Can set new plan title (715 ms)
+    ✓ Insert Semester works (658 ms)
+    ✓ Delete Semester Works (900 ms)
+    ✓ Edit Semester Works (1240 ms)
+    ✓ Edit Semester Works (1304 ms)
+    ✓ Edit Semester cancel button works (1263 ms)
+    ✓ Can delete all semesters (1469 ms)
+    ✓ Can insert a course (1584 ms)
+    ✓ Can edit a course (2518 ms)
+    ✓ Can set and fulfill requirements (2700 ms)
+    ✓ Can edit a plan (727 ms)
+    ✓ Plan editor cancel button works (791 ms)
+    ✓ Delete all courses button works (2964 ms)
 
 -----------------------------|---------|----------|---------|---------|-------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s       
@@ -41,7 +41,7 @@ All files                    |   62.82 |    51.72 |   57.14 |   63.63 |
   recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                         
   recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                       
   recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                         
-  requirements.tsx           |   85.71 |       50 |      80 |   85.71 | 67-70                   
+  requirements.tsx           |   85.71 |       50 |      80 |   85.71 | 72-75                   
   semesterEditor.tsx         |   91.66 |      100 |   83.33 |   91.66 | 33                      
   semesterView.tsx           |   47.72 |      100 |   66.66 |      50 | 81,85-86,90-122         
  src/helper_functions        |     100 |      100 |     100 |     100 |                         
@@ -55,5 +55,5 @@ All files                    |   62.82 |    51.72 |   57.14 |   63.63 |
 Test Suites: 1 passed, 1 total
 Tests:       16 passed, 16 total
 Snapshots:   0 total
-Time:        19.46 s
+Time:        23.729 s
 Ran all test suites.
