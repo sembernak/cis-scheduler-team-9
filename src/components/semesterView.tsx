@@ -77,8 +77,11 @@ export function SemesterView({
 
     //console.log(dragOver); //keep getting lint error if I remove this line
 
-    const handleDragStart = (event: React.DragEvent<HTMLDivElement>) => {
-        event.dataTransfer.setData("text", event.currentTarget.id);
+    const handleDragStart = (
+        event: React.DragEvent<HTMLDivElement>,
+        course: Course
+    ) => {
+        event.dataTransfer.setData("text", JSON.stringify(course));
     };
 
     const enableDropping = (event: React.DragEvent<HTMLDivElement>) => {
@@ -88,34 +91,21 @@ export function SemesterView({
 
     const handleDrop = (event: React.DragEvent<HTMLDivElement>) => {
         const id = event.dataTransfer.getData("text");
-        const courseInfo = id.split("&*");
-        const courseCode = courseInfo[0];
-        const courseTitle = courseInfo[1];
-        const courseDescription = courseInfo[2];
-        const courseCredits = courseInfo[3];
-        const courseSemesterId = courseInfo[4]; //original semester the course is from
-
-        const courseReq = courseInfo[5]; //list of reqs
-        const newCourseReq = courseReq.split("%*");
-        const finalCourseReq = newCourseReq.slice(0, newCourseReq.length - 1); //last digit will be a comma that we dont want
-
-        const coursePre = courseInfo[6];
-        const newCoursePre = coursePre.split("%*");
-        const finalCoursePre = newCoursePre.slice(0, newCoursePre.length - 1); //last digit will be a comma that we dont want
-
+        console.log(id);
         const newSemesterId = event.currentTarget as Element; //semester where the course was dropped
-
+        const tempCourse = JSON.parse(event.dataTransfer.getData("text"));
+        const courseSemesterId = tempCourse.semesterId;
         const newCourse = {
-            code: courseCode,
-            title: courseTitle,
-            prereq: finalCoursePre,
-            description: courseDescription,
-            credits: courseCredits,
-            semesterId: newSemesterId.id,
-            requirements: finalCourseReq
+            ...tempCourse,
+            semesterId: newSemesterId.id
         };
 
-        addCourse(courseCode, newCourse, newSemesterId.id, courseSemesterId);
+        addCourse(
+            newCourse.code,
+            newCourse,
+            newSemesterId.id,
+            courseSemesterId
+        );
 
         console.log("Somebody dropped an element with id:" + id);
         //const newSemesterId = event.target;
@@ -150,7 +140,9 @@ export function SemesterView({
                     <div
                         key={course.code}
                         draggable={true}
-                        onDragStart={handleDragStart}
+                        onDragStart={(event: React.DragEvent<HTMLDivElement>) =>
+                            handleDragStart(event, course)
+                        }
                         id={
                             course.code +
                             "&*" +
