@@ -425,9 +425,13 @@ function App(): JSX.Element {
                     ></PlanViewer>
                 </div>
             </div>
-            <CoursePool addCourse={addCourse}></CoursePool>
+            <br></br>
             <Button onClick={makeCSV}>Download Plan</Button>
             <Button onClick={saveData}>Save Data</Button>
+            <br></br>
+            <br></br>
+            <h3>Course Pool:</h3>
+            <CoursePool addCourse={addCourse}></CoursePool>
             <Requirements
                 plan={
                     plans.find(
