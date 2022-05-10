@@ -426,8 +426,8 @@ function App(): JSX.Element {
                 </div>
             </div>
             <br></br>
-            <Button onClick={makeCSV}>Download Plan</Button>
             <Button onClick={saveData}>Save Data</Button>
+            <Button onClick={makeCSV}>Download Plan</Button>
             <br></br>
             <br></br>
             <h3>Course Pool:</h3>
