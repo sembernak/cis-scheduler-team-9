@@ -100,7 +100,7 @@ export function CoursePool({
             }}
             className="background1"
         >
-            <h3>Course Pool:</h3>
+            <h2>Course Pool:</h2>
             <Form.Group>
                 <Form.Select value={department} onChange={depSelect}>
                     {DEPARTMENTS.map(

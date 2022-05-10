@@ -97,6 +97,7 @@ export function CourseEditor({
 
     return (
         <Container>
+            <br></br>
             <Row>
                 <Col>
                     {/* credits */}
@@ -106,6 +107,7 @@ export function CourseEditor({
                         </Form.Label>
                         <Col>
                             <Form.Control
+                                className="default-form"
                                 value={credits}
                                 data-testid={"D" + course.code}
                                 onChange={(
@@ -125,6 +127,7 @@ export function CourseEditor({
                         </Form.Label>
                         <Col>
                             <Form.Control
+                                className="default-form"
                                 value={title}
                                 onChange={(
                                     event: React.ChangeEvent<HTMLInputElement>
@@ -139,6 +142,7 @@ export function CourseEditor({
                         </Form.Label>
                         <Col>
                             <Form.Control
+                                className="default-form"
                                 as="textarea"
                                 rows={3}
                                 value={description}
@@ -158,12 +162,14 @@ export function CourseEditor({
                                 <FormControl
                                     readOnly
                                     defaultValue={prereq}
+                                    className="default-form"
                                     /*onChange={(
                                         event: React.ChangeEvent<HTMLInputElement>
                                     ) => manageCurrentPR(event, prereq)}
                                     This works but is annoying to use ^*/
                                 />
                                 <Button
+                                    className="default-button"
                                     onClick={() =>
                                         setPreReqs(
                                             preReqs.filter(
@@ -183,10 +189,12 @@ export function CourseEditor({
                             placeholder="New PreReq"
                             value={newPreReq}
                             onChange={newPRFunction}
+                            className="default-form"
                         />
                         <Button
                             variant="outline-secondary"
                             onClick={manageNewPR}
+                            className="default-button"
                         >
                             Add PreReq
                         </Button>
@@ -198,6 +206,7 @@ export function CourseEditor({
                         (req: string): JSX.Element => (
                             <InputGroup key={req}>
                                 <FormControl
+                                    className="default-button"
                                     readOnly
                                     value={req}
                                     /*onChange={(
@@ -206,6 +215,7 @@ export function CourseEditor({
                                     This works but is annoying to use ^*/
                                 />
                                 <Button
+                                    className="default-button"
                                     onClick={() =>
                                         setRequires(
                                             requires.filter(
@@ -225,18 +235,28 @@ export function CourseEditor({
                             placeholder="New Requirement"
                             value={newRequire}
                             onChange={newRequireFunction}
+                            className="default-form"
                         />
                         <Button
                             variant="outline-secondary"
                             onClick={manageNewRequire}
+                            className="default-button"
                         >
                             Add Requirement
                         </Button>
                     </InputGroup>
-                    <Button onClick={save} variant="success" className="me-4">
+                    <Button
+                        onClick={save}
+                        variant="success"
+                        className="default-button me-5"
+                    >
                         Save
                     </Button>
-                    <Button onClick={cancel} variant="warning" className="me-5">
+                    <Button
+                        onClick={cancel}
+                        variant="warning"
+                        className="default-button me-5"
+                    >
                         Cancel
                     </Button>
                     <Button
@@ -244,7 +264,7 @@ export function CourseEditor({
                             deleteCourse(course.code, course.semesterId)
                         }
                         variant="danger"
-                        className="me-8"
+                        className="default-button me-8"
                     >
                         Delete
                     </Button>

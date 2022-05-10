@@ -161,6 +161,24 @@ h3 {
     font-size: medium;
 }
 
+h1 {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: large;
+}
+
+h4 {
+    font-size: x-small;
+}
+
 .background1 {
     background-color: #f8f9fa;
+}
+
+.default-form {
+    font-size: x-small;
 }

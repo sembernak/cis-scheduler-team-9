@@ -91,6 +91,7 @@ export function InsertCourse({
 
     return (
         <Container>
+            <br></br>
             {/* Code */}
             <Form.Group controlId="formcourseCode" as={Row}>
                 <Form.Label column sm={3}>
@@ -99,6 +100,7 @@ export function InsertCourse({
                 <Col>
                     <Form.Control
                         value={code}
+                        className="default-form"
                         onChange={(
                             event: React.ChangeEvent<HTMLTextAreaElement>
                         ) => setCode(event.target.value)}
@@ -112,6 +114,7 @@ export function InsertCourse({
                 </Form.Label>
                 <Col>
                     <Form.Control
+                        className="default-form"
                         value={title}
                         onChange={(
                             event: React.ChangeEvent<HTMLInputElement>
@@ -126,6 +129,7 @@ export function InsertCourse({
                 </Form.Label>
                 <Col>
                     <Form.Control
+                        className="default-form"
                         value={description}
                         onChange={(
                             event: React.ChangeEvent<HTMLInputElement>
@@ -140,6 +144,7 @@ export function InsertCourse({
                 </Form.Label>
                 <Col>
                     <Form.Control
+                        className="default-form"
                         value={credits}
                         onChange={(
                             event: React.ChangeEvent<HTMLTextAreaElement>
@@ -152,6 +157,7 @@ export function InsertCourse({
                 (prereq: string): JSX.Element => (
                     <InputGroup key={prereq}>
                         <FormControl
+                            className="default-form"
                             readOnly
                             value={prereq}
                             /*onChange={(
@@ -160,6 +166,7 @@ export function InsertCourse({
                                     This works but is annoying to use ^*/
                         />
                         <Button
+                            className="default-button"
                             onClick={() =>
                                 setPreReqs(
                                     preReqs.filter(
@@ -179,8 +186,13 @@ export function InsertCourse({
                     placeholder="New PreReq"
                     value={newPreReq}
                     onChange={newPRFunction}
+                    className="default-form"
                 />
-                <Button variant="outline-secondary" onClick={manageNewPR}>
+                <Button
+                    variant="outline-secondary"
+                    onClick={manageNewPR}
+                    className="default-button"
+                >
                     Add PreReq
                 </Button>
             </InputGroup>
@@ -191,6 +203,7 @@ export function InsertCourse({
                 (req: string): JSX.Element => (
                     <InputGroup key={req}>
                         <FormControl
+                            className="default-form"
                             readOnly
                             value={req}
                             /*onChange={(
@@ -199,6 +212,7 @@ export function InsertCourse({
                                     This works but is annoying to use ^*/
                         />
                         <Button
+                            className="default-button"
                             onClick={() =>
                                 setRequires(
                                     requires.filter(
@@ -214,18 +228,31 @@ export function InsertCourse({
             )}
             <InputGroup>
                 <FormControl
+                    className="default-form"
                     placeholder="New Requirement"
                     value={newRequire}
                     onChange={newRequireFunction}
                 />
-                <Button variant="outline-secondary" onClick={manageNewRequire}>
+                <Button
+                    variant="outline-secondary"
+                    onClick={manageNewRequire}
+                    className="default-button"
+                >
                     Add Requirement
                 </Button>
             </InputGroup>
-            <Button onClick={save} variant="success" className="me-4">
+            <Button
+                onClick={save}
+                variant="success"
+                className="me-4 default-button"
+            >
                 Save
             </Button>
-            <Button onClick={cancel} variant="warning" className="me-5">
+            <Button
+                onClick={cancel}
+                variant="warning"
+                className="me-5 default-button"
+            >
                 Cancel
             </Button>
         </Container>
