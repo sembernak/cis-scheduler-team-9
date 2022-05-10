@@ -88,7 +88,19 @@ export function CoursePool({
     }
 
     return (
-        <div>
+        <div
+            style={{
+                overflowY: "scroll",
+                height: "60vh",
+                width: "auto",
+                border: "solid",
+                borderWidth: "1px",
+                borderRadius: "8px",
+                borderColor: "gray"
+            }}
+            className="background1"
+        >
+            <h3>Course Pool:</h3>
             <Form.Group>
                 <Form.Select value={department} onChange={depSelect}>
                     {DEPARTMENTS.map(
@@ -112,6 +124,7 @@ export function CoursePool({
                 </Form.Select>
             </Form.Group>
             <Button
+                className="default-button"
                 onClick={() =>
                     changePool([
                         ...userPool,
@@ -124,13 +137,7 @@ export function CoursePool({
             >
                 Add Course
             </Button>
-            <ul>
-                {/*userPool.map(
-                    (course: Course): JSX.Element => (
-                        <li key={course.code}>{course.code}</li>
-                    )
-                    )*/}
-            </ul>
+            <br></br>
             {userPool.map((course: Course) => (
                 <div key={course.code}>
                     <CoursePoolView

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Button, Container, Row, Col, Form } from "react-bootstrap";
-//import { Quiz } from "../interfaces/quiz";
 import { Course } from "../interfaces/course";
 import { Semester } from "../interfaces/semester";
 import { Plan } from "../interfaces/plan";
@@ -18,7 +17,7 @@ export function SemestorEditor({
 }): JSX.Element {
     const [season, setSeason] = useState<string>(semester.season);
     const [year, setYear] = useState<number>(semester.year);
-    const [courses /*, setCourses*/] = useState<Course[]>(semester.courses);
+    const [courses] = useState<Course[]>(semester.courses);
 
     function cancel() {
         changeEditing();

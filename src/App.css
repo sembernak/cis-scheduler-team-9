@@ -1,5 +1,6 @@
 .App {
     text-align: center;
+    font-size: x-small;
 }
 
 .App-logo {
@@ -13,6 +14,10 @@
     }
 }
 
+.default-button {
+    font-size: 10px;
+}
+
 .App-header {
     width: 100%;
     background-color: #406abc;
@@ -21,11 +26,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(12px + 2vmin);
+    font-size: small;
     color: white;
 }
 .names {
-    font-size: calc(2px + 2vmin);
+    font-size: small;
 }
 
 .App-link {
@@ -74,14 +79,15 @@
     background-color: white;
     color: black;
     border: 1px solid rgb(127, 163, 228);
-    padding: 10px 13px;
+    padding: 8px 7px;
     text-align: center;
     text-decoration: none;
     display: inline;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
 }
 .edit-sem-btn:hover {
+    font-size: 10px;
     background-color: rgb(31, 96, 216);
 }
 .delete-sem-btn {
@@ -89,14 +95,15 @@
     background-color: white;
     color: black;
     border: 1px solid red;
-    padding: 10px 7px;
+    padding: 8px 7px;
     text-align: center;
     text-decoration: none;
     display: inline;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
 }
 .delete-sem-btn:hover {
+    font-size: 10px;
     background-color: red;
 }
 .delete-allcourse-btn {
@@ -104,11 +111,11 @@
     background-color: white;
     color: black;
     border: 1px solid red;
-    padding: 10px 7px;
+    padding: 8px 7px;
     text-align: center;
     text-decoration: none;
     display: inline;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
 }
 .delete-allcourse-btn:hover {
@@ -119,29 +126,41 @@
     background-color: white;
     color: black;
     border: 1px solid green;
-    padding: 10px 7px;
+    padding: 8px 7px;
     text-align: center;
     text-decoration: none;
     display: inline;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
 }
 .insert-course-btn:hover {
+    font-size: 10px;
     background-color: green;
 }
 .reset-course-btn {
+    font-size: 10px;
     background-color: rgb(127, 163, 228);
     text-align: center;
 }
 .insert-plan {
-    font-size: 12px;
+    font-size: 10px;
     background-color: white;
     border: 1px solid green;
     color: black;
+    font-weight: bold;
 }
 
 @media screen and (min-width: 576px) {
     .contains-semester {
         min-width: 500px;
     }
+}
+
+h3 {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.background1 {
+    background-color: #f8f9fa;
 }
