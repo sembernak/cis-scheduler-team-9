@@ -7,7 +7,7 @@ import { PlanViewer } from "./components/planViewer";
 import { Plan } from "./interfaces/plan";
 import { Semester } from "./interfaces/semester";
 import { CoursePool } from "./components/coursePool";
-import { Button /*, Container*/, Col, Row } from "react-bootstrap";
+import { Button /*, Container*/, Col, Form, Row } from "react-bootstrap";
 import { Requirements } from "./components/requirements";
 import { Requirement } from "./interfaces/requirement";
 import { WelcomeMessage } from "./components/welcomeMessage";
@@ -134,46 +134,31 @@ function App(): JSX.Element {
     function saveData() {
         localStorage.setItem(saveDataKey, JSON.stringify(plans));
     }
-    function makeCSV() {
-        let csvContent = "data:text/csv;charset=utf-8, ";
-        csvContent =
-            csvContent +
-            plans
-                .map(
-                    (plan: Plan): string =>
-                        plan.title +
-                        ",\n" +
-                        plan.semesters
-                            .map(
-                                (semester: Semester): string =>
-                                    semester.season +
-                                    ", " +
-                                    semester.year +
-                                    ",\n" +
-                                    semester.courses
-                                        .map(
-                                            (course: Course): string =>
-                                                course.code +
-                                                ", " +
-                                                course.title +
-                                                ", " +
-                                                course.credits +
-                                                ", " +
-                                                course.description +
-                                                ", " +
-                                                course.prereq
-                                        )
-                                        .join(",\n")
-                            )
-                            .join(",\n")
-                )
-                .join(",\n");
-        const a = document.createElement("a");
-        const encodeUri = encodeURI(csvContent);
-        a["download"] = "plans.csv";
-        a.href = encodeUri;
-        a.click();
-        console.log(csvContent);
+
+    //Upload CSV file
+    const [fileContent, setContent] = useState<string>("No file data uploaded");
+    function uploadFile(event: React.ChangeEvent<HTMLInputElement>) {
+        // Might have removed the file, need to check that the files exist
+        if (event.target.files && event.target.files.length) {
+            // Get the first filename
+            const filename = event.target.files[0];
+            // Create a reader
+            const reader = new FileReader();
+            // Create lambda callback to handle when we read the file
+            reader.onload = (loadEvent) => {
+                // Target might be null, so provide default error value
+                const newContent =
+                    loadEvent.target?.result || "Data was not loaded";
+                // FileReader provides string or ArrayBuffer, force it to be string
+                setContent(newContent as string);
+            };
+            // Actually read the file
+            reader.readAsText(filename);
+        }
+    }
+    function uploadPlan() {
+        const fileContentData = JSON.parse(fileContent);
+        setPlans([...plans, fileContentData]);
     }
 
     function deletePlan(id: string) {
@@ -405,6 +390,9 @@ function App(): JSX.Element {
                     show={showWelcomeMessage}
                     handleClose={handleWelcomeMessage}
                 ></WelcomeMessage>
+                <Button className="save-btn" onClick={saveData}>
+                    Save Data
+                </Button>
             </header>
             <div className="schedule">
                 <br></br>
@@ -441,12 +429,37 @@ function App(): JSX.Element {
                         <br></br>
                         <br></br>
                         <CoursePool addCourse={addCourse}></CoursePool>
+                        <br></br>
+                        <br></br>
+                        <div
+                            style={{
+                                width: "auto",
+                                border: "solid",
+                                borderWidth: "1px",
+                                borderRadius: "8px",
+                                borderColor: "gray",
+                                padding: "5px"
+                            }}
+                            className="uploadBackground"
+                        >
+                            Upload an existing plan below
+                            <Form.Group controlId="uploadForm">
+                                <Form.Control
+                                    type="file"
+                                    onChange={uploadFile}
+                                />
+                            </Form.Group>
+                            <Button
+                                className="uploadPlanBtn"
+                                onClick={uploadPlan}
+                            >
+                                Upload
+                            </Button>
+                        </div>
                     </Col>
                 </Row>
             </div>
             <br></br>
-            <Button onClick={saveData}>Save Data</Button>
-            <Button onClick={makeCSV}>Download Plan</Button>
         </div>
     );
 }

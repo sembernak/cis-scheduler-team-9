@@ -1,6 +1,6 @@
 .App {
-    text-align: center;
     font-size: x-small;
+    text-align: center;
 }
 
 .App-logo {
@@ -148,6 +148,30 @@
     border: 1px solid green;
     color: black;
     font-weight: bold;
+}
+.download-plan {
+    font-size: 10px;
+    background-color: white;
+    border: 1px solid blue;
+    color: black;
+    font-weight: bold;
+}
+
+.uploadPlanBtn {
+    width: 100px;
+    float: left;
+    font-size: small;
+}
+
+.uploadBackground {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.save-btn {
+    width: 200px;
+    float: left;
+    font-size: small;
 }
 
 @media screen and (min-width: 576px) {
