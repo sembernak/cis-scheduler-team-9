@@ -8,7 +8,6 @@ import { CourseView } from "./courseView";
 import { InsertCourse } from "./insertCourse";
 import { RecordControlsSemester } from "./recordControlsSemester";
 import { SemestorEditor } from "./semesterEditor";
-//import { SemesterViewer } from "./semesterViewer";
 
 export function SemesterView({
     plan,

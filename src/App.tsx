@@ -1,4 +1,3 @@
-/* eslint-disable indent */
 import React, { useState } from "react";
 import unpackJson from "./helper_functions/unpackJSON";
 import catalog from "./catalog.json";
@@ -11,6 +10,7 @@ import { CoursePool } from "./components/coursePool";
 import { Button /*, Container*/ } from "react-bootstrap";
 import { Requirements } from "./components/requirements";
 import { Requirement } from "./interfaces/requirement";
+import { WelcomeMessage } from "./components/welcomeMessage";
 //import userEvent from "@testing-library/user-event";
 //import { textSpanContainsPosition } from "typescript";
 
@@ -112,6 +112,9 @@ function App(): JSX.Element {
     const [plans, setPlans] = useState<Plan[]>(loadedData);
     const [selection, select] = useState<string>(PLANS[0].title);
     const [requires, setRequires] = useState<Requirement[]>([]);
+    const [showWelcomeMessage, setShowWelcomeMessage] = useState(true); //Welcome message visible?
+
+    const handleWelcomeMessage = () => setShowWelcomeMessage(false);
 
     function compareSeason(a: string, b: string): number {
         const numerify = ["Winter", "Spring", "Summer", "Fall"];
@@ -395,12 +398,11 @@ function App(): JSX.Element {
                 <p className="names">
                     created by Allie Platchek, Sam Bernal, and Anissa Spano
                 </p>
+                <WelcomeMessage
+                    show={showWelcomeMessage}
+                    handleClose={handleWelcomeMessage}
+                ></WelcomeMessage>
             </header>
-            <p>
-                Welcome to Team 9 schedule builder! This application has all the
-                tools you need to create the perfect college course schedule. To
-                get started, select a plan from below or create a new one.
-            </p>
             <div className="schedule">
                 <br></br>
                 <div>
