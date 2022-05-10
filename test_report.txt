@@ -2,31 +2,56 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-FAIL src/App.test.tsx (10.162 s)
+FAIL src/App.test.tsx (7.613 s)
   Make a new plan
-    ✓ App renders with welcome message (203 ms)
-    ✓ Clicking New Plan gives a form to enter a title (301 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (145 ms)
-    ✓ Can set new plan title (854 ms)
-    ✕ Insert Semester works (295 ms)
-    ✕ Delete Semester Works (282 ms)
-    ✕ Edit Semester Works (256 ms)
-    ✕ Edit Semester Works (273 ms)
-    ✕ Edit Semester cancel button works (287 ms)
-    ✕ Can delete all semesters (287 ms)
-    ✕ Can insert a course (271 ms)
-    ✕ Can edit a course (254 ms)
-    ✕ Can set and fulfill requirements (266 ms)
-    ✓ Can edit a plan (998 ms)
-    ✓ Plan editor cancel button works (1023 ms)
-    ✕ Delete all courses button works (294 ms)
+    ✕ App renders with welcome message (194 ms)
+    ✓ Clicking New Plan gives a form to enter a title (192 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (113 ms)
+    ✓ Can set new plan title (624 ms)
+    ✕ Insert Semester works (205 ms)
+    ✕ Delete Semester Works (195 ms)
+    ✕ Edit Semester Works (186 ms)
+    ✕ Edit Semester Works (197 ms)
+    ✕ Edit Semester cancel button works (192 ms)
+    ✕ Can delete all semesters (201 ms)
+    ✕ Can insert a course (204 ms)
+    ✕ Can edit a course (183 ms)
+    ✕ Can set and fulfill requirements (182 ms)
+    ✓ Can edit a plan (748 ms)
+    ✓ Plan editor cancel button works (718 ms)
+    ✕ Delete all courses button works (194 ms)
+
+  ● Make a new plan › App renders with welcome message
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      15 |         expect(
+      16 |             screen.queryAllByText(/Welcome to Team 9 schedule builder!/).length
+    > 17 |         ).toBe(1);
+         |           ^
+      18 |     });
+      19 |     test("Clicking New Plan gives a form to enter a title", () => {
+      20 |         const createNew = screen.getByTestId("NewPlan");
+
+      at Object.<anonymous> (src/App.test.tsx:17:11)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
   ● Make a new plan › Insert Semester works
 
     TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
 
     Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
+    [36m<body[39m
+      [33mclass[39m=[32m"modal-open"[39m
+      [33mdata-rr-ui-modal-open[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 2048px;"[39m
+    [36m>[39m
       [36m<div>[39m
         [36m<div[39m
           [33mclass[39m=[32m"App"[39m
@@ -41,10 +66,8 @@ FAIL src/App.test.tsx (10.162 s)
             [36m>[39m
               [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
             [36m</p>[39m
+            [36m<div />[39m
           [36m</header>[39m
-          [36m<p>[39m
-            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
-          [36m</p>[39m
           [36m<div[39m
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
@@ -168,7 +191,8 @@ FAIL src/App.test.tsx (10.162 s)
                                         [0mReset to Default[0m
                                       [36m</button>[39m
                                     [36m</div>[39m
-                ...
+                                  [36m</div>[39m
+                                  [3...
 
       57 |         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
       58 |         newSemester.click();
@@ -193,7 +217,11 @@ FAIL src/App.test.tsx (10.162 s)
     TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
 
     Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
+    [36m<body[39m
+      [33mclass[39m=[32m"modal-open"[39m
+      [33mdata-rr-ui-modal-open[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 2048px;"[39m
+    [36m>[39m
       [36m<div>[39m
         [36m<div[39m
           [33mclass[39m=[32m"App"[39m
@@ -208,10 +236,8 @@ FAIL src/App.test.tsx (10.162 s)
             [36m>[39m
               [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
             [36m</p>[39m
+            [36m<div />[39m
           [36m</header>[39m
-          [36m<p>[39m
-            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
-          [36m</p>[39m
           [36m<div[39m
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
@@ -336,7 +362,8 @@ FAIL src/App.test.tsx (10.162 s)
                                       [36m<button[39m
                                         [33mclass[39m=[32m"reset-course-btn btn btn-primary"[39m
                                         [33mtype[39m=[32m"button"[39m
-                                ...
+                                      [36m>[39m
+                                        [0mReset to D...
 
       87 |         //make a new semester
       88 |         newSemester.click();
@@ -361,7 +388,11 @@ FAIL src/App.test.tsx (10.162 s)
     TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
 
     Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
+    [36m<body[39m
+      [33mclass[39m=[32m"modal-open"[39m
+      [33mdata-rr-ui-modal-open[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 2048px;"[39m
+    [36m>[39m
       [36m<div>[39m
         [36m<div[39m
           [33mclass[39m=[32m"App"[39m
@@ -376,10 +407,8 @@ FAIL src/App.test.tsx (10.162 s)
             [36m>[39m
               [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
             [36m</p>[39m
+            [36m<div />[39m
           [36m</header>[39m
-          [36m<p>[39m
-            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
-          [36m</p>[39m
           [36m<div[39m
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
@@ -507,7 +536,7 @@ FAIL src/App.test.tsx (10.162 s)
                                         [36m</div>[39m
                                       [36m</div>[39m
                                       [36m<button[39m
-     ...
+                                        [33mclass[39m=[32m"reset-cours...
 
       128 |         //make a new semester
       129 |         newSemester.click();
@@ -532,7 +561,11 @@ FAIL src/App.test.tsx (10.162 s)
     TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
 
     Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
+    [36m<body[39m
+      [33mclass[39m=[32m"modal-open"[39m
+      [33mdata-rr-ui-modal-open[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 2048px;"[39m
+    [36m>[39m
       [36m<div>[39m
         [36m<div[39m
           [33mclass[39m=[32m"App"[39m
@@ -547,10 +580,8 @@ FAIL src/App.test.tsx (10.162 s)
             [36m>[39m
               [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
             [36m</p>[39m
+            [36m<div />[39m
           [36m</header>[39m
-          [36m<p>[39m
-            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
-          [36m</p>[39m
           [36m<div[39m
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
@@ -679,7 +710,8 @@ FAIL src/App.test.tsx (10.162 s)
                                             [33mtype[39m=[32m"button"[39m
                                           [36m>[39m
                                             [0mEdit Course[0m
-                         ...
+                                          [36m</button>[39m
+                                   ...
 
       173 |         //make a new semester
       174 |         newSemester.click();
@@ -704,7 +736,11 @@ FAIL src/App.test.tsx (10.162 s)
     TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
 
     Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
+    [36m<body[39m
+      [33mclass[39m=[32m"modal-open"[39m
+      [33mdata-rr-ui-modal-open[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 2048px;"[39m
+    [36m>[39m
       [36m<div>[39m
         [36m<div[39m
           [33mclass[39m=[32m"App"[39m
@@ -719,10 +755,8 @@ FAIL src/App.test.tsx (10.162 s)
             [36m>[39m
               [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
             [36m</p>[39m
+            [36m<div />[39m
           [36m</header>[39m
-          [36m<p>[39m
-            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
-          [36m</p>[39m
           [36m<div[39m
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
@@ -853,7 +887,8 @@ FAIL src/App.test.tsx (10.162 s)
                                         [36m<div>[39m
                                           [36m<button[39m
                                             [33mclass[39m=[32m"edit-course-btn btn btn-primary btn-sm"[39m
-               ...
+                                            [33mtype[39m=[32m"button"[39m
+         ...
 
       218 |         //make a new semester
       219 |         newSemester.click();
@@ -878,7 +913,11 @@ FAIL src/App.test.tsx (10.162 s)
     TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
 
     Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
+    [36m<body[39m
+      [33mclass[39m=[32m"modal-open"[39m
+      [33mdata-rr-ui-modal-open[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 2048px;"[39m
+    [36m>[39m
       [36m<div>[39m
         [36m<div[39m
           [33mclass[39m=[32m"App"[39m
@@ -893,10 +932,8 @@ FAIL src/App.test.tsx (10.162 s)
             [36m>[39m
               [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
             [36m</p>[39m
+            [36m<div />[39m
           [36m</header>[39m
-          [36m<p>[39m
-            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
-          [36m</p>[39m
           [36m<div[39m
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
@@ -1029,7 +1066,8 @@ FAIL src/App.test.tsx (10.162 s)
                                       [36m<div[39m
                                         [33mclass[39m=[32m"row"[39m
                                       [36m>[39m
-                                    ...
+                                        [36m<div>[39m
+                                          [36m<butt...
 
       261 |         const newSemester = screen.getByTestId("InsertSemesterTest Plan 8");
       262 |         newSemester.click();
@@ -1054,7 +1092,11 @@ FAIL src/App.test.tsx (10.162 s)
     TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
 
     Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
+    [36m<body[39m
+      [33mclass[39m=[32m"modal-open"[39m
+      [33mdata-rr-ui-modal-open[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 2048px;"[39m
+    [36m>[39m
       [36m<div>[39m
         [36m<div[39m
           [33mclass[39m=[32m"App"[39m
@@ -1069,10 +1111,8 @@ FAIL src/App.test.tsx (10.162 s)
             [36m>[39m
               [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
             [36m</p>[39m
+            [36m<div />[39m
           [36m</header>[39m
-          [36m<p>[39m
-            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
-          [36m</p>[39m
           [36m<div[39m
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
@@ -1207,7 +1247,8 @@ FAIL src/App.test.tsx (10.162 s)
                                     [36m<div[39m
                                       [33mclass[39m=[32m"col"[39m
                                     [36m>[39m
-     ...
+                                      [36m<div[39m
+                        ...
 
       326 |         //make a new semester
       327 |         newSemester.click();
@@ -1232,7 +1273,11 @@ FAIL src/App.test.tsx (10.162 s)
     TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
 
     Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
+    [36m<body[39m
+      [33mclass[39m=[32m"modal-open"[39m
+      [33mdata-rr-ui-modal-open[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 2048px;"[39m
+    [36m>[39m
       [36m<div>[39m
         [36m<div[39m
           [33mclass[39m=[32m"App"[39m
@@ -1247,10 +1292,8 @@ FAIL src/App.test.tsx (10.162 s)
             [36m>[39m
               [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
             [36m</p>[39m
+            [36m<div />[39m
           [36m</header>[39m
-          [36m<p>[39m
-            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
-          [36m</p>[39m
           [36m<div[39m
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
@@ -1386,7 +1429,8 @@ FAIL src/App.test.tsx (10.162 s)
                                     [36m<br />[39m
                                     [0m[0m
                                     [36m<br />[39m
-       ...
+                                    [0m[0m
+                                  ...
 
       381 |         //make a new semester
       382 |         newSemester.click();
@@ -1411,7 +1455,11 @@ FAIL src/App.test.tsx (10.162 s)
     TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
 
     Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
+    [36m<body[39m
+      [33mclass[39m=[32m"modal-open"[39m
+      [33mdata-rr-ui-modal-open[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 2048px;"[39m
+    [36m>[39m
       [36m<div>[39m
         [36m<div[39m
           [33mclass[39m=[32m"App"[39m
@@ -1426,10 +1474,8 @@ FAIL src/App.test.tsx (10.162 s)
             [36m>[39m
               [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
             [36m</p>[39m
+            [36m<div />[39m
           [36m</header>[39m
-          [36m<p>[39m
-            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
-          [36m</p>[39m
           [36m<div[39m
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
@@ -1466,38 +1512,7 @@ FAIL src/App.test.tsx (10.162 s)
                     [36m<option[39m
                       [33mvalue[39m=[32m"Test Plan 4"[39m
                     [36m>[39m
-                      [0mTest Pla-----------------------------|---------|----------|---------|---------|-----------------------------------------
-File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                       
------------------------------|---------|----------|---------|---------|-----------------------------------------
-All files                    |   36.36 |    29.03 |   23.07 |   36.82 |                                         
- src                         |   32.67 |    10.71 |   11.76 |      33 |                                         
-  App.tsx                    |   32.67 |    10.71 |   11.76 |      33 | 108,117-120,126,134-260,288-295,308-388 
- src/components              |   36.91 |    44.11 |   27.35 |   37.44 |                                         
-  courseEditor.tsx           |       0 |      100 |       0 |       0 | 28-244                                  
-  coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 61-83,116-135                           
-  coursePoolView.tsx         |       0 |        0 |       0 |       0 | 23-50                                   
-  courseView.tsx             |   66.66 |    66.66 |   33.33 |   66.66 | 23,58                                   
-  insertCourse.tsx           |       0 |      100 |       0 |       0 | 28-205                                  
-  insertPlan.tsx             |     100 |      100 |     100 |     100 |                                         
-  insertSemester.tsx         |   41.66 |      100 |      20 |   41.66 | 37-53,70-97                             
-  planEditor.tsx             |      75 |      100 |   57.14 |   81.81 | 30-31                                   
-  planView.tsx               |      75 |      100 |   66.66 |      75 | 83-101                                  
-  planViewer.tsx             |    87.5 |    66.66 |     100 |    87.5 | 48                                      
-  recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                                         
-  recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                                       
-  recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                                         
-  requirements.tsx           |   21.42 |        0 |      10 |   21.42 | 29-50,57-114                            
-  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 19-83                                   
-  semesterView.tsx           |   44.44 |       50 |   31.25 |   47.05 | 44-48,84,88-89,93-112,144-159,181-195   
- src/helper_functions        |     100 |      100 |     100 |     100 |                                         
-  unpackJSON.tsx             |     100 |      100 |     100 |     100 |                                         
- src/interfaces              |       0 |        0 |       0 |       0 |                                         
-  course.ts                  |       0 |        0 |       0 |       0 |                                         
-  plan.ts                    |       0 |        0 |       0 |       0 |                                         
-  requirement.ts             |       0 |        0 |       0 |       0 |                                         
-  semester.ts                |       0 |        0 |       0 |       0 |                                         
------------------------------|---------|----------|---------|---------|-----------------------------------------
-n 4[0m
+                      [0mTest Plan 4[0m
                     [36m</option>[39m
                     [36m<option[39m
                       [33mvalue[39m=[32m"Test Plan 5"[39m
@@ -1597,7 +1612,8 @@ n 4[0m
                                     [0m [0m
                                     [0m credits[0m
                                     [36m<br />[39m
-                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, ...
+                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                  ...
 
       453 |         //make a new semester
       454 |         newSemester.click();
@@ -1622,7 +1638,11 @@ n 4[0m
     TestingLibraryElementError: Unable to find a label with the text of: Semester Season:
 
     Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
+    [36m<body[39m
+      [33mclass[39m=[32m"modal-open"[39m
+      [33mdata-rr-ui-modal-open[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 2048px;"[39m
+    [36m>[39m
       [36m<div>[39m
         [36m<div[39m
           [33mclass[39m=[32m"App"[39m
@@ -1637,10 +1657,8 @@ n 4[0m
             [36m>[39m
               [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
             [36m</p>[39m
+            [36m<div />[39m
           [36m</header>[39m
-          [36m<p>[39m
-            [0mWelcome to Team 9 schedule builder! This application has all the tools you need to create the perfect college course schedule. To get started, select a plan from below or create a new one.[0m
-          [36m</p>[39m
           [36m<div[39m
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
@@ -1786,7 +1804,8 @@ n 4[0m
                                       [0m [0m
                                       [0m - [0m
                                       [0m [0m
-             ...
+                                      [0mSurvey of Accounting[0m
+                  ...
 
       586 |         //make a new semester
       587 |         newSemester.click();
@@ -1806,8 +1825,40 @@ n 4[0m
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
+-----------------------------|---------|----------|---------|---------|-----------------------------------------
+File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                       
+-----------------------------|---------|----------|---------|---------|-----------------------------------------
+All files                    |   36.84 |    29.03 |   23.39 |   37.42 |                                         
+ src                         |   33.65 |    10.71 |   11.53 |   34.31 |                                         
+  App.tsx                    |   33.65 |    10.71 |   11.53 |   34.31 | 109,121-124,130,138-264,292-299,312-392 
+ src/components              |    37.2 |    44.11 |   27.96 |   37.73 |                                         
+  courseEditor.tsx           |       0 |      100 |       0 |       0 | 28-244                                  
+  coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 61-83,116-135                           
+  coursePoolView.tsx         |       0 |        0 |       0 |       0 | 23-50                                   
+  courseView.tsx             |   66.66 |    66.66 |   33.33 |   66.66 | 23,58                                   
+  insertCourse.tsx           |       0 |      100 |       0 |       0 | 28-205                                  
+  insertPlan.tsx             |     100 |      100 |     100 |     100 |                                         
+  insertSemester.tsx         |   41.66 |      100 |      20 |   41.66 | 37-53,70-97                             
+  planEditor.tsx             |      75 |      100 |   57.14 |   81.81 | 30-31                                   
+  planView.tsx               |      75 |      100 |   66.66 |      75 | 83-101                                  
+  planViewer.tsx             |    87.5 |    66.66 |     100 |    87.5 | 48                                      
+  recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                                         
+  recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                                       
+  recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                                         
+  requirements.tsx           |   21.42 |        0 |      10 |   21.42 | 29-50,57-114                            
+  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 19-83                                   
+  semesterView.tsx           |   44.44 |       50 |   31.25 |   47.05 | 43-47,83,87-88,92-111,143-158,180-194   
+  welcomeMessage.tsx         |     100 |      100 |     100 |     100 |                                         
+ src/helper_functions        |     100 |      100 |     100 |     100 |                                         
+  unpackJSON.tsx             |     100 |      100 |     100 |     100 |                                         
+ src/interfaces              |       0 |        0 |       0 |       0 |                                         
+  course.ts                  |       0 |        0 |       0 |       0 |                                         
+  plan.ts                    |       0 |        0 |       0 |       0 |                                         
+  requirement.ts             |       0 |        0 |       0 |       0 |                                         
+  semester.ts                |       0 |        0 |       0 |       0 |                                         
+-----------------------------|---------|----------|---------|---------|-----------------------------------------
 Test Suites: 1 failed, 1 total
-Tests:       10 failed, 6 passed, 16 total
+Tests:       11 failed, 5 passed, 16 total
 Snapshots:   0 total
-Time:        11.075 s
+Time:        8.496 s
 Ran all test suites.
