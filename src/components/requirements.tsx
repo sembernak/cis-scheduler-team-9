@@ -5,8 +5,7 @@ import {
     Col,
     Row,
     InputGroup,
-    FormControl,
-    FormLabel
+    FormControl
 } from "react-bootstrap";
 import { Requirement } from "../interfaces/requirement";
 import { Plan } from "../interfaces/plan";
@@ -62,7 +61,7 @@ export function Requirements({
             }}
             className="background1"
         >
-            <h3>Degree Requirements:</h3>
+            <h2>Degree Requirements:</h2>
             {requires.map(
                 (req: Requirement): JSX.Element => (
                     <Container key={req.name}>
@@ -96,44 +95,47 @@ export function Requirements({
                                 <p>
                                     Met?{" "}
                                     {checkFulfilled(req.name, req.credits)
-                                        ? "Yes"
-                                        : "No"}
+                                        ? "✅"
+                                        : "❌"}
                                 </p>
+                                <br></br>
                             </Col>
                         </Row>
                     </Container>
                 )
             )}
             <InputGroup as={Container}>
-                <Col md={6}>
-                    <FormControl
-                        placeholder="New Requirement"
-                        value={newRequire}
-                        onChange={newRequireFunction}
-                    />
-                </Col>
-                <Col md={1}>
-                    <FormLabel>Credits: </FormLabel>
-                </Col>
-                <Col md={1}>
-                    <FormControl
-                        aria-label="Credits: "
-                        type="number"
-                        value={credits}
-                        onChange={(
-                            event: React.ChangeEvent<HTMLInputElement>
-                        ) => setCredits(parseInt(event.target.value))}
-                    />
-                </Col>
-                <Col md={2}>
-                    <Button
-                        variant="outline-secondary"
-                        onClick={manageNewRequire}
-                        className="default-button"
-                    >
-                        Add Requirement
-                    </Button>
-                </Col>
+                <Row>
+                    <Col md={6}>
+                        <FormControl
+                            placeholder="New Requirement"
+                            value={newRequire}
+                            onChange={newRequireFunction}
+                        />
+                    </Col>
+                    <Col md={1}>
+                        <h4>Credits: </h4>
+                    </Col>
+                    <Col md={2}>
+                        <FormControl
+                            aria-label="Credits: "
+                            type="number"
+                            value={credits}
+                            onChange={(
+                                event: React.ChangeEvent<HTMLInputElement>
+                            ) => setCredits(parseInt(event.target.value))}
+                        />
+                    </Col>
+                    <Col md={2}>
+                        <Button
+                            variant="outline-secondary"
+                            onClick={manageNewRequire}
+                            className="default-button"
+                        >
+                            Add Requirement
+                        </Button>
+                    </Col>
+                </Row>
             </InputGroup>
         </div>
     );

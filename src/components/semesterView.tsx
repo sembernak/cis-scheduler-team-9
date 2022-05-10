@@ -128,10 +128,10 @@ export function SemesterView({
                 onDragLeave={handleDragOverEnd}
                 id={newsemester.id}
             >
-                <h3>
+                <h1>
                     {newsemester.season + " - " + newsemester.year}
                     <br></br>
-                </h3>
+                </h1>
                 {newsemester.totalCredits} {" credits"}
                 {"                       "}
                 {newsemester.courses.map((course: Course) => (
@@ -173,40 +173,40 @@ export function SemesterView({
                         ></CourseView>
                     </div>
                 ))}
-            </div>
-            <div>
-                <Button
-                    onClick={() => deleteSemester(newsemester.id)}
-                    variant="danger"
-                    className="delete-sem-btn"
-                >
-                    Delete semester
-                </Button>
-                <Button
-                    onClick={flipVisibility}
-                    variant="success"
-                    className="insert-course-btn"
-                >
-                    Insert Course
-                </Button>
-                <Button
-                    onClick={() => deleteAllCourses(String(semester.id))}
-                    variant="danger"
-                    className="delete-allcourse-btn"
-                >
-                    Delete All Courses
-                </Button>
-                {visible && (
-                    <InsertCourse
-                        semester={newsemester}
-                        flipVisibility={flipVisibility}
-                        editCourse={editCourse}
-                        editSemester={editSemester}
-                    ></InsertCourse>
-                )}
-                <RecordControlsSemester
-                    changeEditing={changeEditing}
-                ></RecordControlsSemester>
+                <div>
+                    <Button
+                        onClick={() => deleteSemester(newsemester.id)}
+                        variant="danger"
+                        className="delete-sem-btn"
+                    >
+                        Delete semester
+                    </Button>
+                    <Button
+                        onClick={flipVisibility}
+                        variant="success"
+                        className="insert-course-btn"
+                    >
+                        Insert Course
+                    </Button>
+                    <Button
+                        onClick={() => deleteAllCourses(String(semester.id))}
+                        variant="danger"
+                        className="delete-allcourse-btn"
+                    >
+                        Delete All Courses
+                    </Button>
+                    {visible && (
+                        <InsertCourse
+                            semester={newsemester}
+                            flipVisibility={flipVisibility}
+                            editCourse={editCourse}
+                            editSemester={editSemester}
+                        ></InsertCourse>
+                    )}
+                    <RecordControlsSemester
+                        changeEditing={changeEditing}
+                    ></RecordControlsSemester>
+                </div>
             </div>
         </Container>
     );

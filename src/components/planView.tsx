@@ -57,12 +57,23 @@ export function PlanView({
         ></PlanEditor>
     ) : (
         <div>
-            <h3>{plan.title}</h3>
+            <h1>{plan.title}</h1>
             <Container>
                 <Row lg={2} md={1}>
                     {plan.semesters.map((Semester: Semester) => (
                         <Col className={"row-equal"} key={Semester.id}>
-                            <div className="bg-light border m-2 p-2 contains-semester">
+                            <div
+                                style={{
+                                    overflowY: "scroll",
+                                    height: "80vh",
+                                    width: "auto",
+                                    border: "solid",
+                                    borderWidth: "1px",
+                                    borderRadius: "8px",
+                                    borderColor: "gray"
+                                }}
+                                className="background1"
+                            >
                                 <SemesterView
                                     plan={plan}
                                     semester={Semester}
