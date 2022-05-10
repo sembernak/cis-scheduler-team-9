@@ -55,7 +55,17 @@ export function PlanViewer({
     function updateSelection(event: React.ChangeEvent<HTMLSelectElement>) {
         select(event.target.value);
     }
-
+    function makeCSV() {
+        const planCSV = planList.find((plan) => plan.title == selection);
+        let csvContent = "data:text/csv;charset=utf-8, ";
+        csvContent = csvContent + JSON.stringify(planCSV);
+        const a = document.createElement("a");
+        const encodeUri = encodeURI(csvContent);
+        a["download"] = "plans.csv";
+        a.href = encodeUri;
+        a.click();
+        console.log(csvContent);
+    }
     return (
         <div>
             <>Select a plan:</>
@@ -80,6 +90,10 @@ export function PlanViewer({
                 className="insert-plan"
             >
                 New Plan
+            </Button>
+            Download your current plan:
+            <Button onClick={makeCSV} className="download-plan">
+                Download Plan
             </Button>
             {planInsert && (
                 <InsertPlan

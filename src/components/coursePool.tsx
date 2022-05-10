@@ -96,7 +96,8 @@ export function CoursePool({
                 border: "solid",
                 borderWidth: "1px",
                 borderRadius: "8px",
-                borderColor: "gray"
+                borderColor: "gray",
+                padding: "5px"
             }}
             className="background1"
         >
