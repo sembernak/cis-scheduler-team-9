@@ -2,24 +2,24 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-FAIL src/App.test.tsx (9.754 s)
+FAIL src/App.test.tsx (8.748 s)
   Make a new plan
-    ✕ App renders with welcome message (266 ms)
-    ✓ Clicking New Plan gives a form to enter a title (256 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (157 ms)
-    ✓ Can set new plan title (833 ms)
-    ✕ Insert Semester works (282 ms)
-    ✕ Delete Semester Works (263 ms)
-    ✕ Edit Semester Works (251 ms)
-    ✕ Edit Semester Works (264 ms)
-    ✕ Edit Semester cancel button works (249 ms)
-    ✕ Can delete all semesters (284 ms)
-    ✕ Can insert a course (254 ms)
-    ✕ Can edit a course (254 ms)
-    ✕ Can set and fulfill requirements (257 ms)
-    ✓ Can edit a plan (987 ms)
-    ✓ Plan editor cancel button works (955 ms)
-    ✕ Delete all courses button works (267 ms)
+    ✕ App renders with welcome message (232 ms)
+    ✓ Clicking New Plan gives a form to enter a title (232 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (133 ms)
+    ✓ Can set new plan title (811 ms)
+    ✕ Insert Semester works (245 ms)
+    ✕ Delete Semester Works (251 ms)
+    ✕ Edit Semester Works (218 ms)
+    ✕ Edit Semester Works (224 ms)
+    ✕ Edit Semester cancel button works (225 ms)
+    ✕ Can delete all semesters (214 ms)
+    ✕ Can insert a course (215 ms)
+    ✕ Can edit a course (214 ms)
+    ✕ Can set and fulfill requirements (231 ms)
+    ✓ Can edit a plan (887 ms)
+    ✓ Plan editor cancel button works (857 ms)
+    ✕ Delete all courses button works (220 ms)
 
   ● Make a new plan › App renders with welcome message
 
@@ -72,127 +72,125 @@ FAIL src/App.test.tsx (9.754 s)
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
             [36m<br />[39m
-            [36m<div>[39m
-              [36m<div>[39m
-                [0mSelect a plan:[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"row"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"col-sm-8"[39m
+              [36m>[39m
                 [36m<div>[39m
-                  [36m<select[39m
-                    [33mclass[39m=[32m"form-select"[39m
-                    [33mdata-testid[39m=[32m"PlanSelect"[39m
-                    [33mid[39m=[32m"planDrop"[39m
-                  [36m>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 1"[39m
-                    [36m>[39m
-                      [0mPlan 1[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 2"[39m
-                    [36m>[39m
-                      [0mPlan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 2"[39m
-                    [36m>[39m
-                      [0mTest Plan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 3"[39m
-                    [36m>[39m
-                      [0mTest Plan 3[0m
-                    [36m</option>[39m
-                  [36m</select>[39m
-                [36m</div>[39m
-                [0mCreate a new plan: [0m
-                [36m<button[39m
-                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
-                  [33mdata-testid[39m=[32m"NewPlan"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mNew Plan[0m
-                [36m</button>[39m
-                [36m<div[39m
-                  [33maria-hidden[39m=[32m"true"[39m
-                  [33mhidden[39m=[32m""[39m
-                [36m>[39m
+                  [0mSelect a plan:[0m
                   [36m<div>[39m
-                    [36m<h3>[39m
-                      [0mPlan 1[0m
-                    [36m</h3>[39m
-                    [36m<div[39m
-                      [33mclass[39m=[32m"container"[39m
+                    [36m<select[39m
+                      [33mclass[39m=[32m"form-select"[39m
+                      [33mdata-testid[39m=[32m"PlanSelect"[39m
+                      [33mid[39m=[32m"planDrop"[39m
                     [36m>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 1"[39m
+                      [36m>[39m
+                        [0mPlan 1[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 2"[39m
+                      [36m>[39m
+                        [0mPlan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 2"[39m
+                      [36m>[39m
+                        [0mTest Plan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 3"[39m
+                      [36m>[39m
+                        [0mTest Plan 3[0m
+                      [36m</option>[39m
+                    [36m</select>[39m
+                  [36m</div>[39m
+                  [0mCreate a new plan: [0m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                    [33mdata-testid[39m=[32m"NewPlan"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mNew Plan[0m
+                  [36m</button>[39m
+                  [36m<div[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mhidden[39m=[32m""[39m
+                  [36m>[39m
+                    [36m<div>[39m
+                      [36m<h3>[39m
+                        [0mPlan 1[0m
+                      [36m</h3>[39m
                       [36m<div[39m
-                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                        [33mclass[39m=[32m"container"[39m
                       [36m>[39m
                         [36m<div[39m
-                          [33mclass[39m=[32m"row-equal col"[39m
+                          [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
                         [36m>[39m
                           [36m<div[39m
-                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                            [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"semester-view container"[39m
+                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
                             [36m>[39m
                               [36m<div[39m
-                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                [33mclass[39m=[32m"semester-view container"[39m
                               [36m>[39m
-                                [36m<h3>[39m
-                                  [0mSpring - 2020[0m
-                                  [36m<br />[39m
-                                [36m</h3>[39m
-                                [0m10[0m
-                                [0m [0m
-                                [0m credits[0m
-                                [0m                       [0m
                                 [36m<div[39m
-                                  [33mdraggable[39m=[32m"true"[39m
-                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                  [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
+                                  [36m<h3>[39m
+                                    [0mSpring - 2020[0m
+                                    [36m<br />[39m
+                                  [36m</h3>[39m
+                                  [0m10[0m
+                                  [0m [0m
+                                  [0m credits[0m
+                                  [0m                       [0m
                                   [36m<div[39m
-                                    [33mclass[39m=[32m"col"[39m
-                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                    [33mdraggable[39m=[32m"true"[39m
+                                    [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
                                   [36m>[39m
-                                    [36m<h3>[39m
-                                      [0mACCT 200[0m
-                                      [0m [0m
-                                      [0m - [0m
-                                      [0m [0m
-                                      [0mSurvey of Accounting[0m
-                                    [36m</h3>[39m
-                                    [0m 4[0m
-                                    [0m [0m
-                                    [0m credits[0m
-                                    [36m<br />[39m
-                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
-                                    [36m<br />[39m
-                                    [0m[0m
-                                    [36m<br />[39m
-                                    [0m[0m
                                     [36m<div[39m
                                       [33mclass[39m=[32m"col"[39m
+                                      [33mid[39m=[32m"Spring2020Plan 1"[39m
                                     [36m>[39m
+                                      [36m<h3>[39m
+                                        [0mACCT 200[0m
+                                        [0m [0m
+                                        [0m - [0m
+                                        [0m [0m
+                                        [0mSurvey of Accounting[0m
+                                      [36m</h3>[39m
+                                      [0m 4[0m
+                                      [0m [0m
+                                      [0m credits[0m
+                                      [36m<br />[39m
+                                      [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                      [36m<br />[39m
+                                      [0m[0m
+                                      [36m<br />[39m
+                                      [0m[0m
                                       [36m<div[39m
-                                        [33mclass[39m=[32m"row"[39m
+                                        [33mclass[39m=[32m"col"[39m
                                       [36m>[39m
-                                        [36m<div>[39m
-                                          [36m<button[39m
-                                            [33mclass[39m=[32m"edit-course-btn btn btn-primary btn-sm"[39m
-                                            [33mtype[39m=[32m"button"[39m
-                                          [36m>[39m
-                                            [0mEdit Course[0m
-                                          [36m</button>[39m
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"row"[39m
+                                        [36m>[39m
+                                          [36m<div>[39m
+                                            [36m<button[39m
+                                              [33mclass[39m=[32m"default-button btn btn-primary btn-sm"[39m
+                                              [33mtype[39m=[32m"button"[39m
+                                            [36m>[39m
+                                              [0mEdit Course[0m
+                                            [36m</button>[39m
+                                          [36m</div>[39m
                                         [36m</div>[39m
-                                      [36m</div>[39m
-                                      [36m<button[39m
-                                        [33mclass[39m=[32m"reset-course-btn btn btn-primary"[39m
-                                        [33mtype[39m=[32m"button"[39m
-                                      [36m>[39m
-                                        [0mReset to Default[0m
-                                      [36m</button>[39m
-                                    [36m</div>[39m
-                                  [36m</div>[39m
-                                  [3...
+                                        [36m<button[39m
+                                          [33mclass[39m=[32m"reset-course-btn ...
 
       57 |         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
       58 |         newSemester.click();
@@ -242,128 +240,127 @@ FAIL src/App.test.tsx (9.754 s)
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
             [36m<br />[39m
-            [36m<div>[39m
-              [36m<div>[39m
-                [0mSelect a plan:[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"row"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"col-sm-8"[39m
+              [36m>[39m
                 [36m<div>[39m
-                  [36m<select[39m
-                    [33mclass[39m=[32m"form-select"[39m
-                    [33mdata-testid[39m=[32m"PlanSelect"[39m
-                    [33mid[39m=[32m"planDrop"[39m
-                  [36m>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 1"[39m
-                    [36m>[39m
-                      [0mPlan 1[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 2"[39m
-                    [36m>[39m
-                      [0mPlan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 2"[39m
-                    [36m>[39m
-                      [0mTest Plan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 3"[39m
-                    [36m>[39m
-                      [0mTest Plan 3[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 4"[39m
-                    [36m>[39m
-                      [0mTest Plan 4[0m
-                    [36m</option>[39m
-                  [36m</select>[39m
-                [36m</div>[39m
-                [0mCreate a new plan: [0m
-                [36m<button[39m
-                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
-                  [33mdata-testid[39m=[32m"NewPlan"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mNew Plan[0m
-                [36m</button>[39m
-                [36m<div[39m
-                  [33maria-hidden[39m=[32m"true"[39m
-                  [33mhidden[39m=[32m""[39m
-                [36m>[39m
+                  [0mSelect a plan:[0m
                   [36m<div>[39m
-                    [36m<h3>[39m
-                      [0mPlan 1[0m
-                    [36m</h3>[39m
-                    [36m<div[39m
-                      [33mclass[39m=[32m"container"[39m
+                    [36m<select[39m
+                      [33mclass[39m=[32m"form-select"[39m
+                      [33mdata-testid[39m=[32m"PlanSelect"[39m
+                      [33mid[39m=[32m"planDrop"[39m
                     [36m>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 1"[39m
+                      [36m>[39m
+                        [0mPlan 1[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 2"[39m
+                      [36m>[39m
+                        [0mPlan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 2"[39m
+                      [36m>[39m
+                        [0mTest Plan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 3"[39m
+                      [36m>[39m
+                        [0mTest Plan 3[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 4"[39m
+                      [36m>[39m
+                        [0mTest Plan 4[0m
+                      [36m</option>[39m
+                    [36m</select>[39m
+                  [36m</div>[39m
+                  [0mCreate a new plan: [0m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                    [33mdata-testid[39m=[32m"NewPlan"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mNew Plan[0m
+                  [36m</button>[39m
+                  [36m<div[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mhidden[39m=[32m""[39m
+                  [36m>[39m
+                    [36m<div>[39m
+                      [36m<h3>[39m
+                        [0mPlan 1[0m
+                      [36m</h3>[39m
                       [36m<div[39m
-                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                        [33mclass[39m=[32m"container"[39m
                       [36m>[39m
                         [36m<div[39m
-                          [33mclass[39m=[32m"row-equal col"[39m
+                          [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
                         [36m>[39m
                           [36m<div[39m
-                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                            [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"semester-view container"[39m
+                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
                             [36m>[39m
                               [36m<div[39m
-                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                [33mclass[39m=[32m"semester-view container"[39m
                               [36m>[39m
-                                [36m<h3>[39m
-                                  [0mSpring - 2020[0m
-                                  [36m<br />[39m
-                                [36m</h3>[39m
-                                [0m10[0m
-                                [0m [0m
-                                [0m credits[0m
-                                [0m                       [0m
                                 [36m<div[39m
-                                  [33mdraggable[39m=[32m"true"[39m
-                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                  [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
+                                  [36m<h3>[39m
+                                    [0mSpring - 2020[0m
+                                    [36m<br />[39m
+                                  [36m</h3>[39m
+                                  [0m10[0m
+                                  [0m [0m
+                                  [0m credits[0m
+                                  [0m                       [0m
                                   [36m<div[39m
-                                    [33mclass[39m=[32m"col"[39m
-                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                    [33mdraggable[39m=[32m"true"[39m
+                                    [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
                                   [36m>[39m
-                                    [36m<h3>[39m
-                                      [0mACCT 200[0m
-                                      [0m [0m
-                                      [0m - [0m
-                                      [0m [0m
-                                      [0mSurvey of Accounting[0m
-                                    [36m</h3>[39m
-                                    [0m 4[0m
-                                    [0m [0m
-                                    [0m credits[0m
-                                    [36m<br />[39m
-                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
-                                    [36m<br />[39m
-                                    [0m[0m
-                                    [36m<br />[39m
-                                    [0m[0m
                                     [36m<div[39m
                                       [33mclass[39m=[32m"col"[39m
+                                      [33mid[39m=[32m"Spring2020Plan 1"[39m
                                     [36m>[39m
+                                      [36m<h3>[39m
+                                        [0mACCT 200[0m
+                                        [0m [0m
+                                        [0m - [0m
+                                        [0m [0m
+                                        [0mSurvey of Accounting[0m
+                                      [36m</h3>[39m
+                                      [0m 4[0m
+                                      [0m [0m
+                                      [0m credits[0m
+                                      [36m<br />[39m
+                                      [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                      [36m<br />[39m
+                                      [0m[0m
+                                      [36m<br />[39m
+                                      [0m[0m
                                       [36m<div[39m
-                                        [33mclass[39m=[32m"row"[39m
+                                        [33mclass[39m=[32m"col"[39m
                                       [36m>[39m
-                                        [36m<div>[39m
-                                          [36m<button[39m
-                                            [33mclass[39m=[32m"edit-course-btn btn btn-primary btn-sm"[39m
-                                            [33mtype[39m=[32m"button"[39m
-                                          [36m>[39m
-                                            [0mEdit Course[0m
-                                          [36m</button>[39m
-                                        [36m</div>[39m
-                                      [36m</div>[39m
-                                      [36m<button[39m
-                                        [33mclass[39m=[32m"reset-course-btn btn btn-primary"[39m
-                                        [33mtype[39m=[32m"button"[39m
-                                      [36m>[39m
-                                        [0mReset to D...
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"row"[39m
+                                        [36m>[39m
+                                          [36m<div>[39m
+                                            [36m<button[39m
+                                              [33mclass[39m=[32m"default-button btn btn-primary btn-sm"[39m
+                                              [33mtype[39m=[32m"button"[39m
+                                            [36m>[39m
+                                              [0mEdit Course[0m
+                                            [36m</button>[39m
+                                       ...
 
       87 |         //make a new semester
       88 |         newSemester.click();
@@ -413,130 +410,129 @@ FAIL src/App.test.tsx (9.754 s)
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
             [36m<br />[39m
-            [36m<div>[39m
-              [36m<div>[39m
-                [0mSelect a plan:[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"row"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"col-sm-8"[39m
+              [36m>[39m
                 [36m<div>[39m
-                  [36m<select[39m
-                    [33mclass[39m=[32m"form-select"[39m
-                    [33mdata-testid[39m=[32m"PlanSelect"[39m
-                    [33mid[39m=[32m"planDrop"[39m
-                  [36m>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 1"[39m
-                    [36m>[39m
-                      [0mPlan 1[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 2"[39m
-                    [36m>[39m
-                      [0mPlan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 2"[39m
-                    [36m>[39m
-                      [0mTest Plan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 3"[39m
-                    [36m>[39m
-                      [0mTest Plan 3[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 4"[39m
-                    [36m>[39m
-                      [0mTest Plan 4[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 5"[39m
-                    [36m>[39m
-                      [0mTest Plan 5[0m
-                    [36m</option>[39m
-                  [36m</select>[39m
-                [36m</div>[39m
-                [0mCreate a new plan: [0m
-                [36m<button[39m
-                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
-                  [33mdata-testid[39m=[32m"NewPlan"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mNew Plan[0m
-                [36m</button>[39m
-                [36m<div[39m
-                  [33maria-hidden[39m=[32m"true"[39m
-                  [33mhidden[39m=[32m""[39m
-                [36m>[39m
+                  [0mSelect a plan:[0m
                   [36m<div>[39m
-                    [36m<h3>[39m
-                      [0mPlan 1[0m
-                    [36m</h3>[39m
-                    [36m<div[39m
-                      [33mclass[39m=[32m"container"[39m
+                    [36m<select[39m
+                      [33mclass[39m=[32m"form-select"[39m
+                      [33mdata-testid[39m=[32m"PlanSelect"[39m
+                      [33mid[39m=[32m"planDrop"[39m
                     [36m>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 1"[39m
+                      [36m>[39m
+                        [0mPlan 1[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 2"[39m
+                      [36m>[39m
+                        [0mPlan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 2"[39m
+                      [36m>[39m
+                        [0mTest Plan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 3"[39m
+                      [36m>[39m
+                        [0mTest Plan 3[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 4"[39m
+                      [36m>[39m
+                        [0mTest Plan 4[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 5"[39m
+                      [36m>[39m
+                        [0mTest Plan 5[0m
+                      [36m</option>[39m
+                    [36m</select>[39m
+                  [36m</div>[39m
+                  [0mCreate a new plan: [0m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                    [33mdata-testid[39m=[32m"NewPlan"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mNew Plan[0m
+                  [36m</button>[39m
+                  [36m<div[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mhidden[39m=[32m""[39m
+                  [36m>[39m
+                    [36m<div>[39m
+                      [36m<h3>[39m
+                        [0mPlan 1[0m
+                      [36m</h3>[39m
                       [36m<div[39m
-                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                        [33mclass[39m=[32m"container"[39m
                       [36m>[39m
                         [36m<div[39m
-                          [33mclass[39m=[32m"row-equal col"[39m
+                          [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
                         [36m>[39m
                           [36m<div[39m
-                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                            [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"semester-view container"[39m
+                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
                             [36m>[39m
                               [36m<div[39m
-                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                [33mclass[39m=[32m"semester-view container"[39m
                               [36m>[39m
-                                [36m<h3>[39m
-                                  [0mSpring - 2020[0m
-                                  [36m<br />[39m
-                                [36m</h3>[39m
-                                [0m10[0m
-                                [0m [0m
-                                [0m credits[0m
-                                [0m                       [0m
                                 [36m<div[39m
-                                  [33mdraggable[39m=[32m"true"[39m
-                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                  [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
+                                  [36m<h3>[39m
+                                    [0mSpring - 2020[0m
+                                    [36m<br />[39m
+                                  [36m</h3>[39m
+                                  [0m10[0m
+                                  [0m [0m
+                                  [0m credits[0m
+                                  [0m                       [0m
                                   [36m<div[39m
-                                    [33mclass[39m=[32m"col"[39m
-                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                    [33mdraggable[39m=[32m"true"[39m
+                                    [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
                                   [36m>[39m
-                                    [36m<h3>[39m
-                                      [0mACCT 200[0m
-                                      [0m [0m
-                                      [0m - [0m
-                                      [0m [0m
-                                      [0mSurvey of Accounting[0m
-                                    [36m</h3>[39m
-                                    [0m 4[0m
-                                    [0m [0m
-                                    [0m credits[0m
-                                    [36m<br />[39m
-                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
-                                    [36m<br />[39m
-                                    [0m[0m
-                                    [36m<br />[39m
-                                    [0m[0m
                                     [36m<div[39m
                                       [33mclass[39m=[32m"col"[39m
+                                      [33mid[39m=[32m"Spring2020Plan 1"[39m
                                     [36m>[39m
+                                      [36m<h3>[39m
+                                        [0mACCT 200[0m
+                                        [0m [0m
+                                        [0m - [0m
+                                        [0m [0m
+                                        [0mSurvey of Accounting[0m
+                                      [36m</h3>[39m
+                                      [0m 4[0m
+                                      [0m [0m
+                                      [0m credits[0m
+                                      [36m<br />[39m
+                                      [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                      [36m<br />[39m
+                                      [0m[0m
+                                      [36m<br />[39m
+                                      [0m[0m
                                       [36m<div[39m
-                                        [33mclass[39m=[32m"row"[39m
+                                        [33mclass[39m=[32m"col"[39m
                                       [36m>[39m
-                                        [36m<div>[39m
-                                          [36m<button[39m
-                                            [33mclass[39m=[32m"edit-course-btn btn btn-primary btn-sm"[39m
-                                            [33mtype[39m=[32m"button"[39m
-                                          [36m>[39m
-                                            [0mEdit Course[0m
-                                          [36m</button>[39m
-                                        [36m</div>[39m
-                                      [36m</div>[39m
-                                      [36m<button[39m
-                                        [33mclass[39m=[32m"reset-cours...
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"row"[39m
+                                        [36m>[39m
+                                          [36m<div>[39m
+                                            [36m<button[39m
+                                              [33mclass[39m=[32m"default-button btn btn-primary btn-sm"[39m
+                                              [33mtype[39m=[32m"button"[39m
+         ...
 
       128 |         //make a new semester
       129 |         newSemester.click();
@@ -586,132 +582,131 @@ FAIL src/App.test.tsx (9.754 s)
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
             [36m<br />[39m
-            [36m<div>[39m
-              [36m<div>[39m
-                [0mSelect a plan:[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"row"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"col-sm-8"[39m
+              [36m>[39m
                 [36m<div>[39m
-                  [36m<select[39m
-                    [33mclass[39m=[32m"form-select"[39m
-                    [33mdata-testid[39m=[32m"PlanSelect"[39m
-                    [33mid[39m=[32m"planDrop"[39m
-                  [36m>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 1"[39m
-                    [36m>[39m
-                      [0mPlan 1[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 2"[39m
-                    [36m>[39m
-                      [0mPlan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 2"[39m
-                    [36m>[39m
-                      [0mTest Plan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 3"[39m
-                    [36m>[39m
-                      [0mTest Plan 3[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 4"[39m
-                    [36m>[39m
-                      [0mTest Plan 4[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 5"[39m
-                    [36m>[39m
-                      [0mTest Plan 5[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 6"[39m
-                    [36m>[39m
-                      [0mTest Plan 6[0m
-                    [36m</option>[39m
-                  [36m</select>[39m
-                [36m</div>[39m
-                [0mCreate a new plan: [0m
-                [36m<button[39m
-                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
-                  [33mdata-testid[39m=[32m"NewPlan"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mNew Plan[0m
-                [36m</button>[39m
-                [36m<div[39m
-                  [33maria-hidden[39m=[32m"true"[39m
-                  [33mhidden[39m=[32m""[39m
-                [36m>[39m
+                  [0mSelect a plan:[0m
                   [36m<div>[39m
-                    [36m<h3>[39m
-                      [0mPlan 1[0m
-                    [36m</h3>[39m
-                    [36m<div[39m
-                      [33mclass[39m=[32m"container"[39m
+                    [36m<select[39m
+                      [33mclass[39m=[32m"form-select"[39m
+                      [33mdata-testid[39m=[32m"PlanSelect"[39m
+                      [33mid[39m=[32m"planDrop"[39m
                     [36m>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 1"[39m
+                      [36m>[39m
+                        [0mPlan 1[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 2"[39m
+                      [36m>[39m
+                        [0mPlan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 2"[39m
+                      [36m>[39m
+                        [0mTest Plan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 3"[39m
+                      [36m>[39m
+                        [0mTest Plan 3[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 4"[39m
+                      [36m>[39m
+                        [0mTest Plan 4[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 5"[39m
+                      [36m>[39m
+                        [0mTest Plan 5[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 6"[39m
+                      [36m>[39m
+                        [0mTest Plan 6[0m
+                      [36m</option>[39m
+                    [36m</select>[39m
+                  [36m</div>[39m
+                  [0mCreate a new plan: [0m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                    [33mdata-testid[39m=[32m"NewPlan"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mNew Plan[0m
+                  [36m</button>[39m
+                  [36m<div[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mhidden[39m=[32m""[39m
+                  [36m>[39m
+                    [36m<div>[39m
+                      [36m<h3>[39m
+                        [0mPlan 1[0m
+                      [36m</h3>[39m
                       [36m<div[39m
-                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                        [33mclass[39m=[32m"container"[39m
                       [36m>[39m
                         [36m<div[39m
-                          [33mclass[39m=[32m"row-equal col"[39m
+                          [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
                         [36m>[39m
                           [36m<div[39m
-                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                            [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"semester-view container"[39m
+                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
                             [36m>[39m
                               [36m<div[39m
-                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                [33mclass[39m=[32m"semester-view container"[39m
                               [36m>[39m
-                                [36m<h3>[39m
-                                  [0mSpring - 2020[0m
-                                  [36m<br />[39m
-                                [36m</h3>[39m
-                                [0m10[0m
-                                [0m [0m
-                                [0m credits[0m
-                                [0m                       [0m
                                 [36m<div[39m
-                                  [33mdraggable[39m=[32m"true"[39m
-                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                  [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
+                                  [36m<h3>[39m
+                                    [0mSpring - 2020[0m
+                                    [36m<br />[39m
+                                  [36m</h3>[39m
+                                  [0m10[0m
+                                  [0m [0m
+                                  [0m credits[0m
+                                  [0m                       [0m
                                   [36m<div[39m
-                                    [33mclass[39m=[32m"col"[39m
-                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                    [33mdraggable[39m=[32m"true"[39m
+                                    [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
                                   [36m>[39m
-                                    [36m<h3>[39m
-                                      [0mACCT 200[0m
-                                      [0m [0m
-                                      [0m - [0m
-                                      [0m [0m
-                                      [0mSurvey of Accounting[0m
-                                    [36m</h3>[39m
-                                    [0m 4[0m
-                                    [0m [0m
-                                    [0m credits[0m
-                                    [36m<br />[39m
-                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
-                                    [36m<br />[39m
-                                    [0m[0m
-                                    [36m<br />[39m
-                                    [0m[0m
                                     [36m<div[39m
                                       [33mclass[39m=[32m"col"[39m
+                                      [33mid[39m=[32m"Spring2020Plan 1"[39m
                                     [36m>[39m
+                                      [36m<h3>[39m
+                                        [0mACCT 200[0m
+                                        [0m [0m
+                                        [0m - [0m
+                                        [0m [0m
+                                        [0mSurvey of Accounting[0m
+                                      [36m</h3>[39m
+                                      [0m 4[0m
+                                      [0m [0m
+                                      [0m credits[0m
+                                      [36m<br />[39m
+                                      [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                      [36m<br />[39m
+                                      [0m[0m
+                                      [36m<br />[39m
+                                      [0m[0m
                                       [36m<div[39m
-                                        [33mclass[39m=[32m"row"[39m
+                                        [33mclass[39m=[32m"col"[39m
                                       [36m>[39m
-                                        [36m<div>[39m
-                                          [36m<button[39m
-                                            [33mclass[39m=[32m"edit-course-btn btn btn-primary btn-sm"[39m
-                                            [33mtype[39m=[32m"button"[39m
-                                          [36m>[39m
-                                            [0mEdit Course[0m
-                                          [36m</button>[39m
-                                   ...
+                                        [36m<div[39m
+                                          [33mclass[39m=[32m"row"[39m
+                                        [36m>[39m
+                                          [36m<div>[39m
+                                            [3...
 
       173 |         //make a new semester
       174 |         newSemester.click();
@@ -761,134 +756,133 @@ FAIL src/App.test.tsx (9.754 s)
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
             [36m<br />[39m
-            [36m<div>[39m
-              [36m<div>[39m
-                [0mSelect a plan:[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"row"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"col-sm-8"[39m
+              [36m>[39m
                 [36m<div>[39m
-                  [36m<select[39m
-                    [33mclass[39m=[32m"form-select"[39m
-                    [33mdata-testid[39m=[32m"PlanSelect"[39m
-                    [33mid[39m=[32m"planDrop"[39m
-                  [36m>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 1"[39m
-                    [36m>[39m
-                      [0mPlan 1[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 2"[39m
-                    [36m>[39m
-                      [0mPlan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 2"[39m
-                    [36m>[39m
-                      [0mTest Plan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 3"[39m
-                    [36m>[39m
-                      [0mTest Plan 3[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 4"[39m
-                    [36m>[39m
-                      [0mTest Plan 4[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 5"[39m
-                    [36m>[39m
-                      [0mTest Plan 5[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 6"[39m
-                    [36m>[39m
-                      [0mTest Plan 6[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 7"[39m
-                    [36m>[39m
-                      [0mTest Plan 7[0m
-                    [36m</option>[39m
-                  [36m</select>[39m
-                [36m</div>[39m
-                [0mCreate a new plan: [0m
-                [36m<button[39m
-                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
-                  [33mdata-testid[39m=[32m"NewPlan"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mNew Plan[0m
-                [36m</button>[39m
-                [36m<div[39m
-                  [33maria-hidden[39m=[32m"true"[39m
-                  [33mhidden[39m=[32m""[39m
-                [36m>[39m
+                  [0mSelect a plan:[0m
                   [36m<div>[39m
-                    [36m<h3>[39m
-                      [0mPlan 1[0m
-                    [36m</h3>[39m
-                    [36m<div[39m
-                      [33mclass[39m=[32m"container"[39m
+                    [36m<select[39m
+                      [33mclass[39m=[32m"form-select"[39m
+                      [33mdata-testid[39m=[32m"PlanSelect"[39m
+                      [33mid[39m=[32m"planDrop"[39m
                     [36m>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 1"[39m
+                      [36m>[39m
+                        [0mPlan 1[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 2"[39m
+                      [36m>[39m
+                        [0mPlan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 2"[39m
+                      [36m>[39m
+                        [0mTest Plan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 3"[39m
+                      [36m>[39m
+                        [0mTest Plan 3[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 4"[39m
+                      [36m>[39m
+                        [0mTest Plan 4[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 5"[39m
+                      [36m>[39m
+                        [0mTest Plan 5[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 6"[39m
+                      [36m>[39m
+                        [0mTest Plan 6[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 7"[39m
+                      [36m>[39m
+                        [0mTest Plan 7[0m
+                      [36m</option>[39m
+                    [36m</select>[39m
+                  [36m</div>[39m
+                  [0mCreate a new plan: [0m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                    [33mdata-testid[39m=[32m"NewPlan"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mNew Plan[0m
+                  [36m</button>[39m
+                  [36m<div[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mhidden[39m=[32m""[39m
+                  [36m>[39m
+                    [36m<div>[39m
+                      [36m<h3>[39m
+                        [0mPlan 1[0m
+                      [36m</h3>[39m
                       [36m<div[39m
-                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                        [33mclass[39m=[32m"container"[39m
                       [36m>[39m
                         [36m<div[39m
-                          [33mclass[39m=[32m"row-equal col"[39m
+                          [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
                         [36m>[39m
                           [36m<div[39m
-                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                            [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"semester-view container"[39m
+                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
                             [36m>[39m
                               [36m<div[39m
-                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                [33mclass[39m=[32m"semester-view container"[39m
                               [36m>[39m
-                                [36m<h3>[39m
-                                  [0mSpring - 2020[0m
-                                  [36m<br />[39m
-                                [36m</h3>[39m
-                                [0m10[0m
-                                [0m [0m
-                                [0m credits[0m
-                                [0m                       [0m
                                 [36m<div[39m
-                                  [33mdraggable[39m=[32m"true"[39m
-                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                  [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
+                                  [36m<h3>[39m
+                                    [0mSpring - 2020[0m
+                                    [36m<br />[39m
+                                  [36m</h3>[39m
+                                  [0m10[0m
+                                  [0m [0m
+                                  [0m credits[0m
+                                  [0m                       [0m
                                   [36m<div[39m
-                                    [33mclass[39m=[32m"col"[39m
-                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                    [33mdraggable[39m=[32m"true"[39m
+                                    [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
                                   [36m>[39m
-                                    [36m<h3>[39m
-                                      [0mACCT 200[0m
-                                      [0m [0m
-                                      [0m - [0m
-                                      [0m [0m
-                                      [0mSurvey of Accounting[0m
-                                    [36m</h3>[39m
-                                    [0m 4[0m
-                                    [0m [0m
-                                    [0m credits[0m
-                                    [36m<br />[39m
-                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
-                                    [36m<br />[39m
-                                    [0m[0m
-                                    [36m<br />[39m
-                                    [0m[0m
                                     [36m<div[39m
                                       [33mclass[39m=[32m"col"[39m
+                                      [33mid[39m=[32m"Spring2020Plan 1"[39m
                                     [36m>[39m
+                                      [36m<h3>[39m
+                                        [0mACCT 200[0m
+                                        [0m [0m
+                                        [0m - [0m
+                                        [0m [0m
+                                        [0mSurvey of Accounting[0m
+                                      [36m</h3>[39m
+                                      [0m 4[0m
+                                      [0m [0m
+                                      [0m credits[0m
+                                      [36m<br />[39m
+                                      [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                      [36m<br />[39m
+                                      [0m[0m
+                                      [36m<br />[39m
+                                      [0m[0m
                                       [36m<div[39m
-                                        [33mclass[39m=[32m"row"[39m
+                                        [33mclass[39m=[32m"col"[39m
                                       [36m>[39m
-                                        [36m<div>[39m
-                                          [36m<button[39m
-                                            [33mclass[39m=[32m"edit-course-btn btn btn-primary btn-sm"[39m
-                                            [33mtype[39m=[32m"button"[39m
-         ...
+                                        [36m<div[39m
+               ...
 
       218 |         //make a new semester
       219 |         newSemester.click();
@@ -938,136 +932,134 @@ FAIL src/App.test.tsx (9.754 s)
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
             [36m<br />[39m
-            [36m<div>[39m
-              [36m<div>[39m
-                [0mSelect a plan:[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"row"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"col-sm-8"[39m
+              [36m>[39m
                 [36m<div>[39m
-                  [36m<select[39m
-                    [33mclass[39m=[32m"form-select"[39m
-                    [33mdata-testid[39m=[32m"PlanSelect"[39m
-                    [33mid[39m=[32m"planDrop"[39m
-                  [36m>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 1"[39m
-                    [36m>[39m
-                      [0mPlan 1[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 2"[39m
-                    [36m>[39m
-                      [0mPlan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 2"[39m
-                    [36m>[39m
-                      [0mTest Plan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 3"[39m
-                    [36m>[39m
-                      [0mTest Plan 3[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 4"[39m
-                    [36m>[39m
-                      [0mTest Plan 4[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 5"[39m
-                    [36m>[39m
-                      [0mTest Plan 5[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 6"[39m
-                    [36m>[39m
-                      [0mTest Plan 6[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 7"[39m
-                    [36m>[39m
-                      [0mTest Plan 7[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 8"[39m
-                    [36m>[39m
-                      [0mTest Plan 8[0m
-                    [36m</option>[39m
-                  [36m</select>[39m
-                [36m</div>[39m
-                [0mCreate a new plan: [0m
-                [36m<button[39m
-                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
-                  [33mdata-testid[39m=[32m"NewPlan"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mNew Plan[0m
-                [36m</button>[39m
-                [36m<div[39m
-                  [33maria-hidden[39m=[32m"true"[39m
-                  [33mhidden[39m=[32m""[39m
-                [36m>[39m
+                  [0mSelect a plan:[0m
                   [36m<div>[39m
-                    [36m<h3>[39m
-                      [0mPlan 1[0m
-                    [36m</h3>[39m
-                    [36m<div[39m
-                      [33mclass[39m=[32m"container"[39m
+                    [36m<select[39m
+                      [33mclass[39m=[32m"form-select"[39m
+                      [33mdata-testid[39m=[32m"PlanSelect"[39m
+                      [33mid[39m=[32m"planDrop"[39m
                     [36m>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 1"[39m
+                      [36m>[39m
+                        [0mPlan 1[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 2"[39m
+                      [36m>[39m
+                        [0mPlan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 2"[39m
+                      [36m>[39m
+                        [0mTest Plan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 3"[39m
+                      [36m>[39m
+                        [0mTest Plan 3[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 4"[39m
+                      [36m>[39m
+                        [0mTest Plan 4[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 5"[39m
+                      [36m>[39m
+                        [0mTest Plan 5[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 6"[39m
+                      [36m>[39m
+                        [0mTest Plan 6[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 7"[39m
+                      [36m>[39m
+                        [0mTest Plan 7[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 8"[39m
+                      [36m>[39m
+                        [0mTest Plan 8[0m
+                      [36m</option>[39m
+                    [36m</select>[39m
+                  [36m</div>[39m
+                  [0mCreate a new plan: [0m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                    [33mdata-testid[39m=[32m"NewPlan"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mNew Plan[0m
+                  [36m</button>[39m
+                  [36m<div[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mhidden[39m=[32m""[39m
+                  [36m>[39m
+                    [36m<div>[39m
+                      [36m<h3>[39m
+                        [0mPlan 1[0m
+                      [36m</h3>[39m
                       [36m<div[39m
-                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                        [33mclass[39m=[32m"container"[39m
                       [36m>[39m
                         [36m<div[39m
-                          [33mclass[39m=[32m"row-equal col"[39m
+                          [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
                         [36m>[39m
                           [36m<div[39m
-                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                            [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"semester-view container"[39m
+                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
                             [36m>[39m
                               [36m<div[39m
-                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                [33mclass[39m=[32m"semester-view container"[39m
                               [36m>[39m
-                                [36m<h3>[39m
-                                  [0mSpring - 2020[0m
-                                  [36m<br />[39m
-                                [36m</h3>[39m
-                                [0m10[0m
-                                [0m [0m
-                                [0m credits[0m
-                                [0m                       [0m
                                 [36m<div[39m
-                                  [33mdraggable[39m=[32m"true"[39m
-                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                  [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
+                                  [36m<h3>[39m
+                                    [0mSpring - 2020[0m
+                                    [36m<br />[39m
+                                  [36m</h3>[39m
+                                  [0m10[0m
+                                  [0m [0m
+                                  [0m credits[0m
+                                  [0m                       [0m
                                   [36m<div[39m
-                                    [33mclass[39m=[32m"col"[39m
-                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                    [33mdraggable[39m=[32m"true"[39m
+                                    [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
                                   [36m>[39m
-                                    [36m<h3>[39m
-                                      [0mACCT 200[0m
-                                      [0m [0m
-                                      [0m - [0m
-                                      [0m [0m
-                                      [0mSurvey of Accounting[0m
-                                    [36m</h3>[39m
-                                    [0m 4[0m
-                                    [0m [0m
-                                    [0m credits[0m
-                                    [36m<br />[39m
-                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
-                                    [36m<br />[39m
-                                    [0m[0m
-                                    [36m<br />[39m
-                                    [0m[0m
                                     [36m<div[39m
                                       [33mclass[39m=[32m"col"[39m
+                                      [33mid[39m=[32m"Spring2020Plan 1"[39m
                                     [36m>[39m
-                                      [36m<div[39m
-                                        [33mclass[39m=[32m"row"[39m
-                                      [36m>[39m
-                                        [36m<div>[39m
-                                          [36m<butt...
+                                      [36m<h3>[39m
+                                        [0mACCT 200[0m
+                                        [0m [0m
+                                        [0m - [0m
+                                        [0m [0m
+                                        [0mSurvey of Accounting[0m
+                                      [36m</h3>[39m
+                                      [0m 4[0m
+                                      [0m [0m
+                                      [0m credits[0m
+                                      [36m<br />[39m
+                                      [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+                                      [36m<br />[39m
+                                      [0m[0m
+                                      [36m<br />[39m
+                                      [0m[0m
+                         ...
 
       261 |         const newSemester = screen.getByTestId("InsertSemesterTest Plan 8");
       262 |         newSemester.click();
@@ -1117,138 +1109,135 @@ FAIL src/App.test.tsx (9.754 s)
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
             [36m<br />[39m
-            [36m<div>[39m
-              [36m<div>[39m
-                [0mSelect a plan:[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"row"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"col-sm-8"[39m
+              [36m>[39m
                 [36m<div>[39m
-                  [36m<select[39m
-                    [33mclass[39m=[32m"form-select"[39m
-                    [33mdata-testid[39m=[32m"PlanSelect"[39m
-                    [33mid[39m=[32m"planDrop"[39m
-                  [36m>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 1"[39m
-                    [36m>[39m
-                      [0mPlan 1[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 2"[39m
-                    [36m>[39m
-                      [0mPlan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 2"[39m
-                    [36m>[39m
-                      [0mTest Plan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 3"[39m
-                    [36m>[39m
-                      [0mTest Plan 3[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 4"[39m
-                    [36m>[39m
-                      [0mTest Plan 4[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 5"[39m
-                    [36m>[39m
-                      [0mTest Plan 5[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 6"[39m
-                    [36m>[39m
-                      [0mTest Plan 6[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 7"[39m
-                    [36m>[39m
-                      [0mTest Plan 7[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 8"[39m
-                    [36m>[39m
-                      [0mTest Plan 8[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 9"[39m
-                    [36m>[39m
-                      [0mTest Plan 9[0m
-                    [36m</option>[39m
-                  [36m</select>[39m
-                [36m</div>[39m
-                [0mCreate a new plan: [0m
-                [36m<button[39m
-                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
-                  [33mdata-testid[39m=[32m"NewPlan"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mNew Plan[0m
-                [36m</button>[39m
-                [36m<div[39m
-                  [33maria-hidden[39m=[32m"true"[39m
-                  [33mhidden[39m=[32m""[39m
-                [36m>[39m
+                  [0mSelect a plan:[0m
                   [36m<div>[39m
-                    [36m<h3>[39m
-                      [0mPlan 1[0m
-                    [36m</h3>[39m
-                    [36m<div[39m
-                      [33mclass[39m=[32m"container"[39m
+                    [36m<select[39m
+                      [33mclass[39m=[32m"form-select"[39m
+                      [33mdata-testid[39m=[32m"PlanSelect"[39m
+                      [33mid[39m=[32m"planDrop"[39m
                     [36m>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 1"[39m
+                      [36m>[39m
+                        [0mPlan 1[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 2"[39m
+                      [36m>[39m
+                        [0mPlan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 2"[39m
+                      [36m>[39m
+                        [0mTest Plan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 3"[39m
+                      [36m>[39m
+                        [0mTest Plan 3[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 4"[39m
+                      [36m>[39m
+                        [0mTest Plan 4[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 5"[39m
+                      [36m>[39m
+                        [0mTest Plan 5[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 6"[39m
+                      [36m>[39m
+                        [0mTest Plan 6[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 7"[39m
+                      [36m>[39m
+                        [0mTest Plan 7[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 8"[39m
+                      [36m>[39m
+                        [0mTest Plan 8[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 9"[39m
+                      [36m>[39m
+                        [0mTest Plan 9[0m
+                      [36m</option>[39m
+                    [36m</select>[39m
+                  [36m</div>[39m
+                  [0mCreate a new plan: [0m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                    [33mdata-testid[39m=[32m"NewPlan"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mNew Plan[0m
+                  [36m</button>[39m
+                  [36m<div[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mhidden[39m=[32m""[39m
+                  [36m>[39m
+                    [36m<div>[39m
+                      [36m<h3>[39m
+                        [0mPlan 1[0m
+                      [36m</h3>[39m
                       [36m<div[39m
-                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                        [33mclass[39m=[32m"container"[39m
                       [36m>[39m
                         [36m<div[39m
-                          [33mclass[39m=[32m"row-equal col"[39m
+                          [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
                         [36m>[39m
                           [36m<div[39m
-                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                            [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"semester-view container"[39m
+                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
                             [36m>[39m
                               [36m<div[39m
-                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                [33mclass[39m=[32m"semester-view container"[39m
                               [36m>[39m
-                                [36m<h3>[39m
-                                  [0mSpring - 2020[0m
-                                  [36m<br />[39m
-                                [36m</h3>[39m
-                                [0m10[0m
-                                [0m [0m
-                                [0m credits[0m
-                                [0m                       [0m
                                 [36m<div[39m
-                                  [33mdraggable[39m=[32m"true"[39m
-                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                  [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
+                                  [36m<h3>[39m
+                                    [0mSpring - 2020[0m
+                                    [36m<br />[39m
+                                  [36m</h3>[39m
+                                  [0m10[0m
+                                  [0m [0m
+                                  [0m credits[0m
+                                  [0m                       [0m
                                   [36m<div[39m
-                                    [33mclass[39m=[32m"col"[39m
-                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                    [33mdraggable[39m=[32m"true"[39m
+                                    [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
                                   [36m>[39m
-                                    [36m<h3>[39m
-                                      [0mACCT 200[0m
-                                      [0m [0m
-                                      [0m - [0m
-                                      [0m [0m
-                                      [0mSurvey of Accounting[0m
-                                    [36m</h3>[39m
-                                    [0m 4[0m
-                                    [0m [0m
-                                    [0m credits[0m
-                                    [36m<br />[39m
-                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
-                                    [36m<br />[39m
-                                    [0m[0m
-                                    [36m<br />[39m
-                                    [0m[0m
                                     [36m<div[39m
                                       [33mclass[39m=[32m"col"[39m
+                                      [33mid[39m=[32m"Spring2020Plan 1"[39m
                                     [36m>[39m
-                                      [36m<div[39m
-                        ...
+                                      [36m<h3>[39m
+                                        [0mACCT 200[0m
+                                        [0m [0m
+                                        [0m - [0m
+                                        [0m [0m
+                                        [0mSurvey of Accounting[0m
+                                      [36m</h3>[39m
+                                      [0m 4[0m
+                                      [0m [0m
+                                      [0m credits[0m
+                                      [36m<br />[39m
+                                      [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
+         ...
 
       326 |         //make a new semester
       327 |         newSemester.click();
@@ -1298,139 +1287,139 @@ FAIL src/App.test.tsx (9.754 s)
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
             [36m<br />[39m
-            [36m<div>[39m
-              [36m<div>[39m
-                [0mSelect a plan:[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"row"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"col-sm-8"[39m
+              [36m>[39m
                 [36m<div>[39m
-                  [36m<select[39m
-                    [33mclass[39m=[32m"form-select"[39m
-                    [33mdata-testid[39m=[32m"PlanSelect"[39m
-                    [33mid[39m=[32m"planDrop"[39m
-                  [36m>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 1"[39m
-                    [36m>[39m
-                      [0mPlan 1[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 2"[39m
-                    [36m>[39m
-                      [0mPlan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 2"[39m
-                    [36m>[39m
-                      [0mTest Plan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 3"[39m
-                    [36m>[39m
-                      [0mTest Plan 3[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 4"[39m
-                    [36m>[39m
-                      [0mTest Plan 4[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 5"[39m
-                    [36m>[39m
-                      [0mTest Plan 5[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 6"[39m
-                    [36m>[39m
-                      [0mTest Plan 6[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 7"[39m
-                    [36m>[39m
-                      [0mTest Plan 7[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 8"[39m
-                    [36m>[39m
-                      [0mTest Plan 8[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 9"[39m
-                    [36m>[39m
-                      [0mTest Plan 9[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 10"[39m
-                    [36m>[39m
-                      [0mTest Plan 10[0m
-                    [36m</option>[39m
-                  [36m</select>[39m
-                [36m</div>[39m
-                [0mCreate a new plan: [0m
-                [36m<button[39m
-                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
-                  [33mdata-testid[39m=[32m"NewPlan"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mNew Plan[0m
-                [36m</button>[39m
-                [36m<div[39m
-                  [33maria-hidden[39m=[32m"true"[39m
-                  [33mhidden[39m=[32m""[39m
-                [36m>[39m
+                  [0mSelect a plan:[0m
                   [36m<div>[39m
-                    [36m<h3>[39m
-                      [0mPlan 1[0m
-                    [36m</h3>[39m
-                    [36m<div[39m
-                      [33mclass[39m=[32m"container"[39m
+                    [36m<select[39m
+                      [33mclass[39m=[32m"form-select"[39m
+                      [33mdata-testid[39m=[32m"PlanSelect"[39m
+                      [33mid[39m=[32m"planDrop"[39m
                     [36m>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 1"[39m
+                      [36m>[39m
+                        [0mPlan 1[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 2"[39m
+                      [36m>[39m
+                        [0mPlan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 2"[39m
+                      [36m>[39m
+                        [0mTest Plan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 3"[39m
+                      [36m>[39m
+                        [0mTest Plan 3[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 4"[39m
+                      [36m>[39m
+                        [0mTest Plan 4[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 5"[39m
+                      [36m>[39m
+                        [0mTest Plan 5[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 6"[39m
+                      [36m>[39m
+                        [0mTest Plan 6[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 7"[39m
+                      [36m>[39m
+                        [0mTest Plan 7[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 8"[39m
+                      [36m>[39m
+                        [0mTest Plan 8[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 9"[39m
+                      [36m>[39m
+                        [0mTest Plan 9[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 10"[39m
+                      [36m>[39m
+                        [0mTest Plan 10[0m
+                      [36m</option>[39m
+                    [36m</select>[39m
+                  [36m</div>[39m
+                  [0mCreate a new plan: [0m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                    [33mdata-testid[39m=[32m"NewPlan"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mNew Plan[0m
+                  [36m</button>[39m
+                  [36m<div[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mhidden[39m=[32m""[39m
+                  [36m>[39m
+                    [36m<div>[39m
+                      [36m<h3>[39m
+                        [0mPlan 1[0m
+                      [36m</h3>[39m
                       [36m<div[39m
-                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                        [33mclass[39m=[32m"container"[39m
                       [36m>[39m
                         [36m<div[39m
-                          [33mclass[39m=[32m"row-equal col"[39m
+                          [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
                         [36m>[39m
                           [36m<div[39m
-                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                            [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"semester-view container"[39m
+                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
                             [36m>[39m
                               [36m<div[39m
-                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                [33mclass[39m=[32m"semester-view container"[39m
                               [36m>[39m
-                                [36m<h3>[39m
-                                  [0mSpring - 2020[0m
-                                  [36m<br />[39m
-                                [36m</h3>[39m
-                                [0m10[0m
-                                [0m [0m
-                                [0m credits[0m
-                                [0m                       [0m
                                 [36m<div[39m
-                                  [33mdraggable[39m=[32m"true"[39m
-                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                  [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
+                                  [36m<h3>[39m
+                                    [0mSpring - 2020[0m
+                                    [36m<br />[39m
+                                  [36m</h3>[39m
+                                  [0m10[0m
+                                  [0m [0m
+                                  [0m credits[0m
+                                  [0m                       [0m
                                   [36m<div[39m
-                                    [33mclass[39m=[32m"col"[39m
-                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                    [33mdraggable[39m=[32m"true"[39m
+                                    [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
                                   [36m>[39m
-                                    [36m<h3>[39m
-                                      [0mACCT 200[0m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                      [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                    [36m>[39m
+                                      [36m<h3>[39m
+                                        [0mACCT 200[0m
+                                        [0m [0m
+                                        [0m - [0m
+                                        [0m [0m
+                                        [0mSurvey of Accounting[0m
+                                      [36m</h3>[39m
+                                      [0m 4[0m
                                       [0m [0m
-                                      [0m - [0m
-                                      [0m [0m
-                                      [0mSurvey of Accounting[0m
-                                    [36m</h3>[39m
-                                    [0m 4[0m
-                                    [0m [0m
-                                    [0m credits[0m
-                                    [36m<br />[39m
-                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
-                                    [36m<br />[39m
-                                    [0m[0m
-                                    [36m<br />[39m
-                                    [0m[0m
-                                  ...
+                                      [0m credits[0m
+                                      [36m<br />[39m
+                                      [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statem...
 
       381 |         //make a new semester
       382 |         newSemester.click();
@@ -1480,140 +1469,143 @@ FAIL src/App.test.tsx (9.754 s)
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
             [36m<br />[39m
-            [36m<div>[39m
-              [36m<div>[39m
-                [0mSelect a plan:[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"row"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"col-sm-8"[39m
+              [36m>[39m
                 [36m<div>[39m
-                  [36m<select[39m
-                    [33mclass[39m=[32m"form-select"[39m
-                    [33mdata-testid[39m=[32m"PlanSelect"[39m
-                    [33mid[39m=[32m"planDrop"[39m
-                  [36m>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 1"[39m
-                    [36m>[39m
-                      [0mPlan 1[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 2"[39m
-                    [36m>[39m
-                      [0mPlan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 2"[39m
-                    [36m>[39m
-                      [0mTest Plan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 3"[39m
-                    [36m>[39m
-                      [0mTest Plan 3[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 4"[39m
-                    [36m>[39m
-                      [0mTest Plan 4[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 5"[39m
-                    [36m>[39m
-                      [0mTest Plan 5[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 6"[39m
-                    [36m>[39m
-                      [0mTest Plan 6[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 7"[39m
-                    [36m>[39m
-                      [0mTest Plan 7[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 8"[39m
-                    [36m>[39m
-                      [0mTest Plan 8[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 9"[39m
-                    [36m>[39m
-                      [0mTest Plan 9[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 10"[39m
-                    [36m>[39m
-                      [0mTest Plan 10[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 16"[39m
-                    [36m>[39m
-                      [0mTest Plan 16[0m
-                    [36m</option>[39m
-                  [36m</select>[39m
-                [36m</div>[39m
-                [0mCreate a new plan: [0m
-                [36m<button[39m
-                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
-                  [33mdata-testid[39m=[32m"NewPlan"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mNew Plan[0m
-                [36m</button>[39m
-                [36m<div[39m
-                  [33maria-hidden[39m=[32m"true"[39m
-                  [33mhidden[39m=[32m""[39m
-                [36m>[39m
+                  [0mSelect a plan:[0m
                   [36m<div>[39m
-                    [36m<h3>[39m
-                      [0mPlan 1[0m
-                    [36m</h3>[39m
-                    [36m<div[39m
-                      [33mclass[39m=[32m"container"[39m
+                    [36m<select[39m
+                      [33mclass[39m=[32m"form-select"[39m
+                      [33mdata-testid[39m=[32m"PlanSelect"[39m
+                      [33mid[39m=[32m"planDrop"[39m
                     [36m>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 1"[39m
+                      [36m>[39m
+                        [0mPlan 1[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 2"[39m
+                      [36m>[39m
+                        [0mPlan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 2"[39m
+                      [36m>[39m
+                        [0mTest Plan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 3"[39m
+                      [36m>[39m
+                        [0mTest Plan 3[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 4"[39m
+                      [36m>[39m
+                        [0mTest Plan 4[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 5"[39m
+                      [36m>[39m
+                        [0mTest Plan 5[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 6"[39m
+                      [36m>[39m
+                        [0mTest Plan 6[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 7"[39m
+                      [36m>[39m
+                        [0mTest Plan 7[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 8"[39m
+                      [36m>[39m
+                        [0mTest Plan 8[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 9"[39m
+                      [36m>[39m
+                        [0mTest Plan 9[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 10"[39m
+                      [36m>[39m
+                        [0mTest Plan 10[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 16"[39m
+                      [36m>[39m
+                        [0mTest Plan 16[0m
+                      [36m</option>[39m
+                    [36m</select>[39m
+                  [36m</div>[39m
+                  [0mCreate a new plan: [0m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                    [33mdata-testid[39m=[32m"NewPlan"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mNew Plan[0m
+                  [36m</button>[39m
+                  [36m<div[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mhidden[39m=[32m""[39m
+                  [36m>[39m
+                    [36m<div>[39m
+                      [36m<h3>[39m
+                        [0mPlan 1[0m
+                      [36m</h3>[39m
                       [36m<div[39m
-                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                        [33mclass[39m=[32m"container"[39m
                       [36m>[39m
                         [36m<div[39m
-                          [33mclass[39m=[32m"row-equal col"[39m
+                          [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
                         [36m>[39m
                           [36m<div[39m
-                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                            [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"semester-view container"[39m
+                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
                             [36m>[39m
                               [36m<div[39m
-                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                [33mclass[39m=[32m"semester-view container"[39m
                               [36m>[39m
-                                [36m<h3>[39m
-                                  [0mSpring - 2020[0m
-                                  [36m<br />[39m
-                                [36m</h3>[39m
-                                [0m10[0m
-                                [0m [0m
-                                [0m credits[0m
-                                [0m                       [0m
                                 [36m<div[39m
-                                  [33mdraggable[39m=[32m"true"[39m
-                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                  [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
-                                  [36m<div[39m
-                                    [33mclass[39m=[32m"col"[39m
-                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
-                                  [36m>[39m
-                                    [36m<h3>[39m
-                                      [0mACCT 200[0m
-                                      [0m [0m
-                                      [0m - [0m
-                                      [0m [0m
-                                      [0mSurvey of Accounting[0m
-                                    [36m</h3>[39m
-                                    [0m 4[0m
-                                    [0m [0m
-                                    [0m credits[0m
+                                  [36m<h3>[39m
+                                    [0mSpring - 2020[0m
                                     [36m<br />[39m
-                                    [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
-                  ...
+                                  [36m</h3>[39m
+                                  [0m10[0m
+                                  [0m [0m
+                                  [0m credits[0m
+                                  [0m                       [0m
+                                  [36m<div[39m
+                                    [33mdraggable[39m=[32m"true"[39m
+                                    [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+                                      [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                    [36m>[39m
+                                      [36m<h3>[39m
+                                        [0mACCT 200[0m
+                                        [0m [0m
+                                        [0m - [0m
+                                        [0m [0m
+                                        [0mSurvey of Accounting[0m
+                                      [36m</h3>[39m
+                                      [0m 4[0m
+                                      [0m [0m
+                                      [0m credits[0m
+       ...
 
       453 |         //make a new semester
       454 |         newSemester.click();
@@ -1663,149 +1655,146 @@ FAIL src/App.test.tsx (9.754 s)
             [33mclass[39m=[32m"schedule"[39m
           [36m>[39m
             [36m<br />[39m
-            [36m<div>[39m
-              [36m<div>[39m
-                [0mSelect a plan:[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"row"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"col-sm-8"[39m
+              [36m>[39m
                 [36m<div>[39m
-                  [36m<select[39m
-                    [33mclass[39m=[32m"form-select"[39m
-                    [33mdata-testid[39m=[32m"PlanSelect"[39m
-                    [33mid[39m=[32m"planDrop"[39m
-                  [36m>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 1"[39m
-                    [36m>[39m
-                      [0mPlan 1[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Plan 2"[39m
-                    [36m>[39m
-                      [0mPlan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 2"[39m
-                    [36m>[39m
-                      [0mTest Plan 2[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 3"[39m
-                    [36m>[39m
-                      [0mTest Plan 3[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 4"[39m
-                    [36m>[39m
-                      [0mTest Plan 4[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 5"[39m
-                    [36m>[39m
-                      [0mTest Plan 5[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 6"[39m
-                    [36m>[39m
-                      [0mTest Plan 6[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 7"[39m
-                    [36m>[39m
-                      [0mTest Plan 7[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 8"[39m
-                    [36m>[39m
-                      [0mTest Plan 8[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 9"[39m
-                    [36m>[39m
-                      [0mTest Plan 9[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 10"[39m
-                    [36m>[39m
-                      [0mTest Plan 10[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 16"[39m
-                    [36m>[39m
-                      [0mTest Plan 16[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 11"[39m
-                    [36m>[39m
-                      [0mTest Plan 11[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 12"[39m
-                    [36m>[39m
-                      [0mTest Plan 12[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Test Plan 13"[39m
-                    [36m>[39m
-                      [0mTest Plan 13[0m
-                    [36m</option>[39m
-                  [36m</select>[39m
-                [36m</div>[39m
-                [0mCreate a new plan: [0m
-                [36m<button[39m
-                  [33mclass[39m=[32m"insert-plan btn btn-success"[39m
-                  [33mdata-testid[39m=[32m"NewPlan"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mNew Plan[0m
-                [36m</button>[39m
-                [36m<div[39m
-                  [33maria-hidden[39m=[32m"true"[39m
-                  [33mhidden[39m=[32m""[39m
-                [36m>[39m
+                  [0mSelect a plan:[0m
                   [36m<div>[39m
-                    [36m<h3>[39m
-                      [0mPlan 1[0m
-                    [36m</h3>[39m
-                    [36m<div[39m
-                      [33mclass[39m=[32m"container"[39m
+                    [36m<select[39m
+                      [33mclass[39m=[32m"form-select"[39m
+                      [33mdata-testid[39m=[32m"PlanSelect"[39m
+                      [33mid[39m=[32m"planDrop"[39m
                     [36m>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 1"[39m
+                      [36m>[39m
+                        [0mPlan 1[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 2"[39m
+                      [36m>[39m
+                        [0mPlan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 2"[39m
+                      [36m>[39m
+                        [0mTest Plan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 3"[39m
+                      [36m>[39m
+                        [0mTest Plan 3[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 4"[39m
+                      [36m>[39m
+                        [0mTest Plan 4[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 5"[39m
+                      [36m>[39m
+                        [0mTest Plan 5[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 6"[39m
+                      [36m>[39m
+                        [0mTest Plan 6[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 7"[39m
+                      [36m>[39m
+                        [0mTest Plan 7[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 8"[39m
+                      [36m>[39m
+                        [0mTest Plan 8[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 9"[39m
+                      [36m>[39m
+                        [0mTest Plan 9[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 10"[39m
+                      [36m>[39m
+                        [0mTest Plan 10[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 16"[39m
+                      [36m>[39m
+                        [0mTest Plan 16[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 11"[39m
+                      [36m>[39m
+                        [0mTest Plan 11[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 12"[39m
+                      [36m>[39m
+                        [0mTest Plan 12[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 13"[39m
+                      [36m>[39m
+                        [0mTest Plan 13[0m
+                      [36m</option>[39m
+                    [36m</select>[39m
+                  [36m</div>[39m
+                  [0mCreate a new plan: [0m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                    [33mdata-testid[39m=[32m"NewPlan"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mNew Plan[0m
+                  [36m</button>[39m
+                  [36m<div[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mhidden[39m=[32m""[39m
+                  [36m>[39m
+                    [36m<div>[39m
+                      [36m<h3>[39m
+                        [0mPlan 1[0m
+                      [36m</h3>[39m
                       [36m<div[39m
-                        [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                        [33mclass[39m=[32m"container"[39m
                       [36m>[39m
                         [36m<div[39m
-                          [33mclass[39m=[32m"row-equal col"[39m
+                          [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
                         [36m>[39m
                           [36m<div[39m
-                            [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                            [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"semester-view container"[39m
+                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
                             [36m>[39m
                               [36m<div[39m
-                                [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                [33mclass[39m=[32m"semester-view container"[39m
                               [36m>[39m
-                                [36m<h3>[39m
-                                  [0mSpring - 2020[0m
-                                  [36m<br />[39m
-                                [36m</h3>[39m
-                                [0m10[0m
-                                [0m [0m
-                                [0m credits[0m
-                                [0m                       [0m
                                 [36m<div[39m
-                                  [33mdraggable[39m=[32m"true"[39m
-                                  [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
+                                  [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
+                                  [36m<h3>[39m
+                                    [0mSpring - 2020[0m
+                                    [36m<br />[39m
+                                  [36m</h3>[39m
+                                  [0m10[0m
+                                  [0m [0m
+                                  [0m credits[0m
+                                  [0m                       [0m
                                   [36m<div[39m
-                                    [33mclass[39m=[32m"col"[39m
-                                    [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                    [33mdraggable[39m=[32m"true"[39m
+                                    [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
                                   [36m>[39m
-                                    [36m<h3>[39m
-                                      [0mACCT 200[0m
-                                      [0m [0m
-                                      [0m - [0m
-                                      [0m [0m
-                                      [0mSurvey of Accounting[0m
-                  ...
+                                    [36m<div[39m
+                                      [33mclass[39m=[32m"col"[39m
+      ...
 
       586 |         //make a new semester
       587 |         newSemester.click();
@@ -1828,12 +1817,12 @@ FAIL src/App.test.tsx (9.754 s)
 -----------------------------|---------|----------|---------|---------|-----------------------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                       
 -----------------------------|---------|----------|---------|---------|-----------------------------------------
-All files                    |   36.84 |    29.03 |   23.39 |   37.42 |                                         
- src                         |   33.65 |    10.71 |   11.53 |   34.31 |                                         
-  App.tsx                    |   33.65 |    10.71 |   11.53 |   34.31 | 109,121-124,130,138-264,292-299,312-392 
+All files                    |      37 |    29.03 |   23.39 |   37.57 |                                         
+ src                         |   34.25 |    10.71 |   11.53 |    34.9 |                                         
+  App.tsx                    |   34.25 |    10.71 |   11.53 |    34.9 | 106,118-121,127,135-261,290-297,310-394 
  src/components              |    37.2 |    44.11 |   27.96 |   37.73 |                                         
   courseEditor.tsx           |       0 |      100 |       0 |       0 | 28-244                                  
-  coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 61-83,116-135                           
+  coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 61-83,129-142                           
   coursePoolView.tsx         |       0 |        0 |       0 |       0 | 23-50                                   
   courseView.tsx             |   66.66 |    66.66 |   33.33 |   66.66 | 23,58                                   
   insertCourse.tsx           |       0 |      100 |       0 |       0 | 28-205                                  
@@ -1845,9 +1834,9 @@ All files                    |   36.84 |    29.03 |   23.39 |   37.42 |
   recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                                         
   recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                                       
   recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                                         
-  requirements.tsx           |   21.42 |        0 |      10 |   21.42 | 29-50,57-114                            
-  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 19-83                                   
-  semesterView.tsx           |   44.44 |       50 |   31.25 |   47.05 | 43-47,83,87-88,92-111,143-158,180-194   
+  requirements.tsx           |   21.42 |        0 |      10 |   21.42 | 29-50,68-125                            
+  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 18-82                                   
+  semesterView.tsx           |   44.44 |       50 |   31.25 |   47.05 | 42-46,82,86-87,91-110,142-157,179-193   
   welcomeMessage.tsx         |     100 |      100 |     100 |     100 |                                         
  src/helper_functions        |     100 |      100 |     100 |     100 |                                         
   unpackJSON.tsx             |     100 |      100 |     100 |     100 |                                         
@@ -1860,5 +1849,5 @@ All files                    |   36.84 |    29.03 |   23.39 |   37.42 |
 Test Suites: 1 failed, 1 total
 Tests:       11 failed, 5 passed, 16 total
 Snapshots:   0 total
-Time:        10.627 s
+Time:        9.502 s
 Ran all test suites.
