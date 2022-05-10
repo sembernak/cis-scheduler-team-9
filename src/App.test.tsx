@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import App from "./App";
 import userEvent from "@testing-library/user-event";
 
@@ -13,7 +13,8 @@ describe("Make a new plan", () => {
     beforeEach(() => render(<App />));
     test("App renders with welcome message", () => {
         expect(
-            screen.queryAllByText(/Welcome to Team 9 schedule builder!/).length
+            screen.queryAllByText(/Welcome to our course planner for UD!/)
+                .length
         ).toBe(1);
     });
     test("Clicking New Plan gives a form to enter a title", () => {
@@ -55,22 +56,25 @@ describe("Make a new plan", () => {
         userEvent.selectOptions(drop, "Test Plan 3");
         const newSemesters = screen.getAllByTestId("InsertSemesterTest Plan 3");
         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
+        //make a new semester
         newSemester.click();
-        const setSeason = screen.getByLabelText("Semester Season:");
-        const setYear = screen.getByLabelText("Semester Year:");
+        const setSeason = screen.getByLabelText("Season:");
+        const setYear = screen.getByLabelText("Year:");
         expect(setSeason).toBeInTheDocument;
         expect(setYear).toBeInTheDocument;
-        userEvent.clear(setSeason);
         userEvent.clear(setYear);
-        userEvent.type(setSeason, "Summer");
-        userEvent.type(setYear, "2022");
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Winter" })
+        );
+        userEvent.type(setYear, "2007");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
-        expect(
-            screen.getAllByRole("heading", {
-                name: /Summer - 2022/,
-                hidden: false
-            })
-        ).toBeInTheDocument;
+        expect(screen.getAllByText(/Winter - 2007/i)).toBeInTheDocument; //initially semester is in the document
+        screen
+            .getAllByRole("button", { name: "Edit Semester", hidden: false })[0]
+            .click();
     });
     test("Delete Semester Works", () => {
         //make a new plan
@@ -86,21 +90,20 @@ describe("Make a new plan", () => {
         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
         //make a new semester
         newSemester.click();
-        const setSeason = screen.getByLabelText("Semester Season:");
-        const setYear = screen.getByLabelText("Semester Year:");
+        const setSeason = screen.getByLabelText("Season:");
+        const setYear = screen.getByLabelText("Year:");
         expect(setSeason).toBeInTheDocument;
         expect(setYear).toBeInTheDocument;
-        userEvent.clear(setSeason);
         userEvent.clear(setYear);
-        userEvent.type(setSeason, "Summer");
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Summer" })
+        );
         userEvent.type(setYear, "2022");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
-        expect(
-            screen.getAllByRole("heading", {
-                name: /Summer - 2022/,
-                hidden: false
-            })
-        ).toBeInTheDocument; //initially semester is in the document
+        expect(screen.getAllByText(/Summer - 2022/i)).toBeInTheDocument; //initially semester is in the document
         const deleteSem = screen.getAllByRole("button", {
             name: "Delete semester",
             hidden: false
@@ -127,33 +130,33 @@ describe("Make a new plan", () => {
         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
         //make a new semester
         newSemester.click();
-        const setSeason = screen.getByLabelText("Semester Season:");
-        const setYear = screen.getByLabelText("Semester Year:");
+        const setSeason = screen.getByLabelText("Season:");
+        const setYear = screen.getByLabelText("Year:");
         expect(setSeason).toBeInTheDocument;
         expect(setYear).toBeInTheDocument;
-        userEvent.clear(setSeason);
         userEvent.clear(setYear);
-        userEvent.type(setSeason, "Winter");
-        userEvent.type(setYear, "2020");
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Winter" })
+        );
+        userEvent.type(setYear, "2021");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
-        expect(
-            screen.getAllByRole("heading", {
-                name: /Winter - 2020/,
-                hidden: false
-            })
-        ).toBeInTheDocument; //initially semester is in the document
+        expect(screen.getAllByText(/Winter - 2021/i)).toBeInTheDocument; //initially semester is in the document
         screen
             .getAllByRole("button", { name: "Edit Semester", hidden: false })[0]
             .click();
         //edit semester
-        const editSeason = screen.getByLabelText("Semester Season:");
-        const editYear = screen.getByLabelText("Semester Year:");
-        expect(editSeason).toBeInTheDocument;
-        expect(editYear).toBeInTheDocument;
-        userEvent.clear(editSeason);
-        userEvent.clear(editYear);
-        userEvent.type(editSeason, "Fall");
-        userEvent.type(setYear, "2015");
+        const setYear2 = screen.getByLabelText("Year:");
+        userEvent.clear(setYear2);
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Fall" })
+        );
+        userEvent.type(setYear2, "2015");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
         const editedSem = screen.queryAllByText(/Fall - 2015/);
         expect(editedSem[0]).toBeInTheDocument; //new edited semester is visible
@@ -172,33 +175,33 @@ describe("Make a new plan", () => {
         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
         //make a new semester
         newSemester.click();
-        const setSeason = screen.getByLabelText("Semester Season:");
-        const setYear = screen.getByLabelText("Semester Year:");
+        const setSeason = screen.getByLabelText("Season:");
+        const setYear = screen.getByLabelText("Year:");
         expect(setSeason).toBeInTheDocument;
         expect(setYear).toBeInTheDocument;
-        userEvent.clear(setSeason);
         userEvent.clear(setYear);
-        userEvent.type(setSeason, "Winter");
-        userEvent.type(setYear, "2020");
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Winter" })
+        );
+        userEvent.type(setYear, "2021");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
-        expect(
-            screen.getAllByRole("heading", {
-                name: /Winter - 2020/,
-                hidden: false
-            })
-        ).toBeInTheDocument; //initially semester is in the document
+        expect(screen.getAllByText(/Winter - 2021/i)).toBeInTheDocument; //initially semester is in the document
         screen
             .getAllByRole("button", { name: "Edit Semester", hidden: false })[0]
             .click();
         //edit semester
-        const editSeason = screen.getByLabelText("Semester Season:");
-        const editYear = screen.getByLabelText("Semester Year:");
-        expect(editSeason).toBeInTheDocument;
-        expect(editYear).toBeInTheDocument;
-        userEvent.clear(editSeason);
-        userEvent.clear(editYear);
-        userEvent.type(editSeason, "Fall");
-        userEvent.type(setYear, "2015");
+        const setYear2 = screen.getByLabelText("Year:");
+        userEvent.clear(setYear2);
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Fall" })
+        );
+        userEvent.type(setYear2, "2015");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
         const editedSem = screen.queryAllByText(/Fall - 2015/);
         expect(editedSem[0]).toBeInTheDocument; //new edited semester is visible
@@ -217,35 +220,35 @@ describe("Make a new plan", () => {
         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
         //make a new semester
         newSemester.click();
-        const setSeason = screen.getByLabelText("Semester Season:");
-        const setYear = screen.getByLabelText("Semester Year:");
+        const setSeason = screen.getByLabelText("Season:");
+        const setYear = screen.getByLabelText("Year:");
         expect(setSeason).toBeInTheDocument;
         expect(setYear).toBeInTheDocument;
-        userEvent.clear(setSeason);
         userEvent.clear(setYear);
-        userEvent.type(setSeason, "Winter");
-        userEvent.type(setYear, "2020");
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Winter" })
+        );
+        userEvent.type(setYear, "2021");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
-        expect(
-            screen.getAllByRole("heading", {
-                name: /Winter - 2020/,
-                hidden: false
-            })
-        ).toBeInTheDocument; //initially semester is in the document
+        expect(screen.getAllByText(/Winter - 2021/i)).toBeInTheDocument; //initially semester is in the document
         screen
             .getAllByRole("button", { name: "Edit Semester", hidden: false })[0]
             .click();
-        //edit semester
-        const editSeason = screen.getByLabelText("Semester Season:");
-        const editYear = screen.getByLabelText("Semester Year:");
-        expect(editSeason).toBeInTheDocument;
-        expect(editYear).toBeInTheDocument;
-        userEvent.clear(editSeason);
-        userEvent.clear(editYear);
-        userEvent.type(editSeason, "Fall");
-        userEvent.type(setYear, "2015");
+        //edit semester but click cancel and ensure change doesnt occur
+        const setYear2 = screen.getByLabelText("Year:");
+        userEvent.clear(setYear2);
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Spring" })
+        );
+        userEvent.type(setYear2, "2015");
         screen.getByRole("button", { name: "Cancel", hidden: false }).click(); //cancel, so the semester should not change
-        const editedSem = screen.queryAllByText(/Fall - 2015/);
+        const editedSem = screen.queryAllByText(/Spring - 2015/);
         expect(editedSem[0]).not.toBeInTheDocument; //new edited semester is visible
     });
     test("Can delete all semesters", () => {
@@ -259,39 +262,39 @@ describe("Make a new plan", () => {
         const drop = screen.getByTestId("PlanSelect");
         userEvent.selectOptions(drop, "Test Plan 8");
         const newSemester = screen.getByTestId("InsertSemesterTest Plan 8");
+        //make a new semester
         newSemester.click();
-        const setSeason = screen.getByLabelText("Semester Season:");
-        const setYear = screen.getByLabelText("Semester Year:");
+        const setSeason = screen.getByLabelText("Season:");
+        const setYear = screen.getByLabelText("Year:");
         expect(setSeason).toBeInTheDocument;
         expect(setYear).toBeInTheDocument;
-        userEvent.clear(setSeason);
         userEvent.clear(setYear);
-        userEvent.type(setSeason, "Spring");
-        userEvent.type(setYear, "2020");
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Winter" })
+        );
+        userEvent.type(setYear, "2021");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
-        expect(
-            screen.getAllByRole("heading", {
-                name: /Spring - 2020/,
-                hidden: false
-            })
-        ).toBeInTheDocument;
+        expect(screen.getAllByText(/Winter - 2021/i)).toBeInTheDocument; //initially semester is in the document
         const newSemester2 = screen.getByTestId("InsertSemesterTest Plan 8");
         newSemester2.click();
-        const setSeason2 = screen.getByLabelText("Semester Season:");
-        const setYear2 = screen.getByLabelText("Semester Year:");
+        //make a new semester
+        const setSeason2 = screen.getByLabelText("Season:");
+        const setYear2 = screen.getByLabelText("Year:");
         expect(setSeason2).toBeInTheDocument;
         expect(setYear2).toBeInTheDocument;
-        userEvent.clear(setSeason2);
         userEvent.clear(setYear2);
-        userEvent.type(setSeason2, "Fall");
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Fall" })
+        );
         userEvent.type(setYear2, "2021");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
-        expect(
-            screen.getAllByRole("heading", {
-                name: /Fall - 2021/,
-                hidden: false
-            })
-        ).toBeInTheDocument;
+        expect(screen.getAllByText(/Fall - 2021/i)).toBeInTheDocument; //initially semester is in the document
         const deleteAllSem = screen.getByRole("button", {
             name: "Delete All Semesters",
             hidden: false
@@ -299,7 +302,7 @@ describe("Make a new plan", () => {
         deleteAllSem.click();
         expect(
             screen.queryAllByRole("heading", {
-                name: /Spring - 2020/,
+                name: /Winter - 2021/,
                 hidden: false
             })
         ).not.toBeInTheDocument;
@@ -325,21 +328,20 @@ describe("Make a new plan", () => {
         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
         //make a new semester
         newSemester.click();
-        const setSeason = screen.getByLabelText("Semester Season:");
-        const setYear = screen.getByLabelText("Semester Year:");
+        const setSeason = screen.getByLabelText("Season:");
+        const setYear = screen.getByLabelText("Year:");
         expect(setSeason).toBeInTheDocument;
         expect(setYear).toBeInTheDocument;
-        userEvent.clear(setSeason);
         userEvent.clear(setYear);
-        userEvent.type(setSeason, "Winter");
-        userEvent.type(setYear, "2020");
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Spring" })
+        );
+        userEvent.type(setYear, "2023");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
-        expect(
-            screen.getAllByRole("heading", {
-                name: /Winter - 2020/,
-                hidden: false
-            })
-        ).toBeInTheDocument; //initially semester is in the document
+        expect(screen.getAllByText(/Spring - 2023/i)).toBeInTheDocument; //initially semester is in the document
         //add course
         const insertButton = screen.getByRole("button", {
             name: "Insert Course",
@@ -380,21 +382,20 @@ describe("Make a new plan", () => {
         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
         //make a new semester
         newSemester.click();
-        const setSeason = screen.getByLabelText("Semester Season:");
-        const setYear = screen.getByLabelText("Semester Year:");
+        const setSeason = screen.getByLabelText("Season:");
+        const setYear = screen.getByLabelText("Year:");
         expect(setSeason).toBeInTheDocument;
         expect(setYear).toBeInTheDocument;
-        userEvent.clear(setSeason);
         userEvent.clear(setYear);
-        userEvent.type(setSeason, "Winter");
-        userEvent.type(setYear, "2020");
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Winter" })
+        );
+        userEvent.type(setYear, "2022");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
-        expect(
-            screen.getAllByRole("heading", {
-                name: /Winter - 2020/,
-                hidden: false
-            })
-        ).toBeInTheDocument; //initially semester is in the document
+        expect(screen.getAllByText(/Winter - 2022/i)).toBeInTheDocument; //initially semester is in the document
         //add course
         const insertButton = screen.queryAllByRole("button", {
             name: "Insert Course",
@@ -452,21 +453,20 @@ describe("Make a new plan", () => {
         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
         //make a new semester
         newSemester.click();
-        const setSeason = screen.getByLabelText("Semester Season:");
-        const setYear = screen.getByLabelText("Semester Year:");
+        const setSeason = screen.getByLabelText("Season:");
+        const setYear = screen.getByLabelText("Year:");
         expect(setSeason).toBeInTheDocument;
         expect(setYear).toBeInTheDocument;
-        userEvent.clear(setSeason);
         userEvent.clear(setYear);
-        userEvent.type(setSeason, "Winter");
-        userEvent.type(setYear, "2020");
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Summer" })
+        );
+        userEvent.type(setYear, "2001");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
-        expect(
-            screen.getAllByRole("heading", {
-                name: /Winter - 2020/,
-                hidden: false
-            })
-        ).toBeInTheDocument; //initially semester is in the document
+        expect(screen.getAllByText(/Summer - 2001/i)).toBeInTheDocument; //initially semester is in the document
         //add course
         const insertButton = screen.queryAllByRole("button", {
             name: "Insert Course",
@@ -518,7 +518,7 @@ describe("Make a new plan", () => {
         userEvent.type(credCount[credCount.length - 1], "3");
         const addGlobReq = screen.getAllByText("Add Requirement");
         addGlobReq[addGlobReq.length - 1].click();
-        expect(screen.getByText(/Yes/i)).toBeInTheDocument;
+        expect(screen.getByText(/✅/i)).toBeInTheDocument;
     });
     test("Can edit a plan", () => {
         //testing edit plan button
@@ -585,21 +585,20 @@ describe("Make a new plan", () => {
         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
         //make a new semester
         newSemester.click();
-        const setSeason = screen.getByLabelText("Semester Season:");
-        const setYear = screen.getByLabelText("Semester Year:");
+        const setSeason = screen.getByLabelText("Season:");
+        const setYear = screen.getByLabelText("Year:");
         expect(setSeason).toBeInTheDocument;
         expect(setYear).toBeInTheDocument;
-        userEvent.clear(setSeason);
         userEvent.clear(setYear);
-        userEvent.type(setSeason, "Winter");
-        userEvent.type(setYear, "2020");
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Winter" })
+        );
+        userEvent.type(setYear, "2021");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
-        expect(
-            screen.getAllByRole("heading", {
-                name: /Winter - 2020/,
-                hidden: false
-            })
-        ).toBeInTheDocument; //initially semester is in the document
+        expect(screen.getAllByText(/Winter - 2021/i)).toBeInTheDocument; //initially semester is in the document
         //add course
         const insertButton = screen.getByRole("button", {
             name: "Insert Course",
