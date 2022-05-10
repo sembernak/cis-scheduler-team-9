@@ -2,24 +2,24 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-FAIL src/App.test.tsx (8.748 s)
+FAIL src/App.test.tsx (7.898 s)
   Make a new plan
-    ✕ App renders with welcome message (232 ms)
-    ✓ Clicking New Plan gives a form to enter a title (232 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (133 ms)
-    ✓ Can set new plan title (811 ms)
-    ✕ Insert Semester works (245 ms)
-    ✕ Delete Semester Works (251 ms)
-    ✕ Edit Semester Works (218 ms)
-    ✕ Edit Semester Works (224 ms)
-    ✕ Edit Semester cancel button works (225 ms)
-    ✕ Can delete all semesters (214 ms)
-    ✕ Can insert a course (215 ms)
-    ✕ Can edit a course (214 ms)
-    ✕ Can set and fulfill requirements (231 ms)
-    ✓ Can edit a plan (887 ms)
-    ✓ Plan editor cancel button works (857 ms)
-    ✕ Delete all courses button works (220 ms)
+    ✕ App renders with welcome message (215 ms)
+    ✓ Clicking New Plan gives a form to enter a title (199 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (112 ms)
+    ✓ Can set new plan title (756 ms)
+    ✕ Insert Semester works (219 ms)
+    ✕ Delete Semester Works (226 ms)
+    ✕ Edit Semester Works (202 ms)
+    ✕ Edit Semester Works (206 ms)
+    ✕ Edit Semester cancel button works (208 ms)
+    ✕ Can delete all semesters (193 ms)
+    ✕ Can insert a course (192 ms)
+    ✕ Can edit a course (203 ms)
+    ✕ Can set and fulfill requirements (218 ms)
+    ✓ Can edit a plan (756 ms)
+    ✓ Plan editor cancel button works (750 ms)
+    ✕ Delete all courses button works (217 ms)
 
   ● Make a new plan › App renders with welcome message
 
@@ -121,9 +121,9 @@ FAIL src/App.test.tsx (8.748 s)
                     [33mhidden[39m=[32m""[39m
                   [36m>[39m
                     [36m<div>[39m
-                      [36m<h3>[39m
+                      [36m<h1>[39m
                         [0mPlan 1[0m
-                      [36m</h3>[39m
+                      [36m</h1>[39m
                       [36m<div[39m
                         [33mclass[39m=[32m"container"[39m
                       [36m>[39m
@@ -134,7 +134,8 @@ FAIL src/App.test.tsx (8.748 s)
                             [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                              [33mclass[39m=[32m"background1"[39m
+                              [33mstyle[39m=[32m"overflow-y: scroll; height: 80vh; width: auto; border: solid; border-width: 1px; border-radius: 8px; border-color: gray;"[39m
                             [36m>[39m
                               [36m<div[39m
                                 [33mclass[39m=[32m"semester-view container"[39m
@@ -142,10 +143,10 @@ FAIL src/App.test.tsx (8.748 s)
                                 [36m<div[39m
                                   [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
-                                  [36m<h3>[39m
+                                  [36m<h1>[39m
                                     [0mSpring - 2020[0m
                                     [36m<br />[39m
-                                  [36m</h3>[39m
+                                  [36m</h1>[39m
                                   [0m10[0m
                                   [0m [0m
                                   [0m credits[0m
@@ -188,9 +189,7 @@ FAIL src/App.test.tsx (8.748 s)
                                               [0mEdit Course[0m
                                             [36m</button>[39m
                                           [36m</div>[39m
-                                        [36m</div>[39m
-                                        [36m<button[39m
-                                          [33mclass[39m=[32m"reset-course-btn ...
+                                        [3...
 
       57 |         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
       58 |         newSemester.click();
@@ -294,9 +293,9 @@ FAIL src/App.test.tsx (8.748 s)
                     [33mhidden[39m=[32m""[39m
                   [36m>[39m
                     [36m<div>[39m
-                      [36m<h3>[39m
+                      [36m<h1>[39m
                         [0mPlan 1[0m
-                      [36m</h3>[39m
+                      [36m</h1>[39m
                       [36m<div[39m
                         [33mclass[39m=[32m"container"[39m
                       [36m>[39m
@@ -307,7 +306,8 @@ FAIL src/App.test.tsx (8.748 s)
                             [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                              [33mclass[39m=[32m"background1"[39m
+                              [33mstyle[39m=[32m"overflow-y: scroll; height: 80vh; width: auto; border: solid; border-width: 1px; border-radius: 8px; border-color: gray;"[39m
                             [36m>[39m
                               [36m<div[39m
                                 [33mclass[39m=[32m"semester-view container"[39m
@@ -315,10 +315,10 @@ FAIL src/App.test.tsx (8.748 s)
                                 [36m<div[39m
                                   [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
-                                  [36m<h3>[39m
+                                  [36m<h1>[39m
                                     [0mSpring - 2020[0m
                                     [36m<br />[39m
-                                  [36m</h3>[39m
+                                  [36m</h1>[39m
                                   [0m10[0m
                                   [0m [0m
                                   [0m credits[0m
@@ -358,9 +358,7 @@ FAIL src/App.test.tsx (8.748 s)
                                               [33mclass[39m=[32m"default-button btn btn-primary btn-sm"[39m
                                               [33mtype[39m=[32m"button"[39m
                                             [36m>[39m
-                                              [0mEdit Course[0m
-                                            [36m</button>[39m
-                                       ...
+                ...
 
       87 |         //make a new semester
       88 |         newSemester.click();
@@ -469,9 +467,9 @@ FAIL src/App.test.tsx (8.748 s)
                     [33mhidden[39m=[32m""[39m
                   [36m>[39m
                     [36m<div>[39m
-                      [36m<h3>[39m
+                      [36m<h1>[39m
                         [0mPlan 1[0m
-                      [36m</h3>[39m
+                      [36m</h1>[39m
                       [36m<div[39m
                         [33mclass[39m=[32m"container"[39m
                       [36m>[39m
@@ -482,7 +480,8 @@ FAIL src/App.test.tsx (8.748 s)
                             [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                              [33mclass[39m=[32m"background1"[39m
+                              [33mstyle[39m=[32m"overflow-y: scroll; height: 80vh; width: auto; border: solid; border-width: 1px; border-radius: 8px; border-color: gray;"[39m
                             [36m>[39m
                               [36m<div[39m
                                 [33mclass[39m=[32m"semester-view container"[39m
@@ -490,10 +489,10 @@ FAIL src/App.test.tsx (8.748 s)
                                 [36m<div[39m
                                   [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
-                                  [36m<h3>[39m
+                                  [36m<h1>[39m
                                     [0mSpring - 2020[0m
                                     [36m<br />[39m
-                                  [36m</h3>[39m
+                                  [36m</h1>[39m
                                   [0m10[0m
                                   [0m [0m
                                   [0m credits[0m
@@ -530,9 +529,7 @@ FAIL src/App.test.tsx (8.748 s)
                                         [36m>[39m
                                           [36m<div>[39m
                                             [36m<button[39m
-                                              [33mclass[39m=[32m"default-button btn btn-primary btn-sm"[39m
-                                              [33mtype[39m=[32m"button"[39m
-         ...
+                                              [...
 
       128 |         //make a new semester
       129 |         newSemester.click();
@@ -646,9 +643,9 @@ FAIL src/App.test.tsx (8.748 s)
                     [33mhidden[39m=[32m""[39m
                   [36m>[39m
                     [36m<div>[39m
-                      [36m<h3>[39m
+                      [36m<h1>[39m
                         [0mPlan 1[0m
-                      [36m</h3>[39m
+                      [36m</h1>[39m
                       [36m<div[39m
                         [33mclass[39m=[32m"container"[39m
                       [36m>[39m
@@ -659,7 +656,8 @@ FAIL src/App.test.tsx (8.748 s)
                             [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                              [33mclass[39m=[32m"background1"[39m
+                              [33mstyle[39m=[32m"overflow-y: scroll; height: 80vh; width: auto; border: solid; border-width: 1px; border-radius: 8px; border-color: gray;"[39m
                             [36m>[39m
                               [36m<div[39m
                                 [33mclass[39m=[32m"semester-view container"[39m
@@ -667,10 +665,10 @@ FAIL src/App.test.tsx (8.748 s)
                                 [36m<div[39m
                                   [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
-                                  [36m<h3>[39m
+                                  [36m<h1>[39m
                                     [0mSpring - 2020[0m
                                     [36m<br />[39m
-                                  [36m</h3>[39m
+                                  [36m</h1>[39m
                                   [0m10[0m
                                   [0m [0m
                                   [0m credits[0m
@@ -704,9 +702,7 @@ FAIL src/App.test.tsx (8.748 s)
                                       [36m>[39m
                                         [36m<div[39m
                                           [33mclass[39m=[32m"row"[39m
-                                        [36m>[39m
-                                          [36m<div>[39m
-                                            [3...
+    ...
 
       173 |         //make a new semester
       174 |         newSemester.click();
@@ -825,9 +821,9 @@ FAIL src/App.test.tsx (8.748 s)
                     [33mhidden[39m=[32m""[39m
                   [36m>[39m
                     [36m<div>[39m
-                      [36m<h3>[39m
+                      [36m<h1>[39m
                         [0mPlan 1[0m
-                      [36m</h3>[39m
+                      [36m</h1>[39m
                       [36m<div[39m
                         [33mclass[39m=[32m"container"[39m
                       [36m>[39m
@@ -838,7 +834,8 @@ FAIL src/App.test.tsx (8.748 s)
                             [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                              [33mclass[39m=[32m"background1"[39m
+                              [33mstyle[39m=[32m"overflow-y: scroll; height: 80vh; width: auto; border: solid; border-width: 1px; border-radius: 8px; border-color: gray;"[39m
                             [36m>[39m
                               [36m<div[39m
                                 [33mclass[39m=[32m"semester-view container"[39m
@@ -846,10 +843,10 @@ FAIL src/App.test.tsx (8.748 s)
                                 [36m<div[39m
                                   [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
-                                  [36m<h3>[39m
+                                  [36m<h1>[39m
                                     [0mSpring - 2020[0m
                                     [36m<br />[39m
-                                  [36m</h3>[39m
+                                  [36m</h1>[39m
                                   [0m10[0m
                                   [0m [0m
                                   [0m credits[0m
@@ -879,10 +876,7 @@ FAIL src/App.test.tsx (8.748 s)
                                       [36m<br />[39m
                                       [0m[0m
                                       [36m<div[39m
-                                        [33mclass[39m=[32m"col"[39m
-                                      [36m>[39m
-                                        [36m<div[39m
-               ...
+                                   ...
 
       218 |         //make a new semester
       219 |         newSemester.click();
@@ -1006,9 +1000,9 @@ FAIL src/App.test.tsx (8.748 s)
                     [33mhidden[39m=[32m""[39m
                   [36m>[39m
                     [36m<div>[39m
-                      [36m<h3>[39m
+                      [36m<h1>[39m
                         [0mPlan 1[0m
-                      [36m</h3>[39m
+                      [36m</h1>[39m
                       [36m<div[39m
                         [33mclass[39m=[32m"container"[39m
                       [36m>[39m
@@ -1019,7 +1013,8 @@ FAIL src/App.test.tsx (8.748 s)
                             [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                              [33mclass[39m=[32m"background1"[39m
+                              [33mstyle[39m=[32m"overflow-y: scroll; height: 80vh; width: auto; border: solid; border-width: 1px; border-radius: 8px; border-color: gray;"[39m
                             [36m>[39m
                               [36m<div[39m
                                 [33mclass[39m=[32m"semester-view container"[39m
@@ -1027,10 +1022,10 @@ FAIL src/App.test.tsx (8.748 s)
                                 [36m<div[39m
                                   [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
-                                  [36m<h3>[39m
+                                  [36m<h1>[39m
                                     [0mSpring - 2020[0m
                                     [36m<br />[39m
-                                  [36m</h3>[39m
+                                  [36m</h1>[39m
                                   [0m10[0m
                                   [0m [0m
                                   [0m credits[0m
@@ -1056,10 +1051,7 @@ FAIL src/App.test.tsx (8.748 s)
                                       [36m<br />[39m
                                       [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
                                       [36m<br />[39m
-                                      [0m[0m
-                                      [36m<br />[39m
-                                      [0m[0m
-                         ...
+                 ...
 
       261 |         const newSemester = screen.getByTestId("InsertSemesterTest Plan 8");
       262 |         newSemester.click();
@@ -1188,9 +1180,9 @@ FAIL src/App.test.tsx (8.748 s)
                     [33mhidden[39m=[32m""[39m
                   [36m>[39m
                     [36m<div>[39m
-                      [36m<h3>[39m
+                      [36m<h1>[39m
                         [0mPlan 1[0m
-                      [36m</h3>[39m
+                      [36m</h1>[39m
                       [36m<div[39m
                         [33mclass[39m=[32m"container"[39m
                       [36m>[39m
@@ -1201,7 +1193,8 @@ FAIL src/App.test.tsx (8.748 s)
                             [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                              [33mclass[39m=[32m"background1"[39m
+                              [33mstyle[39m=[32m"overflow-y: scroll; height: 80vh; width: auto; border: solid; border-width: 1px; border-radius: 8px; border-color: gray;"[39m
                             [36m>[39m
                               [36m<div[39m
                                 [33mclass[39m=[32m"semester-view container"[39m
@@ -1209,10 +1202,10 @@ FAIL src/App.test.tsx (8.748 s)
                                 [36m<div[39m
                                   [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
-                                  [36m<h3>[39m
+                                  [36m<h1>[39m
                                     [0mSpring - 2020[0m
                                     [36m<br />[39m
-                                  [36m</h3>[39m
+                                  [36m</h1>[39m
                                   [0m10[0m
                                   [0m [0m
                                   [0m credits[0m
@@ -1236,8 +1229,7 @@ FAIL src/App.test.tsx (8.748 s)
                                       [0m [0m
                                       [0m credits[0m
                                       [36m<br />[39m
-                                      [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.[0m
-         ...
+                                      [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies....
 
       326 |         //make a new semester
       327 |         newSemester.click();
@@ -1371,9 +1363,9 @@ FAIL src/App.test.tsx (8.748 s)
                     [33mhidden[39m=[32m""[39m
                   [36m>[39m
                     [36m<div>[39m
-                      [36m<h3>[39m
+                      [36m<h1>[39m
                         [0mPlan 1[0m
-                      [36m</h3>[39m
+                      [36m</h1>[39m
                       [36m<div[39m
                         [33mclass[39m=[32m"container"[39m
                       [36m>[39m
@@ -1384,7 +1376,8 @@ FAIL src/App.test.tsx (8.748 s)
                             [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                              [33mclass[39m=[32m"background1"[39m
+                              [33mstyle[39m=[32m"overflow-y: scroll; height: 80vh; width: auto; border: solid; border-width: 1px; border-radius: 8px; border-color: gray;"[39m
                             [36m>[39m
                               [36m<div[39m
                                 [33mclass[39m=[32m"semester-view container"[39m
@@ -1392,10 +1385,10 @@ FAIL src/App.test.tsx (8.748 s)
                                 [36m<div[39m
                                   [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
-                                  [36m<h3>[39m
+                                  [36m<h1>[39m
                                     [0mSpring - 2020[0m
                                     [36m<br />[39m
-                                  [36m</h3>[39m
+                                  [36m</h1>[39m
                                   [0m10[0m
                                   [0m [0m
                                   [0m credits[0m
@@ -1419,7 +1412,7 @@ FAIL src/App.test.tsx (8.748 s)
                                       [0m [0m
                                       [0m credits[0m
                                       [36m<br />[39m
-                                      [0mSurvey of financial and managerial accounting concepts for the non-business major. Students learn about financial statem...
+                 ...
 
       381 |         //make a new semester
       382 |         newSemester.click();
@@ -1483,7 +1476,39 @@ FAIL src/App.test.tsx (8.748 s)
                       [33mdata-testid[39m=[32m"PlanSelect"[39m
                       [33mid[39m=[32m"planDrop"[39m
                     [36m>[39m
-                      [36m<option[39m
+        -----------------------------|---------|----------|---------|---------|-----------------------------------------
+File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                       
+-----------------------------|---------|----------|---------|---------|-----------------------------------------
+All files                    |      37 |    29.03 |   23.39 |   37.57 |                                         
+ src                         |   34.25 |    10.71 |   11.53 |    34.9 |                                         
+  App.tsx                    |   34.25 |    10.71 |   11.53 |    34.9 | 106,118-121,127,135-261,290-297,310-394 
+ src/components              |    37.2 |    44.11 |   27.96 |   37.73 |                                         
+  courseEditor.tsx           |       0 |      100 |       0 |       0 | 28-264                                  
+  coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 61-83,129-142                           
+  coursePoolView.tsx         |       0 |        0 |       0 |       0 | 23-50                                   
+  courseView.tsx             |   66.66 |    66.66 |   33.33 |   66.66 | 23,58                                   
+  insertCourse.tsx           |       0 |      100 |       0 |       0 | 28-219                                  
+  insertPlan.tsx             |     100 |      100 |     100 |     100 |                                         
+  insertSemester.tsx         |   41.66 |      100 |      20 |   41.66 | 37-53,70-97                             
+  planEditor.tsx             |      75 |      100 |   57.14 |   81.81 | 30-31                                   
+  planView.tsx               |      75 |      100 |   66.66 |      75 | 94-112                                  
+  planViewer.tsx             |    87.5 |    66.66 |     100 |    87.5 | 48                                      
+  recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                                         
+  recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                                       
+  recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                                         
+  requirements.tsx           |   21.42 |        0 |      10 |   21.42 | 28-49,67-126                            
+  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 18-82                                   
+  semesterView.tsx           |   44.44 |       50 |   31.25 |   47.05 | 42-46,82,86-87,91-110,142-157,178-192   
+  welcomeMessage.tsx         |     100 |      100 |     100 |     100 |                                         
+ src/helper_functions        |     100 |      100 |     100 |     100 |                                         
+  unpackJSON.tsx             |     100 |      100 |     100 |     100 |                                         
+ src/interfaces              |       0 |        0 |       0 |       0 |                                         
+  course.ts                  |       0 |        0 |       0 |       0 |                                         
+  plan.ts                    |       0 |        0 |       0 |       0 |                                         
+  requirement.ts             |       0 |        0 |       0 |       0 |                                         
+  semester.ts                |       0 |        0 |       0 |       0 |                                         
+-----------------------------|---------|----------|---------|---------|-----------------------------------------
+              [36m<option[39m
                         [33mvalue[39m=[32m"Plan 1"[39m
                       [36m>[39m
                         [0mPlan 1[0m
@@ -1558,9 +1583,9 @@ FAIL src/App.test.tsx (8.748 s)
                     [33mhidden[39m=[32m""[39m
                   [36m>[39m
                     [36m<div>[39m
-                      [36m<h3>[39m
+                      [36m<h1>[39m
                         [0mPlan 1[0m
-                      [36m</h3>[39m
+                      [36m</h1>[39m
                       [36m<div[39m
                         [33mclass[39m=[32m"container"[39m
                       [36m>[39m
@@ -1571,7 +1596,8 @@ FAIL src/App.test.tsx (8.748 s)
                             [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                              [33mclass[39m=[32m"background1"[39m
+                              [33mstyle[39m=[32m"overflow-y: scroll; height: 80vh; width: auto; border: solid; border-width: 1px; border-radius: 8px; border-color: gray;"[39m
                             [36m>[39m
                               [36m<div[39m
                                 [33mclass[39m=[32m"semester-view container"[39m
@@ -1579,10 +1605,10 @@ FAIL src/App.test.tsx (8.748 s)
                                 [36m<div[39m
                                   [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
-                                  [36m<h3>[39m
+                                  [36m<h1>[39m
                                     [0mSpring - 2020[0m
                                     [36m<br />[39m
-                                  [36m</h3>[39m
+                                  [36m</h1>[39m
                                   [0m10[0m
                                   [0m [0m
                                   [0m credits[0m
@@ -1601,11 +1627,7 @@ FAIL src/App.test.tsx (8.748 s)
                                         [0m - [0m
                                         [0m [0m
                                         [0mSurvey of Accounting[0m
-                                      [36m</h3>[39m
-                                      [0m 4[0m
-                                      [0m [0m
-                                      [0m credits[0m
-       ...
+                                      [36m</h3>[39...
 
       453 |         //make a new semester
       454 |         newSemester.click();
@@ -1759,9 +1781,9 @@ FAIL src/App.test.tsx (8.748 s)
                     [33mhidden[39m=[32m""[39m
                   [36m>[39m
                     [36m<div>[39m
-                      [36m<h3>[39m
+                      [36m<h1>[39m
                         [0mPlan 1[0m
-                      [36m</h3>[39m
+                      [36m</h1>[39m
                       [36m<div[39m
                         [33mclass[39m=[32m"container"[39m
                       [36m>[39m
@@ -1772,7 +1794,8 @@ FAIL src/App.test.tsx (8.748 s)
                             [33mclass[39m=[32m"row-equal col"[39m
                           [36m>[39m
                             [36m<div[39m
-                              [33mclass[39m=[32m"bg-light border m-2 p-2 contains-semester"[39m
+                              [33mclass[39m=[32m"background1"[39m
+                              [33mstyle[39m=[32m"overflow-y: scroll; height: 80vh; width: auto; border: solid; border-width: 1px; border-radius: 8px; border-color: gray;"[39m
                             [36m>[39m
                               [36m<div[39m
                                 [33mclass[39m=[32m"semester-view container"[39m
@@ -1780,10 +1803,10 @@ FAIL src/App.test.tsx (8.748 s)
                                 [36m<div[39m
                                   [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
-                                  [36m<h3>[39m
+                                  [36m<h1>[39m
                                     [0mSpring - 2020[0m
                                     [36m<br />[39m
-                                  [36m</h3>[39m
+                                  [36m</h1>[39m
                                   [0m10[0m
                                   [0m [0m
                                   [0m credits[0m
@@ -1791,10 +1814,7 @@ FAIL src/App.test.tsx (8.748 s)
                                   [36m<div[39m
                                     [33mdraggable[39m=[32m"true"[39m
                                     [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Spring2020Plan 1&*&*%*"[39m
-                                  [36m>[39m
-                                    [36m<div[39m
-                                      [33mclass[39m=[32m"col"[39m
-      ...
+                ...
 
       586 |         //make a new semester
       587 |         newSemester.click();
@@ -1814,40 +1834,8 @@ FAIL src/App.test.tsx (8.748 s)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
------------------------------|---------|----------|---------|---------|-----------------------------------------
-File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                       
------------------------------|---------|----------|---------|---------|-----------------------------------------
-All files                    |      37 |    29.03 |   23.39 |   37.57 |                                         
- src                         |   34.25 |    10.71 |   11.53 |    34.9 |                                         
-  App.tsx                    |   34.25 |    10.71 |   11.53 |    34.9 | 106,118-121,127,135-261,290-297,310-394 
- src/components              |    37.2 |    44.11 |   27.96 |   37.73 |                                         
-  courseEditor.tsx           |       0 |      100 |       0 |       0 | 28-244                                  
-  coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 61-83,129-142                           
-  coursePoolView.tsx         |       0 |        0 |       0 |       0 | 23-50                                   
-  courseView.tsx             |   66.66 |    66.66 |   33.33 |   66.66 | 23,58                                   
-  insertCourse.tsx           |       0 |      100 |       0 |       0 | 28-205                                  
-  insertPlan.tsx             |     100 |      100 |     100 |     100 |                                         
-  insertSemester.tsx         |   41.66 |      100 |      20 |   41.66 | 37-53,70-97                             
-  planEditor.tsx             |      75 |      100 |   57.14 |   81.81 | 30-31                                   
-  planView.tsx               |      75 |      100 |   66.66 |      75 | 83-101                                  
-  planViewer.tsx             |    87.5 |    66.66 |     100 |    87.5 | 48                                      
-  recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                                         
-  recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                                       
-  recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                                         
-  requirements.tsx           |   21.42 |        0 |      10 |   21.42 | 29-50,68-125                            
-  semesterEditor.tsx         |       0 |      100 |       0 |       0 | 18-82                                   
-  semesterView.tsx           |   44.44 |       50 |   31.25 |   47.05 | 42-46,82,86-87,91-110,142-157,179-193   
-  welcomeMessage.tsx         |     100 |      100 |     100 |     100 |                                         
- src/helper_functions        |     100 |      100 |     100 |     100 |                                         
-  unpackJSON.tsx             |     100 |      100 |     100 |     100 |                                         
- src/interfaces              |       0 |        0 |       0 |       0 |                                         
-  course.ts                  |       0 |        0 |       0 |       0 |                                         
-  plan.ts                    |       0 |        0 |       0 |       0 |                                         
-  requirement.ts             |       0 |        0 |       0 |       0 |                                         
-  semester.ts                |       0 |        0 |       0 |       0 |                                         
------------------------------|---------|----------|---------|---------|-----------------------------------------
 Test Suites: 1 failed, 1 total
 Tests:       11 failed, 5 passed, 16 total
 Snapshots:   0 total
-Time:        9.502 s
+Time:        8.586 s
 Ran all test suites.
