@@ -1,3 +1,4 @@
+//import { hasSelectionSupport } from "@testing-library/user-event/dist/utils";
 import React, { useState } from "react";
 import { Button, Container } from "react-bootstrap";
 import { Course } from "../interfaces/course";
