@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 import React, { useState } from "react";
 import unpackJson from "./helper_functions/unpackJSON";
 import catalog from "./catalog.json";
