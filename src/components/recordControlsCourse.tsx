@@ -9,7 +9,7 @@ export function RecordControlsCourse({
     return (
         <div>
             <Button
-                className="edit-course-btn"
+                className="default-button"
                 size="sm"
                 onClick={changeEditing}
             >

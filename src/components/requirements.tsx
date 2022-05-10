@@ -50,13 +50,24 @@ export function Requirements({
         return compCred >= needCred;
     }
     return (
-        <div>
-            <FormLabel>Degree Requirements:</FormLabel>
+        <div
+            style={{
+                overflowY: "scroll",
+                height: "60vh",
+                width: "auto",
+                border: "solid",
+                borderWidth: "1px",
+                borderRadius: "8px",
+                borderColor: "gray"
+            }}
+            className="background1"
+        >
+            <h3>Degree Requirements:</h3>
             {requires.map(
                 (req: Requirement): JSX.Element => (
                     <Container key={req.name}>
                         <Row>
-                            <Col md={10}>
+                            <Col md={8}>
                                 <FormControl
                                     readOnly
                                     value={req.name}
@@ -80,7 +91,7 @@ export function Requirements({
                                     X
                                 </Button>
                             </Col>
-                            <Col md={1}>
+                            <Col md={2}>
                                 <p>Required Credits: {req.credits}</p>
                                 <p>
                                     Met?{" "}
@@ -94,7 +105,7 @@ export function Requirements({
                 )
             )}
             <InputGroup as={Container}>
-                <Col md={8}>
+                <Col md={6}>
                     <FormControl
                         placeholder="New Requirement"
                         value={newRequire}
@@ -118,6 +129,7 @@ export function Requirements({
                     <Button
                         variant="outline-secondary"
                         onClick={manageNewRequire}
+                        className="default-button"
                     >
                         Add Requirement
                     </Button>

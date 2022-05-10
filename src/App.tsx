@@ -1,4 +1,3 @@
-/* eslint-disable indent */
 import React, { useState } from "react";
 import unpackJson from "./helper_functions/unpackJSON";
 import catalog from "./catalog.json";
@@ -8,12 +7,10 @@ import { PlanViewer } from "./components/planViewer";
 import { Plan } from "./interfaces/plan";
 import { Semester } from "./interfaces/semester";
 import { CoursePool } from "./components/coursePool";
-import { Button /*, Container*/ } from "react-bootstrap";
+import { Button /*, Container*/, Col, Row } from "react-bootstrap";
 import { Requirements } from "./components/requirements";
 import { Requirement } from "./interfaces/requirement";
 import { WelcomeMessage } from "./components/welcomeMessage";
-//import userEvent from "@testing-library/user-event";
-//import { textSpanContainsPosition } from "typescript";
 
 const COURSELIST = [
     //Complete list of every course in order of department (see catalog.json)
@@ -272,18 +269,19 @@ function App(): JSX.Element {
             )
         );
     }
-
+    //editPlan() had issues with lint and prettier disagreeing so we had to switch to if statements
     function editPlan(id: string, newPlan: Plan) {
         setPlans(
-            plans.map(
-                (plan: Plan): Plan =>
-                    plan.id === id
-                        ? {
-                              ...newPlan,
-                              semesters: sortSemesters(newPlan.semesters)
-                          }
-                        : plan
-            )
+            plans.map((plan: Plan): Plan => {
+                if (plan.id === id) {
+                    return {
+                        ...newPlan,
+                        semesters: sortSemesters(newPlan.semesters)
+                    };
+                } else {
+                    return plan;
+                }
+            })
         );
         select(newPlan.title);
     }
@@ -321,6 +319,7 @@ function App(): JSX.Element {
         }
     }
 
+    //had to use if statements in addCourse() to avoid lint/prettier conflict
     function addCourse(
         code: string,
         newCourse: Course,
@@ -349,16 +348,19 @@ function App(): JSX.Element {
                     (newPlan: Plan): Plan => ({
                         ...newPlan,
                         semesters: newPlan.semesters.map(
-                            (semester1: Semester): Semester =>
-                                semester1.id === semesterId
-                                    ? {
-                                          ...semester1,
-                                          courses: [
-                                              ...semester1.courses,
-                                              newCourse
-                                          ]
-                                      }
-                                    : { ...semester1 }
+                            (semester1: Semester): Semester => {
+                                if (semester1.id === semesterId) {
+                                    return {
+                                        ...semester1,
+                                        courses: [
+                                            ...semester1.courses,
+                                            newCourse
+                                        ]
+                                    };
+                                } else {
+                                    return { ...semester1 };
+                                }
+                            }
                         )
                     })
                 )
@@ -406,41 +408,45 @@ function App(): JSX.Element {
             </header>
             <div className="schedule">
                 <br></br>
-                <div>
-                    <PlanViewer
-                        deleteAllCourses={deleteAllCourses}
-                        select={select}
-                        selection={selection}
-                        planList={plans}
-                        deleteSemester={deleteSemester}
-                        deleteAllSemesters={deleteAllSemesters}
-                        deletePlan={deletePlan}
-                        deleteCourse={deleteCourse}
-                        editCourse={editCourse}
-                        editPlan={editPlan}
-                        editSemester={editSemester}
-                        addPlan={addPlan}
-                        resetCourse={resetCourse}
-                        addCourse={addCourse}
-                    ></PlanViewer>
-                </div>
+                <Row>
+                    <Col sm={8}>
+                        <PlanViewer
+                            deleteAllCourses={deleteAllCourses}
+                            select={select}
+                            selection={selection}
+                            planList={plans}
+                            deleteSemester={deleteSemester}
+                            deleteAllSemesters={deleteAllSemesters}
+                            deletePlan={deletePlan}
+                            deleteCourse={deleteCourse}
+                            editCourse={editCourse}
+                            editPlan={editPlan}
+                            editSemester={editSemester}
+                            addPlan={addPlan}
+                            resetCourse={resetCourse}
+                            addCourse={addCourse}
+                        ></PlanViewer>
+                    </Col>
+                    <Col sm={4}>
+                        <Requirements
+                            plan={
+                                plans.find(
+                                    (plan: Plan): boolean =>
+                                        plan.title === selection
+                                ) as Plan
+                            }
+                            requires={requires}
+                            setRequires={setRequires}
+                        ></Requirements>
+                        <br></br>
+                        <br></br>
+                        <CoursePool addCourse={addCourse}></CoursePool>
+                    </Col>
+                </Row>
             </div>
             <br></br>
             <Button onClick={saveData}>Save Data</Button>
             <Button onClick={makeCSV}>Download Plan</Button>
-            <br></br>
-            <br></br>
-            <h3>Course Pool:</h3>
-            <CoursePool addCourse={addCourse}></CoursePool>
-            <Requirements
-                plan={
-                    plans.find(
-                        (plan: Plan): boolean => plan.title === selection
-                    ) as Plan
-                }
-                requires={requires}
-                setRequires={setRequires}
-            ></Requirements>
         </div>
     );
 }
