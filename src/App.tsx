@@ -11,6 +11,7 @@ import { Button /*, Container*/, Col, Form, Row } from "react-bootstrap";
 import { Requirements } from "./components/requirements";
 import { Requirement } from "./interfaces/requirement";
 import { WelcomeMessage } from "./components/welcomeMessage";
+import { examplePlan1, examplePlan2 } from "./helper_functions/initialData";
 
 const COURSELIST = [
     //Complete list of every course in order of department (see catalog.json)
@@ -33,69 +34,7 @@ for (i in catalog) {
         COURSELIST.push(unpackJson(i, j));
     }
 }
-const course1 = {
-    ...COURSELIST[1],
-    semesterId: "Spring2020Plan 1"
-};
 
-const course2 = {
-    ...COURSELIST[34],
-    semesterId: "Spring2020Plan 1"
-};
-
-const course3 = {
-    ...COURSELIST[12],
-    semesterId: "Spring2020Plan 1"
-};
-
-const course4 = {
-    ...COURSELIST[1],
-    semesterId: "Winter2019Plan 1"
-};
-
-const course5 = {
-    ...COURSELIST[433],
-    semesterId: "Winter2019Plan 2"
-};
-
-const exampleSem2 = {
-    season: "Spring",
-    year: 2020,
-    totalCredits: "15",
-    courses: [course1, course2, course3],
-    id: "Spring2020Plan 1",
-    planId: "Plan 1"
-};
-
-const exampleSem3 = {
-    season: "Winter",
-    year: 2019,
-    totalCredits: "6",
-    courses: [course4],
-    id: "Winter2019Plan 1",
-    planId: "Plan 1"
-};
-
-const exampleSem4 = {
-    season: "Winter",
-    year: 2019,
-    totalCredits: "6",
-    courses: [course5],
-    id: "Winter2019Plan 2",
-    planId: "Plan 2"
-};
-
-const examplePlan1 = {
-    title: "Plan 1",
-    semesters: [exampleSem2, exampleSem3],
-    id: "Plan 1"
-};
-
-const examplePlan2 = {
-    title: "Plan 2",
-    semesters: [exampleSem4],
-    id: "Plan 2"
-};
 //save data information
 const PLANS = [examplePlan1, examplePlan2];
 let loadedData = PLANS; //initial save data = initial plan

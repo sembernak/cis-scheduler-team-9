@@ -58,7 +58,6 @@ export function CourseView({
                 <p id={course.code + course.semesterId + "description"}>
                     {course.description};
                 </p>
-                <br></br>
                 {preRecs.length === 0 ? "" : "Prerequisites: " + preRecs}
                 <br></br>
                 {requirements.length === 0
@@ -75,6 +74,7 @@ export function CourseView({
                             resetCourse(course.code, course.semesterId)
                         }
                         className="reset-course-btn"
+                        data-testid="reset-btn"
                     >
                         &#8634; Reset
                     </Button>
