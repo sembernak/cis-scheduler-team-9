@@ -23,7 +23,9 @@ export function CourseView({
     }
 
     function showDes() {
-        const show = document.getElementById(course.code + "description");
+        const show = document.getElementById(
+            course.code + course.semesterId + "description"
+        );
         if (show === null) {
             return;
         } else if (show.style.display === "none") {
@@ -53,7 +55,9 @@ export function CourseView({
                     &#10549;
                 </Button>
                 <br></br>
-                <p id={course.code + "description"}>{course.description};</p>
+                <p id={course.code + course.semesterId + "description"}>
+                    {course.description};
+                </p>
                 <br></br>
                 {preRecs.length === 0 ? "" : "Prerequisites: " + preRecs}
                 <br></br>
