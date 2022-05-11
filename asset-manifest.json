@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/cis-scheduler-team-9/static/css/main.01652516.css",
-    "main.js": "/cis-scheduler-team-9/static/js/main.286ac6cc.js",
+    "main.css": "/cis-scheduler-team-9/static/css/main.4d97dc99.css",
+    "main.js": "/cis-scheduler-team-9/static/js/main.7f418c99.js",
     "static/js/787.4ef7427d.chunk.js": "/cis-scheduler-team-9/static/js/787.4ef7427d.chunk.js",
     "index.html": "/cis-scheduler-team-9/index.html",
-    "main.01652516.css.map": "/cis-scheduler-team-9/static/css/main.01652516.css.map",
-    "main.286ac6cc.js.map": "/cis-scheduler-team-9/static/js/main.286ac6cc.js.map",
+    "main.4d97dc99.css.map": "/cis-scheduler-team-9/static/css/main.4d97dc99.css.map",
+    "main.7f418c99.js.map": "/cis-scheduler-team-9/static/js/main.7f418c99.js.map",
     "787.4ef7427d.chunk.js.map": "/cis-scheduler-team-9/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.01652516.css",
-    "static/js/main.286ac6cc.js"
+    "static/css/main.4d97dc99.css",
+    "static/js/main.7f418c99.js"
   ]
 }
