@@ -2,36 +2,36 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-PASS src/App.test.tsx (28.261 s)
+PASS src/App.test.tsx (28.29 s)
   Make a new plan
-    ✓ App renders with welcome message (210 ms)
-    ✓ Clicking New Plan gives a form to enter a title (220 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (113 ms)
-    ✓ Can set new plan title (773 ms)
-    ✓ Insert Semester works (1264 ms)
-    ✓ Delete Semester Works (1293 ms)
-    ✓ Edit Semester Works (2155 ms)
-    ✓ Edit Semester Works (2118 ms)
-    ✓ Edit Semester cancel button works (2120 ms)
-    ✓ Can delete all semesters (2179 ms)
-    ✓ Can insert a course (1939 ms)
-    ✓ Can edit a course (2832 ms)
-    ✓ Can set and fulfill requirements (3039 ms)
-    ✓ Can edit a plan (722 ms)
-    ✓ Plan editor cancel button works (721 ms)
-    ✓ Delete all courses button works (3345 ms)
+    ✓ App renders with welcome message (206 ms)
+    ✓ Clicking New Plan gives a form to enter a title (204 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (115 ms)
+    ✓ Can set new plan title (721 ms)
+    ✓ Insert Semester works (1267 ms)
+    ✓ Delete Semester Works (1314 ms)
+    ✓ Edit Semester Works (2165 ms)
+    ✓ Edit Semester Works (2142 ms)
+    ✓ Edit Semester cancel button works (2156 ms)
+    ✓ Can delete all semesters (2206 ms)
+    ✓ Can insert a course (1925 ms)
+    ✓ Can edit a course (2877 ms)
+    ✓ Can set and fulfill requirements (3095 ms)
+    ✓ Can edit a plan (732 ms)
+    ✓ Plan editor cancel button works (745 ms)
+    ✓ Delete all courses button works (3441 ms)
 
 -----------------------------|---------|----------|---------|---------|-----------------------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                       
 -----------------------------|---------|----------|---------|---------|-----------------------------------------
-All files                    |   63.74 |    48.57 |   56.97 |   64.88 |                                         
+All files                    |   62.64 |    45.94 |   56.64 |   63.74 |                                         
  src                         |   56.63 |    33.33 |   52.94 |   57.65 |                                         
   App.tsx                    |   56.63 |    33.33 |   52.94 |   57.65 | 109,112,141-142,149-173,206-215,302-386 
- src/components              |   66.66 |     64.7 |   58.33 |   67.87 |                                         
+ src/components              |   64.93 |    57.89 |   57.85 |   66.07 |                                         
   courseEditor.tsx           |   67.85 |      100 |   52.94 |   67.85 | 55-64,174-177,220-264                   
   coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 61-83,130-143                           
   coursePoolView.tsx         |       0 |        0 |       0 |       0 | 23-50                                   
-  courseView.tsx             |   83.33 |      100 |   66.66 |   83.33 | 58                                      
+  courseView.tsx             |   41.66 |       60 |      50 |   41.66 | 26-34,75                                
   insertCourse.tsx           |   58.06 |      100 |   35.29 |   58.06 | 49,75-89,158-219                        
   insertPlan.tsx             |     100 |      100 |     100 |     100 |                                         
   insertSemester.tsx         |   91.66 |      100 |      80 |   91.66 | 37                                      
