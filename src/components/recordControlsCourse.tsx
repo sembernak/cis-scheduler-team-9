@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Button, Col } from "react-bootstrap";
 
 export function RecordControlsCourse({
     changeEditing
@@ -7,7 +7,7 @@ export function RecordControlsCourse({
     changeEditing: () => void;
 }): JSX.Element {
     return (
-        <div>
+        <Col>
             <Button
                 className="edit-course-btn"
                 size="sm"
@@ -15,6 +15,6 @@ export function RecordControlsCourse({
             >
                 &#9998; Edit Course
             </Button>
-        </div>
+        </Col>
     );
 }
