@@ -2,24 +2,26 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-FAIL src/App.test.tsx (44.835 s)
+FAIL src/App.test.tsx (56.733 s)
   Make a new plan
-    ✓ App renders with welcome message (240 ms)
-    ✓ Clicking New Plan gives a form to enter a title (241 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (129 ms)
-    ✓ Can set new plan title (844 ms)
-    ✓ Insert Semester works (1490 ms)
-    ✓ Delete Semester Works (1538 ms)
-    ✓ Edit Semester Works (2595 ms)
-    ✓ Edit Semester Works (2454 ms)
-    ✓ Edit Semester cancel button works (2479 ms)
-    ✓ Can delete all semesters (2554 ms)
-    ✓ Can insert a course (2273 ms)
-    ✕ Can edit a course (9298 ms)
-    ✕ Can set and fulfill requirements (9394 ms)
-    ✓ Can edit a plan (874 ms)
-    ✓ Plan editor cancel button works (855 ms)
-    ✓ Delete all courses button works (4021 ms)
+    ✓ App renders with welcome message (262 ms)
+    ✓ Clicking New Plan gives a form to enter a title (276 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (146 ms)
+    ✓ Can set new plan title (845 ms)
+    ✓ Insert Semester works (1673 ms)
+    ✓ Delete Semester Works (1703 ms)
+    ✓ Edit Semester Works (2812 ms)
+    ✓ Edit Semester Works (2719 ms)
+    ✓ Edit Semester cancel button works (2796 ms)
+    ✓ Can delete all semesters (2881 ms)
+    ✓ Can insert a course (2566 ms)
+    ✕ Can edit a course (10944 ms)
+    ✕ Can set and fulfill requirements (11044 ms)
+    ✓ Can edit a plan (993 ms)
+    ✓ Plan editor cancel button works (1010 ms)
+    ✓ Delete all courses button works (4583 ms)
+    ✕ Can reset a course to default (2730 ms)
+    ✓ Delete all semesters button works (3126 ms)
 
   ● Make a new plan › Can edit a course
 
@@ -71,6 +73,13 @@ FAIL src/App.test.tsx (44.835 s)
       Name "↺ Reset":
       [36m<button[39m
         [33mclass[39m=[32m"reset-course-btn btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "↺ Reset":
+      [36m<button[39m
+        [33mclass[39m=[32m"reset-course-btn btn btn-primary"[39m
+        [33mdata-testid[39m=[32m"reset-btn"[39m
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
@@ -1368,40 +1377,42 @@ FAIL src/App.test.tsx (44.835 s)
                                 [33mclass[39m=[32m"semester-view container"[39m
                               [36m>[39m
                                 [36m<div[39m
-                                  [33mid[39m=[32m"Winter2019Plan 1"[39m
+                                  [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
                                   [36m<h1>[39m
-                                    [0mWinter - 2019[0m
+                                    [0mFall - 2022[0m
                                     [36m<br />[39m
                                   [36m</h1>[39m
-                                  [0m4[0m
+                                  [0m12[0m
                                   [0m [0m
                                   [0m credits[0m
                                   [0m                       [0m
                                   [36m<div[39m
                                     [33mdraggable[39m=[32m"true"[39m
-                                    [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Winter2019Plan 1&*&*%*"[39m
+                                    [33mid[39m=[32m"ENGL 101&*Tools of Textual Analysis&*Gateway introduction to basic tools and strategies used in critical engagement with poety fiction, drama, and nonfiction. Includes fundamental concepts of textual analysis.&* 3&*Fall2022Plan 1&*&*%*"[39m
                                   [36m>[39m
                                     [36m<div[39m
                                       [33mclass[39m=[32m"col"[39m
-                                      [33mid[39m=[32m"Winter2019Plan 1"[39m
+                                      [33mid[39m=[32m"Fall2022Plan 1"[39m
                                     [36m>[39m
                                       [36m<h3>[39m
-    ...
+                                        [0mENGL 101[0m
+                                        [0m [0m
+                                        [0m - [...
 
-      418 |         saveButton[saveButton.length - 1].click();
-      419 |         // edit this course using edit course button
-    > 420 |         const editButton = screen.getByRole("button", {
+      410 |         saveButton[saveButton.length - 1].click();
+      411 |         // edit this course using edit course button
+    > 412 |         const editButton = screen.getByRole("button", {
           |                                   ^
-      421 |             name: "Edit Course"
-      422 |         });
-      423 |         expect(editButton).toBeInTheDocument;
+      413 |             name: "Edit Course"
+      414 |         });
+      415 |         expect(editButton).toBeInTheDocument;
 
       at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
       at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
       at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
       at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/App.test.tsx:420:35)
+      at Object.<anonymous> (src/App.test.tsx:412:35)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -1457,6 +1468,13 @@ FAIL src/App.test.tsx (44.835 s)
       Name "↺ Reset":
       [36m<button[39m
         [33mclass[39m=[32m"reset-course-btn btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "↺ Reset":
+      [36m<button[39m
+        [33mclass[39m=[32m"reset-course-btn btn btn-primary"[39m
+        [33mdata-testid[39m=[32m"reset-btn"[39m
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
@@ -2664,7 +2682,40 @@ FAIL src/App.test.tsx (44.835 s)
                     [36m>[39m
                       [36m<option[39m
                         [33mvalue[39m=[32m"Plan 1"[39m
-                      [36m>[39m
+                      [3-----------------------------|---------|----------|---------|---------|------------------------------------
+File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                  
+-----------------------------|---------|----------|---------|---------|------------------------------------
+All files                    |   58.49 |    43.58 |   50.82 |   59.45 |                                    
+ src                         |   56.31 |    36.11 |   56.86 |   57.42 |                                    
+  App.tsx                    |   56.31 |    36.11 |   56.86 |   57.42 | 48,51,80-81,88-112,145-154,260-325 
+ src/components              |   53.01 |       50 |   45.08 |   53.94 |                                    
+  courseEditor.tsx           |       0 |      100 |       0 |       0 | 28-264                             
+  coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 61-83,130-143                      
+  coursePoolView.tsx         |       0 |        0 |       0 |       0 | 23-50                              
+  courseView.tsx             |   38.46 |       50 |      40 |   38.46 | 22-34,78                           
+  insertCourse.tsx           |   58.06 |      100 |   35.29 |   58.06 | 49,75-89,158-219                   
+  insertPlan.tsx             |     100 |      100 |     100 |     100 |                                    
+  insertSemester.tsx         |   91.66 |      100 |      80 |   91.66 | 37                                 
+  planEditor.tsx             |      75 |      100 |   57.14 |   81.81 | 30-31                              
+  planView.tsx               |    87.5 |      100 |   83.33 |    87.5 | 94                                 
+  planViewer.tsx             |   38.88 |    66.66 |   71.42 |   41.17 | 48,59-67                           
+  recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                                    
+  recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                                  
+  recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                                    
+  requirements.tsx           |   28.57 |        0 |      20 |   28.57 | 28-49,68-86                        
+  semesterEditor.tsx         |   91.66 |      100 |   83.33 |   91.66 | 29                                 
+  semesterView.tsx           |   58.33 |      100 |    62.5 |   61.76 | 83,87-88,92-111,143                
+  welcomeMessage.tsx         |     100 |      100 |     100 |     100 |                                    
+ src/helper_functions        |     100 |      100 |     100 |     100 |                                    
+  initialData.tsx            |     100 |      100 |     100 |     100 |                                    
+  unpackJSON.tsx             |     100 |      100 |     100 |     100 |                                    
+ src/interfaces              |       0 |        0 |       0 |       0 |                                    
+  course.ts                  |       0 |        0 |       0 |       0 |                                    
+  plan.ts                    |       0 |        0 |       0 |       0 |                                    
+  requirement.ts             |       0 |        0 |       0 |       0 |                                    
+  semester.ts                |       0 |        0 |       0 |       0 |                                    
+-----------------------------|---------|----------|---------|---------|------------------------------------
+6m>[39m
                         [0mPlan 1[0m
                       [36m</option>[39m
                       [36m<option[39m
@@ -2675,39 +2726,7 @@ FAIL src/App.test.tsx (44.835 s)
                       [36m<option[39m
                         [33mvalue[39m=[32m"Test Plan 2"[39m
                       [36m>[39m
-                        [0m-----------------------------|---------|----------|---------|---------|-----------------------------------------
-File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                       
------------------------------|---------|----------|---------|---------|-----------------------------------------
-All files                    |   54.59 |    36.48 |   47.39 |   55.55 |                                         
- src                         |   56.63 |    27.77 |   52.94 |   57.65 |                                         
-  App.tsx                    |   56.63 |    27.77 |   52.94 |   57.65 | 109,112,141-142,149-173,206-215,302-386 
- src/components              |   52.81 |    44.73 |   44.62 |   53.74 |                                         
-  courseEditor.tsx           |       0 |      100 |       0 |       0 | 28-264                                  
-  coursePool.tsx             |   62.96 |        0 |   35.71 |   62.96 | 61-83,130-143                           
-  coursePoolView.tsx         |       0 |        0 |       0 |       0 | 23-50                                   
-  courseView.tsx             |   33.33 |       40 |      25 |   33.33 | 22-34,73                                
-  insertCourse.tsx           |   58.06 |      100 |   35.29 |   58.06 | 49,75-89,158-219                        
-  insertPlan.tsx             |     100 |      100 |     100 |     100 |                                         
-  insertSemester.tsx         |   91.66 |      100 |      80 |   91.66 | 37                                      
-  planEditor.tsx             |      75 |      100 |   57.14 |   81.81 | 30-31                                   
-  planView.tsx               |    87.5 |      100 |   83.33 |    87.5 | 94                                      
-  planViewer.tsx             |   38.88 |    66.66 |   71.42 |   41.17 | 48,59-67                                
-  recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                                         
-  recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                                       
-  recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                                         
-  requirements.tsx           |   28.57 |        0 |      20 |   28.57 | 28-49,68-86                             
-  semesterEditor.tsx         |   91.66 |      100 |   83.33 |   91.66 | 29                                      
-  semesterView.tsx           |   58.33 |    83.33 |    62.5 |   61.76 | 83,87-88,92-111,143                     
-  welcomeMessage.tsx         |     100 |      100 |     100 |     100 |                                         
- src/helper_functions        |     100 |      100 |     100 |     100 |                                         
-  unpackJSON.tsx             |     100 |      100 |     100 |     100 |                                         
- src/interfaces              |       0 |        0 |       0 |       0 |                                         
-  course.ts                  |       0 |        0 |       0 |       0 |                                         
-  plan.ts                    |       0 |        0 |       0 |       0 |                                         
-  requirement.ts             |       0 |        0 |       0 |       0 |                                         
-  semester.ts                |       0 |        0 |       0 |       0 |                                         
------------------------------|---------|----------|---------|---------|-----------------------------------------
-Test Plan 2[0m
+                        [0mTest Plan 2[0m
                       [36m</option>[39m
                       [36m<option[39m
                         [33mvalue[39m=[32m"Test Plan 3"[39m
@@ -2796,43 +2815,327 @@ Test Plan 2[0m
                                 [33mclass[39m=[32m"semester-view container"[39m
                               [36m>[39m
                                 [36m<div[39m
-                                  [33mid[39m=[32m"Winter2019Plan 1"[39m
+                                  [33mid[39m=[32m"Spring2020Plan 1"[39m
                                 [36m>[39m
                                   [36m<h1>[39m
-                                    [0mWinter - 2019[0m
+                                    [0mFall - 2022[0m
                                     [36m<br />[39m
                                   [36m</h1>[39m
-                                  [0m4[0m
+                                  [0m12[0m
                                   [0m [0m
                                   [0m credits[0m
                                   [0m                       [0m
                                   [36m<div[39m
                                     [33mdraggable[39m=[32m"true"[39m
-                                    [33mid[39m=[32m"ACCT 200&*Survey of Accounting&*Survey of financial and managerial accounting concepts for the non-business major. Students learn about financial statements for merchandising, manufacturing, and service companies. Topics include: accounting cycle, budgeting, standard costing, contribution margins, cost-volume-profit analysis, and decision making.&* 4&*Winter2019Plan 1&*&*%*"[39m
+                                    [33mid[39m=[32m"ENGL 101&*Tools of Textual Analysis&*Gateway introduction to basic tools and strategies used in critical engagement with poety fiction, drama, and nonfiction. Includes fundamental concepts of textual analysis.&* 3&*Fall2022Plan 1&*&*%*"[39m
                                   [36m>[39m
                                     [36m<div[39m
-                                 ...
+                                      [33mclass[39m=[32m"col"[39m
+                                      [33mid[39m=[32m"Fall2022Plan 1"[39m
+                                   ...
 
-      489 |         saveButton[saveButton.length - 1].click();
-      490 |         // edit this course using edit course button
-    > 491 |         const editButton = screen.getByRole("button", {
+      481 |         saveButton[saveButton.length - 1].click();
+      482 |         // edit this course using edit course button
+    > 483 |         const editButton = screen.getByRole("button", {
           |                                   ^
-      492 |             name: "Edit Course"
-      493 |         });
-      494 |         expect(editButton).toBeInTheDocument;
+      484 |             name: "Edit Course"
+      485 |         });
+      486 |         expect(editButton).toBeInTheDocument;
 
       at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
       at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
       at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
       at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/App.test.tsx:491:35)
+      at Object.<anonymous> (src/App.test.tsx:483:35)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Make a new plan › Can reset a course to default
+
+    TestingLibraryElementError: Found multiple elements with the text: /Prerequisites: CHEM 104/i
+
+    Here are the matching elements:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<div[39m
+      [33mclass[39m=[32m"col"[39m
+      [33mid[39m=[32m"Winter2026Test Plan 17"[39m
+    [36m>[39m
+      [36m<h3>[39m
+        [0mCHEM 331[0m
+        [0m [0m
+        [0m - [0m
+        [0m [0m
+        [0mOrganic Chemistry[0m
+      [36m</h3>[39m
+      [0m 3[0m
+      [0m [0m
+      [0m credits[0m
+      [0m [0m
+      [36m<button[39m
+        [33mclass[39m=[32m"description-btn btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m>[39m
+        [0m⤵[0m
+      [36m</button>[39m
+      [36m<br />[39m
+      [36m<p[39m
+        [33mid[39m=[32m"CHEM 331Winter2026Test Plan 17description"[39m
+      [36m>[39m
+        [0mMajor classes and reactions of organic compounds, emphasizing stereochemistry, reaction mechanisms and synthetic methods.[0m
+        [0m;[0m
+        [36m<br />[39m
+        [0mPrerequisites: CHEM 104 and CHEM 134, CHEM 112 or CHEM 120.[0m
+        [36m<br />[39m
+        [0m[0m
+      [36m</p>[39m
+      [0mPrerequisites: CHEM 104 and CHEM 134, CHEM 112 or CHEM 120.[0m
+      [36m<br />[39m
+      [0m[0m
+      [36m<div[39m
+        [33mclass[39m=[32m"col"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"row"[39m
+        [36m>[39m
+          [36m<div>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"edit-course-btn btn btn-primary btn-sm"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0m✎ Edit Course[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"reset-course-btn btn btn-primary"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0m↺ Reset[0m
+          [36m</button>[39m
+        [36m</div>[39m
+        [36m<button[39m
+          [33mclass[39m=[32m"reset-course-btn btn btn-primary"[39m
+          [33mdata-testid[39m=[32m"reset-btn"[39m
+          [33mtype[39m=[32m"button"[39m
+        [36m>[39m
+          [0m↺ Reset[0m
+        [36m</button>[39m
+      [36m</div>[39m
+    [36m</div>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<p[39m
+      [33mid[39m=[32m"CHEM 331Winter2026Test Plan 17description"[39m
+    [36m>[39m
+      [0mMajor classes and reactions of organic compounds, emphasizing stereochemistry, reaction mechanisms and synthetic methods.[0m
+      [0m;[0m
+      [36m<br />[39m
+      [0mPrerequisites: CHEM 104 and CHEM 134, CHEM 112 or CHEM 120.[0m
+      [36m<br />[39m
+      [0m[0m
+    [36m</p>[39m
+
+    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m"modal-open"[39m
+      [33mdata-rr-ui-modal-open[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 2048px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mUD CISC275 Schedule Planner[0m
+            [0m [0m
+            [36m<p[39m
+              [33mclass[39m=[32m"names"[39m
+            [36m>[39m
+              [0mcreated by Allie Platchek, Sam Bernal, and Anissa Spano[0m
+            [36m</p>[39m
+            [36m<div />[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"save-btn btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mSave Data[0m
+            [36m</button>[39m
+          [36m</header>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"schedule"[39m
+          [36m>[39m
+            [36m<br />[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"row"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"col-sm-8"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [0mSelect a plan:[0m
+                  [36m<div>[39m
+                    [36m<select[39m
+                      [33mclass[39m=[32m"form-select"[39m
+                      [33mdata-testid[39m=[32m"PlanSelect"[39m
+                      [33mid[39m=[32m"planDrop"[39m
+                    [36m>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 1"[39m
+                      [36m>[39m
+                        [0mPlan 1[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Plan 2"[39m
+                      [36m>[39m
+                        [0mPlan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 2"[39m
+                      [36m>[39m
+                        [0mTest Plan 2[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 3"[39m
+                      [36m>[39m
+                        [0mTest Plan 3[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 4"[39m
+                      [36m>[39m
+                        [0mTest Plan 4[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 5"[39m
+                      [36m>[39m
+                        [0mTest Plan 5[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 6"[39m
+                      [36m>[39m
+                        [0mTest Plan 6[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 7"[39m
+                      [36m>[39m
+                        [0mTest Plan 7[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 8"[39m
+                      [36m>[39m
+                        [0mTest Plan 8[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 9"[39m
+                      [36m>[39m
+                        [0mTest Plan 9[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 10"[39m
+                      [36m>[39m
+                        [0mTest Plan 10[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 16"[39m
+                      [36m>[39m
+                        [0mTest Plan 16[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 11"[39m
+                      [36m>[39m
+                        [0mTest Plan 11[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 12"[39m
+                      [36m>[39m
+                        [0mTest Plan 12[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 13"[39m
+                      [36m>[39m
+                        [0mTest Plan 13[0m
+                      [36m</option>[39m
+                      [36m<option[39m
+                        [33mvalue[39m=[32m"Test Plan 17"[39m
+                      [36m>[39m
+                        [0mTest Plan 17[0m
+                      [36m</option>[39m
+                    [36m</select>[39m
+                  [36m</div>[39m
+                  [0mCreate a new plan: [0m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"insert-plan btn btn-success"[39m
+                    [33mdata-testid[39m=[32m"NewPlan"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mNew Plan[0m
+                  [36m</button>[39m
+                  [0mDownload your current plan:[0m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"download-plan btn btn-primary"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mDownload Plan[0m
+                  [36m</button>[39m
+                  [36m<div[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mhidden[39m=[32m""[39m
+                  [36m>[39m
+                    [36m<div>[39m
+                      [36m<h1>[39m
+                        [0mPlan 1[0m
+                      [36m</h1>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"container"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"row row-cols-lg-2 row-cols-md-1"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"row-equal col"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"background1"[39m
+                              [33mstyle[39m=[32m"overflow-y: scroll; height: 80vh; width: auto; border: solid; border-width: 1px; border-radius: 8px; border-color: gray;"[39m
+                            [36m>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"semester-view container"[39m
+                              [36m>[39m
+                                [36m<div[39m
+                                  [33mid[39m=[32m"Spring2020Plan 1"[39m
+                                [36m>[39m
+                                  [36m<h1>[39m
+                                    [0mFall - 2022[0m
+                                    [36m<br />[39m
+                                  [36m</h1>[39m
+                                  [0...
+
+      701 |         expect(screen.getByText(/CHEM 331/i)).toBeInTheDocument;
+      702 |         expect(screen.getByText(/Organic Chemistry/i)).toBeInTheDocument;
+    > 703 |         expect(screen.getByText(/Prerequisites: CHEM 104/i)).toBeInTheDocument;
+          |                       ^
+      704 |         //these are the default values for CHEM 331
+      705 |     });
+      706 |     test("Delete all semesters button works", () => {
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getElementError (node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
+      at getMultipleElementsFoundError (node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:66:13
+      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/App.test.tsx:703:23)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 Test Suites: 1 failed, 1 total
-Tests:       2 failed, 14 passed, 16 total
+Tests:       3 failed, 15 passed, 18 total
 Snapshots:   0 total
-Time:        45.598 s
+Time:        57.481 s
 Ran all test suites.
