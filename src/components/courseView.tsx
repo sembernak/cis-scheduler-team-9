@@ -18,9 +18,19 @@ export function CourseView({
     const preRecs = course.prereq.join(", ");
     const requirements = course.requirements.join(", ");
     const [editing, setEditing] = useState<boolean>(false);
-
     function changeEditing() {
         setEditing(!editing);
+    }
+
+    function showDes() {
+        const show = document.getElementById(course.code + "description");
+        if (show === null) {
+            return;
+        } else if (show.style.display === "none") {
+            show.style.display = "block";
+        } else {
+            show.style.display = "none";
+        }
     }
 
     return editing ? (
@@ -38,9 +48,12 @@ export function CourseView({
                 <h3>
                     {course.code} {" - "} {course.title}
                 </h3>
-                {course.credits} {" credits"}
+                {course.credits} {" credits"}{" "}
+                <Button className="description-btn" onClick={showDes}>
+                    &#10549;
+                </Button>
                 <br></br>
-                {course.description}
+                <p id={course.code + "description"}>{course.description};</p>
                 <br></br>
                 {preRecs.length === 0 ? "" : "Prerequisites: " + preRecs}
                 <br></br>
@@ -59,7 +72,7 @@ export function CourseView({
                         }
                         className="reset-course-btn"
                     >
-                        Reset to Default
+                        &#8634; Reset
                     </Button>
                 </Col>
             </Col>
