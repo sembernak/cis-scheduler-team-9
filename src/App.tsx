@@ -99,17 +99,23 @@ const examplePlan2 = {
 //save data information
 const PLANS = [examplePlan1, examplePlan2];
 let loadedData = PLANS; //initial save data = initial plan
+let loadedRequire: Requirement[] | (() => Requirement[]) = [];
 const saveDataKey = "MyPageData";
+const saveRequireKey = "MyRequireData";
 const previousData = localStorage.getItem(saveDataKey);
+const previousRequire = localStorage.getItem(saveRequireKey);
 // If the data doesn't exist, `getItem` returns null
 if (previousData !== null) {
     loadedData = JSON.parse(previousData);
+}
+if (previousRequire !== null) {
+    loadedRequire = JSON.parse(previousRequire);
 }
 
 function App(): JSX.Element {
     const [plans, setPlans] = useState<Plan[]>(loadedData);
     const [selection, select] = useState<string>(PLANS[0].title);
-    const [requires, setRequires] = useState<Requirement[]>([]);
+    const [requires, setRequires] = useState<Requirement[]>(loadedRequire);
     const [showWelcomeMessage, setShowWelcomeMessage] = useState(true); //Welcome message visible?
 
     const handleWelcomeMessage = () => setShowWelcomeMessage(false);
@@ -133,6 +139,7 @@ function App(): JSX.Element {
 
     function saveData() {
         localStorage.setItem(saveDataKey, JSON.stringify(plans));
+        localStorage.setItem(saveRequireKey, JSON.stringify(requires));
     }
 
     //Upload CSV file
