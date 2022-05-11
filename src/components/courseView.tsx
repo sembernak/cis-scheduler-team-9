@@ -56,28 +56,27 @@ export function CourseView({
                 </Button>
                 <br></br>
                 <p id={course.code + course.semesterId + "description"}>
-                    {course.description};
+                    {course.description};<br></br>
+                    {preRecs.length === 0 ? "" : "Prerequisites: " + preRecs}
+                    <br></br>
+                    {requirements.length === 0
+                        ? ""
+                        : "Degree Requirements: " + requirements}
                 </p>
-                <br></br>
-                {preRecs.length === 0 ? "" : "Prerequisites: " + preRecs}
-                <br></br>
-                {requirements.length === 0
-                    ? ""
-                    : "Degree Requirements: " + requirements}
                 <Col>
                     <Row>
                         <RecordControlsCourse
                             changeEditing={changeEditing}
                         ></RecordControlsCourse>
+                        <Button
+                            onClick={() =>
+                                resetCourse(course.code, course.semesterId)
+                            }
+                            className="reset-course-btn"
+                        >
+                            &#8634; Reset
+                        </Button>
                     </Row>
-                    <Button
-                        onClick={() =>
-                            resetCourse(course.code, course.semesterId)
-                        }
-                        className="reset-course-btn"
-                    >
-                        &#8634; Reset
-                    </Button>
                 </Col>
             </Col>
             <div></div>
