@@ -9,11 +9,11 @@ export function RecordControlsCourse({
     return (
         <div>
             <Button
-                className="default-button"
+                className="edit-course-btn"
                 size="sm"
                 onClick={changeEditing}
             >
-                Edit Course
+                &#9998; Edit Course
             </Button>
         </div>
     );
