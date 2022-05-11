@@ -63,6 +63,11 @@ export function CourseView({
                         ? ""
                         : "Degree Requirements: " + requirements}
                 </p>
+                {preRecs.length === 0 ? "" : "Prerequisites: " + preRecs}
+                <br></br>
+                {requirements.length === 0
+                    ? ""
+                    : "Degree Requirements: " + requirements}
                 <Col>
                     <Row>
                         <RecordControlsCourse
@@ -77,6 +82,15 @@ export function CourseView({
                             &#8634; Reset
                         </Button>
                     </Row>
+                    <Button
+                        onClick={() =>
+                            resetCourse(course.code, course.semesterId)
+                        }
+                        className="reset-course-btn"
+                        data-testid="reset-btn"
+                    >
+                        &#8634; Reset
+                    </Button>
                 </Col>
             </Col>
             <div></div>

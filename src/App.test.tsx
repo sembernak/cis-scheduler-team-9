@@ -3,11 +3,6 @@ import { render, screen } from "@testing-library/react";
 import App from "./App";
 import userEvent from "@testing-library/user-event";
 
-/*test("renders the course name somewhere", () => {
-    render(<App />);
-    const linkElement = screen.getByText(/CISC275/i);
-    expect(linkElement).toBeInTheDocument();
-});*/
 describe("Make a new plan", () => {
     //Making sure that a new plan made by the user is at the very least usable
     beforeEach(() => render(<App />));
@@ -252,7 +247,6 @@ describe("Make a new plan", () => {
         expect(editedSem[0]).not.toBeInTheDocument; //new edited semester is visible
     });
     test("Can delete all semesters", () => {
-        //does not work fully
         const createNew = screen.getByTestId("NewPlan");
         createNew.click();
         const enterTitle = screen.getByLabelText("Plan Title:");
@@ -314,7 +308,6 @@ describe("Make a new plan", () => {
         ).not.toBeInTheDocument;
     });
     test("Can insert a course", () => {
-        //NOTE: this one is not working yet
         //make a new plan
         const createNew = screen.getByTestId("NewPlan");
         createNew.click();
@@ -367,7 +360,6 @@ describe("Make a new plan", () => {
         expect(descriptionElement).toBeInTheDocument;
     });
     test("Can edit a course", () => {
-        //not working for same reason as above -> insert button click()
         const createNew = screen.getByTestId("NewPlan");
         createNew.click();
         const enterTitle = screen.getByLabelText("Plan Title:");
@@ -545,7 +537,7 @@ describe("Make a new plan", () => {
         expect(screen.getAllByText(/Plan is changed/i)).toBeInTheDocument;
     });
     test("Plan editor cancel button works", () => {
-        //testing edit plan button
+        //testing edit plan cancel button
         const createNew = screen.getByTestId("NewPlan");
         createNew.click();
         const enterTitle = screen.getByLabelText("Plan Title:");
@@ -569,7 +561,6 @@ describe("Make a new plan", () => {
         expect(screen.queryByText(/Plan is changed/i)).not.toBeInTheDocument; //cancel button was pushed so title should not change
     });
     test("Delete all courses button works", () => {
-        //NOTE: this one is not working yet
         //make a new plan
         const createNew = screen.getByTestId("NewPlan");
         createNew.click();
@@ -651,32 +642,122 @@ describe("Make a new plan", () => {
         ).not.toBeInTheDocument();
         expect(screen.queryByText(/CHEM331/i)).not.toBeInTheDocument();
     });
-    /*test("Create Courses Manually", () => {
+    test("Can reset a course to default", () => {
+        //add a course with a code matching one in the catalog
+        //then hit reset to default button and ensure the course matches the catalog
         const createNew = screen.getByTestId("NewPlan");
         createNew.click();
-        const enterId = screen.getByLabelText("Plan Id:");
-        userEvent.type(enterId, "6"); //get rid of this when ids become automatic
         const enterTitle = screen.getByLabelText("Plan Title:");
-        userEvent.type(enterTitle, "Test Plan 1");
+        userEvent.type(enterTitle, "Test Plan 17");
         const save = screen.getByText("Save");
         save.click();
         const drop = screen.getByTestId("PlanSelect");
-        userEvent.selectOptions(drop, "Test Plan 1");
-        const newSemesters = screen.getAllByTestId("InsertSemesterTest Plan 1");
+        userEvent.selectOptions(drop, "Test Plan 17");
+        const newSemesters = screen.getAllByTestId(
+            "InsertSemesterTest Plan 17"
+        );
         const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
+        //make a new semester
         newSemester.click();
-        const setSeason = screen.getByLabelText("Semester Season:");
-        const setYear = screen.getByLabelText("Semester Year:");
-        userEvent.clear(setSeason);
+        const setSeason = screen.getByLabelText("Season:");
+        const setYear = screen.getByLabelText("Year:");
+        expect(setSeason).toBeInTheDocument;
+        expect(setYear).toBeInTheDocument;
         userEvent.clear(setYear);
-        userEvent.type(setSeason, "Summer");
-        userEvent.type(setYear, "2022");
-        const verifyCancel = screen.getByRole("button", {
-            name: "Cancel",
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Winter" })
+        );
+        userEvent.type(setYear, "2026");
+        screen.getByRole("button", { name: "Save", hidden: false }).click();
+        expect(screen.getAllByText(/Winter - 2026/i)).toBeInTheDocument; //initially semester is in the document
+        //add course
+        const insertButton = screen.queryAllByRole("button", {
+            name: "Insert Course",
             hidden: false
         });
-        verifyCancel.click();
-        expect(screen.queryAllByLabelText(/Semester Year:/)).toStrictEqual([]); //Making sure cancel insert semester still works
-        screen.getByRole("button", { name: "Insert Course" }).click();
-    });*/
+        expect(insertButton).toBeInTheDocument;
+        insertButton[0].click();
+        const setCode = screen.getByLabelText("Code:");
+        const setTitle = screen.getByLabelText("Title:");
+        const setDes = screen.getByLabelText("Description:");
+        const setCredits = screen.getAllByLabelText("Credits:");
+        userEvent.type(setCode, "CHEM 331");
+        userEvent.type(setTitle, "orgo");
+        userEvent.type(setDes, "incorrect description");
+        userEvent.type(setCredits[0], "17");
+        const saveButton = screen.getAllByRole("button", {
+            name: "Save",
+            hidden: false
+        });
+        saveButton[saveButton.length - 1].click();
+        // press reset to default button
+        const defaultButton = screen.getAllByTestId("reset-btn");
+        expect(defaultButton).toBeInTheDocument;
+        defaultButton[defaultButton.length - 1].click();
+        expect(screen.getAllByText(/3 credits/i)).toBeInTheDocument;
+        expect(screen.getByText(/CHEM 331/i)).toBeInTheDocument;
+        expect(screen.getByText(/Organic Chemistry/i)).toBeInTheDocument;
+        expect(screen.getByText(/Prerequisites: CHEM 104/i)).toBeInTheDocument;
+        //these are the default values for CHEM 331
+    });
+    test("Delete all semesters button works", () => {
+        //make a new plan
+        const createNew = screen.getByTestId("NewPlan");
+        createNew.click();
+        const enterTitle = screen.getByLabelText("Plan Title:");
+        userEvent.type(enterTitle, "Test Plan 18");
+        const save = screen.getByText("Save");
+        save.click();
+        const drop = screen.getByTestId("PlanSelect");
+        userEvent.selectOptions(drop, "Test Plan 18");
+        const newSemesters = screen.getAllByTestId(
+            "InsertSemesterTest Plan 18"
+        );
+        const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
+        //make a new semester
+        newSemester.click();
+        const setSeason = screen.getByLabelText("Season:");
+        const setYear = screen.getByLabelText("Year:");
+        expect(setSeason).toBeInTheDocument;
+        expect(setYear).toBeInTheDocument;
+        userEvent.clear(setYear);
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Winter" })
+        );
+        userEvent.type(setYear, "2021");
+        screen.getByRole("button", { name: "Save", hidden: false }).click();
+        expect(screen.getAllByText(/Winter - 2021/i)).toBeInTheDocument; //initially semester is in the document
+        //add another semester
+        newSemester.click();
+        const setSeason2 = screen.getByLabelText("Season:");
+        const setYear2 = screen.getByLabelText("Year:");
+        expect(setSeason2).toBeInTheDocument;
+        expect(setYear2).toBeInTheDocument;
+        userEvent.clear(setYear2);
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Spring" })
+        );
+        userEvent.type(setYear2, "2029");
+        screen.getByRole("button", { name: "Save", hidden: false }).click();
+        expect(screen.getAllByText(/Spring - 2029/i)).toBeInTheDocument; //initially semester is in the document
+        //checked that both courses appeared- now can delete them
+        screen
+            .getAllByRole("button", {
+                name: "Delete All Semesters",
+                hidden: false
+            })[0]
+            .click();
+        //after clicking delete all semesters button, neither semester should be present anymore
+        expect(screen.queryByText(/Spring - 2029/i)).not.toBeInTheDocument();
+        expect(screen.queryByText(/Winter - 2021/i)).not.toBeInTheDocument();
+    });
 });
