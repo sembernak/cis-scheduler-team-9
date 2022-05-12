@@ -5,7 +5,8 @@ import {
     Col,
     Row,
     InputGroup,
-    FormControl
+    FormControl,
+    FormLabel
 } from "react-bootstrap";
 import { Requirement } from "../interfaces/requirement";
 import { Plan } from "../interfaces/plan";
@@ -69,11 +70,12 @@ export function Requirements({
                 requirement, once the appropriate amount of credits are met,
                 will be marked as complete.
             </div>
+            <br></br>
             {requires.map(
                 (req: Requirement): JSX.Element => (
                     <Container key={req.name}>
                         <Row>
-                            <Col md={8}>
+                            <Col md={8} className="display-requirement">
                                 <FormControl
                                     readOnly
                                     value={req.name}
@@ -100,13 +102,12 @@ export function Requirements({
                             </Col>
                             <Col md={2}>
                                 <p>Required Credits: {req.credits}</p>
-                                <p>
-                                    Met?{" "}
-                                    {checkFulfilled(req.name, req.credits)
-                                        ? "✅"
-                                        : "❌"}
-                                </p>
-                                <br></br>
+                            </Col>
+                            <Col className="met-req-display">
+                                Met?{" "}
+                                {checkFulfilled(req.name, req.credits)
+                                    ? "✅"
+                                    : "❌"}
                             </Col>
                         </Row>
                     </Container>
@@ -119,14 +120,14 @@ export function Requirements({
                             placeholder="New Requirement"
                             value={newRequire}
                             onChange={newRequireFunction}
+                            className="enter-req"
                         />
                     </Col>
-                    <Col md={1}>
-                        <h4>Credits: </h4>
-                    </Col>
-                    <Col md={2}>
+                    <Col md={2} className="credits-dropdown">
+                        <FormLabel>Credits:</FormLabel>
                         <FormControl
                             aria-label="Credits: "
+                            className="credits-form"
                             type="number"
                             value={credits}
                             onChange={(
@@ -138,7 +139,7 @@ export function Requirements({
                         <Button
                             variant="outline-secondary"
                             onClick={manageNewRequire}
-                            className="default-button"
+                            className="add-req-btn"
                         >
                             Add Requirement
                         </Button>
