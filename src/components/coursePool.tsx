@@ -103,7 +103,11 @@ export function CoursePool({
         >
             <h2>Course Pool:</h2>
             <Form.Group>
-                <Form.Select value={department} onChange={depSelect}>
+                <Form.Select
+                    value={department}
+                    onChange={depSelect}
+                    data-testid="department-box"
+                >
                     {DEPARTMENTS.map(
                         (department: string): JSX.Element => (
                             <option key={department} value={department}>
@@ -114,7 +118,11 @@ export function CoursePool({
                 </Form.Select>
             </Form.Group>
             <Form.Group>
-                <Form.Select value={shownCourse} onChange={courseSelect}>
+                <Form.Select
+                    value={shownCourse}
+                    onChange={courseSelect}
+                    data-testid="course-box"
+                >
                     {getDepCourses(department).map(
                         (course: Course): JSX.Element => (
                             <option key={course.code} value={course.code}>

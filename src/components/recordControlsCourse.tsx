@@ -12,6 +12,7 @@ export function RecordControlsCourse({
                 className="edit-course-btn"
                 size="sm"
                 onClick={changeEditing}
+                data-testid="edit-course-btn"
             >
                 &#9998; Edit Course
             </Button>

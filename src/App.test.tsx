@@ -409,11 +409,9 @@ describe("Make a new plan", () => {
         });
         saveButton[saveButton.length - 1].click();
         // edit this course using edit course button
-        const editButton = screen.getByRole("button", {
-            name: "Edit Course"
-        });
+        const editButton = screen.getAllByTestId("edit-course-btn");
         expect(editButton).toBeInTheDocument;
-        editButton.click();
+        editButton[editButton.length - 1].click();
         const newCredits = screen.getAllByLabelText("Credits:");
         const newTitle = screen.getByLabelText("Title:");
         const newDes = screen.getByLabelText("Description:");
@@ -480,11 +478,9 @@ describe("Make a new plan", () => {
         });
         saveButton[saveButton.length - 1].click();
         // edit this course using edit course button
-        const editButton = screen.getByRole("button", {
-            name: "Edit Course"
-        });
+        const editButton = screen.getAllByTestId("edit-course-btn");
         expect(editButton).toBeInTheDocument;
-        editButton.click();
+        editButton[editButton.length - 1].click();
         const newCredits = screen.getAllByLabelText("Credits:");
         const newTitle = screen.getByLabelText("Title:");
         const newDes = screen.getByLabelText("Description:");
@@ -759,5 +755,35 @@ describe("Make a new plan", () => {
         //after clicking delete all semesters button, neither semester should be present anymore
         expect(screen.queryByText(/Spring - 2029/i)).not.toBeInTheDocument();
         expect(screen.queryByText(/Winter - 2021/i)).not.toBeInTheDocument();
+    });
+    test("Can add course to course pool", () => {
+        //make a new plan
+        const createNew = screen.getByTestId("NewPlan");
+        createNew.click();
+        const enterTitle = screen.getByLabelText("Plan Title:");
+        userEvent.type(enterTitle, "Test Plan 19");
+        const save = screen.getByText("Save");
+        save.click();
+        const drop = screen.getByTestId("PlanSelect");
+        userEvent.selectOptions(drop, "Test Plan 19");
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByTestId("department-box"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "ART" })
+        );
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByTestId("course-box"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "ART 117" })
+        );
+        const addBtn = screen.getAllByText("Add Course");
+        addBtn[addBtn.length - 1].click();
+        expect(screen.queryAllByText(/ART 117/i)[0]).toBeInTheDocument();
+        expect(screen.queryAllByText(/3 credits/i)[0]).toBeInTheDocument();
+        expect(
+            screen.getByText(/Research Studio: Practice and Product/i)
+        ).toBeInTheDocument();
     });
 });
