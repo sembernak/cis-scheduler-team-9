@@ -90,31 +90,49 @@ export function PlanView({
                     ))}
                 </Row>
             </Container>
-            <Button
-                onClick={() => deletePlan(plan.id)}
-                variant="danger"
-                className="me-8"
+            <br></br>
+            <div
+                style={{
+                    height: "auto",
+                    width: "auto",
+                    border: "solid",
+                    borderWidth: "1px",
+                    borderRadius: "8px",
+                    borderColor: "gray",
+                    padding: "5px"
+                }}
             >
-                Delete Plan
-            </Button>
-            <Button onClick={changeEditing} variant="primary" className="me-8">
-                Edit Plan
-            </Button>
-            <Button
-                data-testid={"InsertSemester" + plan.title}
-                onClick={flipVisibility}
-                variant="success"
-                className="me-8"
-            >
-                Insert Semester
-            </Button>
-            <Button
-                onClick={() => deleteAllSemesters(String(plan.id))}
-                variant="danger"
-                className="me-8"
-            >
-                Delete All Semesters
-            </Button>
+                <h3>Plan and Semester Editing Tools:</h3>
+                <Button
+                    onClick={() => deletePlan(plan.id)}
+                    variant="danger"
+                    className="delete-plan-btn"
+                >
+                    Delete Plan
+                </Button>
+                <Button
+                    onClick={changeEditing}
+                    variant="primary"
+                    className="edit-plan-btn"
+                >
+                    Edit Plan
+                </Button>
+                <Button
+                    data-testid={"InsertSemester" + plan.title}
+                    onClick={flipVisibility}
+                    variant="success"
+                    className="insert-sem-btn"
+                >
+                    Insert Semester
+                </Button>
+                <Button
+                    onClick={() => deleteAllSemesters(String(plan.id))}
+                    variant="danger"
+                    className="delete-allsem-btn"
+                >
+                    Delete All Semesters
+                </Button>
+            </div>
             {visible && (
                 <InsertSemester
                     flipVisibility={flipVisibility}
