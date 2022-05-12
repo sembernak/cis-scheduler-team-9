@@ -63,6 +63,12 @@ export function Requirements({
             className="background1"
         >
             <h2>Degree Requirements:</h2>
+            <div>
+                Add a requirement for your degree here. If a course fufills that
+                requirement, edit the course and add that requirement. The
+                requirment, once met for the appropriate amount of credits, will
+                be marked as complete.
+            </div>
             {requires.map(
                 (req: Requirement): JSX.Element => (
                     <Container key={req.name}>
