@@ -11,7 +11,11 @@ import { Button /*, Container*/, Col, Form, Row } from "react-bootstrap";
 import { Requirements } from "./components/requirements";
 import { Requirement } from "./interfaces/requirement";
 import { WelcomeMessage } from "./components/welcomeMessage";
-import { examplePlan1, examplePlan2 } from "./helper_functions/initialData";
+import {
+    examplePlan1,
+    examplePlan2,
+    defReq1
+} from "./helper_functions/initialData";
 
 const COURSELIST = [
     //Complete list of every course in order of department (see catalog.json)
@@ -38,7 +42,7 @@ for (i in catalog) {
 //save data information
 const PLANS = [examplePlan1, examplePlan2];
 let loadedData = PLANS; //initial save data = initial plan
-let loadedRequire: Requirement[] | (() => Requirement[]) = [];
+let loadedRequire = defReq1;
 const saveDataKey = "MyPageData";
 const saveRequireKey = "MyRequireData";
 const previousData = localStorage.getItem(saveDataKey);

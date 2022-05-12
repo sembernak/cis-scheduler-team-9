@@ -61,7 +61,12 @@ export function PlanView({
             <Container>
                 <Row lg={2} md={1}>
                     {plan.semesters.map((Semester: Semester) => (
-                        <Col className={"row-equal"} key={Semester.id}>
+                        <Col
+                            lg={6}
+                            md={12}
+                            className={"row-equal"}
+                            key={Semester.id}
+                        >
                             <div>
                                 <SemesterView
                                     plan={plan}

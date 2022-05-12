@@ -100,7 +100,7 @@ describe("Make a new plan", () => {
         screen.getByRole("button", { name: "Save", hidden: false }).click();
         expect(screen.getAllByText(/Summer - 2022/i)).toBeInTheDocument; //initially semester is in the document
         const deleteSem = screen.getAllByRole("button", {
-            name: "Delete semester",
+            name: "Delete Semester",
             hidden: false
         });
         deleteSem[deleteSem.length - 1].click();
