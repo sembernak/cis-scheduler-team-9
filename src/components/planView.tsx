@@ -62,18 +62,7 @@ export function PlanView({
                 <Row lg={2} md={1}>
                     {plan.semesters.map((Semester: Semester) => (
                         <Col className={"row-equal"} key={Semester.id}>
-                            <div
-                                style={{
-                                    overflowY: "scroll",
-                                    height: "80vh",
-                                    width: "auto",
-                                    border: "solid",
-                                    borderWidth: "1px",
-                                    borderRadius: "8px",
-                                    borderColor: "gray"
-                                }}
-                                className="background1"
-                            >
+                            <div>
                                 <SemesterView
                                     plan={plan}
                                     semester={Semester}
