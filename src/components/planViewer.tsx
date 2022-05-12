@@ -91,7 +91,7 @@ export function PlanViewer({
             >
                 New Plan
             </Button>
-            Download your current plan:
+            <> Download your current plan: </>
             <Button onClick={makeCSV} className="download-plan">
                 Download Plan
             </Button>

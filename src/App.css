@@ -178,6 +178,7 @@
     border: 1px solid green;
     color: black;
     font-weight: bold;
+    padding: 1px;
 }
 .download-plan {
     font-size: 10px;
@@ -185,6 +186,7 @@
     border: 1px solid blue;
     color: black;
     font-weight: bold;
+    padding: 1px;
 }
 
 .uploadPlanBtn {
