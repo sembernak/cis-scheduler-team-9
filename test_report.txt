@@ -2,27 +2,27 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-PASS src/App.test.tsx (42.581 s)
+PASS src/App.test.tsx (34.56 s)
   Make a new plan
-    ✓ App renders with welcome message (280 ms)
-    ✓ Clicking New Plan gives a form to enter a title (272 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (151 ms)
-    ✓ Can set new plan title (863 ms)
-    ✓ Insert Semester works (1634 ms)
-    ✓ Delete Semester Works (1641 ms)
-    ✓ Edit Semester Works (2973 ms)
-    ✓ Edit Semester Works (2903 ms)
-    ✓ Edit Semester cancel button works (2755 ms)
-    ✓ Can delete all semesters (2796 ms)
-    ✓ Can insert a course (2408 ms)
-    ✓ Can edit a course (3237 ms)
-    ✓ Can set and fulfill requirements (3464 ms)
-    ✓ Can edit a plan (984 ms)
-    ✓ Plan editor cancel button works (995 ms)
-    ✓ Delete all courses button works (4552 ms)
-    ✓ Can reset a course to default (2639 ms)
-    ✓ Delete all semesters button works (3015 ms)
-    ✓ Can add course to course pool (1437 ms)
+    ✓ App renders with welcome message (215 ms)
+    ✓ Clicking New Plan gives a form to enter a title (230 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (131 ms)
+    ✓ Can set new plan title (724 ms)
+    ✓ Insert Semester works (1387 ms)
+    ✓ Delete Semester Works (1356 ms)
+    ✓ Edit Semester Works (2276 ms)
+    ✓ Edit Semester Works (2231 ms)
+    ✓ Edit Semester cancel button works (2220 ms)
+    ✓ Can delete all semesters (2275 ms)
+    ✓ Can insert a course (1995 ms)
+    ✓ Can edit a course (2661 ms)
+    ✓ Can set and fulfill requirements (2872 ms)
+    ✓ Can edit a plan (804 ms)
+    ✓ Plan editor cancel button works (788 ms)
+    ✓ Delete all courses button works (3561 ms)
+    ✓ Can reset a course to default (2177 ms)
+    ✓ Delete all semesters button works (2514 ms)
+    ✓ Can add course to course pool (1200 ms)
 
 -----------------------------|---------|----------|---------|---------|------------------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                  
@@ -44,7 +44,7 @@ All files                    |    69.1 |       50 |   63.33 |   70.24 |
   recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                                    
   recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                                  
   recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                                    
-  requirements.tsx           |   85.71 |       50 |      80 |   85.71 | 89-92                              
+  requirements.tsx           |   85.71 |       50 |      80 |   85.71 | 91-94                              
   semesterEditor.tsx         |   91.66 |      100 |   83.33 |   91.66 | 29                                 
   semesterView.tsx           |      60 |      100 |    62.5 |   63.63 | 80,84-85,89-106,148                
   welcomeMessage.tsx         |     100 |      100 |     100 |     100 |                                    
@@ -60,5 +60,5 @@ All files                    |    69.1 |       50 |   63.33 |   70.24 |
 Test Suites: 1 passed, 1 total
 Tests:       19 passed, 19 total
 Snapshots:   0 total
-Time:        43.324 s
+Time:        35.158 s
 Ran all test suites.
