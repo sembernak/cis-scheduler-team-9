@@ -102,6 +102,10 @@ export function CoursePool({
             className="background1"
         >
             <h2>Course Pool:</h2>
+            <div>
+                Add courses that you may want to take to the course pool. You
+                can then drag and drop these into semesters as desired.
+            </div>
             <Form.Group>
                 <Form.Select
                     value={department}
