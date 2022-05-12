@@ -2,27 +2,27 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-PASS src/App.test.tsx (33.689 s)
+PASS src/App.test.tsx (34.758 s)
   Make a new plan
-    ✓ App renders with welcome message (224 ms)
-    ✓ Clicking New Plan gives a form to enter a title (217 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (125 ms)
-    ✓ Can set new plan title (725 ms)
-    ✓ Insert Semester works (1343 ms)
-    ✓ Delete Semester Works (1312 ms)
-    ✓ Edit Semester Works (2200 ms)
-    ✓ Edit Semester Works (2164 ms)
-    ✓ Edit Semester cancel button works (2168 ms)
-    ✓ Can delete all semesters (2228 ms)
-    ✓ Can insert a course (1962 ms)
-    ✓ Can edit a course (2581 ms)
-    ✓ Can set and fulfill requirements (2811 ms)
-    ✓ Can edit a plan (764 ms)
-    ✓ Plan editor cancel button works (767 ms)
-    ✓ Delete all courses button works (3492 ms)
-    ✓ Can reset a course to default (2152 ms)
-    ✓ Delete all semesters button works (2460 ms)
-    ✓ Can add course to course pool (1181 ms)
+    ✓ App renders with welcome message (225 ms)
+    ✓ Clicking New Plan gives a form to enter a title (222 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (172 ms)
+    ✓ Can set new plan title (757 ms)
+    ✓ Insert Semester works (1371 ms)
+    ✓ Delete Semester Works (1386 ms)
+    ✓ Edit Semester Works (2289 ms)
+    ✓ Edit Semester Works (2251 ms)
+    ✓ Edit Semester cancel button works (2223 ms)
+    ✓ Can delete all semesters (2288 ms)
+    ✓ Can insert a course (2009 ms)
+    ✓ Can edit a course (2653 ms)
+    ✓ Can set and fulfill requirements (2898 ms)
+    ✓ Can edit a plan (777 ms)
+    ✓ Plan editor cancel button works (782 ms)
+    ✓ Delete all courses button works (3562 ms)
+    ✓ Can reset a course to default (2172 ms)
+    ✓ Delete all semesters button works (2498 ms)
+    ✓ Can add course to course pool (1193 ms)
 
 -----------------------------|---------|----------|---------|---------|------------------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                  
@@ -39,14 +39,14 @@ All files                    |   68.91 |       50 |   63.33 |   70.05 |
   insertPlan.tsx             |     100 |      100 |     100 |     100 |                                    
   insertSemester.tsx         |   91.66 |      100 |      80 |   91.66 | 37                                 
   planEditor.tsx             |      75 |      100 |   57.14 |   81.81 | 30-31                              
-  planView.tsx               |    87.5 |      100 |   83.33 |    87.5 | 94                                 
+  planView.tsx               |    87.5 |      100 |   83.33 |    87.5 | 83                                 
   planViewer.tsx             |   38.88 |    66.66 |   71.42 |   41.17 | 48,59-67                           
   recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                                    
   recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                                  
   recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                                    
   requirements.tsx           |   85.71 |       50 |      80 |   85.71 | 89-92                              
   semesterEditor.tsx         |   91.66 |      100 |   83.33 |   91.66 | 29                                 
-  semesterView.tsx           |   58.33 |      100 |    62.5 |   61.76 | 83,87-88,92-111,143                
+  semesterView.tsx           |   58.33 |      100 |    62.5 |   61.76 | 83,87-88,92-111,153                
   welcomeMessage.tsx         |     100 |      100 |     100 |     100 |                                    
  src/helper_functions        |     100 |      100 |     100 |     100 |                                    
   initialData.tsx            |     100 |      100 |     100 |     100 |                                    
@@ -60,5 +60,5 @@ All files                    |   68.91 |       50 |   63.33 |   70.05 |
 Test Suites: 1 passed, 1 total
 Tests:       19 passed, 19 total
 Snapshots:   0 total
-Time:        34.29 s
+Time:        35.379 s
 Ran all test suites.
