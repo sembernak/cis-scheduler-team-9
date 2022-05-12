@@ -191,6 +191,20 @@
     font-size: small;
 }
 
+.x-btn {
+    padding: 5px;
+    width: 23px;
+    height: auto;
+    background-color: rgb(195, 49, 49);
+    border-color: rgb(195, 49, 49);
+    float: right;
+}
+
+.x-btn:hover {
+    background-color: rgb(190, 95, 95);
+    border-color: rgb(195, 49, 49);
+}
+
 @media screen and (min-width: 576px) {
     .contains-semester {
         min-width: 500px;

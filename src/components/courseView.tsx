@@ -55,30 +55,34 @@ export function CourseView({
                     &#10549;
                 </Button>
                 <br></br>
-                <p id={course.code + course.semesterId + "description"}>
-                    {course.description};<br></br>
-                    {preRecs.length === 0 ? "" : "Prerequisites: " + preRecs}
-                    <br></br>
-                    {requirements.length === 0
-                        ? ""
-                        : "Degree Requirements: " + requirements}
-                </p>
-                <Col md={{ span: 5, offset: 3 }}>
-                    <Row>
-                        <RecordControlsCourse
-                            changeEditing={changeEditing}
-                        ></RecordControlsCourse>
-                        <Button
-                            onClick={() =>
-                                resetCourse(course.code, course.semesterId)
-                            }
-                            className="reset-course-btn"
-                            data-testid="reset-btn"
-                        >
-                            &#8634; Reset
-                        </Button>
-                    </Row>
-                </Col>
+                <div id={course.code + course.semesterId + "description"}>
+                    <p>
+                        {course.description};<br></br>
+                        {preRecs.length === 0
+                            ? ""
+                            : "Prerequisites: " + preRecs}
+                        <br></br>
+                        {requirements.length === 0
+                            ? ""
+                            : "Degree Requirements: " + requirements}
+                    </p>
+                    <Col md={{ span: 5, offset: 3 }}>
+                        <Row>
+                            <RecordControlsCourse
+                                changeEditing={changeEditing}
+                            ></RecordControlsCourse>
+                            <Button
+                                onClick={() =>
+                                    resetCourse(course.code, course.semesterId)
+                                }
+                                className="reset-course-btn"
+                                data-testid="reset-btn"
+                            >
+                                &#8634; Reset
+                            </Button>
+                        </Row>
+                    </Col>
+                </div>
             </Col>
             <div></div>
         </>

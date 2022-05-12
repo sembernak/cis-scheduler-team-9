@@ -66,8 +66,8 @@ export function Requirements({
             <div>
                 Add a requirement for your degree here. If a course fufills that
                 requirement, edit the course and add that requirement. The
-                requirment, once met for the appropriate amount of credits, will
-                be marked as complete.
+                requirement, once the appropriate amount of credits are met,
+                will be marked as complete.
             </div>
             {requires.map(
                 (req: Requirement): JSX.Element => (
@@ -93,6 +93,7 @@ export function Requirements({
                                             )
                                         )
                                     }
+                                    className="x-btn"
                                 >
                                     X
                                 </Button>
