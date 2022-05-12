@@ -9,7 +9,6 @@ import {
     FormControl,
     FormLabel
 } from "react-bootstrap";
-//import { Quiz } from "../interfaces/quiz";
 import { Course } from "../interfaces/course";
 
 //chnaging credits does not fully work yet

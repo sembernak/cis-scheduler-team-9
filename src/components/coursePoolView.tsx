@@ -8,17 +8,10 @@ export function CoursePoolView({
     course,
     editCourse,
     deletePoolCourse
-}: //addCourse
-{
+}: {
     course: Course;
     deletePoolCourse: (code: string) => void;
     editCourse: (code: string, newCourse: Course, semesterId: string) => void;
-    addCourse: (
-        code: string,
-        newCourse: Course,
-        semesterId: string,
-        oldSemesterId: string
-    ) => void;
 }): JSX.Element {
     const preRecs = course.prereq.join(", ");
     const [editing, setEditing] = useState<boolean>(false);
