@@ -1,4 +1,3 @@
-//import { hasSelectionSupport } from "@testing-library/user-event/dist/utils";
 import React, { useState } from "react";
 import { Button, Container } from "react-bootstrap";
 import { Course } from "../interfaces/course";
@@ -74,8 +73,6 @@ export function SemesterView({
     const handleDragOverStart = () => setDragOver(true);
     const handleDragOverEnd = () => setDragOver(false);
 
-    //console.log(dragOver); //keep getting lint error if I remove this line
-
     const handleDragStart = (
         event: React.DragEvent<HTMLDivElement>,
         course: Course
@@ -106,8 +103,6 @@ export function SemesterView({
             courseSemesterId
         );
 
-        console.log("Somebody dropped an element with id:" + id);
-        //const newSemesterId = event.target;
         setDragOver(false);
     };
 

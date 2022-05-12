@@ -374,7 +374,7 @@ function App(): JSX.Element {
                         ></Requirements>
                         <br></br>
                         <br></br>
-                        <CoursePool addCourse={addCourse}></CoursePool>
+                        <CoursePool></CoursePool>
                         <br></br>
                         <br></br>
                         <div
