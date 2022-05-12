@@ -123,6 +123,16 @@ export function SemesterView({
     ) : (
         <Container className="semester-view">
             <div
+                style={{
+                    overflowY: "scroll",
+                    height: "80vh",
+                    width: "auto",
+                    border: "solid",
+                    borderWidth: "1px",
+                    borderRadius: "8px",
+                    borderColor: "gray"
+                }}
+                className="background1"
                 onDragOver={enableDropping}
                 onDrop={handleDrop}
                 onDragEnter={handleDragOverStart}
