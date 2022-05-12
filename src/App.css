@@ -96,6 +96,8 @@
     display: inline;
     font-size: 10px;
     font-weight: bold;
+    float: left;
+    width: 60px;
 }
 .edit-sem-btn:hover {
     font-size: 10px;
@@ -112,10 +114,17 @@
     display: inline;
     font-size: 10px;
     font-weight: bold;
+    float: left;
+    width: 60px;
 }
 .delete-sem-btn:hover {
     font-size: 10px;
     background-color: red;
+}
+
+.sem-controls {
+    border: 1px "solid" gray;
+    background-color: #406abc;
 }
 .delete-allcourse-btn {
     transition-duration: 0.4s;
@@ -127,7 +136,9 @@
     text-decoration: none;
     display: inline;
     font-size: 10px;
+    float: right;
     font-weight: bold;
+    width: 70px;
 }
 .delete-allcourse-btn:hover {
     background-color: red;
@@ -143,6 +154,8 @@
     display: inline;
     font-size: 10px;
     font-weight: bold;
+    float: right;
+    width: 60px;
 }
 .insert-course-btn:hover {
     font-size: 10px;
@@ -165,6 +178,7 @@
     border: 1px solid green;
     color: black;
     font-weight: bold;
+    padding: 1px;
 }
 .download-plan {
     font-size: 10px;
@@ -172,6 +186,7 @@
     border: 1px solid blue;
     color: black;
     font-weight: bold;
+    padding: 1px;
 }
 
 .uploadPlanBtn {

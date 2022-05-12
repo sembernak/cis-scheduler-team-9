@@ -91,7 +91,7 @@ export function PlanViewer({
             >
                 New Plan
             </Button>
-            Download your current plan:
+            <> Download your current plan: </>
             <Button onClick={makeCSV} className="download-plan">
                 Download Plan
             </Button>
@@ -103,6 +103,8 @@ export function PlanViewer({
                     flipInsert={flipInsert}
                 ></InsertPlan>
             )}
+            <br></br>
+            <br></br>
             {planList.length < 2 ? (
                 <PlanView
                     deleteAllCourses={deleteAllCourses}

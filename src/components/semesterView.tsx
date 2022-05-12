@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Container } from "react-bootstrap";
+import { Button, Col, Container } from "react-bootstrap";
 import { Course } from "../interfaces/course";
 import { Plan } from "../interfaces/plan";
 import { Semester } from "../interfaces/semester";
@@ -180,27 +180,37 @@ export function SemesterView({
                     </div>
                 ))}
                 <div>
-                    <Button
-                        onClick={() => deleteSemester(newsemester.id)}
-                        variant="danger"
-                        className="delete-sem-btn"
-                    >
-                        Delete semester
-                    </Button>
-                    <Button
-                        onClick={flipVisibility}
-                        variant="success"
-                        className="insert-course-btn"
-                    >
-                        Insert Course
-                    </Button>
-                    <Button
-                        onClick={() => deleteAllCourses(String(semester.id))}
-                        variant="danger"
-                        className="delete-allcourse-btn"
-                    >
-                        Delete All Courses
-                    </Button>
+                    <br></br>
+                    <Col>
+                        <RecordControlsSemester
+                            changeEditing={changeEditing}
+                        ></RecordControlsSemester>
+                        <Button
+                            onClick={() => deleteSemester(newsemester.id)}
+                            variant="danger"
+                            className="delete-sem-btn"
+                        >
+                            Delete Semester
+                        </Button>
+                    </Col>
+                    <Col>
+                        <Button
+                            onClick={flipVisibility}
+                            variant="success"
+                            className="insert-course-btn"
+                        >
+                            Insert Course
+                        </Button>
+                        <Button
+                            onClick={() =>
+                                deleteAllCourses(String(semester.id))
+                            }
+                            variant="danger"
+                            className="delete-allcourse-btn"
+                        >
+                            Delete All Courses
+                        </Button>
+                    </Col>
                     {visible && (
                         <InsertCourse
                             semester={newsemester}
@@ -209,9 +219,6 @@ export function SemesterView({
                             editSemester={editSemester}
                         ></InsertCourse>
                     )}
-                    <RecordControlsSemester
-                        changeEditing={changeEditing}
-                    ></RecordControlsSemester>
                 </div>
             </div>
         </Container>
