@@ -1,7 +1,8 @@
 import unpackJson from "./unpackJSON";
 import catalog from "../catalog.json";
+import { Requirement } from "../interfaces/requirement";
 import { Course } from "../interfaces/course";
-export { examplePlan1, examplePlan2 };
+export { examplePlan1, examplePlan2, defReq1 };
 
 const COURSELIST = [
     //Complete list of every course in order of department (see catalog.json)
@@ -130,3 +131,15 @@ const examplePlan2 = {
     semesters: [exampleSem4],
     id: "Plan 2"
 };
+
+const defReq1 = [
+    { name: "ENGL 110", credits: 3 },
+    { name: "First Year Seminar", credits: 1 },
+    { name: "Discovery Learning Experience", credits: 3 },
+    { name: "Multicultural", credits: 3 },
+    { name: "Creative Arts and Humanities", credits: 3 },
+    { name: "History and Cultural Change", credits: 3 },
+    { name: "Social and Behavioral Sciences", credits: 3 },
+    { name: "Mathematics, Natural Sciences, and Technology", credits: 3 },
+    { name: "Capstonce Experience", credits: 1 }
+] as Requirement[];

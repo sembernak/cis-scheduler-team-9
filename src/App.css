@@ -57,11 +57,6 @@
     flex-wrap: wrap;
 }
 
-.row-equal {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .semester-view {
     display: flex;
     flex-direction: column;
