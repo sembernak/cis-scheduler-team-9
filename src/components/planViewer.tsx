@@ -22,7 +22,8 @@ export function PlanViewer({
     deleteAllCourses,
     deleteAllSemesters,
     resetCourse,
-    addCourse
+    addCourse,
+    checkPreReq
 }: {
     planList: Plan[];
     select: (title: string) => void;
@@ -43,6 +44,7 @@ export function PlanViewer({
         semesterId: string,
         oldSemesterId: string
     ) => void;
+    checkPreReq: (reqList: string[], courseNeed: Course) => boolean;
 }): JSX.Element {
     if (planList.length < 1) {
         planList.push({ title: "New Plan", semesters: [], id: "New Plan" });
@@ -118,6 +120,7 @@ export function PlanViewer({
                     deleteAllSemesters={deleteAllSemesters}
                     resetCourse={resetCourse}
                     addCourse={addCourse}
+                    checkPreReq={checkPreReq}
                 ></PlanView>
             ) : (
                 planList.map((plan: Plan) => (
@@ -138,6 +141,7 @@ export function PlanViewer({
                             deleteAllSemesters={deleteAllSemesters}
                             resetCourse={resetCourse}
                             addCourse={addCourse}
+                            checkPreReq={checkPreReq}
                         ></PlanView>
                     </div>
                 ))

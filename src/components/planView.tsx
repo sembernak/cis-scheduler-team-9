@@ -18,7 +18,8 @@ export function PlanView({
     deleteAllCourses,
     deleteAllSemesters,
     resetCourse,
-    addCourse
+    addCourse,
+    checkPreReq
 }: {
     plan: Plan;
     deleteSemester: (id: string) => void;
@@ -36,6 +37,7 @@ export function PlanView({
         semesterId: string,
         oldSemesterId: string
     ) => void;
+    checkPreReq: (reqList: string[], courseNeed: Course) => boolean;
 }): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false); //whether or not the adding semester view is visible
     //true means the addition screen is open
@@ -78,6 +80,7 @@ export function PlanView({
                                     deleteAllCourses={deleteAllCourses}
                                     resetCourse={resetCourse}
                                     addCourse={addCourse}
+                                    checkPreReq={checkPreReq}
                                 ></SemesterView>
                             </div>
                         </Col>

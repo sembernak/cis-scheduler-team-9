@@ -38,11 +38,11 @@ export function InsertCourse({
     const newCourse = {
         code: code,
         title: title,
-        prereq: [""],
+        prereq: preReqs,
         description: description,
         credits: credits,
         semesterId: semesterId,
-        requirements: [""]
+        requirements: requires
     };
 
     function cancel() {

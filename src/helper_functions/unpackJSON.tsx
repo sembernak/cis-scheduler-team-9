@@ -14,7 +14,7 @@ export default function unloadJson(
     return {
         code: courseSpec["code"],
         title: courseSpec["name"],
-        prereq: [courseSpec["preReq"]],
+        prereq: [],
         description: courseSpec["descr"],
         credits: courseSpec["credits"],
         semesterId: "",

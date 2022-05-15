@@ -329,6 +329,32 @@ function App(): JSX.Element {
         return false;
     }
 
+    function compSemesters(semesterChk2: Semester, course: Course): boolean {
+        const currentPlan = plans.find(
+            (plan: Plan): boolean => plan.title === selection
+        ) as Plan;
+        const semesterChk1 = currentPlan.semesters.find(
+            (sem: Semester): boolean => contains(course.code, sem.id)
+        ) as Semester;
+        return semesterChk1.year === semesterChk2.year
+            ? 0 < compareSeason(semesterChk1.season, semesterChk2.season)
+            : 0 < semesterChk1.year - semesterChk2.year;
+    }
+
+    function checkPreReq(reqList: string[], courseNeed: Course): boolean {
+        const currentPlan = plans.find(
+            (plan: Plan): boolean => plan.title === selection
+        ) as Plan;
+        return reqList.every((req: string): boolean =>
+            currentPlan.semesters.some((sem: Semester): boolean =>
+                sem.courses.some(
+                    (course: Course): boolean =>
+                        course.code === req && compSemesters(sem, courseNeed)
+                )
+            )
+        );
+    }
+
     return (
         <div className="App">
             <header className="App-header">
@@ -363,6 +389,7 @@ function App(): JSX.Element {
                             addPlan={addPlan}
                             resetCourse={resetCourse}
                             addCourse={addCourse}
+                            checkPreReq={checkPreReq}
                         ></PlanViewer>
                     </Col>
                     <Col sm={4}>

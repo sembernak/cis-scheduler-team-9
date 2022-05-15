@@ -8,12 +8,14 @@ export function CourseView({
     course,
     deleteCourse,
     editCourse,
-    resetCourse
+    resetCourse,
+    checkPreReq
 }: {
     course: Course;
     deleteCourse: (code: string, semesterId: string) => void;
     editCourse: (code: string, newCourse: Course, semesterId: string) => void;
     resetCourse: (code: string, semesterId: string) => void;
+    checkPreReq: (reqList: string[], courseNeed: Course) => boolean;
 }): JSX.Element {
     const preRecs = course.prereq.join(", ");
     const requirements = course.requirements.join(", ");
@@ -21,6 +23,8 @@ export function CourseView({
     function changeEditing() {
         setEditing(!editing);
     }
+
+    const message = checkPreReq(course.prereq, course) ? "✅" : "❌";
 
     function showDes() {
         const show = document.getElementById(
@@ -58,9 +62,10 @@ export function CourseView({
                 <div id={course.code + course.semesterId + "description"}>
                     <p>
                         {course.description};<br></br>
+                        {}
                         {preRecs.length === 0
                             ? ""
-                            : "Prerequisites: " + preRecs}
+                            : "Prerequisites: " + preRecs + " Met? " + message}
                         <br></br>
                         {requirements.length === 0
                             ? ""
