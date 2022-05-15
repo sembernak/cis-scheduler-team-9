@@ -17,7 +17,8 @@ export function SemesterView({
     editSemester,
     deleteAllCourses,
     resetCourse,
-    addCourse
+    addCourse,
+    checkPreReq
 }: {
     plan: Plan;
     semester: Semester;
@@ -33,6 +34,7 @@ export function SemesterView({
         semesterId: string,
         oldSemesterId: string
     ) => void;
+    checkPreReq: (reqList: string[], courseNeed: Course) => boolean;
 }): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false); //whether or not the adding semester view is visible
     const [editing, setEditing] = useState<boolean>(false);
@@ -176,6 +178,7 @@ export function SemesterView({
                             deleteCourse={deleteCourse}
                             editCourse={editCourse}
                             resetCourse={resetCourse}
+                            checkPreReq={checkPreReq}
                         ></CourseView>
                     </div>
                 ))}

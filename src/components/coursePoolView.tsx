@@ -68,8 +68,9 @@ export function CoursePoolView({
                         changeEditing={changeEditing}
                     ></RecordControlsCourse>
                 </Col>
+                <br></br>
             </Col>
-            <div></div>
+            <br></br>
         </div>
     );
 }

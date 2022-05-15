@@ -696,7 +696,6 @@ describe("Make a new plan", () => {
         expect(screen.getAllByText(/3 credits/i)).toBeInTheDocument;
         expect(screen.getByText(/CHEM 331/i)).toBeInTheDocument;
         expect(screen.getByText(/Organic Chemistry/i)).toBeInTheDocument;
-        expect(screen.getByText(/Prerequisites: CHEM 104/i)).toBeInTheDocument;
         //these are the default values for CHEM 331
     });
     test("Delete all semesters button works", () => {
@@ -755,6 +754,86 @@ describe("Make a new plan", () => {
         //after clicking delete all semesters button, neither semester should be present anymore
         expect(screen.queryByText(/Spring - 2029/i)).not.toBeInTheDocument();
         expect(screen.queryByText(/Winter - 2021/i)).not.toBeInTheDocument();
+    });
+    test("Can make and fulfill preRequisites", () => {
+        //make a new plan
+        const createNew = screen.getByTestId("NewPlan");
+        createNew.click();
+        const enterTitle = screen.getByLabelText("Plan Title:");
+        userEvent.type(enterTitle, "Test Plan 20");
+        const save = screen.getByText("Save");
+        save.click();
+        const drop = screen.getByTestId("PlanSelect");
+        userEvent.selectOptions(drop, "Test Plan 20");
+        const newSemesters = screen.getAllByTestId(
+            "InsertSemesterTest Plan 20"
+        );
+        const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
+        //make a new semester
+        newSemester.click();
+        const setSeason = screen.getByLabelText("Season:");
+        const setYear = screen.getByLabelText("Year:");
+        expect(setSeason).toBeInTheDocument;
+        expect(setYear).toBeInTheDocument;
+        userEvent.clear(setYear);
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Winter" })
+        );
+        userEvent.type(setYear, "2021");
+        screen.getByRole("button", { name: "Save", hidden: false }).click();
+        expect(screen.getAllByText(/Winter - 2021/i)).toBeInTheDocument; //initially semester is in the document
+        //Add a course
+        const insertButton = screen.queryAllByRole("button", {
+            name: "Insert Course",
+            hidden: false
+        });
+        expect(insertButton).toBeInTheDocument;
+        insertButton[0].click();
+        const setCode = screen.getByLabelText("Code:");
+        userEvent.type(setCode, "CISC 100");
+        const saveButton = screen.getAllByRole("button", {
+            name: "Save",
+            hidden: false
+        })[0];
+        saveButton.click();
+        //add another semester
+        newSemester.click();
+        const setSeason2 = screen.getByLabelText("Season:");
+        const setYear2 = screen.getByLabelText("Year:");
+        expect(setSeason2).toBeInTheDocument;
+        expect(setYear2).toBeInTheDocument;
+        userEvent.clear(setYear2);
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Spring" })
+        );
+        userEvent.type(setYear2, "2029");
+        screen.getByRole("button", { name: "Save", hidden: false }).click();
+        expect(screen.getAllByText(/Spring - 2029/i)).toBeInTheDocument;
+        //Add second course
+        const insertButton2 = screen.queryAllByRole("button", {
+            name: "Insert Course",
+            hidden: false
+        });
+        expect(insertButton2).toBeInTheDocument;
+        insertButton[insertButton.length - 1].click();
+        const setCode2 = screen.getByLabelText("Code:");
+        const typePreReqs = screen.getAllByPlaceholderText("New PreReq")[0];
+        const enterPreReqs = screen.getAllByText("Add PreReq")[0];
+        userEvent.type(setCode2, "CHEM 331");
+        userEvent.type(typePreReqs, "CISC 100");
+        enterPreReqs.click();
+        const saveButton2 = screen.getAllByRole("button", {
+            name: "Save",
+            hidden: false
+        })[0];
+        saveButton2.click();
+        expect(/Met? ✅/i).toBeInTheDocument;
     });
     test("Can add course to course pool", () => {
         //make a new plan
