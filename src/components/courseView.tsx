@@ -61,7 +61,8 @@ export function CourseView({
                 <br></br>
                 <div id={course.code + course.semesterId + "description"}>
                     <p>
-                        {course.description};<br></br>
+                        {course.description}
+                        <br></br>
                         {}
                         {preRecs.length === 0
                             ? ""
