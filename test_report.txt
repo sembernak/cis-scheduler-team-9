@@ -2,28 +2,28 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-PASS src/App.test.tsx (42.189 s)
+PASS src/App.test.tsx (42.987 s)
   Make a new plan
-    ✓ App renders with welcome message (254 ms)
-    ✓ Clicking New Plan gives a form to enter a title (243 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (149 ms)
-    ✓ Can set new plan title (731 ms)
-    ✓ Insert Semester works (1473 ms)
-    ✓ Delete Semester Works (1496 ms)
-    ✓ Edit Semester Works (2437 ms)
-    ✓ Edit Semester Works (2437 ms)
-    ✓ Edit Semester cancel button works (2377 ms)
-    ✓ Can delete all semesters (2544 ms)
-    ✓ Can insert a course (2195 ms)
-    ✓ Can edit a course (2911 ms)
-    ✓ Can set and fulfill requirements (3131 ms)
-    ✓ Can edit a plan (949 ms)
-    ✓ Plan editor cancel button works (952 ms)
-    ✓ Delete all courses button works (4016 ms)
-    ✓ Can reset a course to default (2376 ms)
-    ✓ Delete all semesters button works (2766 ms)
-    ✓ Can make and fulfill preRequisites (4508 ms)
-    ✓ Can add course to course pool (1241 ms)
+    ✓ App renders with welcome message (258 ms)
+    ✓ Clicking New Plan gives a form to enter a title (253 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (145 ms)
+    ✓ Can set new plan title (748 ms)
+    ✓ Insert Semester works (1485 ms)
+    ✓ Delete Semester Works (1514 ms)
+    ✓ Edit Semester Works (2458 ms)
+    ✓ Edit Semester Works (2430 ms)
+    ✓ Edit Semester cancel button works (2425 ms)
+    ✓ Can delete all semesters (2561 ms)
+    ✓ Can insert a course (2241 ms)
+    ✓ Can edit a course (2980 ms)
+    ✓ Can set and fulfill requirements (3199 ms)
+    ✓ Can edit a plan (957 ms)
+    ✓ Plan editor cancel button works (948 ms)
+    ✓ Delete all courses button works (4050 ms)
+    ✓ Can reset a course to default (2425 ms)
+    ✓ Delete all semesters button works (2808 ms)
+    ✓ Can make and fulfill preRequisites (4571 ms)
+    ✓ Can add course to course pool (1274 ms)
 
 -----------------------------|---------|----------|---------|---------|--------------------------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                          
@@ -61,5 +61,5 @@ All files                    |   73.82 |    58.75 |   68.61 |      75 |
 Test Suites: 1 passed, 1 total
 Tests:       20 passed, 20 total
 Snapshots:   0 total
-Time:        42.822 s
+Time:        43.649 s
 Ran all test suites.
