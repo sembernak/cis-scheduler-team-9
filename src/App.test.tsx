@@ -891,7 +891,7 @@ describe("Make a new plan", () => {
             screen.getByLabelText("Season:"),
             // Find and select the Ireland option, like a real user would.
             screen.getByRole("option", { name: "Summer" })
-        );
+    );
         userEvent.type(setYear, "2010");
         screen.getByRole("button", { name: "Save", hidden: false }).click();
         expect(screen.getAllByText(/Summer - 2010/i)).toBeInTheDocument; //initially semester is in the document
@@ -916,5 +916,17 @@ describe("Make a new plan", () => {
             .click(); //saving semester
         window.location.reload(); //refresh page
         expect(editedSem[0]).toBeInTheDocument; //semester still visible
+      });
+    test("Welcome message is pulled up when help button is pressed", () => {
+        const closeButton = screen.getByRole("button", { name: /close/i });
+        closeButton.click(); //close the welcome message
+        expect(
+            screen.queryByText(/Welcome to our course planner for UD!/i)
+        ).not.toBeInTheDocument();
+        const helpBtn = screen.getAllByText("Help");
+        helpBtn[helpBtn.length - 1].click();
+        expect(
+            screen.getByText(/Welcome to our course planner for UD!/i)
+        ).toBeInTheDocument();
     });
 });
