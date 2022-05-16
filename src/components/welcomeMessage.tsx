@@ -32,9 +32,9 @@ export function WelcomeMessage({
                     <br></br>
                     <header>
                         Degree requirements are the first box in the right
-                        column. Once a requirment is fufilled by a course in
-                        your plan, it will be checked off. If a course fufills a
-                        requiremnt, click the edit course button then add the
+                        column. Once a requirement is fulfilled by a course in
+                        your plan, it will be checked off. If a course fulfills
+                        a requirement, click the edit course button then add the
                         name of the requirement.
                     </header>
                     <br></br>
