@@ -338,9 +338,13 @@ function App(): JSX.Element {
         const semesterChk1 = currentPlan.semesters.find(
             (sem: Semester): boolean => contains(course.code, sem.id)
         ) as Semester;
-        return semesterChk1.year === semesterChk2.year
-            ? 0 < compareSeason(semesterChk1.season, semesterChk2.season)
-            : 0 < semesterChk1.year - semesterChk2.year;
+        if (semesterChk1 === undefined || semesterChk2 === undefined) {
+            return false;
+        } else {
+            return semesterChk1.year === semesterChk2.year
+                ? 0 < compareSeason(semesterChk1.season, semesterChk2.season)
+                : 0 < semesterChk1.year - semesterChk2.year;
+        }
     }
 
     //Check if PreReqs are fulfilled
