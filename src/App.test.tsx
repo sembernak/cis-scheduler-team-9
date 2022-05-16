@@ -865,4 +865,16 @@ describe("Make a new plan", () => {
             screen.getByText(/Research Studio: Practice and Product/i)
         ).toBeInTheDocument();
     });
+    test("Welcome message is pulled up when help button is pressed", () => {
+        const closeButton = screen.getByRole("button", { name: /close/i });
+        closeButton.click(); //close the welcome message
+        expect(
+            screen.queryByText(/Welcome to our course planner for UD!/i)
+        ).not.toBeInTheDocument();
+        const helpBtn = screen.getAllByText("Help");
+        helpBtn[helpBtn.length - 1].click();
+        expect(
+            screen.getByText(/Welcome to our course planner for UD!/i)
+        ).toBeInTheDocument();
+    });
 });
