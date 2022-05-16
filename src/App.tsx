@@ -62,6 +62,7 @@ function App(): JSX.Element {
     const [showWelcomeMessage, setShowWelcomeMessage] = useState(true); //Welcome message visible?
 
     const handleWelcomeMessage = () => setShowWelcomeMessage(false);
+    const handleWelcomeButton = () => setShowWelcomeMessage(true);
 
     function compareSeason(a: string, b: string): number {
         const numerify = ["Winter", "Spring", "Summer", "Fall"];
@@ -370,6 +371,11 @@ function App(): JSX.Element {
                 ></WelcomeMessage>
                 <Button className="save-btn" onClick={saveData}>
                     Save Data
+                </Button>
+                <br></br>
+                <Button className="save-btn" onClick={handleWelcomeButton}>
+                    {" "}
+                    Help{" "}
                 </Button>
             </header>
             <div className="schedule">
