@@ -52,8 +52,6 @@ export function Requirements({
     return (
         <div
             style={{
-                overflowY: "scroll",
-                height: "60vh",
                 width: "auto",
                 border: "solid",
                 borderWidth: "1px",
