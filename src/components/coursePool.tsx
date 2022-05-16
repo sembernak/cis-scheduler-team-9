@@ -81,8 +81,6 @@ export function CoursePool(): JSX.Element {
     return (
         <div
             style={{
-                overflowY: "scroll",
-                height: "60vh",
                 width: "auto",
                 border: "solid",
                 borderWidth: "1px",
