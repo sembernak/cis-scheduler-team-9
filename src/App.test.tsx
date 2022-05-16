@@ -865,6 +865,58 @@ describe("Make a new plan", () => {
             screen.getByText(/Research Studio: Practice and Product/i)
         ).toBeInTheDocument();
     });
+    test("Can save data", () => {
+        //make a new plan
+        const createNew = screen.getByTestId("NewPlan");
+        createNew.click();
+        const enterTitle = screen.getByLabelText("Plan Title:");
+        userEvent.type(enterTitle, "Test Plan 21");
+        const save = screen.getByText("Save");
+        save.click();
+        const drop = screen.getByTestId("PlanSelect");
+        userEvent.selectOptions(drop, "Test Plan 21");
+        const newSemesters = screen.getAllByTestId(
+            "InsertSemesterTest Plan 21"
+        );
+        const newSemester = newSemesters[0]; //if the tests mysteriously break this is the reason
+        //make a new semester
+        newSemester.click();
+        const setSeason = screen.getByLabelText("Season:");
+        const setYear = screen.getByLabelText("Year:");
+        expect(setSeason).toBeInTheDocument;
+        expect(setYear).toBeInTheDocument;
+        userEvent.clear(setYear);
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Summer" })
+    );
+        userEvent.type(setYear, "2010");
+        screen.getByRole("button", { name: "Save", hidden: false }).click();
+        expect(screen.getAllByText(/Summer - 2010/i)).toBeInTheDocument; //initially semester is in the document
+        screen
+            .getAllByRole("button", { name: "Edit Semester", hidden: false })[0]
+            .click();
+        //edit semester
+        const setYear2 = screen.getByLabelText("Year:");
+        userEvent.clear(setYear2);
+        userEvent.selectOptions(
+            // Find the select element, like a real user would.
+            screen.getByLabelText("Season:"),
+            // Find and select the Ireland option, like a real user would.
+            screen.getByRole("option", { name: "Fall" })
+        );
+        userEvent.type(setYear2, "2011");
+        screen.getByRole("button", { name: "Save", hidden: false }).click();
+        const editedSem = screen.queryAllByText(/Fall - 2011/);
+        expect(editedSem[0]).toBeInTheDocument; //new edited semester is visible
+        screen
+            .getByRole("button", { name: "Save Data", hidden: false })
+            .click(); //saving semester
+        window.location.reload(); //refresh page
+        expect(editedSem[0]).toBeInTheDocument; //semester still visible
+      });
     test("Welcome message is pulled up when help button is pressed", () => {
         const closeButton = screen.getByRole("button", { name: /close/i });
         closeButton.click(); //close the welcome message
