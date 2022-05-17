@@ -36,6 +36,8 @@ export function Requirements({
 
     function checkFulfilled(req: string, needCred: number) {
         let compCred = 0;
+        //needed to use if statements otherwise code became very hard to read
+        //If we deleted first plan, it caused a console error so we have to check if plan is undefined
         if (plan !== undefined) {
             compCred = plan.semesters.reduce(
                 (total: number, semester: Semester) =>
