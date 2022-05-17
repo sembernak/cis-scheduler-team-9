@@ -2,50 +2,30 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-  console.error
-    Error: Not implemented: navigation (except hash changes)
-        at module.exports (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
-        at navigateFetch (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/jsdom/lib/jsdom/living/window/navigation.js:76:3)
-        at exports.navigate (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/jsdom/lib/jsdom/living/window/navigation.js:54:3)
-        at LocationImpl.reload (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/jsdom/lib/jsdom/living/window/Location-impl.js:236:5)
-        at Location.reload (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/jsdom/lib/jsdom/living/generated/Location.js:99:36)
-        at Object.<anonymous> (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/src/App.test.tsx:917:25)
-        at Promise.then.completed (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/jest-circus/build/utils.js:391:28)
-        at new Promise (<anonymous>)
-        at callAsyncCircusFn (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/jest-circus/build/utils.js:316:10)
-        at _callCircusTest (/home/runner/work/cis-scheduler-team-9/cis-scheduler-team-9/node_modules/jest-circus/build/run.js:218:40) undefined
-
-      at VirtualConsole.<anonymous> (node_modules/jsdom/lib/jsdom/virtual-console.js:29:45)
-      at module.exports (node_modules/jsdom/lib/jsdom/browser/not-implemented.js:12:26)
-      at navigateFetch (node_modules/jsdom/lib/jsdom/living/window/navigation.js:76:3)
-      at exports.navigate (node_modules/jsdom/lib/jsdom/living/window/navigation.js:54:3)
-      at LocationImpl.reload (node_modules/jsdom/lib/jsdom/living/window/Location-impl.js:236:5)
-      at Location.reload (node_modules/jsdom/lib/jsdom/living/generated/Location.js:99:36)
-
-PASS src/App.test.tsx (47.259 s)
+PASS src/App.test.tsx (48.636 s)
   Make a new plan
-    ✓ App renders with welcome message (262 ms)
-    ✓ Clicking New Plan gives a form to enter a title (243 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (158 ms)
-    ✓ Can set new plan title (783 ms)
-    ✓ Insert Semester works (1536 ms)
-    ✓ Delete Semester Works (1503 ms)
-    ✓ Edit Semester Works (2529 ms)
-    ✓ Edit Semester Works (2481 ms)
-    ✓ Edit Semester cancel button works (2483 ms)
-    ✓ Can delete all semesters (2597 ms)
-    ✓ Can insert a course (2272 ms)
-    ✓ Can edit a course (3009 ms)
-    ✓ Can set and fulfill requirements (3226 ms)
-    ✓ Can edit a plan (956 ms)
-    ✓ Plan editor cancel button works (964 ms)
-    ✓ Delete all courses button works (4096 ms)
-    ✓ Can reset a course to default (2467 ms)
-    ✓ Delete all semesters button works (2868 ms)
-    ✓ Can make and fulfill preRequisites (4647 ms)
-    ✓ Can add course to course pool (1327 ms)
-    ✓ Can save data (3393 ms)
-    ✓ Welcome message is pulled up when help button is pressed (455 ms)
+    ✓ App renders with welcome message (266 ms)
+    ✓ Clicking New Plan gives a form to enter a title (270 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (166 ms)
+    ✓ Can set new plan title (785 ms)
+    ✓ Insert Semester works (1538 ms)
+    ✓ Delete Semester Works (1544 ms)
+    ✓ Edit Semester Works (2563 ms)
+    ✓ Edit Semester Works (2550 ms)
+    ✓ Edit Semester cancel button works (2564 ms)
+    ✓ Can delete all semesters (2687 ms)
+    ✓ Can insert a course (2381 ms)
+    ✓ Can edit a course (3073 ms)
+    ✓ Can set and fulfill requirements (3362 ms)
+    ✓ Can edit a plan (993 ms)
+    ✓ Plan editor cancel button works (1000 ms)
+    ✓ Delete all courses button works (4240 ms)
+    ✓ Can reset a course to default (2532 ms)
+    ✓ Delete all semesters button works (2936 ms)
+    ✓ Can make and fulfill preRequisites (4761 ms)
+    ✓ Can add course to course pool (1362 ms)
+    ✓ Can save data (3429 ms)
+    ✓ Welcome message is pulled up when help button is pressed (469 ms)
 
 -----------------------------|---------|----------|---------|---------|------------------------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                        
@@ -83,5 +63,5 @@ All files                    |   74.61 |    59.52 |   69.84 |   75.46 |
 Test Suites: 1 passed, 1 total
 Tests:       22 passed, 22 total
 Snapshots:   0 total
-Time:        47.924 s
+Time:        49.308 s
 Ran all test suites.
