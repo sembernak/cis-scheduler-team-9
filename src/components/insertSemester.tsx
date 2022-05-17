@@ -30,9 +30,6 @@ export function InsertSemester({
         planId: plan.id
     };
 
-    //function changeEditing() {
-    //    setEditing(!editing);
-    //}
     function cancel() {
         flipVisibility();
     }

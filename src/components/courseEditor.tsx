@@ -11,8 +11,6 @@ import {
 } from "react-bootstrap";
 import { Course } from "../interfaces/course";
 
-//chnaging credits does not fully work yet
-
 export function CourseEditor({
     changeEditing,
     course,
@@ -63,17 +61,6 @@ export function CourseEditor({
         setNewPR("");
     }
 
-    /*function manageCurrentPR(
-        event: React.ChangeEvent<HTMLInputElement>,
-        key: string
-    ) {
-        setPreReqs(
-            preReqs.map((item: string): string =>
-                item === key ? event.target.value : item
-            )
-        );
-    }*/
-
     function newRequireFunction(event: React.ChangeEvent<HTMLInputElement>) {
         setNewRequire(event.target.value);
     }
@@ -83,24 +70,13 @@ export function CourseEditor({
         setNewRequire("");
     }
 
-    /*function manageCurrentPR(
-        event: React.ChangeEvent<HTMLInputElement>,
-        key: string
-    ) {
-        setRequires(
-            requires.map((item: string): string =>
-                item === key ? event.target.value : item
-            )
-        );
-    }*/
-
     return (
         <Container>
-            <br></br>
             <Row>
                 <Col>
                     {/* credits */}
                     <Form.Group controlId="formCourseCredits" as={Row}>
+                        <br></br>
                         <Form.Label column sm={3}>
                             Credits:
                         </Form.Label>
@@ -162,10 +138,6 @@ export function CourseEditor({
                                     readOnly
                                     defaultValue={prereq}
                                     className="default-form"
-                                    /*onChange={(
-                                        event: React.ChangeEvent<HTMLInputElement>
-                                    ) => manageCurrentPR(event, prereq)}
-                                    This works but is annoying to use ^*/
                                 />
                                 <Button
                                     className="default-button"
@@ -208,10 +180,6 @@ export function CourseEditor({
                                     className="default-button"
                                     readOnly
                                     value={req}
-                                    /*onChange={(
-                                        event: React.ChangeEvent<HTMLInputElement>
-                                    ) => manageCurrentPR(event, prereq)}
-                                    This works but is annoying to use ^*/
                                 />
                                 <Button
                                     className="default-button"

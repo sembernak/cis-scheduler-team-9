@@ -67,7 +67,6 @@ export function PlanViewer({
         a["download"] = "plans.csv";
         a.href = encodeUri;
         a.click();
-        console.log(csvContent);
     }
     return (
         <div>

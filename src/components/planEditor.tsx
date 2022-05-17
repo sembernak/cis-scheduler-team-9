@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import { Button, Container, Row, Col, Form } from "react-bootstrap";
-//import { Quiz } from "../interfaces/quiz";
 import { Course } from "../interfaces/course";
 import { Semester } from "../interfaces/semester";
 import { Plan } from "../interfaces/plan";
-
-//chnaging credits does not fully work yet
 
 export function PlanEditor({
     changeEditing,
