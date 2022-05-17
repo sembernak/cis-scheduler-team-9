@@ -352,6 +352,9 @@ function App(): JSX.Element {
         const currentPlan = plans.find(
             (plan: Plan): boolean => plan.title === selection
         ) as Plan;
+        if (currentPlan === undefined || currentPlan === null) {
+            return false;
+        }
         return reqList.every((req: string): boolean =>
             currentPlan.semesters.some((sem: Semester): boolean =>
                 sem.courses.some(
