@@ -2,6 +2,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 import userEvent from "@testing-library/user-event";
+import "jest-location-mock";
 
 describe("Make a new plan", () => {
     //Making sure that a new plan made by the user is at the very least usable
