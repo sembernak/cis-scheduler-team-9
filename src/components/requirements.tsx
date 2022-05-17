@@ -35,18 +35,23 @@ export function Requirements({
     }
 
     function checkFulfilled(req: string, needCred: number) {
-        const compCred = plan.semesters.reduce(
-            (total: number, semester: Semester) =>
-                total +
-                semester.courses.reduce(
-                    (subTotal: number, course: Course) =>
-                        course.requirements.includes(req)
-                            ? subTotal + parseInt(course.credits.trim()[0])
-                            : subTotal,
-                    0
-                ),
-            0
-        );
+        let compCred = 0;
+        if (plan !== undefined) {
+            compCred = plan.semesters.reduce(
+                (total: number, semester: Semester) =>
+                    total +
+                    semester.courses.reduce(
+                        (subTotal: number, course: Course) =>
+                            course.requirements.includes(req)
+                                ? subTotal + parseInt(course.credits.trim()[0])
+                                : subTotal,
+                        0
+                    ),
+                0
+            );
+        } else {
+            compCred = 0;
+        }
         return compCred >= needCred;
     }
     return (
