@@ -92,6 +92,10 @@ export function InsertCourse({
     return (
         <Container>
             <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
             {/* Code */}
             <Form.Group controlId="formcourseCode" as={Row}>
                 <Form.Label column sm={3}>
@@ -160,10 +164,6 @@ export function InsertCourse({
                             className="default-form"
                             readOnly
                             value={prereq}
-                            /*onChange={(
-                                        event: React.ChangeEvent<HTMLInputElement>
-                                    ) => manageCurrentPR(event, prereq)}
-                                    This works but is annoying to use ^*/
                         />
                         <Button
                             className="default-button"
@@ -206,10 +206,6 @@ export function InsertCourse({
                             className="default-form"
                             readOnly
                             value={req}
-                            /*onChange={(
-                                        event: React.ChangeEvent<HTMLInputElement>
-                                    ) => manageCurrentPR(event, prereq)}
-                                    This works but is annoying to use ^*/
                         />
                         <Button
                             className="default-button"

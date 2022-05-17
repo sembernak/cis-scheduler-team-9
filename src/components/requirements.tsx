@@ -81,14 +81,7 @@ export function Requirements({
                     <Container key={req.name}>
                         <Row>
                             <Col md={8} className="display-requirement">
-                                <FormControl
-                                    readOnly
-                                    value={req.name}
-                                    /*onChange={(
-                                        event: React.ChangeEvent<HTMLInputElement>
-                                    ) => manageCurrentPR(event, prereq)}
-                                    This works but is annoying to use ^*/
-                                />
+                                <FormControl readOnly value={req.name} />
                             </Col>
                             <Col md={1}>
                                 <Button
