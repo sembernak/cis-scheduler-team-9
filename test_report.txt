@@ -2,30 +2,30 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-PASS src/App.test.tsx (47.508 s)
+PASS src/App.test.tsx (45.816 s)
   Tests for user stories
-    ✓ App renders with welcome message (265 ms)
-    ✓ Clicking New Plan gives a form to enter a title (257 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (158 ms)
-    ✓ Can set new plan title (798 ms)
-    ✓ Insert Semester works (1571 ms)
-    ✓ Delete Semester Works (1547 ms)
-    ✓ Edit Semester Works (2606 ms)
-    ✓ Edit Semester Works (2527 ms)
-    ✓ Edit Semester cancel button works (2533 ms)
-    ✓ Can delete all semesters (2676 ms)
-    ✓ Can insert a course (2276 ms)
-    ✓ Can edit a course (3052 ms)
-    ✓ Can set and fulfill requirements (3260 ms)
-    ✓ Can edit a plan (941 ms)
-    ✓ Plan editor cancel button works (945 ms)
-    ✓ Delete all courses button works (4077 ms)
-    ✓ Can reset a course to default (2452 ms)
-    ✓ Delete all semesters button works (2850 ms)
-    ✓ Can make and fulfill preRequisites (4587 ms)
-    ✓ Can add course to course pool (1318 ms)
-    ✓ Can save data (3338 ms)
-    ✓ Welcome message is pulled up when help button is pressed (427 ms)
+    ✓ App renders with welcome message (267 ms)
+    ✓ Clicking New Plan gives a form to enter a title (227 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (157 ms)
+    ✓ Can set new plan title (789 ms)
+    ✓ Insert Semester works (1493 ms)
+    ✓ Delete Semester Works (1524 ms)
+    ✓ Edit Semester Works (2522 ms)
+    ✓ Edit Semester Works (2423 ms)
+    ✓ Edit Semester cancel button works (2359 ms)
+    ✓ Can delete all semesters (2604 ms)
+    ✓ Can insert a course (2255 ms)
+    ✓ Can edit a course (2993 ms)
+    ✓ Can set and fulfill requirements (3219 ms)
+    ✓ Can edit a plan (948 ms)
+    ✓ Plan editor cancel button works (964 ms)
+    ✓ Delete all courses button works (4082 ms)
+    ✓ Can reset a course to default (2450 ms)
+    ✓ Delete all semesters button works (2514 ms)
+    ✓ Can make and fulfill preRequisites (4584 ms)
+    ✓ Can add course to course pool (1189 ms)
+    ✓ Can save data (2967 ms)
+    ✓ Welcome message is pulled up when help button is pressed (402 ms)
 
 -----------------------------|---------|----------|---------|---------|------------------------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                        
@@ -47,7 +47,7 @@ All files                    |   74.74 |     59.3 |   69.84 |   75.59 |
   recordControlsCourse.tsx   |     100 |      100 |     100 |     100 |                                          
   recordControlsPlan.tsx     |       0 |      100 |       0 |       0 | 9                                        
   recordControlsSemester.tsx |     100 |      100 |     100 |     100 |                                          
-  requirements.tsx           |   82.35 |    83.33 |      80 |   82.35 | 53,94-97                                 
+  requirements.tsx           |   82.35 |    83.33 |      80 |   82.35 | 55,96-99                                 
   semesterEditor.tsx         |   91.66 |      100 |   83.33 |   91.66 | 29                                       
   semesterView.tsx           |      60 |      100 |    62.5 |   63.63 | 82,86-87,91-108,150                      
   welcomeMessage.tsx         |     100 |      100 |     100 |     100 |                                          
@@ -63,5 +63,5 @@ All files                    |   74.74 |     59.3 |   69.84 |   75.59 |
 Test Suites: 1 passed, 1 total
 Tests:       22 passed, 22 total
 Snapshots:   0 total
-Time:        48.164 s
+Time:        46.389 s
 Ran all test suites.
