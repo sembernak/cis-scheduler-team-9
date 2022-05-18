@@ -2,30 +2,30 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-PASS src/App.test.tsx (46.726 s)
+PASS src/App.test.tsx (47.873 s)
   Tests for user stories
-    ✓ App renders with welcome message (266 ms)
-    ✓ Clicking New Plan gives a form to enter a title (252 ms)
-    ✓ Clicking cancel gets rid of Create Plan prompt (162 ms)
-    ✓ Can set new plan title (784 ms)
-    ✓ Insert Semester works (1523 ms)
-    ✓ Delete Semester Works (1520 ms)
-    ✓ Edit Semester Works (2593 ms)
-    ✓ Edit Semester Works (2442 ms)
-    ✓ Edit Semester cancel button works (2462 ms)
-    ✓ Can delete all semesters (2589 ms)
-    ✓ Can insert a course (2226 ms)
-    ✓ Can edit a course (2936 ms)
-    ✓ Can set and fulfill requirements (3175 ms)
-    ✓ Can edit a plan (931 ms)
-    ✓ Plan editor cancel button works (948 ms)
-    ✓ Delete all courses button works (4038 ms)
-    ✓ Can reset a course to default (2436 ms)
-    ✓ Delete all semesters button works (2848 ms)
-    ✓ Can make and fulfill preRequisites (4616 ms)
-    ✓ Can add course to course pool (1352 ms)
-    ✓ Can save data (3343 ms)
-    ✓ Welcome message is pulled up when help button is pressed (456 ms)
+    ✓ App renders with welcome message (267 ms)
+    ✓ Clicking New Plan gives a form to enter a title (257 ms)
+    ✓ Clicking cancel gets rid of Create Plan prompt (157 ms)
+    ✓ Can set new plan title (786 ms)
+    ✓ Insert Semester works (1540 ms)
+    ✓ Delete Semester Works (1562 ms)
+    ✓ Edit Semester Works (2568 ms)
+    ✓ Edit Semester Works (2484 ms)
+    ✓ Edit Semester cancel button works (2489 ms)
+    ✓ Can delete all semesters (2665 ms)
+    ✓ Can insert a course (2289 ms)
+    ✓ Can edit a course (3070 ms)
+    ✓ Can set and fulfill requirements (3334 ms)
+    ✓ Can edit a plan (967 ms)
+    ✓ Plan editor cancel button works (980 ms)
+    ✓ Delete all courses button works (4129 ms)
+    ✓ Can reset a course to default (2506 ms)
+    ✓ Delete all semesters button works (2892 ms)
+    ✓ Can make and fulfill preRequisites (4689 ms)
+    ✓ Can add course to course pool (1356 ms)
+    ✓ Can save data (3405 ms)
+    ✓ Welcome message is pulled up when help button is pressed (461 ms)
 
 -----------------------------|---------|----------|---------|---------|----------------------------------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                            
@@ -63,5 +63,5 @@ All files                    |   74.61 |       60 |   69.84 |   75.45 |
 Test Suites: 1 passed, 1 total
 Tests:       22 passed, 22 total
 Snapshots:   0 total
-Time:        47.396 s
+Time:        48.53 s
 Ran all test suites.
