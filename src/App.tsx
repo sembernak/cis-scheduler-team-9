@@ -372,6 +372,10 @@ function App(): JSX.Element {
                 <p className="names">
                     created by Allie Platchek, Sam Bernal, and Anissa Spano
                 </p>
+                <h3 className="names">
+                    Currently Setting Up on our projects from Pranav Kamath and
+                    Christain Khun
+                </h3>
                 <WelcomeMessage
                     show={showWelcomeMessage}
                     handleClose={handleWelcomeMessage}
