@@ -375,7 +375,7 @@ function App(): JSX.Element {
                 </p>
                 <h3 className="names">
                     Currently Setting Up on our projects from Pranav Kamath and
-                    Christain Khun.
+                    Christain .
                 </h3>
                 <WelcomeMessage
                     show={showWelcomeMessage}
