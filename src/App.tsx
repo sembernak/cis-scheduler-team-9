@@ -370,7 +370,7 @@ function App(): JSX.Element {
             <header className="App-header" id="header">
                 UD CISC275 Daily Planner{" "}
                 <p className="names">
-                    created by Christian Kuhn and Pranav Kamath...
+                    created by Christian Kuhn and Pranav Kamath
                 </p>
                 <h3 className="names">
                     Currently Setting Up on our projects from Pranav Kamath and
@@ -380,14 +380,14 @@ function App(): JSX.Element {
                     show={showWelcomeMessage}
                     handleClose={handleWelcomeMessage}
                 ></WelcomeMessage>
-                {/* <Button className="save-btn" onClick={saveData}>
+                <Button className="save-btn" onClick={saveData}>
                     Save Data
-                </Button> */}
-                {/* <br></br>
+                </Button>
+                <br></br>
                 <Button className="save-btn" onClick={handleWelcomeButton}>
                     {" "}
                     Help{" "}
-                </Button> */}
+                </Button>
             </header>
             <div className="schedule">
                 <br></br>
