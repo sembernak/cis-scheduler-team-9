@@ -24,21 +24,21 @@
 
 .App-header {
     width: 100%;
-    background-color: #262b57;
+    background-color: #406abc;
     min-height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: small;
-    color: rgb(0, 204, 255);
+    color: white;
 }
 .names {
     font-size: small;
 }
 
 .App-link {
-    color: #eeb90a;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -100,7 +100,7 @@
 }
 .edit-sem-btn:hover {
     font-size: 10px;
-    background-color: rgb(189, 196, 207);
+    background-color: rgb(31, 96, 216);
 }
 .delete-sem-btn {
     transition-duration: 0.4s;
