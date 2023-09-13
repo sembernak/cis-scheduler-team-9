@@ -368,9 +368,9 @@ function App(): JSX.Element {
     return (
         <div className="App">
             <header className="App-header" id="header">
-                UD CISC275 Daily Planner{" "}
+                UD CISC275 Schedule Planner{" "}
                 <p className="names">
-                    created by Christian Kuhn and Pranav Kamath
+                    created by Allie Platchek, Sam Bernal, and Anissa Spano
                 </p>
                 <h3 className="names">
                     Currently Setting Up on our projects from Pranav Kamath and
