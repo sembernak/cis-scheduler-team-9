@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from "react";
 import unpackJson from "./helper_functions/unpackJSON";
 import catalog from "./catalog.json";
